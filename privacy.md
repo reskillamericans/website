@@ -1,10 +1,10 @@
-Reskill Americans Privacy Notice 
+# Reskill Americans Privacy Notice 
 
 Version: 1.0
 
 October 7, 2021
 
-1.  Introduction 
+## 1.  Introduction 
 
 This Privacy Notice explains how Reskill Americans ("RA"," "we" or "us") collects, uses, and shares information when you access or use our websites, collaboration tools, learning-management systems, and other online products and services, including those of our vendors  (collectively, the "RA Services" or the "Services"), or when you otherwise interact with us. 
 
@@ -16,7 +16,7 @@ RA is based in the United States and the information we collect is governed by 
 
 If you are in the European Economic Area, RA is the data controller of all personal information. 
 
-2.  Legal Bases for Use of Personal Information 
+## 2.  Legal Bases for Use of Personal Information 
 
 The legal bases for RA's use of personal information are as follows: 
 
@@ -26,28 +26,28 @@ The legal bases for RA's use of personal information are as follows: 
 
 The legal bases applicable to a specific activity depend on the types of personal information used and the contexts in which it is being used. 
 
-3.  Collection of Information 
+## 3.  Collection of Information 
 
-4.  Information you provide to us 
+## 4.  Information you provide to us 
 
 We collect information you provide directly to us. For example, we collect information when you: create an account; use any RA Service; participate in our courses, projects, internships, or other educational offerings; contact our staff; respond to questionnaires; or otherwise interact with us. The types of information we may collect directly from you vary depending on the RA Service you use, but can include your name, username, profile images, email address, phone number, postal address, state of residence, US work-authorization status, racial identity, age, employment status, links to your coding-related and social media accounts, and answers to survey questions (such as how you heard about us). We also may collect posts, messages, files, assignments, and other information you submit to us or to others in connection with the Services. 
 
-5.  Information we create about you 
+## 5.  Information we create about you 
 
 We collect information that we create about you and your use of RA Services, including grades relating to your performance on our assignments and other evaluations of your academic performance and your suitability for employment, projects, and internships. 
 
-6.  Information we collect automatically when you use the RA Services 
+## 6.  Information we collect automatically when you use the RA Services 
 
 When you use the RA Services, we automatically collect information about you, including: 
 
 -   We log information about your use of the RA Services, including access times, services used, pages viewed, and your IP addresses, as well as other information available from your web browser. 
 -   We collect information by using or authorizing the use by others of cookies, web beacons (tracking pixels), and similar web-based tracking technologies that operate by sending information to your computer or mobile device.  
 
-7.  Information we collect from other sources 
+## 7.  Information we collect from other sources 
 
 We may also obtain information from other sources and combine that with information we collect through your use of the Services. 
 
-8.  Use of Information 
+## 8.  Use of Information 
 
 We may use information about you for various purposes, including: 
 
@@ -61,7 +61,7 @@ We may use information about you for various purposes, including: 
 -   Protecting our legal rights and complying with our legal obligations, including responding to subpoenas, court orders, and other legal processes; and 
 -   Carrying out any other purpose for which the information was collected. 
 
-9.  Sharing of Information 
+## 9.  Sharing of Information 
 
 We may share information about you as follows, or as otherwise described in this Privacy Notice: 
 
@@ -75,24 +75,24 @@ We may share information about you as follows, or as otherwise described in thi
 
 We may also share aggregated or anonymized information, which cannot reasonably be used to identify you. 
 
-10.  Analytics Services provided by others 
+## 10.  Analytics Services provided by others 
 
 We may engage third parties to provide analytics services in connection with the RA Services. These entities may use cookies, web beacons and other technologies to collect and analyze information about your use of the RA Services. 
 
-11.  Retention of Information 
+## 11.  Retention of Information 
 
 We keep your personal information for no longer than necessary for the purposes for which the information is collected and processed. The length of time we retain personal information depends on the purposes for which we collect and use it, or as required to comply with applicable laws, or to establish, exercise, or defend our legal rights. 
 
-12.  Confidentiality and Security of Information 
+## 12.  Confidentiality and Security of Information 
 
 RA takes reasonable measures to help protect personal information from loss, theft, misuse and unauthorized access, disclosure, alteration, and destruction.  
 
-13.  Updating or Deleting Your Personal Data 
+## 13.  Updating or Deleting Your Personal Data 
 
 You can access your personal information and confirm that it remains correct and up-to-date, choose whether or not you wish to receive material from us, and request that we delete or provide you with a copy of your personal data by [detail the specific procedure]. 
 
 If you reside or are located in the EEA or other region that offers similar protections, you have the right to request that we provide access to any personal information we hold about you, prevent the processing of your personal information for direct-marketing purposes, update any personal information that is out of date or incorrect, delete any personal information that we are holding about you, restrict the way that we process your personal information, provide your personal information to a third party provider of services, and provide you with a copy of any personal information that we hold about you.  
 
-14.  Contact Us 
+## 14.  Contact Us 
 
 If you have any questions, comments, or requests in connection with this Privacy Notice, please contact us at [email address].
