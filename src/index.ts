@@ -1,13 +1,15 @@
-import { addDoc, collection } from "firebase/firestore";
-import { onAuthStateChanged,
-         signInWithEmailAndPassword, signInWithPopup, linkWithPopup,
+import { signInWithEmailAndPassword, signInWithPopup, linkWithPopup,
          EmailAuthProvider, GoogleAuthProvider, GithubAuthProvider,
          sendEmailVerification,
          sendPasswordResetEmail }
     from "firebase/auth";
 import type { User, AuthProvider } from "firebase/auth";
+import { addDoc, collection } from "firebase/firestore";
 
-import { app, db, auth } from "./setup.js";
+import { db, auth } from "./setup.js";
+import { linkLinkedIn, continueLinkedIn } from "./linkedin.js";
+
+export { main, continueLinkedIn };
 
 const googleProvider = new GoogleAuthProvider();
 const emailProvider = new EmailAuthProvider();
@@ -40,9 +42,7 @@ async function linkWith(provider: AuthProvider) {
     }
 }
 
-onAuthStateChanged(auth, (user) => {
-    console.log(`Auth user: ${JSON.stringify(user)}`);
-});
+
 
 const authButtonHandlers: Map<string, () => void> = new Map([
     ['sign-in-google', () => signInWith(googleProvider)],
@@ -50,6 +50,7 @@ const authButtonHandlers: Map<string, () => void> = new Map([
     ['link-to-github', () => linkWith(githubProvider)],
     ['sign-out', () => auth.signOut()],
     ['reset-password', () => sendPasswordResetEmail(auth, auth.currentUser!.email!)],
+    ['link-to-linkedin', linkLinkedIn],
 ]);
 
 function bindButtons(handlers: Map<string, () => void>) {
@@ -59,4 +60,6 @@ function bindButtons(handlers: Map<string, () => void>) {
     }
 }
 
-bindButtons(authButtonHandlers);
+function main() {
+    bindButtons(authButtonHandlers);
+}

@@ -1,7 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getFirestore } from 'firebase/firestore';
-import { getAuth } from "firebase/auth";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCpNW4y3jENwllOQqAxPdImKYbUhz5VMew",
@@ -19,3 +19,7 @@ const db = getFirestore(app);
 const auth = getAuth(app);
 
 export { app, auth, db };
+
+onAuthStateChanged(auth, (user) => {
+  console.log(`Auth user: ${JSON.stringify(user)}`);
+});
