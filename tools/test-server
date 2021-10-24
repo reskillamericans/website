@@ -1,0 +1,28 @@
+#!/bin/bash
+
+set -e
+
+PORT=5500
+
+PROC="$(pgrep http-server)" || true
+
+if [[ "$1" == "--stop" ]]; then
+    if [[ -z "$PROC" ]]; then
+        echo "No server running"
+        exit 1
+    fi
+
+    echo "Killing process: $PROC"
+    kill $PROC
+    exit 0
+fi
+
+if [[ -n "$PROC" ]]; then
+    echo "Already a server running..."
+    exit 1
+fi
+
+nohup npx http-server public --port $PORT 2>1 &
+
+echo "Running test server on port $PORT"
+echo "run tools/test-server --stop   ... to stop"
