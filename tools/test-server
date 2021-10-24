@@ -1,4 +1,6 @@
 #!/bin/bash
+#
+# test-server --- Run a local web server for testing.
 
 set -e
 
@@ -22,7 +24,7 @@ if [[ -n "$PROC" ]]; then
     exit 1
 fi
 
-nohup npx http-server public --port $PORT 2>1 &
+nohup npx http-server public --port $PORT > /dev/null 2>&1 &
 
 echo "Running test server on port $PORT"
 echo "run tools/test-server --stop   ... to stop"

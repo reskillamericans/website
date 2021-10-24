@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+// bundle --- Use ESBuild to bundle code for use in browser.
 
 // ESBuild transpiles TypeScript directly.  We keep the
 // tsc build around (and the generated scripts files) for type
@@ -7,6 +8,8 @@
 require('esbuild').buildSync({
     entryPoints: ['src/index.ts'],
     bundle: true,
+    format: 'esm',
+    treeShaking: true,
     // minify: true,
     sourcemap: true,
     outfile: 'public/scripts/reskill.js',
