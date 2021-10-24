@@ -10,7 +10,7 @@ require('esbuild').buildSync({
     bundle: true,
     format: 'esm',
     treeShaking: true,
-    // minify: true,
+    minify: true,
     sourcemap: true,
     outfile: 'public/scripts/reskill.js',
   })
