@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tools/bundle",
-    "serve": "tools/test-server"
+    "serve": "tools/test-server",
+    "ci": "tsc"
   },
   "repository": {
     "type": "git",
@@ -20,8 +21,7 @@
   },
   "homepage": "https://github.com/reskillamericans/website#readme",
   "dependencies": {
-    "firebase": "^9.1.3",
-    "firebaseui": "^5.0.0"
+    "firebase": "^9.1.3"
   },
   "devDependencies": {
     "esbuild": "^0.13.8",

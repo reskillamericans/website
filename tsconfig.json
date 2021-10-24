@@ -1,15 +1,15 @@
 {
   "compilerOptions": {
-    "strict": true,                                      /* Enable all strict type-checking options. */
+    "strict": true,
     "target": "es2020",
     "module": "esnext",
     "rootDir": "src",
     "moduleResolution": "Node",
-    "sourceRoot": "/src",
     "outDir": "scripts",
     "sourceMap": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
-  }
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*"],
 }
