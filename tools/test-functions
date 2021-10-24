@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# test-functions  --- Rebuild typescript and run test server.
+
+set -e
+
+cd "$PROJ_DIR/functions"
+npm run build
+firebase serve --only functions

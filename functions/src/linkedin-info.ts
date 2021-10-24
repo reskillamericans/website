@@ -2,18 +2,27 @@ import * as functions from "firebase-functions";
 
 export { extractLinkedInInfo };
 
+const requiredParams: string[] = ['code', 'redirect_uri', 'user_id'];
+
 const extractLinkedInInfo = functions.https.onRequest((request, response) => {
-    const code = request.query.code;
-    const redirect_uri = request.query.redirect_uri;
-    const user_id = request.query.user_id;
+    let badParams = [];
+    let params: {[key: string]: string} = {};
 
-    functions.logger.info("Hello logs!", {structuredData: true});
-    const name = request.query.name;
+    for (let param of requiredParams) {
+        if (!request.query[param]) {
+            badParams.push(param);
+        } else {
+            // @ts-ignore - Type issue with Express request query?
+            params[param] = request.query[param];
+        }
+    }
 
-    if (!code || !redirect_uri || !user_id ) {
-        response.status(400).send(`Missing parameter.`);
+    if (badParams.length !== 0) {
+        const message = `Missing parameter(s) in request: ${badParams.join(', ')}`;
+        functions.logger.error(message);
+        response.status(400).send(message);
         return;
     }
 
-    response.send(`Hello ${name}, from Firebase!`);
+    response.send(`Well formed request.`);
   });

@@ -1,7 +1,10 @@
 import * as functions from "firebase-functions";
 import { extractLinkedInInfo } from "./linkedin-info";
 
-export { helloWorld, extractLinkedInInfo };
+export {
+    helloWorld as hello,
+    extractLinkedInInfo as linked_in
+};
 
 // Start writing Firebase Functions
 // https://firebase.google.com/docs/functions/typescript
