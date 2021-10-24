@@ -86,7 +86,7 @@ class OAuthRequest {
 
         console.log("Wrote LinkedIn authorization code to server.");
 
-        // Make sure not to write the code more than once.
+        // Don't write the code more than once.
         sessionStorage.removeItem(SESSION_KEY);
     }
 }
