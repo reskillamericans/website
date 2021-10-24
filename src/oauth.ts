@@ -85,5 +85,8 @@ class OAuthRequest {
         await setDoc(ref, { code }, { merge: true });
 
         console.log("Wrote LinkedIn authorization code to server.");
+
+        // Make sure not to write the code more than once.
+        sessionStorage.removeItem(SESSION_KEY);
     }
 }
