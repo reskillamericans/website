@@ -2,6 +2,7 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from 'firebase/firestore';
 import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { getFunctions } from "firebase/functions";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCpNW4y3jENwllOQqAxPdImKYbUhz5VMew",
@@ -17,8 +18,9 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const auth = getAuth(app);
+const functions = getFunctions(app);
 
-export { app, auth, db };
+export { app, auth, db, functions };
 
 onAuthStateChanged(auth, (user) => {
   console.log(`Auth user: ${JSON.stringify(user)}`);

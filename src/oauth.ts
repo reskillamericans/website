@@ -1,6 +1,7 @@
 import { addDoc, setDoc, doc, collection, serverTimestamp } from "firebase/firestore";
+import { httpsCallable } from "firebase/functions";
 
-import { db } from "./setup.js";
+import { auth, db, functions } from "./setup.js";
 
 export { OAuthParams, OAuthRequest };
 
@@ -77,14 +78,25 @@ class OAuthRequest {
 
         let code = params.get('code');
 
-        const ref = doc(db, REQUEST_COLLECTION, this.requestID);
+        // const ref = doc(db, REQUEST_COLLECTION, this.requestID);
 
-        // This is the code we need to exchange it for a bearer token.
-        // This must happen on the server, though - since we don't want
-        // to reveal our client secret in the browser.
-        await setDoc(ref, { code }, { merge: true });
+        // // This is the code we need to exchange it for a bearer token.
+        // // This must happen on the server, though - since we don't want
+        // // to reveal our client secret in the browser.
+        // await setDoc(ref, { code }, { merge: true });
 
-        console.log("Wrote LinkedIn authorization code to server.");
+        // console.log("Wrote LinkedIn authorization code to server.");
+
+        console.log("Calling Firebase Function");
+
+        const linked_in = httpsCallable(functions, 'linked_in');
+        const res = await linked_in({
+            code,
+            request_id: this.requestID,
+            user_id: auth.currentUser?.uid
+        });
+
+        console.log("Successful return from function: ${res.data.text}");
 
         // Don't write the code more than once.
         sessionStorage.removeItem(SESSION_KEY);
