@@ -89,8 +89,8 @@ class OAuthRequest {
 
         console.log("Calling Firebase Function");
 
-        const linked_in = httpsCallable(functions, 'linked_in');
-        const res = await linked_in({
+        const linkedIn = httpsCallable(functions, 'linkedIn');
+        const res = await linkedIn({
             code,
             request_id: this.requestID,
             user_id: auth.currentUser?.uid
