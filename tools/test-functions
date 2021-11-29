@@ -3,6 +3,8 @@
 # test-functions  --- Rebuild typescript and run test server.
 
 set -e
+TOOLS_DIR="$(unset CDPATH; cd $(dirname ${BASH_SOURCE[0]}) && pwd)"
+source $TOOLS_DIR/use
 
 cd "$PROJ_DIR/functions"
 npm run build
