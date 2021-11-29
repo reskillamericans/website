@@ -13,7 +13,4 @@ if [[ "$1" == "--ci" ]]; then
   INSTALL_CMD="ci"
 fi
 
-# Be sure to use the .nvmrc version of node.
-nvm install
-
 npm $INSTALL_CMD

@@ -43,7 +43,8 @@ integration.
 To get started:
 
 ```
-$ npm install
+$ source tools/use
+$ configure
 $ npm build
 $ npm test
 $ npm serve
