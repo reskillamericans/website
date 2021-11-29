@@ -49,4 +49,6 @@ $ npm test
 $ npm serve
 ```
 
+Only PR's that have passed testing can be merged to the main
+branch (and only FF commits are allowed in main).
 
