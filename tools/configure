@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+# configure  --- Configure repo and install dependencies.
+
+set -e
+
+INSTALL_CMD="install"
+
+if [[ "$1" == "--ci" ]]; then
+  shift
+  INSTALL_CMD="ci"
+fi
+
+npm $INSTALL_CMD

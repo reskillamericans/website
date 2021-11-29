@@ -6,11 +6,14 @@ export PROJECT=ra-website
 export TOOLS_DIR="$(unset CDPATH; cd $(dirname ${BASH_SOURCE[0]}) && pwd)"
 source $TOOLS_DIR/usefuncs
 
+# Ensure bin directory exists for installing dependencies
+mkdir -p "$PROJ_DIR/bin"
+
 #
 # Add build tools to PATH
 #
-PATH="$PROJ_DIR/tools:$(cd $PROJ_DIR; npm bin):$PATH"
-CDPATH="$PROJ_DIR/src:$CDPATH"
+PATH="$(remove-dup-paths "$PROJ_DIR/bin:$(cd $PROJ_DIR; npm bin):$PATH")"
+CDPATH="$(remove-dup-paths "$PROJ_DIR/src:$CDPATH")"
 
 #
 # Non-interactive shells - exit here.
