@@ -51,6 +51,7 @@ unuse () {
     unset -f display-command
     unset -f show-commands
     unset -f show-dirs
+    unset -f download-to-bin
 
     unset PROJECT
 
@@ -136,6 +137,19 @@ show-dirs () {
         help="$(echo "${line}" | sed 's/[^ ]* //')"
         display-command "cd ${command}" "cd ${help}"
     done
+}
+
+function download-to-bin {
+    FILE_PATH="$1"
+    FILE="$( basename "$FILE_PATH" )"
+
+    if [ ! -f "$PROJ_DIR/bin/$FILE" ]; then
+        echo "Downloading $1"
+        if ! curl "$FILE_PATH" --output "$DOWN_DIR/$FILE"; then
+            echo "Failed to download $FILE_PATH"
+            exit 1
+        fi
+    fi
 }
 
 if [ -z "$_OLD_CDPATH" ]; then
