@@ -148,12 +148,13 @@ fi
 
 CDPATH=".:$PROJ_DIR"
 if [[ "$_OLD_CDPATH" != "NONE" ]]; then
-    CDPATH="$CDPATH:$_OLD_CDPATH"
+    CDPATH="$(remove-dup-paths "$CDPATH:$_OLD_CDPATH")"
 fi
 
 if [ -z "$_OLD_PATH" ]; then
     _OLD_PATH="$PATH"
 fi
-PATH="$TOOLS_DIR:$_OLD_PATH"
+
+PATH="$($TOOLS_DIR/remove-dup-paths "$TOOLS_DIR:$_OLD_PATH")"
 
 add_alias cd-home "cd \$PROJ_DIR"

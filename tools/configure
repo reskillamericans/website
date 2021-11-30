@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# configure  --- Configure repo and install dependencies.
+
+set -e
+TOOLS_DIR="$(unset CDPATH; cd $(dirname ${BASH_SOURCE[0]}) && pwd)"
+source $TOOLS_DIR/use
+
+INSTALL_CMD="install"
+
+if [[ "$1" == "--ci" ]]; then
+  shift
+  INSTALL_CMD="ci"
+fi
+
+npm $INSTALL_CMD

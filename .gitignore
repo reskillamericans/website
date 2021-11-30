@@ -1,5 +1,6 @@
 # Logs
 scripts/
+bin/
 nohup.out
 
 logs
