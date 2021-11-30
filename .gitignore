@@ -3,6 +3,7 @@ node_modules
 scripts/
 bin/
 static/scripts
+public
 nohup.out
 .hugo_build.lock
 

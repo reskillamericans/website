@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+# build  --- Build website into public directory.
+
+set -e
+TOOLS_DIR="$(unset CDPATH; cd $(dirname ${BASH_SOURCE[0]}) && pwd)"
+source $TOOLS_DIR/use
+
+# Compile TS into a sigle JS file in static/scripts
+bundle
+
+hugo -D
