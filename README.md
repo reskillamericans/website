@@ -55,7 +55,7 @@ branch (and only FF commits are allowed in main).
 
 ## Directory Structure
 
-| src | Usage |
+| Directory | Usage |
 --- | --- |
 | .github | GitHub actions workflow definitions. |
 | node_modules | Node/npm installed packages. |
