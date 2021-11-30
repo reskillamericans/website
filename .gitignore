@@ -1,9 +1,10 @@
 # Logs
-node_modules
+node_modules/
 scripts/
 bin/
-static/scripts
-public
+static/scripts/
+public/
+resources/
 nohup.out
 .hugo_build.lock
 
