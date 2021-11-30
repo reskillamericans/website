@@ -1,0 +1,17 @@
+name: Build and run tests on pushing to any branch.
+'on': push
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.x]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: tools/configure --ci
+      - run: tools/build
+      - run: npm test
