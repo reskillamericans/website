@@ -14,3 +14,22 @@ if [[ "$1" == "--ci" ]]; then
 fi
 
 npm $INSTALL_CMD
+
+echo -e "\nChecking Hugo installation..."
+
+HUGO_VERSION="0.89.4"
+HUGO_URL="https://github.com/gohugoio/hugo/releases/download/v$HUGO_VERSION/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz"
+HUGO_FILE="$(basename $HUGO_URL)"
+
+cd $PROJ_DIR/bin
+
+if [[ -f $HUGO_FILE ]]; then
+  echo "$HUGO_FILE already downloaded."
+else
+  echo "Downloading Hugo."
+  curl -L -o $HUGO_FILE $HUGO_URL
+  tar -xvf $HUGO_FILE hugo
+fi
+
+echo "Hugo installed at $(which hugo)"
+echo "Version: $(hugo version)"
