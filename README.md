@@ -53,3 +53,19 @@ $ npm serve
 Only PR's that have passed testing can be merged to the main
 branch (and only FF commits are allowed in main).
 
+## Directory Structure
+
+| src | Usage |
+--- | --- |
+| .github | GitHub actions workflow definitions. |
+| node_modules | Node/npm installed packages. |
+| src | TypeScript source files. |
+| static | Files to be copied to server "as is" |
+| static/scripts | Bundled client-side JavaScript files - compiled from TypeScript |
+| data | Hugo data files |
+| content | Hugo content files |
+| archetypes | Hugo file types |
+| themes | Hugo theme files |
+| resources | Hugo caches? |
+| tools | Utility commands for this repo. |
+| bin | External tools installed here (e.g. Hugo) |
