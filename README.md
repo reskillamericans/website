@@ -67,5 +67,6 @@ branch (and only FF commits are allowed in main).
 | archetypes | Hugo file types |
 | themes | Hugo theme files |
 | resources | Hugo caches? |
+| public | Hugo builds website here.  This directory is copied to Firebase Hosting. |
 | tools | Utility commands for this repo. |
 | bin | External tools installed here (e.g. Hugo) |
