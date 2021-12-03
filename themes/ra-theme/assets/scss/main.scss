@@ -14,23 +14,34 @@ body {
   font-family: 'Open Sans', san-serif;
   max-width: 1200px;
   margin: auto;
-  line-height: 1.5rem;
+  line-height: 1.5em;
 }
 
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 1rem;
 
   .logo {
     @include hover-zoom;
 
     height: 30px;
-    margin: 2rem;
+    padding-right: 2rem;
   }
 
   nav {
     ul {
+      @media (max-width: 750px) {
+        position:fixed;
+        inset: 0 0 0 30%;
+        background-color: hsla(0, 0%, 0%, 0.1);
+        backdrop-filter: blur(7px);
+        flex-direction: column;
+        justify-content: start;
+        padding: 8rem 2rem;
+      }
+
       padding: 0;
       margin: 0;
       list-style: none;
@@ -47,6 +58,7 @@ header {
         text-decoration: none;
         color: #000;
         font-weight: bold;
+        white-space: nowrap;
       }
     }
   }
