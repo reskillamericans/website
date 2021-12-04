@@ -45,16 +45,25 @@ header {
       display: block;
     }
 
+    &:hover {
+      cursor: pointer;
+    }
+
     display: none;
     z-index: 100;
     position: absolute;
-    top: 2rem;
+    top: 1rem;
     right: 2rem;
     width: 2em;
-    aspect-ratio: 1;;
-    background: url("/images/icon-hamburger.svg");
-    background-size: contain;
+    aspect-ratio: 1;
     border: 0;
+    background: url("/images/icon-hamburger.svg");
+    background-size: cover;
+    &[data-popout="true"] {
+      background: url("/images/icon-close.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 
   nav {
@@ -66,7 +75,7 @@ header {
         z-index: 90;
         inset: 0 0 0 30%;
         background-color: hsla(0, 0%, 0%, 0.1);
-        backdrop-filter: blur(7px);
+        backdrop-filter: blur(15px);
         flex-direction: column;
         justify-content: start;
         padding: 4rem 2rem;

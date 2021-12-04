@@ -8,5 +8,6 @@ function main() {
     console.log("Toggle menu");
     const pop = nav.getAttribute('data-popout');
     nav.setAttribute('data-popout', pop === 'true' ? 'false' : 'true');
+    toggle.setAttribute('data-popout', pop === 'true' ? 'false' : 'true');
   });
 }
