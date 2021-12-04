@@ -68,7 +68,7 @@ header {
     z-index: 100;
     position: absolute;
     top: 0;
-    right: 2rem;
+    right: 1rem;
     width: 2em;
     aspect-ratio: 1;
     border: 0;
@@ -143,6 +143,11 @@ footer {
   color: $footer-text-color;
   padding: 4rem 2rem;
 
+  @media (max-width: $break-width) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
   .tagline {
     padding-block: 1rem;
   }
@@ -164,5 +169,26 @@ footer {
   aspect-ratio: 1;
   fill: $footer-text-color;
   filter: invert(100%);
+  }
+}
+
+.footer-links {
+  display: flex;
+  gap: 2rem;
+  padding-right: 4rem;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: start;
+    align-items: baseline;
+  }
+
+  a {
+    @include hover-zoom;
+    color: $footer-text-color;
+    text-decoration: none;
+    white-space: nowrap;
   }
 }
