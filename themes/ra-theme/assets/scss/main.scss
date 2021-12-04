@@ -1,3 +1,6 @@
+$break-width: 750px;
+$max-width: 1200px;
+
 @mixin hover-zoom {
   transition: transform 0.2s ease-in-out;
   &:hover {
@@ -20,7 +23,7 @@
 
 body {
   font-family: 'Open Sans', san-serif;
-  max-width: 1200px;
+  max-width: $max-width;
   margin: auto;
   line-height: 1.5em;
 
@@ -41,7 +44,7 @@ header {
   }
 
   #menu-toggle {
-    @media (max-width: 750px) {
+    @media (max-width: $break-width) {
       display: block;
     }
 
@@ -57,10 +60,12 @@ header {
     width: 2em;
     aspect-ratio: 1;
     border: 0;
-    background: url("/images/icon-hamburger.svg");
+    background-image: url("/images/icon-hamburger.svg");
+    background-color: transparent;
     background-size: cover;
     &[data-popout="true"] {
-      background: url("/images/icon-close.svg");
+      background-image: url("/images/icon-close.svg");
+      background-size: auto;
       background-repeat: no-repeat;
       background-position: center;
     }
@@ -68,7 +73,7 @@ header {
 
   nav {
     ul {
-      @media (max-width: 750px) {
+      @media (max-width: $break-width) {
         @include popout;
 
         position:fixed;
@@ -81,7 +86,8 @@ header {
         padding: 4rem 2rem;
       }
 
-      padding: 0;
+      padding-block: 1rem;
+      padding-inline: clamp(3rem, 10vw, 7rem);
       margin: 0;
       list-style: none;
       display: flex;
