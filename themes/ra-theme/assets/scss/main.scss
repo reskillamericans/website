@@ -1,7 +1,10 @@
 $break-width: 750px;
 $max-width: 1200px;
+$min-width: 320px;
 $standout-color: #f2594b;
 $standout-text-color: white;
+$footer-color: #131c2c;
+$footer-text-color: white;
 
 @mixin hover-zoom {
   transition: transform 0.2s ease-in-out;
@@ -27,6 +30,7 @@ $standout-text-color: white;
 body {
   font-family: 'Open Sans', san-serif;
   max-width: $max-width;
+  min-width: $min-width;
   margin: auto;
   line-height: 1.5em;
   padding: 1rem;
@@ -39,10 +43,10 @@ header {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 1rem;
+  position: relative;
 
   .logo {
     @include hover-zoom;
-
     height: 30px;
   }
 
@@ -63,7 +67,7 @@ header {
     display: none;
     z-index: 100;
     position: absolute;
-    top: 1rem;
+    top: 0;
     right: 2rem;
     width: 2em;
     aspect-ratio: 1;
@@ -130,4 +134,35 @@ header {
   background-color: $standout-color;
   border-radius: 4px;
   padding: 1rem 2rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: $footer-color;
+  color: $footer-text-color;
+  padding: 4rem 2rem;
+
+  .tagline {
+    padding-block: 1rem;
+  }
+
+  .logo {
+    @include hover-zoom;
+    height: 50px;
+  }
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: start;
+
+  img {
+  @include hover-zoom;
+  height: 24px;
+  aspect-ratio: 1;
+  fill: $footer-text-color;
+  filter: invert(100%);
+  }
 }
