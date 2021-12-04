@@ -38,8 +38,8 @@ reuse () {
 }
 
 add_alias () {
-    a="$1"; shift
-    d="$1"; shift
+    local a="$1"; shift
+    local d="$1"; shift
     ENV_ALIASES="$ENV_ALIASES $a"
     alias $a="$d"
 }
@@ -75,7 +75,7 @@ unuse () {
 }
 
 display-command () {
-    command=$1; shift
+    local command=$1; shift
     description=$1; shift
     if [[ -z "$description" ]]; then
         description="DESCRIPTION MISSING IN FILE"
@@ -115,6 +115,7 @@ show-commands () {
 show-dirs () {
     # Split CDPATH up on colons and for each item within the project directory,
     # show its contents as an available command
+    local last_command="NONE"
     (
         IFS=":"
         for entry in ${CDPATH}; do
@@ -134,8 +135,11 @@ show-dirs () {
         /^\\./ d;
     " | sort -u | while read line; do
         command="$(echo "${line}" | sed 's/ .*//')"
-        help="$(echo "${line}" | sed 's/[^ ]* //')"
-        display-command "cd ${command}" "cd ${help}"
+        if [[ "$last_command" != "$command" ]]; then
+            help="$(echo "${line}" | sed 's/[^ ]* //')"
+            display-command "cd ${command}" "cd ${help}"
+            last_command="$command"
+        fi
     done
 }
 

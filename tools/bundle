@@ -5,6 +5,10 @@
 // tsc build around (and the generated scripts files) for type
 // checking.
 
+const projDir = process.env['PROJ_DIR'];
+
+process.chdir(projDir);
+
 require('esbuild').buildSync({
     entryPoints: ['src/index.ts'],
     bundle: true,
