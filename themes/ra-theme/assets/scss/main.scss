@@ -1,10 +1,13 @@
 $break-width: 750px;
 $max-width: 1200px;
+$standout-color: #f2594b;
+$standout-text-color: white;
 
 @mixin hover-zoom {
   transition: transform 0.2s ease-in-out;
   &:hover {
     transform: scale(1.2);
+    cursor: pointer;
   }
 }
 
@@ -26,6 +29,7 @@ body {
   max-width: $max-width;
   margin: auto;
   line-height: 1.5em;
+  padding: 1rem;
 
   overflow-x: hidden;
 }
@@ -34,13 +38,17 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding-bottom: 1rem;
 
   .logo {
     @include hover-zoom;
 
     height: 30px;
-    padding-right: 2rem;
+  }
+
+  // This hack to keep anchors from adding additional height to elements.
+  a {
+    line-height: 0.5em;
   }
 
   #menu-toggle {
@@ -86,19 +94,25 @@ header {
         padding: 4rem 2rem;
       }
 
-      padding-block: 1rem;
+      padding-block: 0;
       padding-inline: clamp(3rem, 10vw, 7rem);
       margin: 0;
       list-style: none;
       display: flex;
       gap: 1rem;
       justify-content: space-between;
-      align-content: center;
+      align-items: baseline;
+
+      li {
+        line-height: 1em;
+        height: 1em;
+      }
 
       a {
         @include hover-zoom;
 
         display: inline-block;
+        vertical-align: middle;
         backface-visibility: hidden;
         text-decoration: none;
         color: #000;
@@ -107,4 +121,13 @@ header {
       }
     }
   }
+}
+
+.button-like {
+  @include hover-zoom;
+  display: inline-block;
+  color: $standout-text-color;
+  background-color: $standout-color;
+  border-radius: 4px;
+  padding: 1rem 2rem;
 }
