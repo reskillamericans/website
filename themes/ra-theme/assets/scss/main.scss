@@ -1,10 +1,24 @@
 $break-width: 750px;
-$max-width: 1200px;
+$max-width: 1400px;
 $min-width: 320px;
+
+$heading-color: white;
+$heading-text-color: #222;
+
+$main-color: #fafafa;
+$main-heading-color: #0a0a0a;
+$main-text-color: #676767;
+
 $standout-color: #f2594b;
-$standout-text-color: white;
+$standout-text-color: #fff;
+
 $footer-color: #131c2c;
-$footer-text-color: white;
+$footer-text-color:#ececec;
+
+$selected-tab-color: #3c64b1;
+$selected-tab-text-color: white;
+$deselected-tab-color: white;
+$deselected-tab-text-color: #0a0a0a;
 
 @mixin hover-zoom {
   transition: transform 0.2s ease-in-out;
@@ -22,27 +36,64 @@ $footer-text-color: white;
   }
 }
 
+@mixin content {
+  margin: 0 auto;
+  max-width: $max-width;
+  padding: 1rem;
+}
+
+@mixin headings {
+  h1, h2, h3,
+  h4, h5, h6 {
+      @content;
+  }
+}
+
 :root {
   --codeFont: 'Roboto Mono', monospace;
   --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+// Sections are full-bleed across the page and for background for content elements.
+section {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  &.heading {
+    background-color: $heading-color;
+    color: $heading-text-color;
+  }
+  &.main {
+    background-color: $main-color;
+    color: $main-text-color;
+    @include headings {
+      color: $main-heading-color
+    }
+  }
+  &.footer {
+    background-color: $footer-color;
+    color: $footer-text-color;
+  }
+}
+
 body {
   font-family: 'Open Sans', san-serif;
-  max-width: $max-width;
   min-width: $min-width;
-  margin: auto;
+  margin: 0;
+  padding: 0;
   line-height: 1.5em;
-  padding: 1rem;
 
   overflow-x: hidden;
 }
 
 header {
+  @include content;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 1rem;
+  padding: 1rem;
   position: relative;
 
   .logo {
@@ -67,7 +118,7 @@ header {
     display: none;
     z-index: 100;
     position: absolute;
-    top: 0;
+    top: 1rem;
     right: 1rem;
     width: 2em;
     aspect-ratio: 1;
@@ -119,7 +170,7 @@ header {
         vertical-align: middle;
         backface-visibility: hidden;
         text-decoration: none;
-        color: #000;
+        color: $heading-text-color;
         font-weight: bold;
         white-space: nowrap;
       }
@@ -136,7 +187,13 @@ header {
   padding: 1rem 2rem;
 }
 
+main {
+  @include content;
+}
+
 footer {
+  @include content;
+
   display: flex;
   justify-content: space-between;
   background-color: $footer-color;
@@ -164,11 +221,10 @@ footer {
   justify-content: start;
 
   img {
-  @include hover-zoom;
-  height: 24px;
-  aspect-ratio: 1;
-  fill: $footer-text-color;
-  filter: invert(100%);
+    @include hover-zoom;
+    height: 24px;
+    aspect-ratio: 1;
+    filter: invert(100%);
   }
 }
 

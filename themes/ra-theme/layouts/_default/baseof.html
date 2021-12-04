@@ -2,8 +2,14 @@
 <html language="en">
     {{- partial "head.html" . -}}
     <body>
-        {{- partial "header.html" . -}}
-        {{- block "main" . }}{{- end }}
-        {{- partial "footer.html" . -}}
+        <section class="header">
+            {{- partial "header.html" . -}}
+        </section>
+        <section class="main">
+            {{- block "main" . }}{{- end }}
+        </section>
+        <section class="footer">
+            {{- partial "footer.html" . -}}
+        </section>
     </body>
 </html>
