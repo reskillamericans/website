@@ -6,25 +6,11 @@ set -e
 
 PORT=5500
 
-PROC="$(pgrep http-server)" || true
+cd $PROJ_DIR
 
-if [[ "$1" == "--stop" ]]; then
-    if [[ -z "$PROC" ]]; then
-        echo "No server running"
-        exit 1
-    fi
-
-    echo "Killing process: $PROC"
-    kill $PROC
-    exit 0
+if [[ -z "$1" ]]; then
+    daemon-command start http-server public --port $PORT
+    echo run test-server stop ... to stop.
+else
+    daemon-command $1 http-server --port $PORT
 fi
-
-if [[ -n "$PROC" ]]; then
-    echo "Already a server running..."
-    exit 1
-fi
-
-nohup npx http-server public --port $PORT > /dev/null 2>&1 &
-
-echo "Running test server on port $PORT"
-echo "run test-server --stop   ... to stop"
