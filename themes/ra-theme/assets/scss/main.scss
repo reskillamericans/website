@@ -5,6 +5,14 @@
   }
 }
 
+@mixin popout {
+  transition: transform 0.2s ease-in-out;
+  transform: translateX(100%);
+  &[data-popout="true"] {
+    transform: translateX(0%);
+  }
+}
+
 :root {
   --codeFont: 'Roboto Mono', monospace;
   --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -15,6 +23,8 @@ body {
   max-width: 1200px;
   margin: auto;
   line-height: 1.5em;
+
+  overflow-x: hidden;
 }
 
 header {
@@ -30,16 +40,36 @@ header {
     padding-right: 2rem;
   }
 
+  #menu-toggle {
+    @media (max-width: 750px) {
+      display: block;
+    }
+
+    display: none;
+    z-index: 100;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 2em;
+    aspect-ratio: 1;;
+    background: url("/images/icon-hamburger.svg");
+    background-size: contain;
+    border: 0;
+  }
+
   nav {
     ul {
       @media (max-width: 750px) {
+        @include popout;
+
         position:fixed;
+        z-index: 90;
         inset: 0 0 0 30%;
         background-color: hsla(0, 0%, 0%, 0.1);
         backdrop-filter: blur(7px);
         flex-direction: column;
         justify-content: start;
-        padding: 8rem 2rem;
+        padding: 4rem 2rem;
       }
 
       padding: 0;

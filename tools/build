@@ -9,8 +9,15 @@ source $TOOLS_DIR/use
 cd $PROJ_DIR
 
 # Compile TS into a sigle JS file in static/scripts
-echo "Bundling TypeScript code..."
+echo "Bundling Site TypeScript code..."
 bundle
+
+# TODO: Include theme code in single bundle?
+echo "Building Theme's TypeScript code..."
+cd $PROJ_DIR/themes/ra-theme
+tsc
+
+cd $PROJ_DIR
 
 echo "Building Hugo static site..."
 rm -rf public

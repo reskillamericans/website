@@ -1,7 +1,8 @@
 <header>
   <a href="/"><img class="logo" src="images/ra-logo-black.png"></a>
+  <button id="menu-toggle"></button>
   <nav>
-    <ul>
+    <ul data-popout="false">
       <li><a href="/learn-more">Learn More</a></li>
       <li><a href="/partner">Partner</a></li>
       <li><a href="/dontate">Donate</a></li>
@@ -11,3 +12,9 @@
     </ul>
   </nav>
 </header>
+
+<script defer type="module">
+  import { main } from '/scripts/nav.js';
+
+  main();
+</script>

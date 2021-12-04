@@ -6,6 +6,7 @@ import { signInWithEmailAndPassword, signInWithPopup, linkWithPopup,
 import type { User, AuthProvider } from "firebase/auth";
 import { addDoc, collection } from "firebase/firestore";
 
+import { bindButtons } from './dom-utils.js';
 import { db, auth } from "./setup.js";
 import { linkLinkedIn, continueLinkedIn } from "./linkedin.js";
 
@@ -42,8 +43,6 @@ async function linkWith(provider: AuthProvider) {
     }
 }
 
-
-
 const authButtonHandlers: Map<string, () => void> = new Map([
     ['sign-in-google', () => signInWith(googleProvider)],
     // ['sign-in-email', () => signInWith(emailProvider)],
@@ -52,13 +51,6 @@ const authButtonHandlers: Map<string, () => void> = new Map([
     ['reset-password', () => sendPasswordResetEmail(auth, auth.currentUser!.email!)],
     ['link-to-linkedin', linkLinkedIn],
 ]);
-
-function bindButtons(handlers: Map<string, () => void>) {
-    for (let [id, fn] of handlers) {
-        console.log(`Binding button id: ${id}`);
-        document.getElementById(id)!.addEventListener('click', fn);
-    }
-}
 
 function main() {
     bindButtons(authButtonHandlers);
