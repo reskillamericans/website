@@ -27,4 +27,4 @@ fi
 nohup npx http-server public --port $PORT > /dev/null 2>&1 &
 
 echo "Running test server on port $PORT"
-echo "run tools/test-server --stop   ... to stop"
+echo "run test-server --stop   ... to stop"

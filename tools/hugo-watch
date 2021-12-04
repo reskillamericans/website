@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# hugo-watch --- Watch for changes in Hugo source files and rebuild the site.
+
+set -e
+
+cd $PROJ_DIR
+
+if [[ -z "$1" ]]; then
+    daemon-command start hugo --watch
+else
+    daemon-command $1 hugo --watch
+fi
