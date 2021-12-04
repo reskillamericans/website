@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html language="en">
+<html {{ with .Site.LanguageCode }}language="{{ . }}"{{ end }}>
     {{- partial "head.html" . -}}
     <body>
         <section class="header">

@@ -6,23 +6,7 @@
       Increasing access to careers in tech.
     </div>
 
-    <div class="social-links">
-      <a href="https://twitter.com/ReskillAmerica" target="_blank">
-        <img src="/images/twitter.svg">
-      </a>
-      <a href="https://www.instagram.com/reskillamericans/" target="_blank">
-        <img src="/images/instagram.svg">
-      </a>
-      <a href="https://www.linkedin.com/company/reskill-americans" target="_blank">
-        <img src="/images/linkedin-in.svg">
-      </a>
-      <a href="https://www.youtube.com/c/ReskillAmericans" target="_blank">
-        <img src="/images/youtube.svg">
-      </a>
-      <a href="https://www.facebook.com/reskillamericans" target="_blank">
-        <img src="/images/facebook-f.svg">
-      </a>
-    </div>
+    {{ partial "social-links" .Site.Params.socials }}
   </div>
 
   <!-- Right side -->
@@ -34,7 +18,7 @@
       <a href="/about">About Us</a>
     </div>
     <div>
-      <a href="mailto:info@reskillamericans.org">Contact Us</a>
+      <a href="mailto:{{ .Site.Params.email }}">Contact Us</a>
       <a href="/privacy">Privacy Policy</a>
       <a href="/blog">Blog</a>
       <a href="/faq">FAQ</a>
