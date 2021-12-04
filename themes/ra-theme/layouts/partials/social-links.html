@@ -1,0 +1,32 @@
+<div class="social-links">
+  {{ with .twitter }}
+    <a href="https://twitter.com/{{ . }}" target="_blank">
+      <img src="/images/twitter.svg">
+    </a>
+  {{ end }}
+  {{ with .instagram }}
+    <a href="https://www.instagram.com/{{ . }}/" target="_blank">
+      <img src="/images/instagram.svg">
+    </a>
+  {{ end }}
+  {{ with .linkedin }}
+    <a href="https://www.linkedin.com/{{ . }}" target="_blank">
+      <img src="/images/linkedin-in.svg">
+    </a>
+  {{ end }}
+  {{ with .youtube }}
+    <a href="https://www.youtube.com/c/{{ . }}" target="_blank">
+      <img src="/images/youtube.svg">
+    </a>
+  {{ end }}
+  {{ with .github }}
+    <a href="https://github.com/{{ . }}" target="_blank">
+      <img src="/images/github.svg">
+    </a>
+  {{ end }}
+  {{ with .facebook }}
+    <a href="https://www.facebook.com/{{ . }}" target="_blank">
+      <img src="/images/facebook-f.svg">
+    </a>
+  {{ end }}
+</div>

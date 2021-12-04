@@ -1,3 +1,10 @@
++++
+title = "Privacy Policy"
+date = 2021-10-07
+draft = false
+tags = []
++++
+
 # Reskill Americans Privacy Notice 
 
 Version: 1.0
@@ -10,7 +17,7 @@ This Privacy Notice explains how Reskill Americans ("RA"," "we" or "us") co
 
 We may change this Privacy Notice from time to time. If we make changes, we will notify you by revising the version designation above and posting the new version on our website. 
 
-Your use of the RA Services is also governed by our [Terms of Use](./terms-of-use.md).
+Your use of the RA Services is also governed by our [Terms of Service](/terms-of-service).
 
 RA is based in the United States and the information we collect is governed by U.S. law. By accessing or using the Services or otherwise providing information to us, you consent to the processing and transfer of information in and to the U.S. and other countries. 
 
