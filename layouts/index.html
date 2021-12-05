@@ -1,0 +1,22 @@
+{{ define "main" }}
+<main>
+  <div>
+    <h1>Launch Your Career in Tech:<br>Enroll in Our Free Training Program</h1>
+
+    <p>
+      Reskill Americans is a nonprofit founded by tech veterans that provides tuition-free software development
+      training,
+      mentorship and community for historically underrepresented racial minorities across the U.S.
+    </p>
+  </div>
+
+  <div>
+    <a class="button-like" href="/enroll">Join Our Next Cohort</a>
+  </div>
+
+
+  {{- $hero := (resources.Get "images/woman-typing-hero.jpg").Resize "1080x" -}}
+  <img src="{{ $hero.RelPermalink  }}">
+</main>
+
+{{ end }}

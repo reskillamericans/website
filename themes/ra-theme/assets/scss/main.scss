@@ -189,6 +189,14 @@ header {
 
 main {
   @include content;
+
+  img {
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: 1rem;
+    object-fit: cover;
+    border-radius: 6px;
+  }
 }
 
 footer {
