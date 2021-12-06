@@ -46,10 +46,10 @@ $deselected-tab-text-color: #0a0a0a;
   }
 }
 
-@mixin content {
+@mixin content($padding: 1rem) {
   margin: 0 auto;
   max-width: $max-width;
-  padding: 1rem;
+  padding: $padding;
 }
 
 @mixin all-headings {
@@ -226,7 +226,11 @@ a {
 
 // These are the content-holding blocks in each section of the page.
 main {
-  @include content;
+  @include content(1rem 2rem);
+
+  @media (max-width: $break-width) {
+    padding-inline: 1rem;
+  }
 
   font-size: 20px;
   line-height: 1.5em;
@@ -241,21 +245,32 @@ main {
     }
   }
 
+  span.footnote-mark {
+    font-size: 0.8em;
+    vertical-align: super;
+    font-weight: bold;
+  }
+
+  .footnote {
+    font-size: 0.8em;
+    line-height: 1.2em;
+    font-style: italic;
+    padding-left: 1em;
+    text-indent: -1em;
+  }
+
   img {
     box-sizing: border-box;
     max-width: 100%;
-    padding: 1rem;
+    padding: 0;
     object-fit: cover;
+    object-position: center top;
     border-radius: 6px;
   }
 
   &.centered {
     padding-inline: 4rem;
     text-align: center;
-
-    @media (max-width: $break-width) {
-      padding-inline: 1rem;
-    }
   }
 
   &.wrapped-boxes {
@@ -264,10 +279,6 @@ main {
     justify-content: space-around;
     align-items: stretch;
     gap: 2rem;
-
-    @media (max-width: $break-width) {
-      padding-inline: 1rem;
-    }
 
     > div {
       @include floating-shadow;
@@ -300,6 +311,28 @@ main {
     }
   }
 
+  &.side-by-side {
+    display: grid;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+
+    @media (max-width: $break-width) {
+      grid-auto-flow: row;
+      grid-auto-columns: 1fr;
+    }
+
+    > * {
+      align-self: center;
+    }
+
+    > div {
+      font-size: 18px;
+      line-height: 1.5em;
+      max-width: calc(#{$max-width}/2);
+    }
+  }
+
   // Allow for overlapping section after this one.
   &.prep-overlap {
     padding-bottom: 10rem;
@@ -312,13 +345,12 @@ main {
 }
 
 footer {
-  @include content;
+  @include content(4rem 2rem);
 
   display: flex;
   justify-content: space-between;
   background-color: $footer-color;
   color: $footer-text-color;
-  padding: 4rem 2rem;
 
   @media (max-width: $break-width) {
     flex-direction: column;

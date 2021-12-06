@@ -45,7 +45,7 @@
       <div>
         <h2>Full Stack Web<br>Development</h2>
         <p>
-          We will start from the basics of web development:&nbsp;HTML and CSS. And
+          We will start from the basics of web development: HTML and CSS. And
           then move into JavaScript as used in the browser, and then on the
           server.<br><br>No prior experience is needed as we will begin with the
           basics and progress until you are able to develop complete web sites and
@@ -57,13 +57,55 @@
     <div>
       {{- $img2 := (resources.Get "images/Design.png").Resize "400x" -}}
       <img src="{{ $img2.RelPermalink  }}">
-      <h2>Product Designer<br>UI/UX</h2>
       <div>
+        <h2>Product Designer<br>UI/UX</h2>
         <p>
-          Our Product Designer course is designed to give you the tools you need to gather requirements from users, do customer research, and architect product solutions to solve end-user problems.<br><br>This is a hands-on course with practical product design experience. You will be trained to use Figma, the industry standard interface-design tool to communicate your designs to stakeholders and developers.
+          Our Product Designer course is designed to give you the tools you need to gather requirements from users, do
+          customer research, and architect product solutions to solve end-user problems.
+        </p>
+        <p>
+          This is a hands-on
+          course with practical product design experience. You will be trained to use Figma, the industry standard
+          interface-design tool to communicate your designs to stakeholders and developers.
         </p>
       </div>
     </div>
   </main>
+</section>
+
+<section class="main">
+  <main class="side-by-side">
+    <div>
+      <h2>It's Free!</h2>
+      <p>
+        If you self-identify as a historically underrepresented minority, then
+        our program is completely free for you. We are a 501(c)(3) nonprofit
+        organization funded by individual and corporate donors.
+      </p>
+      <h2>Learn from<br>Anywhere, Anytime</h2>
+      <p>
+        Our course is entirely online. Once your cohort begins, you can
+        participate on your own schedule, as long as you submit your assignments
+        on time.&nbsp;<span class="footnote-mark">*</span>
+      </p>
+      <p class="footnote">
+        * We will provide twice-weekly mentor and peer-group video conference
+        calls to meet your schedule.
+      </p>
+      <h2>Enrolling is Easy</h2>
+      <p>
+        No credit check or entrance exam is required. We don't require prior
+        knowledge or experience in software development. All you need is a
+        computer with a web browser.&nbsp;<span class="footnote-mark">*</span>
+      </p>
+      <p class="footnote">
+        * Having a Windows or Macinstosh laptop where you can install VS-Code
+        will provide the best experience.
+      </p>
+      </div>
+      {{- $img2 := (resources.Get "images/Working_01.png").Resize "800x" -}}
+      <img src="{{ $img2.RelPermalink  }}">
+  </main>
+
 </section>
 {{ end }}
