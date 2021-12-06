@@ -1,22 +1,56 @@
 {{ define "main" }}
-<main>
-  <div>
-    <h1>Launch Your Career in Tech:<br>Enroll in Our Free Training Program</h1>
+<section class="main">
+  <main class="centered">
+      <h1>Launch Your Career in Tech:<br>Enroll in Our Free Training Program</h1>
 
-    <p>
-      Reskill Americans is a nonprofit founded by tech veterans that provides tuition-free software development
-      training,
-      mentorship and community for historically underrepresented racial minorities across the U.S.
-    </p>
-  </div>
+      <p>
+        Reskill Americans is a nonprofit founded by tech veterans that provides tuition-free software development
+        training,
+        mentorship and community for historically underrepresented racial minorities across the U.S.
+      </p>
 
-  <div>
-    <a class="button-like" href="/enroll">Join Our Next Cohort</a>
-  </div>
+      <p>
+        <a class="button-like standout" href="/enroll">Join Our Next Cohort</a>
+      </p>
 
+      <p>
+        {{- $hero := (resources.Get "images/woman-typing-hero.jpg").Resize "1080x" -}}
+        <img src="{{ $hero.RelPermalink  }}">
+      </p>
+  </main>
+</section>
 
-  {{- $hero := (resources.Get "images/woman-typing-hero.jpg").Resize "1080x" -}}
-  <img src="{{ $hero.RelPermalink  }}">
-</main>
+<section class="contrast">
+  <main class="centered prep-overlap">
+    <div>
+      <h2>Learning Tracks</h2>
+      <p>
+        We have two tracks to choose from. A Full-Stack Web Development course, and a Product Designer UI/UX course.
+      </p>
+      <p>
+        Our seven-month course is project-based with hands-on learning and weekly
+        mentorship.
+      </p>
+      <p>
+        <a class="button-like" href="/learn-more">Learn More</a>
+      </p>
+  </main>
+</section>
 
+<section class="main">
+  <main class="centered">
+    <div style="margin-top: -9rem; background-color: white">
+      <h2>Our Mentors</h2>
+      <p>
+        Our mentors are industry professionals who have been working in the tech industry for over 10 years.
+      </p>
+      <p>
+        They are passionate about helping people learn and grow in tech.
+      </p>
+      <p>
+        <a class="button-like standout" href="/mentors">Meet Our Mentors</a>
+      </p>
+    </div>
+  </main>
+</section>
 {{ end }}
