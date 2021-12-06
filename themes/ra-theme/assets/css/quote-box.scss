@@ -11,9 +11,8 @@ div.quote-box {
   padding: 1rem 2rem;
   width: 400px;
   height: 200px;
-  background-color: $standout-color;
-  color: $standout-text-color;
 
+  // Alternate accent color.
   &:nth-child(odd) {
     background-color: $standout-color;
     color: $standout-text-color;
@@ -24,6 +23,7 @@ div.quote-box {
     color: $standout-text-color;
   }
 
+  // Profile picture on the left side.
   > img {
     box-sizing: border-box;
     height: 200px;
@@ -31,6 +31,7 @@ div.quote-box {
     margin: 0;
   }
 
+  // Quote paragraphs down the right side - ending in signature at bottom.
   > div {
     display: flex;
     flex-direction: column;

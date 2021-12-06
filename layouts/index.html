@@ -1,4 +1,15 @@
+{{ define "extra-head" }}
+{{ "<!-- layouts/index.html:extra-head-->" | safeHTML }}
+<script type="module" src="/scripts/reskill.js"></script>
+{{ $style := resources.Get "css/carousell.scss" | resources.ToCSS }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+{{ end }}
+
+{{ define "body" }}
+{{ end }}
+
 {{ define "main" }}
+{{ "<!-- layouts/index.html:main-->" | safeHTML }}
 <section>
   <main class="centered">
     <h1>Launch Your Career in Tech:<br>Enroll in Our Free Training Program</h1>
@@ -109,11 +120,21 @@
 </section>
 
 <section>
-  <main class="carousell">
+  <main>
+  <div id="testimonials" class="carousell">
+    <div class="directional left"></div>
+    <div class="directional right"></div>
+    <div>
     {{ range shuffle (where .Site.Data.testimonials "Publish" true) }}
-      {{ partial "testimonial" . }}
+    {{ partial "testimonial" . }}
     {{ end }}
+    </div>
+  </div>
   </main>
+  <script type="module">
+    import { carousell } from '/scripts/reskill.js';
+    carousell(document.getElementById('testimonials'));
+  </script>
 </section>
 
 <section>
