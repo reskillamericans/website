@@ -9,8 +9,10 @@ $main-color: #fafafa;
 $main-heading-color: #0a0a0a;
 $main-text-color: #676767;
 
-$standout-color: #f2594b;
+$standout-color: #FF4133;
 $standout-text-color: #fff;
+
+$alternate-standout-color: #555ec1;
 
 $button-color: white;
 $button-border-color: #0a0a0a;
@@ -192,7 +194,6 @@ header {
         @include hover-zoom(1.2);
 
         display: inline-block;
-        vertical-align: middle;
         backface-visibility: hidden;
         text-decoration: none;
         color: $header-text-color;
@@ -314,7 +315,6 @@ main {
 
   &.side-by-side {
     display: grid;
-    display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
 
@@ -342,6 +342,16 @@ main {
   &.overlap {
     margin-top: -8rem;
     background-color: transparent;
+  }
+
+  &.carousell {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    > * {
+      flex-shrink: 0;
+    }
   }
 }
 
@@ -399,5 +409,54 @@ footer {
     color: $footer-text-color;
     text-decoration: none;
     white-space: nowrap;
+  }
+}
+
+div.quote-box {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  column-gap: 2rem;
+  align-items: stretch;
+
+  font-size: 12px;
+  line-height: 1.3em;
+
+  padding: 1rem 2rem;
+  width: 400px;
+  height: 200px;
+  background-color: $standout-color;
+  color: $standout-text-color;
+
+  &:nth-child(odd) {
+    background-color: $standout-color;
+    color: $standout-text-color;
+  }
+
+  &:nth-child(even) {
+    background-color: $alternate-standout-color;
+    color: $standout-text-color;
+  }
+
+  > img {
+    box-sizing: border-box;
+    height: 200px;
+    padding: 0;
+    margin: 0;
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  > div > p:first-child {
+    margin-top: 0;
+  }
+
+  > div > p:last-child {
+    font-weight: bold;
+    margin-bottom: 0;
   }
 }

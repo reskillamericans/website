@@ -109,4 +109,20 @@
 </section>
 
 <section>
+  <main class="carousell">
+    {{ range first 2 (shuffle .Site.Data.testimonials) }}
+      {{ partial "testimonial" . }}
+    {{ end }}
+  </main>
+</section>
+
+<section>
+  <main class="centered">
+    <h1>Parner with Us</h1>
+    <p>
+      We are seeking partners in the tech industry that share our mission to help underrepresented minorities get access to training so they can build careers in technology.
+    </p>
+    <a class="button-like standout" href="mailto:{{ .Site.Params.email }}" target="_blank">Contact Us</a>
+  </main>
+</section>
 {{ end }}
