@@ -110,7 +110,7 @@
 
 <section>
   <main class="carousell">
-    {{ range first 2 (shuffle .Site.Data.testimonials) }}
+    {{ range shuffle (where .Site.Data.testimonials "Publish" true) }}
       {{ partial "testimonial" . }}
     {{ end }}
   </main>

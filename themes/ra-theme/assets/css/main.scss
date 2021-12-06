@@ -1,0 +1,185 @@
+// What to use @use directive instead - but not working in Hugo 0.89 extended
+@import "breakpoints";
+@import "colors";
+@import "mixins";
+@import "header";
+@import "footer";
+@import "quote-box";
+
+:root {
+  --codeFont: 'Roboto Mono', monospace;
+}
+
+body {
+  font-family: 'Open Sans', san-serif;
+  min-width: $min-width;
+  margin: 0;
+  padding: 0;
+  background-color: $main-color;
+
+  overflow-x: hidden;
+}
+
+// Sections are full-bleed across the page and for background for content elements.
+// Page structure is a sequence of sections down the page.  With each section
+// there is a content block (either header, main, or footer) that defines how
+// wide it will be on the page.
+section {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  background-color: transparent;
+  color: $main-text-color;
+  @include all-headings {
+    color: $main-heading-color
+  }
+
+  &.header {
+    background-color: $header-color;
+    color: $header-text-color;
+  }
+
+  &.contrast {
+    background-color: $contrast-color;
+    color: $contrast-text-color;
+    font-weight: 300;
+    @include all-headings {
+      color: $contrast-heading-color
+    }
+  }
+
+  &.footer {
+    background-color: $footer-color;
+    color: $footer-text-color;
+  }
+}
+
+// These are the content-holding blocks in each section of the page.
+main {
+  @include content(1rem 2rem);
+
+  @media (max-width: $break-width) {
+    padding-inline: 1rem;
+  }
+
+  font-size: 20px;
+  line-height: 1.5em;
+
+  h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+
+    @media (max-width: $break-width) {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+  }
+
+  span.footnote-mark {
+    font-size: 0.8em;
+    vertical-align: super;
+    font-weight: bold;
+  }
+
+  .footnote {
+    font-size: 0.8em;
+    line-height: 1.2em;
+    font-style: italic;
+    padding-left: 1em;
+    text-indent: -1em;
+  }
+
+  img {
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: 0;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 6px;
+  }
+
+  &.centered {
+    padding-inline: 4rem;
+    text-align: center;
+  }
+
+  &.wrapped-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 2rem;
+
+    > div {
+      @include floating-shadow;
+      @include hover-zoom(1.1);
+      border-radius: 5px;
+      min-width: 250px;
+      max-width: 400px;
+      min-height: 150px;
+      background-color: white;
+      font-size: 14px;
+      line-height: 1.5em;
+
+      @include all-headings {
+        margin-top: 0;
+        text-align: center;
+      }
+
+      img {
+        padding: 0;
+        width: 100%;
+      }
+
+      p {
+        text-align: justify;
+      }
+
+      div {
+        padding: 1rem;
+      }
+    }
+  }
+
+  &.side-by-side {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+
+    @media (max-width: $break-width) {
+      grid-auto-flow: row;
+      grid-auto-columns: 1fr;
+    }
+
+    > * {
+      align-self: center;
+    }
+
+    > div {
+      font-size: 18px;
+      line-height: 1.5em;
+      max-width: calc(#{$max-width}/2);
+    }
+  }
+
+  // Allow for overlapping section after this one.
+  &.prep-overlap {
+    padding-bottom: 10rem;
+  }
+
+  &.overlap {
+    margin-top: -8rem;
+    background-color: transparent;
+  }
+
+  &.carousell {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    > * {
+      flex-shrink: 0;
+    }
+  }
+}

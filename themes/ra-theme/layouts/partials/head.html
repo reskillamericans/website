@@ -6,7 +6,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Roboto+Mono:wght@500&display=swap');
     </style>
-    {{ $style := resources.Get "scss/main.scss" | resources.ToCSS }}
+    {{ $style := resources.Get "css/main.scss" | resources.ToCSS }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
     <title>{{ .Title }}{{ if .IsPage }} | {{ .Site.Title }}{{ end }}</title>
     {{ partial "analytics.html" . }}

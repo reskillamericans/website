@@ -1,0 +1,32 @@
+@mixin hover-zoom($scale: 1.15) {
+  transition: transform 0.2s ease-in-out;
+  &:hover {
+    transform: scale($scale);
+    cursor: pointer;
+  }
+}
+
+@mixin popout {
+  transition: transform 0.2s ease-in-out;
+  transform: translateX(100%);
+  &[data-popout="true"] {
+    transform: translateX(0%);
+  }
+}
+
+@mixin content($padding: 1rem) {
+  margin: 0 auto;
+  max-width: $max-width;
+  padding: $padding;
+}
+
+@mixin all-headings {
+  h1, h2, h3,
+  h4, h5, h6 {
+      @content;
+  }
+}
+
+@mixin floating-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
