@@ -2,8 +2,8 @@ $break-width: 750px;
 $max-width: 1080px;
 $min-width: 320px;
 
-$heading-color: white;
-$heading-text-color: #222;
+$header-color: white;
+$header-text-color: #222;
 
 $main-color: #fafafa;
 $main-heading-color: #0a0a0a;
@@ -59,9 +59,22 @@ $deselected-tab-text-color: #0a0a0a;
   }
 }
 
+@mixin floating-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 :root {
   --codeFont: 'Roboto Mono', monospace;
-  --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body {
+  font-family: 'Open Sans', san-serif;
+  min-width: $min-width;
+  margin: 0;
+  padding: 0;
+  background-color: $main-color;
+
+  overflow-x: hidden;
 }
 
 // Sections are full-bleed across the page and for background for content elements.
@@ -73,12 +86,12 @@ section {
   padding: 0;
   width: 100%;
 
-  &.heading {
-    background-color: $heading-color;
-    color: $heading-text-color;
+  &.header {
+    background-color: $header-color;
+    color: $header-text-color;
   }
   &.main {
-    background-color: $main-color;
+    background-color: transparent;
     color: $main-text-color;
     @include all-headings {
       color: $main-heading-color
@@ -96,16 +109,6 @@ section {
     background-color: $footer-color;
     color: $footer-text-color;
   }
-}
-
-body {
-  font-family: 'Open Sans', san-serif;
-  min-width: $min-width;
-  margin: 0;
-  padding: 0;
-  // line-height: 1.5em;
-
-  overflow-x: hidden;
 }
 
 header {
@@ -191,7 +194,7 @@ header {
         vertical-align: middle;
         backface-visibility: hidden;
         text-decoration: none;
-        color: $heading-text-color;
+        color: $header-text-color;
         font-weight: bold;
         white-space: nowrap;
       }
@@ -255,9 +258,56 @@ main {
     }
   }
 
+  &.wrapped-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 2rem;
+
+    @media (max-width: $break-width) {
+      padding-inline: 1rem;
+    }
+
+    > div {
+      @include floating-shadow;
+      @include hover-zoom(1.1);
+      border-radius: 5px;
+      min-width: 250px;
+      max-width: 400px;
+      min-height: 150px;
+      background-color: white;
+      font-size: 14px;
+      line-height: 1.5em;
+
+      @include all-headings {
+        margin-top: 0;
+        text-align: center;
+      }
+
+      img {
+        padding: 0;
+        width: 100%;
+      }
+
+      p {
+        text-align: justify;
+      }
+
+      div {
+        padding: 1rem;
+      }
+    }
+  }
+
   // Allow for overlapping section after this one.
   &.prep-overlap {
     padding-bottom: 10rem;
+  }
+
+  &.overlap {
+    margin-top: -8rem;
+    background-color: transparent;
   }
 }
 
