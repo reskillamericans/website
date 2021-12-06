@@ -12,6 +12,16 @@ $main-text-color: #676767;
 $standout-color: #f2594b;
 $standout-text-color: #fff;
 
+$button-color: white;
+$button-border-color: #0a0a0a;
+$button-text-color: #0a0a0a;
+$button-hover-color: black;
+$button-hover-border-color: #ccc;
+
+$contrast-color: #131c2c;
+$contrast-heading-color: white;
+$contrast-text-color:#ececec;
+
 $footer-color: #131c2c;
 $footer-text-color:#ececec;
 
@@ -20,10 +30,10 @@ $selected-tab-text-color: white;
 $deselected-tab-color: white;
 $deselected-tab-text-color: #0a0a0a;
 
-@mixin hover-zoom {
+@mixin hover-zoom($scale: 1.15) {
   transition: transform 0.2s ease-in-out;
   &:hover {
-    transform: scale(1.2);
+    transform: scale($scale);
     cursor: pointer;
   }
 }
@@ -42,7 +52,7 @@ $deselected-tab-text-color: #0a0a0a;
   padding: 1rem;
 }
 
-@mixin headings {
+@mixin all-headings {
   h1, h2, h3,
   h4, h5, h6 {
       @content;
@@ -55,6 +65,9 @@ $deselected-tab-text-color: #0a0a0a;
 }
 
 // Sections are full-bleed across the page and for background for content elements.
+// Page structure is a sequence of sections down the page.  With each section
+// there is a content block (either header, main, or footer) that defines how
+// wide it will be on the page.
 section {
   margin: 0;
   padding: 0;
@@ -67,8 +80,16 @@ section {
   &.main {
     background-color: $main-color;
     color: $main-text-color;
-    @include headings {
+    @include all-headings {
       color: $main-heading-color
+    }
+  }
+  &.contrast {
+    background-color: $contrast-color;
+    color: $contrast-text-color;
+    font-weight: 300;
+    @include all-headings {
+      color: $contrast-heading-color
     }
   }
   &.footer {
@@ -82,7 +103,7 @@ body {
   min-width: $min-width;
   margin: 0;
   padding: 0;
-  line-height: 1.5em;
+  // line-height: 1.5em;
 
   overflow-x: hidden;
 }
@@ -164,7 +185,7 @@ header {
       }
 
       a {
-        @include hover-zoom;
+        @include hover-zoom(1.2);
 
         display: inline-block;
         vertical-align: middle;
@@ -178,17 +199,44 @@ header {
   }
 }
 
-.button-like {
-  @include hover-zoom;
-  display: inline-block;
-  color: $standout-text-color;
-  background-color: $standout-color;
-  border-radius: 4px;
-  padding: 1rem 2rem;
+a {
+  text-decoration: none;
+
+  &.button-like {
+    @include hover-zoom;
+    font-weight: bold;
+    display: inline-block;
+
+    border-radius: 5px;
+    padding: 1em 2em;
+    color: $button-text-color;
+    background-color: $button-color;
+    border: 1px solid $button-border-color;
+  }
+
+  &.standout {
+    color: $standout-text-color;
+    background-color: $standout-color;
+    border: none;
+  }
 }
 
+// These are the content-holding blocks in each section of the page.
 main {
   @include content;
+
+  font-size: 20px;
+  line-height: 1.5em;
+
+  h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+
+    @media (max-width: $break-width) {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+  }
 
   img {
     box-sizing: border-box;
@@ -196,6 +244,20 @@ main {
     padding: 1rem;
     object-fit: cover;
     border-radius: 6px;
+  }
+
+  &.centered {
+    padding-inline: 4rem;
+    text-align: center;
+
+    @media (max-width: $break-width) {
+      padding-inline: 1rem;
+    }
+  }
+
+  // Allow for overlapping section after this one.
+  &.prep-overlap {
+    padding-bottom: 10rem;
   }
 }
 
@@ -229,7 +291,7 @@ footer {
   justify-content: start;
 
   img {
-    @include hover-zoom;
+    @include hover-zoom(1.8);
     height: 24px;
     aspect-ratio: 1;
     filter: invert(100%);
@@ -250,7 +312,7 @@ footer {
   }
 
   a {
-    @include hover-zoom;
+    @include hover-zoom(1.2);
     color: $footer-text-color;
     text-decoration: none;
     white-space: nowrap;
