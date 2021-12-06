@@ -86,17 +86,17 @@ section {
   padding: 0;
   width: 100%;
 
+  background-color: transparent;
+  color: $main-text-color;
+  @include all-headings {
+    color: $main-heading-color
+  }
+
   &.header {
     background-color: $header-color;
     color: $header-text-color;
   }
-  &.main {
-    background-color: transparent;
-    color: $main-text-color;
-    @include all-headings {
-      color: $main-heading-color
-    }
-  }
+
   &.contrast {
     background-color: $contrast-color;
     color: $contrast-text-color;
@@ -105,6 +105,7 @@ section {
       color: $contrast-heading-color
     }
   }
+
   &.footer {
     background-color: $footer-color;
     color: $footer-text-color;
