@@ -5,10 +5,10 @@ div.carousell {
   position: relative;
   overflow: hidden;
 
-  & > div:last-child {
+  & > div:first-child {
     display: flex;
     gap: 1rem;
-    transform: translateX(-500px);
+    transform: translateX(0px);
     transition: transform 0.5s ease-in-out;
 
     & > * {
@@ -21,20 +21,22 @@ div.directional {
   @include hover-zoom(1.2);
   position: absolute;
   z-index: 1000;
-  height: 50px;
-  top: calc(50% - 25px);
+  width: 50px;
   aspect-ratio: 1;
+  top: calc(50% - 25px);
+
   background-repeat:no-repeat;
   background-size: contain;
+  background-position: center;
   filter: invert(100%);
 
   &.left {
-    left: 1rem;
+    left: 0;
     background-image: url(/images/angle-left.svg);
   }
 
   &.right {
-    right: 1rem;
+    right: 0;
     background-image: url(/images/angle-right.svg);
   }
 }

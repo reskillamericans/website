@@ -121,19 +121,17 @@
 
 <section>
   <main>
-  <div id="testimonials" class="carousell">
-    <div class="directional left"></div>
-    <div class="directional right"></div>
-    <div>
-    {{ range shuffle (where .Site.Data.testimonials "Publish" true) }}
-    {{ partial "testimonial" . }}
-    {{ end }}
+    <div id="testimonials" class="carousell">
+      <div>
+      {{ range shuffle (where .Site.Data.testimonials "Publish" true) }}
+      {{ partial "testimonial" . }}
+      {{ end }}
+      </div>
     </div>
-  </div>
   </main>
   <script type="module">
     import { carousell } from '/scripts/reskill.js';
-    carousell(document.getElementById('testimonials'));
+    carousell('testimonials');
   </script>
 </section>
 
