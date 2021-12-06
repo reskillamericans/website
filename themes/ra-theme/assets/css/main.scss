@@ -172,14 +172,4 @@ main {
     margin-top: -8rem;
     background-color: transparent;
   }
-
-  &.carousell {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-
-    > * {
-      flex-shrink: 0;
-    }
-  }
 }

@@ -1,0 +1,40 @@
+@import "themes/ra-theme/assets/css/mixins";
+
+div.carousell {
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+
+  & > div:last-child {
+    display: flex;
+    gap: 1rem;
+    transform: translateX(-500px);
+    transition: transform 0.5s ease-in-out;
+
+    & > * {
+      flex-shrink: 0;
+    }
+  }
+}
+
+div.directional {
+  @include hover-zoom(1.2);
+  position: absolute;
+  z-index: 1000;
+  height: 50px;
+  top: calc(50% - 25px);
+  aspect-ratio: 1;
+  background-repeat:no-repeat;
+  background-size: contain;
+  filter: invert(100%);
+
+  &.left {
+    left: 1rem;
+    background-image: url(/images/angle-left.svg);
+  }
+
+  &.right {
+    right: 1rem;
+    background-image: url(/images/angle-right.svg);
+  }
+}

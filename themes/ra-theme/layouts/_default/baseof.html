@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html {{ with .Site.LanguageCode }}language="{{ . }}"{{ end }}>
-    {{- partial "head.html" . -}}
-    <body>
-        <section class="header">
-            {{- partial "header.html" . -}}
-        </section>
-        {{- block "main" . }}{{- end }}
-        <section class="footer">
-            {{- partial "footer.html" . -}}
-        </section>
-    </body>
+    {{ "<!--" | safeHTML }} ra-theme/layouts/baseof.html {{ .Kind }} for {{ .Permalink }}
+        {{- with .File }} by {{ .Path }} {{ end }}{{ "-->" | safeHTML }}
+<head>
+    {{ partial "head.html" . }}
+    {{ block "extra-head" . }}{{ end }}
+</head>
+<body>
+    <section class="header">
+        {{ partial "header.html" . }}
+    </section>
+    {{- block "main" . }}{{- end }}
+    <section class="footer">
+        {{- partial "footer.html" . -}}
+    </section>
+</body>
 </html>
