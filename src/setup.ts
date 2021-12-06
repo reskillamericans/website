@@ -22,6 +22,6 @@ const functions = getFunctions(app);
 
 export { app, auth, db, functions };
 
-onAuthStateChanged(auth, (user) => {
-  console.log(`Auth user: ${JSON.stringify(user)}`);
-});
+// onAuthStateChanged(auth, (user) => {
+//   console.log(`Auth user: ${JSON.stringify(user)}`);
+// });
