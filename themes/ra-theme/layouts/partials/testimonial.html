@@ -1,0 +1,14 @@
+{{ if index . "Publish" }}
+<div class="quote-box">
+  <img src="{{ index . "Profile Picture" }}">
+  <div>
+    <p>
+      "{{ index . "Quote" }}"
+    </p>
+    <p>
+      {{ index . "Name" }}<br>
+      {{ index . "Location" }}
+    </p>
+  </div>
+</div>
+{{ end }}
