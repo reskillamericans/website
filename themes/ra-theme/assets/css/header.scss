@@ -1,0 +1,111 @@
+header {
+  @include content;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  position: relative;
+
+  .logo {
+    @include hover-zoom;
+    height: 30px;
+  }
+
+  // This hack to keep anchors from adding additional height to elements.
+  a {
+    line-height: 0.5em;
+  }
+
+  #menu-toggle {
+    @media (max-width: $break-width) {
+      display: block;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    display: none;
+    z-index: 100;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2em;
+    aspect-ratio: 1;
+    border: 0;
+    background-image: url("/images/icon-hamburger.svg");
+    background-color: transparent;
+    background-size: cover;
+    &[data-popout="true"] {
+      background-image: url("/images/icon-close.svg");
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  nav {
+    ul {
+      @media (max-width: $break-width) {
+        @include popout;
+
+        position:fixed;
+        z-index: 90;
+        inset: 0 0 0 30%;
+        background-color: hsla(0, 0%, 0%, 0.1);
+        backdrop-filter: blur(15px);
+        flex-direction: column;
+        justify-content: start;
+        padding: 4rem 2rem;
+      }
+
+      padding-block: 0;
+      padding-inline: clamp(3rem, 10vw, 7rem);
+      margin: 0;
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      align-items: baseline;
+
+      li {
+        line-height: 1em;
+        height: 1em;
+      }
+
+      a {
+        @include hover-zoom(1.2);
+
+        display: inline-block;
+        backface-visibility: hidden;
+        text-decoration: none;
+        color: $header-text-color;
+        font-weight: bold;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+
+  &.button-like {
+    @include hover-zoom;
+    font-weight: bold;
+    display: inline-block;
+
+    border-radius: 5px;
+    padding: 1em 2em;
+    color: $button-text-color;
+    background-color: $button-color;
+    border: 1px solid $button-border-color;
+  }
+
+  &.standout {
+    color: $standout-text-color;
+    background-color: $standout-color;
+    border: none;
+  }
+}
