@@ -1,22 +1,22 @@
 {{ define "main" }}
 <section class="main">
   <main class="centered">
-      <h1>Launch Your Career in Tech:<br>Enroll in Our Free Training Program</h1>
+    <h1>Launch Your Career in Tech:<br>Enroll in Our Free Training Program</h1>
 
-      <p>
-        Reskill Americans is a nonprofit founded by tech veterans that provides tuition-free software development
-        training,
-        mentorship and community for historically underrepresented racial minorities across the U.S.
-      </p>
+    <p>
+      Reskill Americans is a nonprofit founded by tech veterans that provides tuition-free software development
+      training,
+      mentorship and community for historically underrepresented racial minorities across the U.S.
+    </p>
 
-      <p>
-        <a class="button-like standout" href="/enroll">Join Our Next Cohort</a>
-      </p>
+    <p>
+      <a class="button-like standout" href="/enroll">Join Our Next Cohort</a>
+    </p>
 
-      <p>
-        {{- $hero := (resources.Get "images/woman-typing-hero.jpg").Resize "1080x" -}}
-        <img src="{{ $hero.RelPermalink  }}">
-      </p>
+    <p>
+      {{- $hero := (resources.Get "images/hero01.png").Resize "1080x jpg" -}}
+      <img src="{{ $hero.RelPermalink  }}">
+    </p>
   </main>
 </section>
 
@@ -38,18 +38,31 @@
 </section>
 
 <section class="main">
-  <main class="centered">
-    <div style="margin-top: -9rem; background-color: white">
-      <h2>Our Mentors</h2>
-      <p>
-        Our mentors are industry professionals who have been working in the tech industry for over 10 years.
-      </p>
-      <p>
-        They are passionate about helping people learn and grow in tech.
-      </p>
-      <p>
-        <a class="button-like standout" href="/mentors">Meet Our Mentors</a>
-      </p>
+  <main class="wrapped-boxes overlap">
+    <div>
+      {{- $img1 := (resources.Get "images/code-fe.png").Resize "400x" -}}
+      <img src="{{ $img1.RelPermalink  }}">
+      <div>
+        <h2>Full Stack Web<br>Development</h2>
+        <p>
+          We will start from the basics of web development:&nbsp;HTML and CSS. And
+          then move into JavaScript as used in the browser, and then on the
+          server.<br><br>No prior experience is needed as we will begin with the
+          basics and progress until you are able to develop complete web sites and
+          applications on your own.
+        </p>
+      </div>
+    </div>
+
+    <div>
+      {{- $img2 := (resources.Get "images/Design.png").Resize "400x" -}}
+      <img src="{{ $img2.RelPermalink  }}">
+      <h2>Product Designer<br>UI/UX</h2>
+      <div>
+        <p>
+          Our Product Designer course is designed to give you the tools you need to gather requirements from users, do customer research, and architect product solutions to solve end-user problems.<br><br>This is a hands-on course with practical product design experience. You will be trained to use Figma, the industry standard interface-design tool to communicate your designs to stakeholders and developers.
+        </p>
+      </div>
     </div>
   </main>
 </section>
