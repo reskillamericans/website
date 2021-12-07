@@ -1,0 +1,14 @@
+{{ define "extra-head" }}
+{{ "<!-- layouts/testimonials/single.html:extra-head-->" | safeHTML }}
+<script type="module" src="/scripts/reskill.js"></script>
+{{ end }}
+
+{{ define "main" }}
+{{ "<!-- layouts/testimonials/single.html:main-->" | safeHTML }}
+<section>
+    <main>
+      <h2>{{ .Title }}</h2>
+      {{ partial "testimonial" . }}
+    </main>
+</section>
+{{ end }}

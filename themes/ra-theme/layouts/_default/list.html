@@ -1,2 +1,17 @@
-{{ "<!-- ra-theme/layouts/single.html -->" | safeHTML }}
-List template not used (yet).
+{{ define "main" }}
+{{ "<!-- ra-theme/layouts/_default/list.html -->" | safeHTML }}
+<section>
+  <main>
+      <h2>List of {{.Title}} Pages</h2>
+      {{.Content}}
+    <ul>
+    {{ range .Pages }}
+        <li>
+            <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+            {{ if .Draft }}(draft){{ end }}
+        </li>
+    {{ end }}
+    </ul>
+  </main>
+</section>
+{{ end }}

@@ -3,6 +3,8 @@
 # test-server --- Run a local web server for testing.
 
 set -e
+TOOLS_DIR="$(unset CDPATH; cd $(dirname ${BASH_SOURCE[0]}) && pwd)"
+source $TOOLS_DIR/use
 
 PORT=5500
 

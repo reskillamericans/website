@@ -4,6 +4,8 @@ div.quote-box {
   grid-auto-columns: 1fr;
   column-gap: 2rem;
   align-items: stretch;
+  overflow: hidden;
+  border-radius: 6px;
 
   font-size: 12px;
   line-height: 1.3em;
