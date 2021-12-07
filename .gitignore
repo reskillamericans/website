@@ -5,6 +5,7 @@ bin/
 static/scripts/
 public/
 resources/
+.vscode/
 nohup.out
 .hugo_build.lock
 
