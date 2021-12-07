@@ -1,5 +1,17 @@
+{{ "<!-- ra-theme/layouts/partials/testimonial.html -->" | safeHTML }}
 <div class="quote-box">
-  <img src="{{ .Params.imageURL }}">
+  <!-- Resize image - note that we can optionally rotate it - needed
+    because original might have EXIF rotation - so it is displayed
+    correctly - BUT - the .Resize command strips in out! -->
+  {{- with .Resources.GetMatch "profile.*" -}}
+    {{- $sizing := "300x" -}}
+    {{- with $.Page.Params.rotation -}}
+      {{- $sizing = printf "%s r%d" $sizing . -}}
+    {{- end -}}
+    <img src="{{ (.Resize $sizing).Permalink }}" alt="{{ .Name }}">
+  {{ else }}
+    <img src="{{ ((resources.Get "images/anon-profile.png").Resize "200x").Permalink }}" alt="Photo missing.">
+  {{ end }}
   <div>
     {{ .Content }}
     <p>
