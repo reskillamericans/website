@@ -3,11 +3,14 @@
 # hugo-watch --- Watch for changes in Hugo source files and rebuild the site.
 
 set -e
+TOOLS_DIR="$(unset CDPATH; cd $(dirname ${BASH_SOURCE[0]}) && pwd)"
+source $TOOLS_DIR/use
 
 cd $PROJ_DIR
 
 if [[ -z "$1" ]]; then
-    daemon-command start hugo --watch
+    hugo-watch start
+    hugo-watch tail
 else
     daemon-command $1 hugo --watch
 fi

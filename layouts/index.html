@@ -123,9 +123,11 @@
   <main>
     <div id="testimonials" class="carousell">
       <div>
-      {{ range shuffle (where .Site.Data.testimonials "Publish" true) }}
-      {{ partial "testimonial" . }}
-      {{ end }}
+        {{ with .Site.GetPage "testimonials" }}
+          {{ range where .Pages "Draft" false }}
+            {{ partial "testimonial" . }}
+          {{ end }}
+        {{ end }}
       </div>
     </div>
   </main>
