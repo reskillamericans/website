@@ -5,9 +5,6 @@
 <link rel="stylesheet" href="{{ $style.Permalink }}">
 {{ end }}
 
-{{ define "body" }}
-{{ end }}
-
 {{ define "main" }}
 {{ "<!-- layouts/index.html:main-->" | safeHTML }}
 <section>
@@ -113,9 +110,9 @@
         * Having a Windows or Macinstosh laptop where you can install VS-Code
         will provide the best experience.
       </p>
-      </div>
-      {{- $img2 := (resources.Get "images/Working_01.png").Resize "800x" -}}
-      <img src="{{ $img2.RelPermalink  }}">
+    </div>
+    {{- $img2 := (resources.Get "images/Working_01.png").Resize "800x" -}}
+    <img src="{{ $img2.RelPermalink  }}">
   </main>
 </section>
 
