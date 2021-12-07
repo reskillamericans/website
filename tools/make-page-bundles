@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+# make-page-bundles  --- Move specified top-level content into page bundle directory.
+
+set -e
+TOOLS_DIR="$(unset CDPATH; cd $(dirname ${BASH_SOURCE[0]}) && pwd)"
+source $TOOLS_DIR/use
+
+for file in $*; do
+    if [ -f $file ]; then
+        dir_name="${file%.*}"
+
+        echo "Moving $file to $dir_name."
+        mkdir -p $dir_name
+        mv $file $dir_name
+    fi
+done
+
+tree
