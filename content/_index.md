@@ -18,3 +18,15 @@ historically underrepresented racial minorities across the U.S.
 {{< image src="hero01.png" resize="1080x jpg" >}}
 
 {{% /section %}}
+
+{{% section contrast centered prep-overlap %}}
+
+## Learning Tracks
+
+We have two tracks to choose from. A Full-Stack Web Development course, and a
+Product Designer UI/UX course.
+
+Our seven-month course is project-based with hands-on learning and weekly
+mentorship.
+
+{{< button href="/learn-more" >}}Learn More{{< /button >}}
