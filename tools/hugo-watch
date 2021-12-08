@@ -12,5 +12,5 @@ if [[ -z "$1" ]]; then
     hugo-watch start
     hugo-watch tail
 else
-    daemon-command $1 hugo --watch
+    daemon-command $1 hugo -D --watch
 fi

@@ -1,0 +1,16 @@
+{{ "<!-- shortcode: " | safeHTML }}{{ .Name }}{{ " -->" | safeHTML }}
+
+{{ $mainClass := "" }}
+{{ $sep := "" }}
+{{ range .Params }}
+  {{ if eq . "centered" }}
+    {{ $mainClass = (print $mainClass $sep "centered") }}
+    {{ $sep = " " }}
+  {{ end }}
+{{ end }}
+
+<section>
+  <main {{ with $mainClass }}class="{{ . }}"{{ end }}>
+    {{ .Inner }}
+  </main>
+</section>

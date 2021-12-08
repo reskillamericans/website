@@ -4,6 +4,17 @@ title = 'Reskill Americans'
 theme = 'ra-theme'
 assetDir = 'assets'
 
+[markup.goldmark.renderer]
+# We use nested shortcodes - this is needed to allow them to be nested
+# within Markdown.
+unsafe= true
+
+[markup.goldmark.parser]
+# We don't use the <hN> id's, so they are disabled.  This would be
+# needed for fragment links.  So, remove this if we start using them
+# or want to support external links to to page fragments.
+autoHeadingID = false
+
 [taxonomies]
 tag = "tags"
 

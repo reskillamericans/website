@@ -9,5 +9,5 @@
 </style>
 {{ $style := resources.Get "css/main.scss" | resources.ToCSS }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
-<title>{{ .Title }}{{ if .IsPage }} | {{ .Site.Title }}{{ end }}</title>
+<title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
 {{ partial "analytics.html" . }}
