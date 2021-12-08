@@ -1,15 +1,25 @@
 {{ "<!-- shortcode: " | safeHTML }}{{ .Name }}{{ " -->" | safeHTML }}
 
-{{ $mainClass := "" }}
-{{ $sep := "" }}
-{{ range .Params }}
-  {{ if eq . "centered" }}
-    {{ $mainClass = (print $mainClass $sep "centered") }}
-    {{ $sep = " " }}
-  {{ end }}
-{{ end }}
+{{- $sectionClass := "" -}}
+{{- $sepSection := "" -}}
 
-<section>
+{{ $mainClass := "" }}
+{{ $sepMain := "" }}
+
+{{- range .Params }}
+  {{ if or (eq . "centered") (eq . "prep-overlap") }}
+    {{ $mainClass = (print $mainClass $sepMain . ) }}
+    {{ $sepMain = " " }}
+  {{ end }}
+
+  {{ if eq . "contrast" }}
+    {{ $sectionClass = (print $sectionClass $sepSection "contrast") }}
+    {{ $sepSection = " " }}
+  {{ end }}
+
+{{ end -}}
+
+<section {{ with $sectionClass }}class="{{ . }}"{{ end }}>
   <main {{ with $mainClass }}class="{{ . }}"{{ end }}>
     {{ .Inner }}
   </main>
