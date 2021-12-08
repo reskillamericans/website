@@ -10,6 +10,7 @@
     {{- end -}}
     <img src="{{ (.Resize $sizing).Permalink }}" alt="{{ .Name }}">
   {{ else }}
+    {{ warnf "No profile image found for %s" .File }}
     <img src="{{ ((resources.Get "images/anon-profile.png").Resize "200x").Permalink }}" alt="Photo missing.">
   {{ end }}
   <div>

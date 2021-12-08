@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html {{ with .Site.LanguageCode }}language="{{ . }}"{{ end }}>
-    {{ "<!--" | safeHTML }} ra-theme/layouts/baseof.html {{ .Kind }} for {{ .Permalink }}
-        {{- with .File }} by {{ .Path }} {{ end }}{{ "-->" | safeHTML }}
+    {{ "<!--" | safeHTML }}
+        ra-theme/layouts/baseof.html
+        kind: {{ .Kind | safeHTML }}
+        url: {{ .Permalink | safeHTML }}
+        file-path: {{- with .File }} {{ .Path | safeHTML }} {{ end }}
+    {{ "-->" | safeHTML }}
 <head>
     {{ partial "head.html" . }}
     {{ block "extra-head" . }}{{ end }}
