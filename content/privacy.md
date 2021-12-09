@@ -13,7 +13,7 @@ October 7, 2021
 
 ## 1.  Introduction 
 
-This Privacy Notice explains how Reskill Americans ("RA"," "we" or "us") collects, uses, and shares information when you access or use our websites, collaboration tools, learning-management systems, and other online products and services, including those of our vendors  (collectively, the "RA Services" or the "Services"), or when you otherwise interact with us. 
+This really fine Privacy Notice explains how Reskill Americans ("RA"," "we" or "us") collects, uses, and shares information when you access or use our websites, collaboration tools, learning-management systems, and other online products and services, including those of our vendors  (collectively, the "RA Services" or the "Services"), or when you otherwise interact with us. 
 
 We may change this Privacy Notice from time to time. If we make changes, we will notify you by revising the version designation above and posting the new version on our website. 
 
