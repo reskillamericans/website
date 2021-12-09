@@ -66,6 +66,11 @@ main {
   font-size: 20px;
   line-height: 1.5em;
 
+  @media (max-width: $break-width) {
+    font-size: 16px;
+    line-height: 1.2em;
+  }
+
   h1 {
     font-size: 3rem;
     line-height: 3.5rem;
@@ -90,12 +95,13 @@ main {
     text-indent: -1em;
   }
 
-  img {
+  > img {
     box-sizing: border-box;
-    max-width: 100%;
+    width: 100%;
+    aspect-ratio: 2 / 1;
     padding: 0;
     object-fit: cover;
-    object-position: center top;
+    object-position: 50% 75%;
     border-radius: 6px;
   }
 
