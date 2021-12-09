@@ -13,7 +13,7 @@ Reskill Americans is a nonprofit founded by tech veterans that provides
 tuition-free software development training, mentorship and community for
 historically underrepresented racial minorities across the U.S.
 
-{{< button style="standout" href="/enroll" >}}Join Our Next Cohort{{</ button >}}
+<a class="button-like standout" href="/enroll">Join Our Next Cohort</a>
 
 {{< image src="hero01.png" resize="1080x jpg" >}}
 
@@ -30,7 +30,7 @@ Product Designer UI/UX course.
 Our seven-month course is project-based with hands-on learning and weekly
 mentorship.
 
-{{< button href="/learn-more" >}}Learn More{{< /button >}}
+<a class="button-like " href="/learn-more">Learn More</a>
 
 {{% /section %}}
 
@@ -56,5 +56,58 @@ This is a hands-on course with practical product design experience. You will be
 trained to use Figma, the industry standard interface-design tool to communicate
 your designs to stakeholders and developers.
 {{% /image-box %}}
+
+{{% /section %}}
+
+
+{{% section side-by-side %}}
+
+<div>
+
+## It's Free!
+
+If you self-identify as a historically underrepresented minority, then
+our program is completely free for you. We are a 501(c)(3) nonprofit
+organization funded by individual and corporate donors.
+
+## Learn from<br>Anywhere, Anytime
+
+Our course is entirely online. Once your cohort begins, you can
+participate on your own schedule, as long as you submit your assignments
+on time.&nbsp;<span class="footnote-mark">*</span>
+
+<p class="footnote">
+* We will provide twice-weekly mentor and peer-group video conference
+calls to meet your schedule.
+</p>
+
+## Enrolling is Easy
+
+No credit check or entrance exam is required. We don't require prior
+knowledge or experience in software development. All you need is a
+computer with a web browser.&nbsp;<span class="footnote-mark">*</span>
+
+<p class="footnote">
+* Having a Windows or Macinstosh laptop where you can install VS-Code
+will provide the best experience.
+</p>
+
+</div>
+
+{{< image src="Working_01.png" resize="800x" >}}
+
+{{% /section %}}
+
+
+{{< testimonials >}}
+
+
+{{% section centered %}}
+
+# Parner with Us
+
+We are seeking partners in the tech industry that share our mission to help underrepresented minorities get access to training so they can build careers in technology.
+
+<a class="button-like standout" href="mailto:{{< site-param email >}}" target="_blank">Contact Us</a>
 
 {{% /section %}}
