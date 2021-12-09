@@ -1,5 +1,13 @@
 {{ "<!-- shortcode: " | safeHTML }}{{ .Name }}{{ " -->" | safeHTML }}
 
+{{ $whereUsed := .Position }}
+
+{{ with .Parent }}
+  {{ if eq .Name "section" }}
+    {{ warnf "Close section before starting a new section : %s" $whereUsed }}
+  {{ end }}
+{{ end }}
+
 {{- $sectionClass := "" -}}
 {{- $sepSection := "" -}}
 
@@ -7,14 +15,14 @@
 {{ $sepMain := "" }}
 
 {{- range .Params }}
-  {{ if or (eq . "centered") (eq . "prep-overlap") }}
+  {{ if eq . "centered" "wrapped-boxes" "prep-overlap" "overlap" }}
     {{ $mainClass = (print $mainClass $sepMain . ) }}
     {{ $sepMain = " " }}
-  {{ end }}
-
-  {{ if eq . "contrast" }}
+  {{ else if eq . "contrast" }}
     {{ $sectionClass = (print $sectionClass $sepSection "contrast") }}
     {{ $sepSection = " " }}
+  {{ else }}
+    {{ warnf "Section code: %s is not recognized at %s" . $whereUsed }}
   {{ end }}
 
 {{ end -}}
