@@ -1,0 +1,23 @@
+<div>
+<!-- TODO: Would like to share this code from image shortcode - not supported in
+HUGO? -->
+{{- $path := (print "images/" (.Get "src")) -}}
+{{- with (resources.Get $path) -}}
+  {{- if $.Get "resize" -}}
+    {{- $image := .Resize ($.Get "resize") -}}
+      <img src="{{ $image.Permalink }}">
+  {{- else -}}
+      <img src="{{ .Permalink }}">
+  {{- end -}}
+
+{{- else -}}
+
+  {{- warnf "Unable to find image: %s" $path -}}
+
+{{- end }}
+
+  <div>
+    {{ .Inner }}
+  </div>
+
+</div>
