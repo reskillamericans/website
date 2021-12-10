@@ -29,8 +29,7 @@ to access a career in tech.
 {{% /section %}}
 
 
-
-{{< section wrapped-boxes overlap >}}
+{{< section team-boxes overlap >}}
 
 {{< team-members >}}
 

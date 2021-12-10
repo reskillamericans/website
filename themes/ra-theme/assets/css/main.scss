@@ -120,7 +120,7 @@ main {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: stretch;
-    gap: 1rem;
+    gap: 2rem;
 
     > div {
       @include floating-shadow;
@@ -150,6 +150,22 @@ main {
       div {
         padding: 1rem;
       }
+    }
+  }
+
+  &.team-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+
+    > div {
+      @include floating-shadow;
+      @include hover-zoom(1.1);
+      border-radius: 5px;
+      min-height: 150px;
+      background-color: white;
     }
   }
 
