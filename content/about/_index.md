@@ -9,9 +9,16 @@ tags = []
 
 # Increasing Access to Careers<br>in Tech
 
-Reskill Americans is a nonprofit founded by tech veterans that provides tuition-free software development training, mentorship and community to unemployed, underemployed and career-switching historically underrepresented racial minorities across the U.S. to help them launch a career in tech.
+Reskill Americans is a nonprofit founded by tech veterans that provides
+tuition-free software development training, mentorship and community to
+unemployed, underemployed and career-switching historically underrepresented
+racial minorities across the U.S. to help them launch a career in tech.
 
-We eliminate traditional barriers to access so that aspiring tech professionals with no prior experience can enroll in our rigorous, instructor–led online program. Participants who complete our seven-month program will have applied their new skills to software development projects, worked on cross-functional teams, and built a portfolio of work to show future employers.
+We eliminate traditional barriers to access so that aspiring tech professionals
+with no prior experience can enroll in our rigorous, instructor–led online
+program. Participants who complete our seven-month program will have applied
+their new skills to software development projects, worked on cross-functional
+teams, and built a portfolio of work to show future employers.
 
 <a class="button-like standout" href="/partner">Partner with us!</a>
 
@@ -31,6 +38,23 @@ to access a career in tech.
 
 {{< section team-boxes overlap >}}
 
-{{< team-members >}}
+{{< team-members Team >}}
+
+{{< /section >}}
+
+
+{{% section contrast centered prep-overlap %}}
+
+# Advisory Board
+
+We are supported by talented and committed advisors who are experts in the
+industry.
+
+{{< /section >}}
+
+
+{{< section team-boxes overlap >}}
+
+{{< team-members Advisor >}}
 
 {{< /section >}}
