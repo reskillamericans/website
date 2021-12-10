@@ -1,0 +1,13 @@
+TBD
+{{ $date := time (.Get 0) }}
+{{ $secs := sub $date.Unix now.Unix }}
+{{ $days := math.Floor (div $secs 86400) }}
+{{ $secs = sub $secs (mul $days 86400) }}
+{{ $hours := math.Floor (div $secs 3600) }}
+{{ $secs = sub $secs (mul $hours 3600) }}
+{{ $mins := math.Floor (div $secs 60) }}
+{{ $secs = sub $secs (mul $mins 60) }}
+{{ warnf "End Date: %s (%d %d:%d:%d)" $date $days $hours $mins $secs}}
+
+{{ printf "%d %d:%d:%d" $days $hours $mins $secs }}
+
