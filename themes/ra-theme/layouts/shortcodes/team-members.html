@@ -1,0 +1,3 @@
+{{ range (index .Site.Data "team-members") }}
+    {{ partial "team-member" . }}
+{{ end }}

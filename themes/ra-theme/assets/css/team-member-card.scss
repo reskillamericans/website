@@ -1,0 +1,53 @@
+div.team-member {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 250px !important;
+  padding: 1rem;
+
+  div {
+    padding: 0 !important;
+    position: relative;
+
+    h3 {
+      font-size: 0.8rem;
+      text-align: right !important;
+      background-color: rgba(0, 0, 0, 0.3);
+      color: white;
+      padding: 0.5em;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  > img {
+    height: 250px;
+    object-fit: fill;
+    object-position: top center;
+  }
+
+  h2 {
+    padding-top: 1rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+    text-align: center !important;
+    color: rgb(104, 104, 104);
+    font-weight: 300;
+    margin-top: 0;
+  }
+
+  // All the extra space in the column layout goes above the social
+  // links - putting them at the bottom of the card.
+  .social-links {
+    margin-top: auto;
+    margin-inline: auto;
+    opacity: 0.75;
+  }
+}

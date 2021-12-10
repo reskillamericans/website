@@ -1,0 +1,9 @@
+{{ define "extra-head" }}
+{{ "<!-- layouts/list.html:extra-head-->" | safeHTML }}
+<script type="module" src="/scripts/reskill.js"></script>
+{{ end }}
+
+{{ define "main" }}
+{{ "<!-- layouts/list.html:main-->" | safeHTML }}
+{{.Content}}
+{{ end }}

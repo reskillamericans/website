@@ -1,0 +1,18 @@
+{{ "<!-- ra-theme/layouts/partials/team-member.html -->" | safeHTML }}
+{{- warnf "Rendering Team Member: %s" .Name -}}
+<div class="team-member">
+    <div>
+      <img src="{{ (index . "Profile Picture") }}" alt="{{ .Name }}">
+      <h3>{{ index . "Job Title" }}</h3>
+    </div>
+    <h2>{{ .Name }}</h2>
+    <p>
+      "{{ index . "Card Text" }}"
+    </p>
+    {{- $data := newScratch -}}
+    {{- $data.SetInMap "d" "linkedin" (index . "LinkedIn") }}
+    {{- $data.SetInMap "d" "twitter" (index . "Twitter") -}}
+    {{- $data.SetInMap "d" "instagram" (index . "Instagram") -}}
+    {{ warnf "data: %s" ( $data.Get "d").twitter -}}
+    {{ partial "social-links" ($data.Get "d") }}
+</div>
