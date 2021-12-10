@@ -1,3 +1,4 @@
-{{ range (index .Site.Data "team-members") }}
+{{ $members := where (index .Site.Data "team-members") "Group" ( .Get 0 ) }}
+{{ range sort $members "Ordering" }}
     {{ partial "team-member" . }}
 {{ end }}
