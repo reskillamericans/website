@@ -1,17 +1,13 @@
-<section>
-  <main>
-    <div id="testimonials" class="carousell">
-      <div>
-        {{ with .Site.GetPage "testimonials" }}
-          {{ range where .Pages "Draft" false }}
-            {{ partial "testimonial" . }}
-          {{ end }}
+  <div id="testimonials" class="carousell">
+    <div>
+      {{ with .Site.GetPage "testimonials" }}
+        {{ range where .Pages "Draft" false }}
+          {{ partial "testimonial" . }}
         {{ end }}
-      </div>
+      {{ end }}
     </div>
-  </main>
+  </div>
   <script type="module">
     import { carousell } from '/scripts/reskill.js';
     carousell('testimonials');
   </script>
-</section>

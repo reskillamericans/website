@@ -99,7 +99,9 @@ will provide the best experience.
 {{% /section %}}
 
 
+{{< section >}}
 {{< testimonials >}}
+{{< /section >}}
 
 
 {{% section centered %}}

@@ -5,6 +5,7 @@
 @import "header";
 @import "footer";
 @import "quote-box";
+@import "team-member-card";
 
 :root {
   --codeFont: 'Roboto Mono', monospace;
@@ -52,6 +53,10 @@ section {
   &.footer {
     background-color: $footer-color;
     color: $footer-text-color;
+
+    .social-links img {
+      filter: invert(100%);
+    }
   }
 }
 
@@ -115,7 +120,7 @@ main {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: stretch;
-    gap: 2rem;
+    gap: 1rem;
 
     > div {
       @include floating-shadow;
@@ -177,5 +182,17 @@ main {
   &.overlap {
     margin-top: -8rem;
     background-color: transparent;
+  }
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: start;
+
+  img {
+    @include hover-zoom(1.8);
+    height: 24px;
+    aspect-ratio: 1;
   }
 }
