@@ -2,6 +2,7 @@ import { assert } from 'chai';
 
 import { Countdown } from '../countdown.js';
 
+process.env.TZ = 'America/Los_Angeles';
 
 suite("Countdown", () => {
     test('asLocalDateTime', () => {
