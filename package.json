@@ -4,7 +4,7 @@
   "description": "Static website generation for reskillamericans.org",
   "main": "index.js",
   "scripts": {
-    "test": "echo Empty test - but still success.",
+    "test": "tools/run-tests",
     "build": "tools/build",
     "serve": "tools/test-server",
     "ci": "tsc"
@@ -24,8 +24,12 @@
     "firebase": "^9.1.3"
   },
   "devDependencies": {
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^9.0.0",
+    "chai": "^4.3.4",
     "esbuild": "^0.13.8",
     "http-server": "^14.0.0",
+    "mocha": "^9.1.3",
     "typescript": "^4.4.4"
   }
 }
