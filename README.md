@@ -40,14 +40,25 @@ integration.
 
 # Using this repository
 
+The tooling for this project has been tested using Linux.  It probably also
+works on a Mac - but would need some tweaking to use Windows (perhaps using WSL
+or GitBash).
+
 To get started:
 
 ```
 $ source tools/use
 $ configure
-$ npm build
-$ npm test
-$ npm serve
+$ build
+$ run-tests
+$ test-server
+```
+
+When making content and css changes, it is convenient to automatically process
+website updates:
+
+```
+$ hugo-watch
 ```
 
 Only PR's that have passed testing can be merged to the main
