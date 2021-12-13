@@ -1,5 +1,7 @@
 export { Countdown, DHMS };
 
+import { Timer } from './timer.js';
+
 const counterNames = ["days", "hours", "minutes", "seconds"];
 
 type DHMS = {
@@ -25,8 +27,18 @@ class Countdown {
         endDate.textContent = this.asLocalDateTime();
 
         for (let name of counterNames) {
-            this.counters.set(name, counterContainer.querySelector(`.${name}`)!);
+            this.counters.set(name, counterContainer.querySelector(`.${name} > p`)!);
         }
+
+        const t = new Timer(1, () => {
+            const dhms = this.dhms();
+
+            for (let name of counterNames) {
+                const value = dhms[name as keyof DHMS].toString();
+                console.log(`Setting ${name} to ${value}`);
+                this.counters.get(name)!.innerText = value;
+            }
+        });
     }
 
     asLocalDateTime() {
