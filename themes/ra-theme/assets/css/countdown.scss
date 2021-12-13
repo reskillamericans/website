@@ -1,0 +1,16 @@
+div.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    outine: 1px solid red;
+
+    div {
+        width: 5rem;
+        height: 2rem;
+        border-radius: 4px;
+        padding: 1rem;
+        aspect-ratio: 1;
+        background-color: $alternate-standout-color;
+        color: white;
+    }
+}

@@ -1,10 +1,8 @@
-<div id="cohortCountdown" class="countdown"></div>
+<div id="countdownParent"></div>
 
 <script type="module">
     import { Countdown } from "/scripts/countdown.js";
 
     const countdown = new Countdown("{{ .Get 0}}");
-
-    const div = document.getElementById("cohortCountdown");
-    div.innerText = countdown.asLocalDateTime();
+    countdown.attach(document.getElementById("countdownParent"));
 </script>

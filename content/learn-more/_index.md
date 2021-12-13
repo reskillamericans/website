@@ -14,7 +14,7 @@ development through a range of formats: recorded and live video sessions,
 training modules, and online video conferences with your instructors and mentors
 (collectively requiring a minimum of 15 hours a week).
 
-## Next Cohort Starts On:
+## Next Cohort Starts In:
 
 {{< countdown "2022-02-07T08:00-08:00" >}}
 
