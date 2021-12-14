@@ -2,9 +2,9 @@
 {{- with (resources.Get $path) -}}
   {{- if $.Get "resize" -}}
     {{- $image := .Resize ($.Get "resize") -}}
-      <img src="{{ $image.Permalink }}">
+      <img {{ with $.Get "class" }}class="{{.}}" {{ end -}} src="{{ $image.Permalink }}">
   {{- else -}}
-      <img src="{{ .Permalink }}">
+      <img {{ with $.Get "class" }}class="{{.}}" {{ end -}} src="{{ .Permalink }}">
   {{- end -}}
 
 {{- else -}}

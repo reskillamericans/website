@@ -87,6 +87,4 @@ working individually on exercises and projects.
   const tabs = new Tabs(document.getElementById('phase-tabs'));
 </script>
 
-
-
 {{% /section %}}

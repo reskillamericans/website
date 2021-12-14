@@ -22,7 +22,7 @@ teams, and built a portfolio of work to show future employers.
 
 <a class="button-like standout" href="/partner">Partner with us!</a>
 
-{{< image src="computer.png" resize="1080x jpg" >}}
+{{< image class="hero" src="computer.png" resize="1080x jpg" >}}
 
 {{% /section %}}
 
