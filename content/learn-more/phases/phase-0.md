@@ -3,8 +3,8 @@ title = "Intro Phase"
 date = 2021-12-14T10:22:23-08:00
 draft = false
 tags = []
+order = 0
 +++
-
 
 ## Self-Paced Orientation
 
