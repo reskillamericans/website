@@ -232,23 +232,44 @@ div.list {
   font-weight: 300;
 }
 
-.tabs {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+.tabbed {
 
-  input[type="radio"] {
-    display: none;
+  .menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
 
-    &:checked + label {
-      background-color: $selected-tab-color;
-      color: $selected-tab-text-color;
+    input[type="radio"] {
+      display: none;
+
+      &:checked + label {
+        background-color: $selected-tab-color;
+        color: $selected-tab-text-color;
+      }
+    }
+
+    label {
+      @include button-like(1em);
+      font-size: 1rem;
     }
   }
 
-  label {
-    @include button-like(1em);
-    font-size: 1rem;
+  .content {
+    position: relative;
+
+    [data-tab-active] {
+      position: absolute;
+      width: 100%;
+      height: 500px;
+      transition: opacity 0.5s ease-in-out;
+      outline: 1px solid red;
+      opacity: 0;
+    }
+
+    [data-tab-active="true"] {
+      opacity: 1;
+    }
   }
 }
