@@ -35,7 +35,7 @@ class Countdown {
 
             for (let name of counterNames) {
                 const value = dhms[name as keyof DHMS].toString();
-                console.log(`Setting ${name} to ${value}`);
+                // console.log(`Setting ${name} to ${value}`);
                 this.counters.get(name)!.innerText = value;
             }
         });
