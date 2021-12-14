@@ -51,6 +51,10 @@ section {
     }
   }
 
+  &.light-background {
+    background-color: $light-background-color;
+  }
+
   &.footer {
     background-color: $footer-color;
     color: $footer-text-color;
@@ -191,6 +195,13 @@ main {
     }
   }
 
+  &.light-box {
+    background-color: $main-color;
+    width: 80%;
+    border-radius: 8px;
+    @include floating-shadow;
+  }
+
   // Allow for overlapping section after this one.
   &.prep-overlap {
     padding-bottom: 10rem;
@@ -211,5 +222,30 @@ main {
     @include hover-zoom(1.8);
     height: 24px;
     aspect-ratio: 1;
+  }
+}
+
+div.list {
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+
+  input[type="radio"] {
+    display: none;
+
+    &:checked + label {
+      background-color: $selected-tab-color;
+      color: $selected-tab-text-color;
+    }
+  }
+
+  label {
+    @include button-like(1em);
   }
 }
