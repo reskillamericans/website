@@ -1,0 +1,40 @@
+.tabbed {
+  .menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+
+    input[type="radio"] {
+      display: none;
+
+      &:checked + label {
+        background-color: $selected-tab-color;
+        color: $selected-tab-text-color;
+      }
+    }
+
+    label {
+      @include button-like(1em);
+      font-size: 1rem;
+    }
+  }
+
+  .content {
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+
+    [data-tab-active] {
+      position: absolute;
+      width: 100%;
+      transition: opacity 0.5s ease-in-out;
+      opacity: 0;
+    }
+
+    [data-tab-active="true"] {
+      opacity: 1;
+    }
+  }
+}

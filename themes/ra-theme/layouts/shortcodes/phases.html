@@ -1,0 +1,33 @@
+<div id="phase-tabs" class="tabbed">
+
+{{ $checked := "checked" }}
+
+<div class="menu">
+{{- with .Site.GetPage "phases" -}}
+  {{- range sort (where .Pages "Draft" false) "Params.order" -}}
+    {{- $name := .File.BaseFileName -}}
+    <input type="radio" id="{{ $name }}" name="phases" {{ $checked }}>
+    <label for="{{ $name }}">{{ .Title }}</label>
+    {{ $checked = "" }}
+  {{- end -}}
+{{- end }}
+</div>
+
+<div class="content">
+{{- with .Site.GetPage "phases" -}}
+  {{- range sort (where .Pages "Draft" false) "Params.order" -}}
+    {{- $name := .File.BaseFileName -}}
+    <div data-tab="{{ $name }}" data-tab-active="false">
+      {{- .Content -}}
+    </div>
+  {{- end -}}
+{{- end -}}
+</div>
+
+</div>
+
+<script type="module">
+  import { Tabs } from '/scripts/tabs.js';
+
+  const tabs = new Tabs(document.getElementById('phase-tabs'));
+</script>
