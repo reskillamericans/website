@@ -92,15 +92,7 @@ a {
   text-decoration: none;
 
   &.button-like {
-    @include hover-zoom;
-    font-weight: bold;
-    display: inline-block;
-
-    border-radius: 5px;
-    padding: 1em 2em;
-    color: $button-text-color;
-    background-color: $button-color;
-    border: 1px solid $button-border-color;
+    @include button-like;
   }
 
   &.standout {

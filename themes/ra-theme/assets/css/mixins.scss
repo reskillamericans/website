@@ -30,3 +30,15 @@
 @mixin floating-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+@mixin button-like($inline-padding: 2em) {
+  @include hover-zoom;
+  font-weight: bold;
+  display: inline-block;
+
+  border-radius: 5px;
+  padding: 1em $inline-padding;
+  color: $button-text-color;
+  background-color: $button-color;
+  // border: 1px solid $button-border-color;
+}
