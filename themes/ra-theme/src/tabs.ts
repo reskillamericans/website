@@ -26,21 +26,29 @@ class Tabs {
       }
     }
 
-    const pages = parent.querySelectorAll('.content [data-tab]') as Iterable<HTMLElement>;
-    let height = 0;
-    for (let page of pages) {
-      this.pages.set(page.dataset.tab!, page as HTMLElement);
-      height = Math.max(height, page.clientHeight);
-    }
-
-    this.content.style.height = `${height}px`;
+    this.calcHeight();
 
     parent.addEventListener('change', (event) => {
       let target = event.target as HTMLInputElement;
       this.setActivePage(target!.id);
     });
 
+    window.addEventListener('resize', () => {
+      this.calcHeight();
+    });
+
     this.setActivePage(activeId);
+  }
+
+  calcHeight() {
+    const pages = this.parent.querySelectorAll('.content [data-tab]') as Iterable<HTMLElement>;
+    let height = 0;
+    for (let page of pages) {
+      this.pages.set(page.dataset.tab!, page as HTMLElement);
+      height = Math.max(height, page.offsetHeight);
+    }
+
+    this.content.style.height = `${height}px`;
   }
 
   setActivePage(id: string) {

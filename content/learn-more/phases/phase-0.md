@@ -5,11 +5,12 @@ draft = false
 tags = []
 +++
 
+
+## Self-Paced Orientation
+
+### (approximately 4 weeks)
+
 {{% image-box src="Working_01.png" resize="800x" %}}
-
-# Self-Paced Orientation
-
-(approximately 4 weeks)
 
 Everyone comes to our program from a range of industries and experiences, and
 we've found that your diverse backgrounds can enhance your collective training.

@@ -7,6 +7,7 @@
 @import "quote-box";
 @import "team-member-card";
 @import "countdown";
+@import "tabs";
 
 :root {
   --codeFont: 'Roboto Mono', monospace;
@@ -128,44 +129,6 @@ main {
     text-align: center;
   }
 
-  &.wrapped-boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: stretch;
-    gap: 2rem;
-
-    > div {
-      @include floating-shadow;
-      @include hover-zoom(1.1);
-      border-radius: 5px;
-      min-width: 250px;
-      max-width: 400px;
-      min-height: 150px;
-      background-color: white;
-      font-size: 14px;
-      line-height: 1.5em;
-
-      @include all-headings {
-        margin-top: 0;
-        text-align: center;
-      }
-
-      img {
-        padding: 0;
-        width: 100%;
-      }
-
-      p {
-        text-align: justify;
-      }
-
-      div {
-        padding: 1rem;
-      }
-    }
-  }
-
   &.team-boxes {
     display: flex;
     flex-wrap: wrap;
@@ -179,27 +142,6 @@ main {
       border-radius: 5px;
       min-height: 150px;
       background-color: white;
-    }
-  }
-
-  &.side-by-side {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-
-    @media (max-width: $break-width) {
-      grid-auto-flow: row;
-      grid-auto-columns: 1fr;
-    }
-
-    > * {
-      align-self: center;
-    }
-
-    > div {
-      font-size: 18px;
-      line-height: 1.5em;
-      max-width: calc(#{$max-width}/2);
     }
   }
 
@@ -240,44 +182,69 @@ div.list {
   font-weight: 300;
 }
 
-.tabbed {
+div.image-box {
+  border-radius: 8px;
+  min-width: 250px;
+  min-height: 150px;
+  background-color: white;
+  font-size: 14px;
+  line-height: 1.5em;
 
-  .menu {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-
-    input[type="radio"] {
-      display: none;
-
-      &:checked + label {
-        background-color: $selected-tab-color;
-        color: $selected-tab-text-color;
-      }
-    }
-
-    label {
-      @include button-like(1em);
-      font-size: 1rem;
-    }
+  @include all-headings {
+    margin-top: 0;
+    text-align: center;
   }
 
-  .content {
-    position: relative;
+  img {
+    padding: 0;
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+  }
 
-    [data-tab-active] {
-      position: absolute;
-      width: 100%;
-      height: 500px;
-      transition: opacity 0.5s ease-in-out;
-      outline: 1px solid red;
-      opacity: 0;
-    }
+  p {
+    text-align: justify;
+  }
 
-    [data-tab-active="true"] {
-      opacity: 1;
+  div {
+    padding: 1rem;
+  }
+}
+
+.wrapped-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+
+  > div {
+    @include floating-shadow;
+    max-width: 45%;
+    // max-width: 400px;
+
+    @media (max-width: $break-width) {
+      max-width: 80%;
     }
+  }
+}
+
+.side-by-side {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+
+  @media (max-width: $break-width) {
+    grid-auto-flow: row;
+    grid-auto-columns: 1fr;
+  }
+
+  > * {
+    align-self: center;
+  }
+
+  > div {
+    font-size: 18px;
+    line-height: 1.5em;
+    max-width: calc(#{$max-width}/2);
   }
 }
