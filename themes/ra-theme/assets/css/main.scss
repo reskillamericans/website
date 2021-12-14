@@ -91,6 +91,11 @@ main {
     }
   }
 
+  em strong {
+    color: $emphatic-color;
+    font-weight: bold;
+  }
+
   span.footnote-mark {
     font-size: 0.8em;
     vertical-align: super;
@@ -108,11 +113,14 @@ main {
   > img {
     box-sizing: border-box;
     width: 100%;
-    aspect-ratio: 2 / 1;
     padding: 0;
-    object-fit: cover;
-    object-position: 50% 75%;
-    border-radius: 6px;
+
+    &.hero {
+      aspect-ratio: 2 / 1;
+      object-fit: cover;
+      object-position: 50% 75%;
+      border-radius: 6px;
+    }
   }
 
   &.centered {
