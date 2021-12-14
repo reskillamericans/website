@@ -40,5 +40,6 @@
   padding: 1em $inline-padding;
   color: $button-text-color;
   background-color: $button-color;
+  user-select: none;
   // border: 1px solid $button-border-color;
 }
