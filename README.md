@@ -1,10 +1,10 @@
 # Reskill Americans Learning
 
-This is repository for the 2022 Reskill Americans learning website.
+This is repository for the 2022 Reskill Americans website.
 
-Note: We may possibly combine the "marketing" website with this one - but
-the core focus here is on building the learning platform for our next
-cohort.
+View the current [staging version here](https://reskill-learning.web.app/).
+
+This will combine the "marketing" website with a log-in site for participants.
 
 The primary features here are:
 
