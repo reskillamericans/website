@@ -20,6 +20,8 @@ training modules, and online video conferences with your instructors and mentors
 
 <a class="button-like standout" href="/enroll">Join Our Next Cohort</a>
 
+{{< image class="hero" src="828457-1.png" resize="1080x jpg" >}}
+
 {{% /section %}}
 
 {{% section centered light-background %}}
