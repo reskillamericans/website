@@ -21,5 +21,5 @@ cd $PROJ_DIR
 
 echo "Building Hugo static site..."
 rm -rf public
-hugo -D
+hugo
 tree public
