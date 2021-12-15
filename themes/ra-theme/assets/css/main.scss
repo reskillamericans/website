@@ -148,8 +148,6 @@ main {
   &.light-box {
     background-color: $main-color;
     width: 80%;
-    border-radius: 8px;
-    @include floating-shadow;
   }
 
   // Allow for overlapping section after this one.
