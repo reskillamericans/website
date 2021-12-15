@@ -48,3 +48,7 @@ working individually on exercises and projects.
 {{< phases >}}
 
 {{% /section %}}
+
+{{% section centered light-background %}}
+
+{{% /section %}}
