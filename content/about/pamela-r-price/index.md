@@ -1,5 +1,6 @@
 +++
 title = "Pamela R. Price"
+slug = "pamela-r-price"
 jobTitle = "Director of Education"
 order = 3
 group = "Team"

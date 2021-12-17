@@ -1,5 +1,6 @@
 +++
 title = "Juwon Isola-Osobu"
+slug = "adejuwon-isola-osobu"
 jobTitle = "Director of Program Management"
 order = 5
 group = "Team"

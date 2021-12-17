@@ -1,5 +1,6 @@
 +++
 title = "Nick Tsilas"
+slug = "nick-tsilas"
 jobTitle = "Microsoft Asst. General Counsel"
 order = 50
 group = "Advisor"

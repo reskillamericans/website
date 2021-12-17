@@ -1,5 +1,6 @@
 +++
 title = "Femi Akinde"
+slug = "femi-akinde"
 jobTitle = "Co-Founder"
 order = 1
 group = "Team"

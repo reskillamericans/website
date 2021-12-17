@@ -1,5 +1,6 @@
 +++
 title = "Dr. Thelma Phillip-Browne"
+slug = "dr-thelma-phillip-browne"
 jobTitle = "Ambassador, St. Kitts and Nevis"
 order = 1
 group = "Advisor"
