@@ -1,0 +1,24 @@
+{{ define "extra-head" }}
+{{ "<!-- layouts/videos/single.html:extra-head-->" | safeHTML }}
+<script type="module" src="/scripts/reskill.js"></script>
+{{ end }}
+
+{{ define "main" }}
+{{ "<!-- layouts/videos/single.html:main-->" | safeHTML }}
+
+<section>
+  <main class="centered">
+    <h1>{{ .Title }}</h1>
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/{{ .Params.videoId }}" allowfullscreen title="{{ .Title }}"></iframe>
+    </div>
+  </main>
+</section>
+
+<section>
+  <main>
+    {{ .Content }}
+  </main>
+</section>
+
+{{ end }}

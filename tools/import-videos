@@ -1,0 +1,91 @@
+#!/bin/env node
+// import videos --- Read youtube search results API JSON and generate markdown files.
+
+const fs = require('fs/promises');
+const https = require('https');
+const slugify = require('slugify');
+
+const sourceFile = '../data/youtube-townhalls.json';
+const targetDir = 'content/videos/';
+
+const json = require(sourceFile);
+
+console.log(`There are ${json.pageInfo.totalResults} videos in ${sourceFile}.`);
+
+// Write a markdown file for each video
+async function createVideos() {
+  for (let video of json.items) {
+    const fullTitle = video.snippet.title;
+    console.log(fullTitle);
+
+    const matches = fullTitle.matchAll(/^.* \#(?<num>\d+)( \| +(?<guest>.*))?/g);
+    const {num, guest} = [...matches][0].groups;
+    let guestName = guest;
+    let guestTitle = '';
+    if (guest) {
+      const parts = guest.split('-').map(s => s.trim());
+      [guestName, guestTitle] = parts;
+    }
+
+    const fileParts = ['town-hall', num];
+    if (guestName) {
+      fileParts.push(slugify(guestName, {lower: true}));
+    }
+
+    const slug = fileParts.join('-');
+
+    const dir = `${targetDir}${slug}/`;
+    let fileName = `${dir}index.md`;
+
+    await fs.mkdir(dir, {recursive: true});
+
+    let markdown = `+++
+      title = ${JSON.stringify(fullTitle)}
+      ${ifPresent('guest', guestName)}
+      ${ifPresent('guestTitle', guestTitle)}
+      slug = ${JSON.stringify(slug)}
+      date = ${JSON.stringify(video.snippet.publishedAt)}
+      order = ${num}
+      draft = false
+      tags = ['town-hall']
+      videoID = '${video.contentDetails.videoId}'
+      +++
+
+      ${video.snippet.description}
+    `;
+
+    markdown = markdown.replace(/^ +/gm, '');
+
+    await fs.writeFile(fileName, markdown);
+
+    // await downloadImage(person["Profile Picture"], `${dir}/profile.jpg`);
+  }
+}
+
+function ifPresent(key, value) {
+  return value ? `${key} = ${JSON.stringify(value)}` : '';
+}
+
+function ifPresentAsInt(key, value) {
+  return value ? `${key} = ${parseInt(value)}` : '';
+}
+
+function downloadImage(url, filepath) {
+  const fs = require('fs');
+  return new Promise((resolve, reject) => {
+      https.get(url, (res) => {
+          if (res.statusCode === 200) {
+              res.pipe(fs.createWriteStream(filepath))
+                  .on('error', reject)
+                  .once('close', () => resolve(filepath));
+          } else {
+              // Consume response data to free up memory
+              res.resume();
+              reject(new Error(`Request Failed With a Status Code: ${res.statusCode}`));
+
+          }
+      });
+  });
+}
+
+createVideos();
