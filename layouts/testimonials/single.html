@@ -8,7 +8,7 @@
 <section>
     <main>
       <h2>{{ .Title }}</h2>
-      {{ partial "testimonial" . }}
+      {{ .Render "quote-box" }}
     </main>
 </section>
 {{ end }}
