@@ -5,7 +5,7 @@ const fs = require('fs/promises');
 const https = require('https');
 
 const sourceFile = '../data/team-members.json';
-const targetDir = 'content/about/team/';
+const targetDir = 'content/about/';
 
 const json = require(sourceFile);
 
@@ -38,6 +38,7 @@ async function createTeamMembers() {
       jobTitle = "${person["Job Title"]}"
       ${ifPresentAsInt('order', person.Ordering)}
       group = "${person.Group}"
+      draft = false
 
       ${ifPresent('linkedIn', person.LinkedIn)}
       ${ifPresent('twitter', person.Twitter)}
@@ -53,7 +54,7 @@ async function createTeamMembers() {
       > ${person["Personal Message"]}
     `;
 
-    markdown = markdown.replace(/^    /gm, '');
+    markdown = markdown.replace(/^ +/gm, '');
 
     await fs.writeFile(fileName, markdown);
 
