@@ -3,6 +3,7 @@ title = "Enroll"
 date = 2021-12-15T12:30:03-08:00
 draft = false
 tags = []
+layout = "document"
 +++
 
 # Reskill Americans Enrollment Form
