@@ -1,0 +1,90 @@
+#!/bin/env node
+// migrate-teams --- Generate markdown files for each team member in data/team-members.json
+
+const fs = require('fs/promises');
+const https = require('https');
+
+const sourceFile = '../data/team-members.json';
+const targetDir = 'content/about/team/';
+
+const json = require(sourceFile);
+
+// JSON Schema:
+// Name: string
+// Slug: string
+// Profile Picture: string (url)
+// Group: string
+// Job Title: string
+// Card Text: string
+// Bio Full: string
+// Personal Message: string
+// LinkedIn: string
+// Twitter: string
+// Github: string
+// Instagram: string
+// Ordering: string
+
+// Write a markdown file for each team member
+async function createTeamMembers() {
+  for (let person of json) {
+    const dir = `${targetDir}${person.Slug}/`;
+    let fileName = `${dir}/index.md`;
+
+    console.log(`Creating ${person.Name} in ${fileName}...`);
+    await fs.mkdir(dir, {recursive: true});
+
+    let markdown = `+++
+      title = ${JSON.stringify(person.Name)}
+      jobTitle = "${person["Job Title"]}"
+      ${ifPresentAsInt('order', person.Ordering)}
+      group = "${person.Group}"
+
+      ${ifPresent('linkedIn', person.LinkedIn)}
+      ${ifPresent('twitter', person.Twitter)}
+      ${ifPresent('github', person.Github)}
+      ${ifPresent('instagram', person.Instagram)}
+
+      cardText = "${person["Card Text"]}"
+
+      +++
+
+      ${person["Bio Full"]}
+
+      > ${person["Personal Message"]}
+    `;
+
+    markdown = markdown.replace(/^    /gm, '');
+
+    await fs.writeFile(fileName, markdown);
+
+    await downloadImage(person["Profile Picture"], `${dir}/profile.jpg`);
+  }
+}
+
+function ifPresent(key, value) {
+  return value ? `${key} = ${JSON.stringify(value)}` : '';
+}
+
+function ifPresentAsInt(key, value) {
+  return value ? `${key} = ${parseInt(value)}` : '';
+}
+
+function downloadImage(url, filepath) {
+  const fs = require('fs');
+  return new Promise((resolve, reject) => {
+      https.get(url, (res) => {
+          if (res.statusCode === 200) {
+              res.pipe(fs.createWriteStream(filepath))
+                  .on('error', reject)
+                  .once('close', () => resolve(filepath));
+          } else {
+              // Consume response data to free up memory
+              res.resume();
+              reject(new Error(`Request Failed With a Status Code: ${res.statusCode}`));
+
+          }
+      });
+  });
+}
+
+createTeamMembers();
