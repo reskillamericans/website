@@ -2,7 +2,7 @@
   <div>
     {{ with .Site.GetPage "/testimonials" }}
       {{ range .Pages }}
-        {{ partial "testimonial" . }}
+        {{ .Render "quote-box" }}
       {{ end }}
     {{ end }}
   </div>
