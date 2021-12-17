@@ -56,9 +56,9 @@ Job Fairs or other virtual events and shared insights with our participants in
 - Charles Cox, Mgr. Financial Management, Growth & Technology Ops,  Direct to
   Consumer Technology, WarnerMedia.
 
-‍Check out our [YouTube
+Check out our [YouTube
 Channel](https://www.youtube.com/c/ReskillAmericans/videos) for a full list of
-who spoke at our events. ‍
+who spoke at our events.
 
 {{% /section %}}
 
