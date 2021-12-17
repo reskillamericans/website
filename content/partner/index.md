@@ -5,6 +5,8 @@ draft = false
 tags = []
 +++
 
+{{% section centered %}}
+
 # Help Us Increase Access to Careers in Tech
 
 When you partner with Reskill Americans, you help underrepresented minorities
@@ -16,29 +18,57 @@ training, mentorship and community to our participants. We also seek companies
 to hire our participants into entry-level jobs or paid internships at the end
 our program.
 
+{{< image class="hero" src="typing-behind.jpg" resize="1080x jpg" >}}
+
+{{% /section %}}
+
+{{% section light-background centered %}}
+
+## Vote of Thanks
+
 We want to thank the many industry experts who participated in our Town Halls,
 Job Fairs or other virtual events and shared insights with our participants in
-2021. They include: Mike Coleman, Developer Advocate for Google Cloud; Nick
-Curry, Head of Military Initiatives, Technical Apprenticeships, and Diversity
-Internships at Amazon; Columbus Steward, a principal software engineer manager
-at Microsoft; Laurent Pierre, General Manager of Customer Experience,
-Engineering Support (CXP) for Microsoft Azure; and David Fowler, Software
-Architect, Microsoft; Eric Johnson, Director of Innovation, Bright Machines;
-Nina Unger, Talent Acquisition Partner, and Bill Winans, Regional Director,
-SoftwareONE;  Noreli Garcia Valentin, Director of Strategic Initiatives & Chair
-of Equity and Inclusion at WarnerMedia’s Direct to Consumer organization;
-Charles Cox, Mgr. Financial Management, Growth & Technology Ops,  Direct to
-Consumer Technology, WarnerMedia.
+2021. They include:
+
+- Mike Coleman, Developer Advocate for Google Cloud; Nick
+  Curry, Head of Military Initiatives, Technical Apprenticeships, and Diversity
+  Internships at Amazon
+
+- Columbus Steward, a principal software engineer manager
+  at Microsoft
+
+- Laurent Pierre, General Manager of Customer Experience,
+  Engineering Support (CXP) for Microsoft Azure
+
+- David Fowler, Software
+  Architect, Microsoft
+
+- Eric Johnson, Director of Innovation, Bright Machines
+
+- Nina Unger, Talent Acquisition Partner, and Bill Winans, Regional Director,
+  SoftwareONE
+
+- Noreli Garcia Valentin, Director of Strategic Initiatives & Chair
+  of Equity and Inclusion at WarnerMedia’s Direct to Consumer organization
+
+- Charles Cox, Mgr. Financial Management, Growth & Technology Ops,  Direct to
+  Consumer Technology, WarnerMedia.
 
 ‍Check out our [YouTube
 Channel](https://www.youtube.com/c/ReskillAmericans/videos) for a full list of
 who spoke at our events. ‍
+
+{{% /section %}}
+
+{{% section centered contrast prep-overlap %}}
 
 ## Companies
 
 We help companies diversify their rapidly growing tech workforce by scaling up tuition-free software development training and mentorship to historically underrepresented racial minorities.
 
 We introduce companies to a large pool of diverse candidates that have enrolled in our rigorous, tuition-free software development program.
+
+{{% /section %}}
 
 ### We seek partners to:
 

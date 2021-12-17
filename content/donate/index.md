@@ -3,6 +3,7 @@ title = "Donate"
 date = 2021-12-15T12:22:40-08:00
 draft = false
 tags = []
+layout = "document"
 +++
 
 # Why Donate?

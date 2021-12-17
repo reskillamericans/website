@@ -3,6 +3,7 @@ title = "Privacy Policy"
 date = 2021-10-07
 draft = false
 tags = []
+layout = "document"
 +++
 
 # Reskill Americans Privacy Notice 

@@ -127,6 +127,10 @@ main {
   &.centered {
     padding-inline: 4rem;
     text-align: center;
+
+    li {
+      text-align: left;
+    }
   }
 
   &.team-boxes {
@@ -174,7 +178,6 @@ main {
 }
 
 div.list {
-  text-align: left;
   max-width: 600px;
   margin: 0 auto;
   font-weight: 300;
