@@ -1,5 +1,6 @@
 +++
 title = "John \"JG\" Chirapurath"
+slug = "john-jg-chirapurath"
 jobTitle = "Chief Marketing & Solutions Officer, SAP"
 
 group = "Advisor"

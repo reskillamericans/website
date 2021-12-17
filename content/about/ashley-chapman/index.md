@@ -1,5 +1,6 @@
 +++
 title = "Ashley Chapman"
+slug = "ashley-chapman"
 jobTitle = "Director, Marketing and Communications"
 order = 4
 group = "Team"

@@ -1,5 +1,6 @@
 +++
 title = "David Fowler"
+slug = "david-fowler"
 jobTitle = "Microsoft Software Architect"
 order = 1
 group = "Advisor"

@@ -1,5 +1,6 @@
 +++
 title = "David Ortiz"
+slug = "david-ortiz"
 jobTitle = "CEO, SimWin Sports"
 
 group = "Advisor"

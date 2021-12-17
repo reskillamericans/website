@@ -1,5 +1,6 @@
 +++
 title = "Tim Mallalieu"
+slug = "tim-mallalieu"
 jobTitle = "General Manager, Microsoft"
 
 group = "Advisor"
