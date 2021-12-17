@@ -15,7 +15,8 @@
     <main class="team-member">
       <div>
         {{ with .Resources.GetMatch "profile.jpg" }}
-          <img src="{{ .Resize "800x" }}" alt="{{ $.Name }}">
+          {{ $image := .Resize "800x" }}
+          <img src="{{ $image.Permalink }}" alt="{{ $.Name }}">
         {{ end }}
         {{ partial "social-links" .Params }}
       </div>

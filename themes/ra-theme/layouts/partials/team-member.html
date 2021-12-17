@@ -1,16 +1,15 @@
 {{ "<!-- ra-theme/layouts/partials/team-member.html -->" | safeHTML }}
-<div class="team-member">
+<div class="team-member" onclick="window.location.href = '/about/{{ .Params.slug }}';">
     <div>
-      <img src="{{ (index . "Profile Picture") }}" alt="{{ .Name }}">
-      <h3>{{ index . "Job Title" }}</h3>
+      {{ with .Resources.GetMatch "profile.jpg" }}
+        {{ $image := .Resize "400x" }}
+         <img src="{{ $image.Permalink }}" alt="{{ $.Name }}">
+      {{ end }}
+      <h3>{{ .Params.jobTitle }}</h3>
     </div>
     <h2>{{ .Name }}</h2>
     <p>
-      "{{ index . "Card Text" }}"
+      "{{ .Params.cardText }}"
     </p>
-    {{- $data := newScratch -}}
-    {{- $data.SetInMap "d" "linkedin" (index . "LinkedIn") }}
-    {{- $data.SetInMap "d" "twitter" (index . "Twitter") -}}
-    {{- $data.SetInMap "d" "instagram" (index . "Instagram") -}}
-    {{ partial "social-links" ($data.Get "d") }}
+    {{ partial "social-links" .Params }}
 </div>
