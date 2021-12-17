@@ -1,7 +1,7 @@
 <div id="testimonials" class="carousell">
   <div>
-    {{ with .Site.GetPage "testimonials" }}
-      {{ range where .Pages "Draft" false }}
+    {{ with .Site.GetPage "/testimonials" }}
+      {{ range .Pages }}
         {{ partial "testimonial" . }}
       {{ end }}
     {{ end }}

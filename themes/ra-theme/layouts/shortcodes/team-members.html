@@ -1,4 +1,7 @@
-{{ $members := where (index .Site.Data "team-members") "Group" ( .Get 0 ) }}
-{{ range sort $members "Ordering" }}
-    {{ partial "team-member" . }}
+{{ $group := .Get 0 }}
+{{ with .Site.GetPage "/about" }}
+    {{ $members := where .Pages "Params.group" $group }}
+    {{ range sort $members "Params.order" }}
+        {{ partial "team-member" . }}
+    {{ end }}
 {{ end }}
