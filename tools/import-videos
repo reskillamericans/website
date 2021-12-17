@@ -58,7 +58,11 @@ async function createVideos() {
 
     await fs.writeFile(fileName, markdown);
 
-    // await downloadImage(person["Profile Picture"], `${dir}/profile.jpg`);
+    const thumnails = video.snippet.thumbnails;
+    const thumbnail = thumnails.maxres || thumnails.standard;
+
+    console.log(`Downloading ${thumbnail.url}`);
+    await downloadImage(thumbnail.url, `${dir}/thumbnail.jpg`);
   }
 }
 
