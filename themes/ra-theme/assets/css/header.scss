@@ -89,10 +89,11 @@ header {
 }
 
 a {
-  text-decoration: none;
+  color: $link-color;
 
   &.button-like {
     @include button-like;
+    text-decoration: none;
   }
 
   &.standout {
