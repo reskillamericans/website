@@ -30,6 +30,8 @@ We want to thank the many industry experts who participated in our Town Halls,
 Job Fairs or other virtual events and shared insights with our participants in
 2021. They include:
 
+---
+
 - Mike Coleman, Developer Advocate for Google Cloud; Nick
   Curry, Head of Military Initiatives, Technical Apprenticeships, and Diversity
   Internships at Amazon
@@ -64,50 +66,103 @@ who spoke at our events. ‍
 
 ## Companies
 
-We help companies diversify their rapidly growing tech workforce by scaling up tuition-free software development training and mentorship to historically underrepresented racial minorities.
+We help companies diversify their rapidly growing tech workforce by scaling up
+tuition-free software development training and mentorship to historically
+underrepresented racial minorities.
 
-We introduce companies to a large pool of diverse candidates that have enrolled in our rigorous, tuition-free software development program.
+We introduce companies to a large pool of diverse candidates that have enrolled
+in our rigorous, tuition-free software development program.
 
 {{% /section %}}
+
+{{% section wrapped-boxes overlap %}}
+
+{{% image-box %}}
 
 ### We seek partners to:
 
 
-- Hire our participants for full-time software development roles.
-- Hire our participants for paid internships.
+- Hire our participants for full-time software development roles.&nbsp;<span
+  class="footnote-mark">*</span>
+- Hire our participants for paid internships.&nbsp;<span
+  class="footnote-mark">*</span>
 - Recruit your employees for our Volunteer Program. (See [Volunteer](/volunteer)
   section for details).
 
-* Reskill Americans is a 501(c)(3) nonprofit. We supplement donor funds through a fee-for-service placement program.
+<p class="footnote">
+* Reskill Americans is a 501(c)(3) nonprofit. We supplement donor funds through
+  a fee-for-service placement program.
+</p>
+
+{{% /image-box %}}
+
+{{% image-box %}}
 
 ### Why partner with us:
 
-- Get access to a large pool of qualified, diverse tech candidates to recruit from.
-- Engage your employees in impactful work that helps create a career path in tech for minorities.
-- Help increase the representation of minorities in the tech community and create long-term economic opportunities
+- Get access to a large pool of qualified, diverse tech candidates to recruit
+  from.&nbsp;<span class="footnote-mark">*</span>
+- Engage your employees in impactful work that helps create a career path in
+  tech for minorities.
+- Help increase the representation of minorities in the tech community and
+  create long-term economic opportunities
 
-* Reskill Americans is a 501(c)(3) nonprofit. We supplement donor funds through a fee-for-service placement program.
+<p class="footnote">
+* Reskill Americans is a 501(c)(3) nonprofit. We supplement donor funds through
+  a fee-for-service placement program.
+</p>
 
-[Contact Us](mailto:info@reskillamericans.org)
+{{% /image-box %}}
+
+{{% /section %}}
+
+{{% section centered %}}
+<a class="button-like standout" href="mailto:info@reskillamericans.org" target="_blank">Contact Us</a>
+{{% /section %}}
+
+{{% section centered contrast prep-overlap %}}
 
 ## Volunteers
 
-We seek volunteers, ideally software developers or UI/X product designers, to engage with -- and/or mentor -- our participants throughout our seven-month program.
+We seek volunteers, ideally software developers or UI/X product designers, to
+engage with -- and/or mentor -- our participants throughout our seven-month
+program.
 
-Our participants are determined, driven and committed <em></em>to learning what's required to get a job in the tech industry. They often have extensive experience in other industries, and some have graduate degrees.
+Our participants are determined, driven and committed to learning what's
+required to get a job in the tech industry. They often have extensive experience
+in other industries, and some have graduate degrees.
+
+{{% /section %}}
+
+{{% section wrapped-boxes overlap %}}
+
+{{% image-box %}}
 
 ### We seek volunteers to:
 
-- Speak at our Town Halls: Participate in informal Q&amp;A about how you got
+- Speak at our Town Halls: Participate in informal Q&A about how you got
   started in tech, your current job, and what you look for when hiring people.
 - Provide our participants one-on-one coaching and mentorship that's aligned to
   your tech skills.
 - Provide job prep advice such as mock interviews, resume review, job search tips, etc.
 
+{{% /image-box %}}
+
+{{% image-box %}}
+
 ### Why volunteer with us:
 
-- Perfect your skills: there's no better way to hone your skills than by teaching them to others. It's fun and rewarding!
-- Volunteer when it works for you: we just require a minimum of 2 hours per week for at least 2 consecutive months.
-- No mentoring background required: just commitment and an openness to sharing your career experiences.
+- Perfect your skills: there's no better way to hone your skills than by
+  teaching them to others. It's fun and rewarding!
+- Volunteer when it works for you: we just require a minimum of 2 hours per week
+  for at least 2 consecutive months.
+- No mentoring background required: just commitment and an openness to sharing
+  your career experiences.
 
-[Volunteer](/volunteer)
+{{% /image-box %}}
+
+{{% /section %}}
+
+{{% section centered %}}
+<a class="button-like standout" href="/volunteer">Volunteer</a>
+{{% /section %}}
