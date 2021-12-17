@@ -1,3 +1,4 @@
+// Card format for team-members view.
 div.team-member {
   display: flex;
   flex-direction: column;
@@ -56,5 +57,46 @@ div.team-member {
     margin-top: auto;
     margin-inline: auto;
     opacity: 0.75;
+  }
+}
+
+// Format for full team member page.
+main.team-member {
+  max-width: 800px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: minmax(1fr, 400px) 1fr;
+  grid-column-gap: 2rem;
+  font-size: 1rem;
+
+  @media (max-width: $narrow-width) {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+  }
+
+  h2, h3 {
+    margin:0;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  blockquote {
+    font-style: italic;
+    opacity: 75%;
+
+    border-left: 4px solid gray;
+    padding-top: 1rem;
+    padding-left: 2em;
+    padding-bottom: 1em;
+  };
+
+  .social-links {
+    padding-top: 1rem;
+    margin-inline: auto;
+    opacity: 0.75;
+    // I don't understand why I need this here, but NOT in the card!
+    justify-content: center;
   }
 }

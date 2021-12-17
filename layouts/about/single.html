@@ -1,0 +1,29 @@
+{{ define "extra-head" }}
+{{ "<!-- layouts/about/single.html:extra-head-->" | safeHTML }}
+<script type="module" src="/scripts/reskill.js"></script>
+{{ end }}
+
+{{ define "main" }}
+{{ "<!-- layouts/about/single.html:main-->" | safeHTML }}
+<section class="contrast">
+  <main class="centered">
+    <h1>{{ .Title }}</h1>
+  </main>
+</section>
+
+<section>
+    <main class="team-member">
+      <div>
+        {{ with .Resources.GetMatch "profile.jpg" }}
+          <img src="{{ .Resize "800x" }}" alt="{{ $.Name }}">
+        {{ end }}
+        {{ partial "social-links" .Params }}
+      </div>
+      <div>
+        <h2>{{ .Name }}</h2>
+        <h3>{{ .Params.jobTitle }}</h3>
+        {{ .Content }}
+      </div>
+    </main>
+</section>
+{{ end }}
