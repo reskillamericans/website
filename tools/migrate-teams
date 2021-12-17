@@ -35,6 +35,7 @@ async function createTeamMembers() {
 
     let markdown = `+++
       title = ${JSON.stringify(person.Name)}
+      slug = ${JSON.stringify(person.Slug)}
       jobTitle = "${person["Job Title"]}"
       ${ifPresentAsInt('order', person.Ordering)}
       group = "${person.Group}"
