@@ -1,8 +1,6 @@
 {{ define "extra-head" }}
 {{ "<!-- layouts/index.html:extra-head-->" | safeHTML }}
 <script type="module" src="/scripts/reskill.js"></script>
-{{ $style := resources.Get "css/carousell.scss" | resources.ToCSS }}
-<link rel="stylesheet" href="{{ $style.Permalink }}">
 {{ end }}
 
 {{ define "main" }}

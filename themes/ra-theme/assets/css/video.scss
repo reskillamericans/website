@@ -16,7 +16,7 @@ div.video {
   }
 }
 
-$imageSize: 150px;
+$imageSize: 100px;
 $cardWidth: 400px;
 
 // For video "cards"
@@ -30,13 +30,15 @@ div.video-card {
   background-color: white;
   border-radius: 6px;
   padding: 1rem;
-  margin: 0;
+  // Don't clip image even when hover-zooming
+  margin-top: calc((#{$imageSize} / 2) * 1.2);
 
-  max-width: $cardWidth;
+  width: $cardWidth;
   aspect-ratio: 16/9;
 
   img {
     @include hover-zoom;
+    @include floating-shadow;
     position: absolute;
     border-radius: calc(#{$imageSize} / 2);
     top: calc(-#{$imageSize} / 2);

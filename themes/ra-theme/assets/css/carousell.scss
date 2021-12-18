@@ -1,9 +1,8 @@
-@import "themes/ra-theme/assets/css/mixins";
-
 div.carousell {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
+  padding-bottom: 1rem;
 
   & > div:first-child {
     display: flex;
@@ -19,6 +18,9 @@ div.carousell {
 
 div.directional {
   @include hover-zoom(1.2);
+  background-color: white;
+  border-radius: 25px;
+  opacity: 0.4;
   position: absolute;
   z-index: 1000;
   width: 50px;

@@ -1,6 +1,6 @@
 +++
 title = "Reskill Americans Town Hall #1"
-
+quote = "Let's get this party, started!"
 
 slug = "town-hall-1"
 date = "2021-03-08T18:59:00Z"
