@@ -1,12 +1,13 @@
 +++
 title = "Reskill Americans Town Hall #8 | BlackRock"
-guest = "BlackRock"
+guest = "Ajax Green & My Doan"
+guestTitle = "BlackRock Financial"
 
 slug = "town-hall-8-blackrock"
 date = "2021-04-20T02:35:29Z"
 order = 8
 draft = false
-tags = ['town-hall']
+tags = ['town-hall', 'companies']
 videoID = 'Qxy1moUCANA'
 +++
 

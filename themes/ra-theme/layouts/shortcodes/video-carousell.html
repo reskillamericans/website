@@ -3,7 +3,7 @@
 <div id="videos" class="carousell">
   <div>
       {{- range sort .Pages "Params.order" -}}
-        {{ if in .Params.tags "town-hall" }}
+        {{ if in .Params.tags "companies" }}
           {{- .Render "card" -}}
         {{- end -}}
       {{- end -}}

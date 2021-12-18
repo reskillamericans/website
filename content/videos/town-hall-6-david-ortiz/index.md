@@ -6,7 +6,7 @@ slug = "town-hall-6-david-ortiz"
 date = "2021-04-20T02:37:26Z"
 order = 6
 draft = false
-tags = ['town-hall']
+tags = ['town-hall', 'companies']
 videoID = 'HzmsXMX6F5A'
 +++
 

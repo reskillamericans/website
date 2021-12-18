@@ -1,12 +1,13 @@
 +++
 title = "Reskill Americans Town Hall #3 | Covid Act Now"
-guest = "Covid Act Now"
+guest = "Michael Lehenbauer & Chelsi Asulin"
+guestTitle = "Covid Act Now"
 
 slug = "town-hall-3-covid-act-now"
 date = "2021-03-18T01:58:09Z"
 order = 3
 draft = false
-tags = ['town-hall']
+tags = ['town-hall', 'companies']
 videoID = 'UDl4_KdT_Q4'
 +++
 

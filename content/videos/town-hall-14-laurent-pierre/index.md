@@ -6,7 +6,7 @@ slug = "town-hall-14-laurent-pierre"
 date = "2021-06-14T16:18:27Z"
 order = 14
 draft = false
-tags = ['town-hall']
+tags = ['town-hall', 'companies']
 videoID = 'ZO8qQx-bS1I'
 +++
 

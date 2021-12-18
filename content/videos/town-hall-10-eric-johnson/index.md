@@ -6,7 +6,7 @@ slug = "town-hall-10-eric-johnson"
 date = "2021-05-24T17:38:58Z"
 order = 10
 draft = false
-tags = ['town-hall']
+tags = ['town-hall', 'companies']
 videoID = 'xZ2O6F0gF5k'
 +++
 

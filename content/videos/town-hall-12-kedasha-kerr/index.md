@@ -6,7 +6,7 @@ slug = "town-hall-12-kedasha-kerr"
 date = "2021-05-24T17:39:12Z"
 order = 12
 draft = false
-tags = ['town-hall']
+tags = ['town-hall', 'companies']
 videoID = 'GW-EJ9MixFs'
 +++
 
