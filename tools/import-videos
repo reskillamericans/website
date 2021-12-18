@@ -5,7 +5,8 @@ const fs = require('fs/promises');
 const https = require('https');
 const slugify = require('slugify');
 
-const sourceFile = '../data/youtube-townhalls.json';
+// const sourceFile = '../data/youtube-townhalls.json';
+const sourceFile = '../data/youtube-jobfairs.json';
 const targetDir = 'content/videos/';
 
 const json = require(sourceFile);
@@ -18,8 +19,17 @@ async function createVideos() {
     const fullTitle = video.snippet.title;
     console.log(fullTitle);
 
-    const matches = fullTitle.matchAll(/^.* \#(?<num>\d+)( \| +(?<guest>.*))?/g);
-    const {num, guest} = [...matches][0].groups;
+    const matches = fullTitle.matchAll(/^.* \#(?<num>\d+)(\s+\|\s+(?<guest>.*))?/g);
+    const match = [...matches][0];
+
+    let num = '';
+    let guest = '';
+
+    if (match) {
+      ({num, guest} = match.groups);
+      console.log(JSON.stringify(match.groups));
+    }
+
     let guestName = guest;
     let guestTitle = '';
     if (guest) {
@@ -27,12 +37,19 @@ async function createVideos() {
       [guestName, guestTitle] = parts;
     }
 
-    const fileParts = ['town-hall', num];
+    const fileParts  = ['job-fair'];
+    if (num !== '') {
+      fileParts.push(num);
+    } else {
+      fileParts.push(video.snippet.publishedAt);
+    }
+
     if (guestName) {
       fileParts.push(slugify(guestName, {lower: true}));
     }
 
     const slug = fileParts.join('-');
+    console.log(`Slug: ${slug}`);
 
     const dir = `${targetDir}${slug}/`;
     let fileName = `${dir}index.md`;
@@ -47,7 +64,7 @@ async function createVideos() {
       date = ${JSON.stringify(video.snippet.publishedAt)}
       order = ${num}
       draft = false
-      tags = ['town-hall']
+      tags = ['job-fair']
       videoID = '${video.contentDetails.videoId}'
       +++
 
@@ -58,8 +75,8 @@ async function createVideos() {
 
     await fs.writeFile(fileName, markdown);
 
-    const thumnails = video.snippet.thumbnails;
-    const thumbnail = thumnails.maxres || thumnails.standard;
+    const thumbnails = video.snippet.thumbnails;
+    const thumbnail = thumbnails.maxres || thumbnails.standard || thumbnails.high;
 
     console.log(`Downloading ${thumbnail.url}`);
     await downloadImage(thumbnail.url, `${dir}/thumbnail.jpg`);
