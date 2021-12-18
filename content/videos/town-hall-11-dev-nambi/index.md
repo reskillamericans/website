@@ -6,7 +6,7 @@ slug = "town-hall-11-dev-nambi"
 date = "2021-05-18T14:31:53Z"
 order = 11
 draft = false
-tags = ['town-hall']
+tags = ['town-hall', 'companies']
 videoID = '24uOcGj-6sM'
 +++
 

@@ -1,12 +1,12 @@
 +++
 title = "Reskill Americans Town Hall #18 | Andrew Kwatinetz and Eric Patey - Sonos"
-guest = "Andrew Kwatinetz and Eric Patey"
+guest = "Andrew Kwatinetz & Eric Patey"
 guestTitle = "Sonos"
 slug = "town-hall-18-andrew-kwatinetz-and-eric-patey"
 date = "2021-08-11T05:42:38Z"
 order = 18
 draft = false
-tags = ['town-hall']
+tags = ['town-hall', 'companies']
 videoID = 'g7hCp8is2qg'
 +++
 

@@ -6,7 +6,7 @@ slug = "town-hall-9-columbus-steward"
 date = "2021-05-03T17:33:47Z"
 order = 9
 draft = false
-tags = ['town-hall']
+tags = ['town-hall', 'companies']
 videoID = 'IKaTxeq013w'
 +++
 

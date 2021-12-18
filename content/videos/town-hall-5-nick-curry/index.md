@@ -6,7 +6,7 @@ slug = "town-hall-5-nick-curry"
 date = "2021-04-20T02:37:55Z"
 order = 5
 draft = false
-tags = ['town-hall']
+tags = ['town-hall', 'companies']
 videoID = 'FaZuzZc1-5w'
 +++
 

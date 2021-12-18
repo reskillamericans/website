@@ -6,7 +6,7 @@ slug = "town-hall-7-deborah-russell"
 date = "2021-04-20T02:37:06Z"
 order = 7
 draft = false
-tags = ['town-hall']
+tags = ['town-hall', 'companies']
 videoID = 'zcq9mu5SItE'
 +++
 

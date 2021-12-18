@@ -6,7 +6,7 @@ slug = "town-hall-17-mike-coleman"
 date = "2021-07-31T19:57:27Z"
 order = 17
 draft = false
-tags = ['town-hall']
+tags = ['town-hall', 'companies']
 videoID = 'XZCt4Jyn378'
 +++
 

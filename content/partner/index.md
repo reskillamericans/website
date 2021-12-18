@@ -28,35 +28,7 @@ our program.
 
 We want to thank the many industry experts who participated in our Town Halls,
 Job Fairs or other virtual events and shared insights with our participants in
-2021. They include:
-
----
-
-- Mike Coleman, Developer Advocate for Google Cloud; Nick
-  Curry, Head of Military Initiatives, Technical Apprenticeships, and Diversity
-  Internships at Amazon
-
-- Columbus Steward, a principal software engineer manager
-  at Microsoft
-
-- Laurent Pierre, General Manager of Customer Experience,
-  Engineering Support (CXP) for Microsoft Azure
-
-- David Fowler, Software
-  Architect, Microsoft
-
-- Eric Johnson, Director of Innovation, Bright Machines
-
-- Nina Unger, Talent Acquisition Partner, and Bill Winans, Regional Director,
-  SoftwareONE
-
-- Noreli Garcia Valentin, Director of Strategic Initiatives & Chair
-  of Equity and Inclusion at WarnerMedia’s Direct to Consumer organization
-
-- Charles Cox, Mgr. Financial Management, Growth & Technology Ops,  Direct to
-  Consumer Technology, WarnerMedia.
-
-
+2021.
 
 {{% /section %}}
 

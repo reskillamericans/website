@@ -1,12 +1,12 @@
 +++
 title = "Reskill Americans Town Hall #21 | Danielle Storlie"
 guest = "Danielle Storlie"
-
+guestTitle = "Product Designer"
 slug = "town-hall-21-danielle-storlie"
 date = "2021-09-03T22:00:05Z"
 order = 21
 draft = false
-tags = ['town-hall']
+tags = ['town-hall', 'companies']
 videoID = '-yuW6_6ghkE'
 +++
 

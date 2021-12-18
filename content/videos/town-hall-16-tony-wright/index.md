@@ -6,7 +6,7 @@ slug = "town-hall-16-tony-wright"
 date = "2021-06-28T16:22:42Z"
 order = 16
 draft = false
-tags = ['town-hall']
+tags = ['town-hall', 'companies']
 videoID = 'NivSoU2jTrY'
 +++
 
