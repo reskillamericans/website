@@ -33,12 +33,12 @@ div.directional {
   filter: invert(100%);
 
   &.left {
-    left: 0;
+    left: 5px;
     background-image: url(/images/angle-left.svg);
   }
 
   &.right {
-    right: 0;
+    right: 5px;
     background-image: url(/images/angle-right.svg);
   }
 }
