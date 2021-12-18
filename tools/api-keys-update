@@ -1,0 +1,42 @@
+#!/bin/bash
+#
+# api-keys-update --- Encode or decode (secret) API keys for this repo.
+
+set -e
+TOOLS_DIR="$(unset CDPATH; cd $(dirname ${BASH_SOURCE[0]}) && pwd)"
+source $TOOLS_DIR/use
+
+cd $TOOLS_DIR
+
+PLAIN_TEXT="api-keys.json"
+CYPHER_TEXT="api-keys.secret"
+
+ALL_FLAGS="encrypt decrypt"
+encrypt_help="Encrypt current $PLAIN_TEXT into $CYPHER_TEXT"
+decrypt_help="Decrypt $CYPHER_TEXT into $PLAIN_TEXT"
+usage () {
+  echo "Encode and decode api keys for thir repo."
+  usage_helper
+  echo -e "\n  (You will be prompted for a passphrase)"
+  show_help "  --" $ALL_FLAGS
+
+}
+source $TOOLS_DIR/bash-helper
+
+echo Start
+
+if [ $encrypt_flag ]; then
+    echo "Encrypting"
+    gpg --symmetric --output "$CYPHER_TEXT" "$PLAIN_TEXT"
+    exit 0
+fi
+
+if [ $decrypt_flag ]; then
+    echo "Decrypting"
+    gpg --decrypt --output "$PLAIN_TEXT" "$CYPHER_TEXT"
+    exit 0
+fi
+
+echo -e "Error: You must specify either --encrypt or --decrypt"
+usage
+exit 1
