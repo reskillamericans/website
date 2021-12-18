@@ -1,0 +1,77 @@
+// For embedded YouTube videos
+div.video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
+
+$imageSize: 150px;
+$cardWidth: 400px;
+
+// For video "cards"
+div.video-card {
+  @include floating-shadow
+  background-color: white;
+  border-radius: 6px;
+  position: relative;
+  max-width: $cardWidth;
+  aspect-ratio: 2/1;
+
+  img {
+    @include hover-zoom;
+    position: absolute;
+    border-radius: calc(#{$imageSize} / 2);
+    top: calc(-#{$imageSize} / 2);
+    left: calc(#{$cardWidth} / 2 - #{$imageSize} / 2);
+    width: $imageSize;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+
+  div.quote {
+    position: absolute;
+    text-align: center;
+    top: 80px;
+    padding-inline: 1rem;
+    font-style: italic;
+  }
+
+  hr {
+    position: absolute;
+    top: 125px;
+    padding: 0;
+    margin: 0;
+    left: 50px;
+    width: 300px;
+    border-top: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  div.name {
+    position: absolute;
+    top: 135px;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+  }
+
+  div.title {
+    position: absolute;
+    top: 160px;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    color: $emphatic-color;
+  }
+}
