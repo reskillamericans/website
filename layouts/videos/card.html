@@ -13,7 +13,7 @@
     <div class="quote">{{ . }}</div>
   {{ else }}
     <div class="quote">
-      {{- .PublishDate.Format "January 2, 2006" -}}
+      {{- .Date.Format "January 2, 2006" -}}
     </div>
   {{- end -}}
 
