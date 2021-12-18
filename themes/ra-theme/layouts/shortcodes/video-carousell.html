@@ -1,9 +1,10 @@
+{{ $tag := .Get 0 }}
 {{- with .Site.GetPage "/videos" -}}
 
 <div id="videos" class="carousell">
   <div>
       {{- range sort .Pages "Params.order" -}}
-        {{ if in .Params.tags "companies" }}
+        {{ if in .Params.tags $tag }}
           {{- .Render "card" -}}
         {{- end -}}
       {{- end -}}
