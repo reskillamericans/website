@@ -13,11 +13,12 @@
 
 <section class="light-background">
     <main>
-    <ol>
+      <ol>
         {{ range .Pages }}
-        <li>
-            <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} |
-                <b>{{ .File.BaseFileName }}</b> - {{.Title}}</a>
+        <li style="padding-top: 1rem;">
+          <a href="{{.Permalink}}">{{.Title}}</a>
+          <div style="height: 100px"></div>
+          {{ .Render "card" }}
         </li>
         {{ end }}
     </ol>
