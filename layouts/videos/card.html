@@ -2,7 +2,9 @@
 <div class="video-card">
   {{ with .Resources.GetMatch "thumbnail.*" }}
     {{ $image := .Resize "400x" }}
-    <img src="{{ $image.Permalink }}" alt="{{ $.Title }}" />
+    <a href="https://youtu.be/{{ $.Params.videoId }}">
+      <img src="{{ $image.Permalink }}" alt="{{ $.Title }}">
+    </a>
   {{ else }}
     {{ warnf "No thumbnail found for video-card %s" .Title }}
   {{ end }}
@@ -10,12 +12,14 @@
     <div class="quote">{{ . }}</div>
   {{ else }}
     <div class="quote">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, mollitia.
+      {{ .PublishDate.Format "January 2, 2006" }}
     </div>
   {{ end }}
   <hr>
   {{ with .Params.guest }}
     <div class="name">{{ . }}</div>
+  {{ else }}
+    <div class="name">Reskill Americans</div>
   {{ end }}
   {{ with .Params.guestTitle }}
     <div class="title">{{ . }}</div>
