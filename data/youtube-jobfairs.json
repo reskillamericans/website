@@ -1,0 +1,306 @@
+{
+  "kind": "youtube#playlistItemListResponse",
+  "etag": "Kmap_Wgw_jwYnMAHOaAmSvEvzjM",
+  "items": [
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "p5U64RnWpFwfS-uRM0RpvpnL778",
+      "id": "UExyM1dSYk5hZkszbnRWcTN1dC0zQkYyTEJNWktkSmZiYy41MzJCQjBCNDIyRkJDN0VD",
+      "snippet": {
+        "publishedAt": "2021-10-12T22:31:58Z",
+        "channelId": "UC14p9XBzofIsiGvNLpf0wkw",
+        "title": "Virtual Job Fair #5 | HBO Max - 100 Open Positions NOW! | Noreli Garcia Valentin and Charles Cox",
+        "description": "Learn about HBO Max’s Open Roles and participate in a Career Q&A\n\nAre you interested in working at a leading, award-winning, world-class technology organization at the intersection of media and culture? \n\nHBO Max, a WarnerMedia company, is recruiting to fill many over the 100 open roles, ranging from software developers and UX roles to product designers and program managers, all available at www.warnermediacareers.com.\n\nHBO Max is a standalone streaming platform that launched in 2020, expanded to 40 markets with the addition of Latin America in July and scaling to 190 countries over the next year - including a Europe launch later this month!\n\nPlease join Noreli Garcia Valentin, Director of Strategic Initiatives & Chair of Equity and Inclusion at WM’s Direct to Consumer organization.\n\nShe will share details about current and future opportunities with HBO Max, the interview process, and how to apply.  After a brief overview presentation, you will have the opportunity to introduce yourself and ask questions.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/5sMY4HgPtW0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/5sMY4HgPtW0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/5sMY4HgPtW0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/5sMY4HgPtW0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/5sMY4HgPtW0/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Reskill Americans",
+        "playlistId": "PLr3WRbNafK3ntVq3ut-3BF2LBMZKdJfbc",
+        "position": 0,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "5sMY4HgPtW0"
+        },
+        "videoOwnerChannelTitle": "Reskill Americans",
+        "videoOwnerChannelId": "UC14p9XBzofIsiGvNLpf0wkw"
+      },
+      "contentDetails": {
+        "videoId": "5sMY4HgPtW0",
+        "videoPublishedAt": "2021-10-22T07:03:35Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "WbEGOFcn2kOmfCRbI1v64JSprcY",
+      "id": "UExyM1dSYk5hZkszbnRWcTN1dC0zQkYyTEJNWktkSmZiYy4xMkVGQjNCMUM1N0RFNEUx",
+      "snippet": {
+        "publishedAt": "2021-10-12T22:23:52Z",
+        "channelId": "UC14p9XBzofIsiGvNLpf0wkw",
+        "title": "Resume Best Practices | Training Session with Teddy Burriss- Career Coach",
+        "description": "Career Coach Teddy Burris held a Resume Tips session for our participants on October 12, 2021.\n\nYou can also view his slides at:\n\nhttps://reskillamericans.github.io/info-2021/presentations/Reskill%20Americans%20-%2010%20Powerful%20Resume%20Tips.pdf",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/vy-nd8m6M88/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/vy-nd8m6M88/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/vy-nd8m6M88/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Reskill Americans",
+        "playlistId": "PLr3WRbNafK3ntVq3ut-3BF2LBMZKdJfbc",
+        "position": 1,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "vy-nd8m6M88"
+        },
+        "videoOwnerChannelTitle": "Reskill Americans",
+        "videoOwnerChannelId": "UC14p9XBzofIsiGvNLpf0wkw"
+      },
+      "contentDetails": {
+        "videoId": "vy-nd8m6M88",
+        "videoPublishedAt": "2021-10-12T22:23:25Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "u_wvlPk17bAe-sGvHJuWioXvjkQ",
+      "id": "UExyM1dSYk5hZkszbnRWcTN1dC0zQkYyTEJNWktkSmZiYy4wOTA3OTZBNzVEMTUzOTMy",
+      "snippet": {
+        "publishedAt": "2021-09-23T03:27:35Z",
+        "channelId": "UC14p9XBzofIsiGvNLpf0wkw",
+        "title": "Virtual Job Fair #3 | Teddy Burriss - Learn How to Use LinkedIn as a Career Transition Tool",
+        "description": "Teddy is a Certified Career Coach, Certified Social Media Strategist, DDI leadership facilitator, Dale Carnegie graduate coach, Sandlers Sales Trained Professional, YouTuber, columnist, keynote speaker and author who teaches creating success in business and career through building relationships and Using LinkedIn as a Business Tool.\n\nTeddy’s presentation, Using LinkedIn as a Career Transition Tool, will include tips and insights for ways you can leverage LinkedIn to help you in your job search and career transition.  Teddy will introduce you to some of the best practices of building a professional LinkedIn Profile, building a relevant LinkedIn Network and engaging on LinkedIn to build a professional brand. You will be able to leave the session and begin using the ideas Teddy shares with you.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Pdvy3Qinxgw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Pdvy3Qinxgw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Pdvy3Qinxgw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/Pdvy3Qinxgw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/Pdvy3Qinxgw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Reskill Americans",
+        "playlistId": "PLr3WRbNafK3ntVq3ut-3BF2LBMZKdJfbc",
+        "position": 2,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "Pdvy3Qinxgw"
+        },
+        "videoOwnerChannelTitle": "Reskill Americans",
+        "videoOwnerChannelId": "UC14p9XBzofIsiGvNLpf0wkw"
+      },
+      "contentDetails": {
+        "videoId": "Pdvy3Qinxgw",
+        "videoPublishedAt": "2021-09-28T08:11:15Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "MtK-fz93b8xHXsoN0czeVfUMJVs",
+      "id": "UExyM1dSYk5hZkszbnRWcTN1dC0zQkYyTEJNWktkSmZiYy4yODlGNEE0NkRGMEEzMEQy",
+      "snippet": {
+        "publishedAt": "2021-09-03T22:04:51Z",
+        "channelId": "UC14p9XBzofIsiGvNLpf0wkw",
+        "title": "Virtual Job Fair #2 | Marina Nitze- Small Business and Entrepreneurship",
+        "description": "Marina has been an entrepreneur from a very young age.  She's even had a position as CTO for the VA working for the Obama Administration.  We will talk about the ins and outs of starting and running your own gig (including Freelancing).",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/S1F4ihlSzqU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/S1F4ihlSzqU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/S1F4ihlSzqU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/S1F4ihlSzqU/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/S1F4ihlSzqU/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Reskill Americans",
+        "playlistId": "PLr3WRbNafK3ntVq3ut-3BF2LBMZKdJfbc",
+        "position": 3,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "S1F4ihlSzqU"
+        },
+        "videoOwnerChannelTitle": "Reskill Americans",
+        "videoOwnerChannelId": "UC14p9XBzofIsiGvNLpf0wkw"
+      },
+      "contentDetails": {
+        "videoId": "S1F4ihlSzqU",
+        "videoPublishedAt": "2021-09-15T11:12:57Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "wJCjv5O3SCbJUdEEY6KrdjXOFWs",
+      "id": "UExyM1dSYk5hZkszbnRWcTN1dC0zQkYyTEJNWktkSmZiYy4wMTcyMDhGQUE4NTIzM0Y5",
+      "snippet": {
+        "publishedAt": "2021-09-11T05:25:23Z",
+        "channelId": "UC14p9XBzofIsiGvNLpf0wkw",
+        "title": "Technical Interview Training | David Fowler - Software Architect | Microsoft",
+        "description": "David Fowler and I will talk about the Technical Interview, and what interviews expect of successful software development candidates.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/nCtPz2LdDyc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/nCtPz2LdDyc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/nCtPz2LdDyc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/nCtPz2LdDyc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/nCtPz2LdDyc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Reskill Americans",
+        "playlistId": "PLr3WRbNafK3ntVq3ut-3BF2LBMZKdJfbc",
+        "position": 4,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "nCtPz2LdDyc"
+        },
+        "videoOwnerChannelTitle": "Reskill Americans",
+        "videoOwnerChannelId": "UC14p9XBzofIsiGvNLpf0wkw"
+      },
+      "contentDetails": {
+        "videoId": "nCtPz2LdDyc",
+        "videoPublishedAt": "2021-09-15T07:14:11Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "xKWGAKLXELUmRpMqIsaH5PngVxI",
+      "id": "UExyM1dSYk5hZkszbnRWcTN1dC0zQkYyTEJNWktkSmZiYy41NkI0NEY2RDEwNTU3Q0M2",
+      "snippet": {
+        "publishedAt": "2021-08-19T07:29:26Z",
+        "channelId": "UC14p9XBzofIsiGvNLpf0wkw",
+        "title": "Virtual Job Fair #1 | Software One",
+        "description": "Nina Unger from Software One will answer questions about their internship program with information about how to apply.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/RLX-6YJHubg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/RLX-6YJHubg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/RLX-6YJHubg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/RLX-6YJHubg/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/RLX-6YJHubg/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Reskill Americans",
+        "playlistId": "PLr3WRbNafK3ntVq3ut-3BF2LBMZKdJfbc",
+        "position": 5,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "RLX-6YJHubg"
+        },
+        "videoOwnerChannelTitle": "Reskill Americans",
+        "videoOwnerChannelId": "UC14p9XBzofIsiGvNLpf0wkw"
+      },
+      "contentDetails": {
+        "videoId": "RLX-6YJHubg",
+        "videoPublishedAt": "2021-08-19T07:44:57Z"
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 6,
+    "resultsPerPage": 50
+  }
+}
