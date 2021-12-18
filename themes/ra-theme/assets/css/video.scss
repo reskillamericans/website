@@ -21,12 +21,19 @@ $cardWidth: 400px;
 
 // For video "cards"
 div.video-card {
-  @include floating-shadow
+  @include floating-shadow;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
   background-color: white;
   border-radius: 6px;
-  position: relative;
+  padding: 1rem;
+  margin: 0;
+
   max-width: $cardWidth;
-  aspect-ratio: 2/1;
+  aspect-ratio: 16/9;
 
   img {
     @include hover-zoom;
@@ -40,38 +47,30 @@ div.video-card {
   }
 
   div.quote {
-    position: absolute;
     text-align: center;
-    top: 80px;
-    padding-inline: 1rem;
     font-style: italic;
   }
 
   hr {
-    position: absolute;
-    top: 125px;
     padding: 0;
-    margin: 0;
-    left: 50px;
+    margin: 1rem auto;
     width: 300px;
     border-top: none;
     border-bottom: 1px solid #ccc;
   }
 
   div.name {
-    position: absolute;
-    top: 135px;
     text-align: center;
     font-weight: bold;
     width: 100%;
+    margin-bottom: 0.25rem;
   }
 
   div.title {
-    position: absolute;
-    top: 160px;
     text-align: center;
     font-weight: bold;
     width: 100%;
     color: $emphatic-color;
+    margin: 0;
   }
 }
