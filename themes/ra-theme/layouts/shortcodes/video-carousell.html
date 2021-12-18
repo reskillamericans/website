@@ -1,0 +1,20 @@
+{{- with .Site.GetPage "/videos" -}}
+
+<div id="videos" class="carousell">
+  <div>
+      {{- range sort .Pages "Params.order" -}}
+        {{ if in .Params.tags "town-hall" }}
+          {{- .Render "card" -}}
+        {{- end -}}
+      {{- end -}}
+  </div>
+</div>
+
+<script type="module">
+  import { carousell } from '/scripts/reskill.js';
+  carousell('videos');
+</script>
+
+{{- else -}}
+  {{ warnf "No videos found" }}
+{{- end }}
