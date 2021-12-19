@@ -11,17 +11,21 @@
     </main>
 </section>
 
-<section class="light-background">
-    <main>
-      <ol>
-        {{ range .Pages }}
-        <li style="padding-top: 1rem;">
-          <a href="{{.Permalink}}">{{.Title}}</a>
-          <div style="height: 100px"></div>
-          {{ .Render "card" }}
-        </li>
-        {{ end }}
-    </ol>
-</main>
+{{ $namedSections := .Params.sections }}
+{{ range $namedSections }}
+{{ $sectionName := . }}
+<section>
+  <main>
+    <h1>{{ . }}</h1>
+  </main>
+  <main class="wrapped-boxes">
+    {{ range sort $.Pages "Date" }}
+      {{ if in .Params.tags $sectionName }}
+        {{ .Render "card" }}
+      {{ end }}
+    {{ end }}
+  </main>
 </section>
+{{ end }}
+
 {{ end }}
