@@ -10,7 +10,7 @@ tags = [ "about-reskill-americans" ]
 [_1dfUzkKNII]
 title = "What is Reskill Americans?"
 videoId = "_1dfUzkKNII"
-slug = "what-is-reskill-americans"
+slug = "what-is-reskill-americans-2"
 filename = "2020-12-07-_1dfUzkKNII.md"
 date = "2020-12-07T19:39:58.000Z"
 draft = false
@@ -63,6 +63,7 @@ tags = [ "town-halls" ]
 title = "Reskill Americans Town Hall #2 | Jeremiah Peoples"
 videoId = "OpE39nGFA6U"
 guest = "Jeremiah Peoples"
+guestTitle = "Self-taught developer"
 slug = "town-hall-2-jeremiah-peoples"
 num = "2"
 filename = "2021-03-15-OpE39nGFA6U.md"
@@ -72,6 +73,8 @@ tags = [ "town-halls" ]
 
 [YoZu_knVjdo]
 title = "Add Two Numbers | A First-Timers Demo of HTML, CSS, and JavaScript"
+guest = "Mike Koss"
+guestTitle = "Reskill Americans"
 videoId = "YoZu_knVjdo"
 slug = "add-two-numbers-a-first-timers-demo-of-html-css-javascript"
 filename = "2021-03-16-YoZu_knVjdo.md"
@@ -113,6 +116,8 @@ draft = false
 
 [G9OnzhCaipw]
 title = "Code with Me | Test Driven Development Demo"
+guest = "Mike Koss"
+guestTitle = "Reskill Americans"
 videoId = "G9OnzhCaipw"
 slug = "code-with-me-test-driven-development-demo"
 filename = "2021-03-20-G9OnzhCaipw.md"
@@ -123,7 +128,8 @@ tags = [ "mikes-live-coding-demos" ]
 [UDl4_KdT_Q4]
 title = "Reskill Americans Town Hall #3 | Covid Act Now"
 videoId = "UDl4_KdT_Q4"
-guest = "Covid Act Now"
+guest = "Michael Lehenbauer & Chelsi Asulin"
+guestTitle = "Covid Act Now"
 slug = "town-hall-3-covid-act-now"
 num = "3"
 filename = "2021-03-22-UDl4_KdT_Q4.md"
@@ -133,6 +139,8 @@ tags = [ "town-halls" ]
 
 [RjGRfYAesFw]
 title = "Git Demo (from Introduction to Programming course)."
+guest = "Mike Koss"
+guestTitle = "Reskill Americans"
 videoId = "RjGRfYAesFw"
 slug = "git-demo-from-introduction-to-programming-course"
 filename = "2021-03-23-RjGRfYAesFw.md"
@@ -171,6 +179,8 @@ tags = [ "mikes-live-coding-demos" ]
 [1viR1v4Iw4o]
 title = "Hello, World! | First Time Dart Lesson # 1"
 videoId = "1viR1v4Iw4o"
+guest = "Mike Koss"
+guestTitle = "Reskill Americans"
 slug = "hello-world-first-time-dart-lesson-1"
 filename = "2021-04-05-1viR1v4Iw4o.md"
 date = "2021-04-05T02:46:06.000Z"
@@ -180,6 +190,8 @@ tags = [ "first-time-dart" ]
 [yjaHKGhKpqE]
 title = "Variables and Expressions | First Time Dart Lession #2"
 videoId = "yjaHKGhKpqE"
+guest = "Mike Koss"
+guestTitle = "Reskill Americans"
 slug = "variables-expressions-first-time-dart-lession-2"
 num = "2"
 filename = "2021-04-05-yjaHKGhKpqE.md"
@@ -197,7 +209,7 @@ num = "5"
 filename = "2021-04-05-FaZuzZc1-5w.md"
 date = "2021-04-05T15:01:18.000Z"
 draft = false
-tags = [ "town-halls" ]
+tags = [ "town-halls", "companies" ]
 
 [HzmsXMX6F5A]
 title = "Reskill Americans Town Hall #6 | David Ortiz - SimWin Sports"
@@ -226,7 +238,8 @@ tags = [ "town-halls" ]
 [Qxy1moUCANA]
 title = "Reskill Americans Town Hall #8 | BlackRock"
 videoId = "Qxy1moUCANA"
-guest = "BlackRock"
+guest = "Ajax Green & My Doan"
+guestTitle = "BlackRock Financial"
 slug = "town-hall-8-blackrock"
 num = "8"
 filename = "2021-04-26-Qxy1moUCANA.md"
@@ -256,19 +269,19 @@ num = "10"
 filename = "2021-05-10-xZ2O6F0gF5k.md"
 date = "2021-05-10T15:00:49.000Z"
 draft = false
-tags = [ "town-halls" ]
+tags = [ "town-halls", "companies" ]
 
 [24uOcGj-6sM]
 title = "Reskill Americans Town Hall #11 |  Dev Nambi - Data Scientist at Fred Hutch"
 videoId = "24uOcGj-6sM"
 guest = "Dev Nambi"
 guestTitle = "Data Scientist at Fred Hutch"
-slug = "town-hall-11-dev-nambi-data-scientist-at-fred-hutch"
+slug = "town-hall-11-dev-nambi-data-scientist-fred-hutch"
 num = "11"
 filename = "2021-05-17-24uOcGj-6sM.md"
 date = "2021-05-17T15:00:18.000Z"
 draft = false
-tags = [ "town-halls" ]
+tags = [ "town-halls", "companies" ]
 
 [GW-EJ9MixFs]
 title = "Reskill Americans Town Hall #12 |  Kedasha Kerr - @itsthatladydev"
@@ -285,13 +298,14 @@ tags = [ "town-halls" ]
 [1CV9kVYZXCc]
 title = "Reskill Americans Town Hall #13 | Software One"
 videoId = "1CV9kVYZXCc"
-guest = "Software One"
+guest = "Nina Unger & Bill Winans"
+guestTitle = "Software One"
 slug = "town-hall-13-software-one"
 num = "13"
 filename = "2021-06-07-1CV9kVYZXCc.md"
 date = "2021-06-07T15:00:19.000Z"
 draft = false
-tags = [ "town-halls" ]
+tags = [ "town-halls", "companies" ]
 
 [ZO8qQx-bS1I]
 title = "Reskill Americans Town Hall #14 | Laurent Pierre - Microsoft Customer Experience"
@@ -303,13 +317,13 @@ num = "14"
 filename = "2021-06-14-ZO8qQx-bS1I.md"
 date = "2021-06-14T15:00:44.000Z"
 draft = false
-tags = [ "town-halls" ]
+tags = [ "town-halls", "companies" ]
 
 [WiH8B-NbD-o]
 title = "Reskill Americans Town Hall #15 | Program Update and Q&A"
 videoId = "WiH8B-NbD-o"
 guest = "Program Update and Q&A"
-slug = "town-hall-15-program-update-qanda"
+slug = "town-hall-15-program-update"
 num = "15"
 filename = "2021-06-21-WiH8B-NbD-o.md"
 date = "2021-06-21T15:00:28.000Z"
@@ -326,7 +340,7 @@ num = "16"
 filename = "2021-06-28-NivSoU2jTrY.md"
 date = "2021-06-28T15:00:33.000Z"
 draft = false
-tags = [ "town-halls" ]
+tags = [ "town-halls", "companies" ]
 
 [XZCt4Jyn378]
 title = "Reskill Americans Town Hall #17 | Mike Coleman - Google Developer Advocate"
@@ -338,7 +352,7 @@ num = "17"
 filename = "2021-07-12-XZCt4Jyn378.md"
 date = "2021-07-12T15:01:04.000Z"
 draft = false
-tags = [ "town-halls" ]
+tags = [ "town-halls", "companies" ]
 
 [g7hCp8is2qg]
 title = "Reskill Americans Town Hall #18 | Andrew Kwatinetz and Eric Patey - Sonos"
@@ -350,7 +364,7 @@ num = "18"
 filename = "2021-08-02-g7hCp8is2qg.md"
 date = "2021-08-02T15:01:23.000Z"
 draft = false
-tags = [ "town-halls" ]
+tags = [ "town-halls", "companies" ]
 
 [SXkgB-cDpd4]
 title = "Reskill Americans Town Hall #19 | Program Review - Phase III"
@@ -417,6 +431,8 @@ tags = [ "coding-challenges" ]
 [zzK1MiUnXvE]
 title = "Coding Challenges with Pam | Isograms"
 videoId = "zzK1MiUnXvE"
+guest = "Pamela Price"
+guestTitle = "Reskill Americans"
 slug = "coding-challenges-with-pam-isograms"
 filename = "2021-08-31-zzK1MiUnXvE.md"
 date = "2021-08-31T04:35:23.000Z"
@@ -426,7 +442,8 @@ tags = [ "coding-challenges" ]
 [b9ahOiieV20]
 title = "Coding Challenge #2 | Two Sum"
 videoId = "b9ahOiieV20"
-guest = "Two Sum"
+guest = "Pamela Price"
+guestTitle = "Reskill Americans"
 slug = "coding-challenge-2-two-sum"
 num = "2"
 filename = "2021-09-08-b9ahOiieV20.md"
@@ -437,7 +454,8 @@ tags = [ "coding-challenges" ]
 [wmndmt58I4g]
 title = "Coding Challenge #3 | Longest Substring Without Repeating Characters"
 videoId = "wmndmt58I4g"
-guest = "Longest Substring Without Repeating Characters"
+guest = "Pamela Price"
+guestTitle = "Reskill Americans"
 slug = "coding-challenge-3-longest-substring-without-repeating-characters"
 num = "3"
 filename = "2021-09-14-wmndmt58I4g.md"
@@ -449,7 +467,8 @@ tags = [ "coding-challenges" ]
 title = "Reskill Americans Town Hall #21 | Danielle Storlie"
 videoId = "-yuW6_6ghkE"
 guest = "Danielle Storlie"
-slug = "town-hall-21-danielle-storlie"
+guestTitle = "Designer"
+slug = "town-hall-21-danielle-storlie-designer"
 num = "21"
 filename = "2021-09-13--yuW6_6ghkE.md"
 date = "2021-09-13T15:00:48.000Z"
@@ -471,7 +490,7 @@ tags = [ "job-fairs", "companies" ]
 title = "Virtual Job Fair #2 | Marina Nitze- Small Business and Entrepreneurship"
 videoId = "S1F4ihlSzqU"
 guest = "Marina Nitze"
-guestTitle = "Small Business and Entrepreneurship"
+guestTitle = "Entrepreneur"
 slug = "job-fair-2-marina-nitze-small-business-entrepreneurship"
 num = "2"
 filename = "2021-09-14-S1F4ihlSzqU.md"
@@ -482,7 +501,8 @@ tags = [ "job-fairs", "companies" ]
 [BXD2hjpkd8I]
 title = "Coding Challenge #4 | String Manipulation in Javascript"
 videoId = "BXD2hjpkd8I"
-guest = "String Manipulation in Javascript"
+guest = "Pamela Price"
+guestTitle = "Reskill Americans"
 slug = "coding-challenge-4-string-manipulation-in-javascript"
 num = "4"
 filename = "2021-09-22-BXD2hjpkd8I.md"
@@ -494,19 +514,20 @@ tags = [ "coding-challenges" ]
 title = "Virtual Job Fair #3 | Teddy Burriss - Learn How to Use LinkedIn as a Career Transition Tool"
 videoId = "iubjqvaqZHM"
 guest = "Teddy Burriss"
-guestTitle = "Learn How to Use LinkedIn as a Career Transition Tool"
+guestTitle = "Career Coach"
 slug = "job-fair-3-teddy-burriss-learn-how-to-use-linkedin-as-a-career-transition-tool"
 num = "3"
 filename = "2021-09-27-iubjqvaqZHM.md"
 date = "2021-09-27T21:23:45.000Z"
 draft = false
+tags = [ "job-fairs" ]
 
 [Pdvy3Qinxgw]
-title = "Virtual Job Fair #3 | Teddy Burriss - Learn How to Use LinkedIn as a Career Transition Tool"
+title = "Virtual Job Fair #4 | Teddy Burriss - Learn How to Use LinkedIn as a Career Transition Tool"
 videoId = "Pdvy3Qinxgw"
 guest = "Teddy Burriss"
-guestTitle = "Learn How to Use LinkedIn as a Career Transition Tool"
-slug = "job-fair-3-teddy-burriss-learn-how-to-use-linkedin-as-a-career-transition-tool"
+guestTitle = "Career Coach"
+slug = "job-fair-4-teddy-burriss-learn-how-to-use-linkedin-as-a-career-transition-tool"
 num = "3"
 filename = "2021-09-27-Pdvy3Qinxgw.md"
 date = "2021-09-27T19:00:38.000Z"
@@ -516,6 +537,8 @@ tags = [ "job-fairs" ]
 [vy-nd8m6M88]
 title = "Resume Best Practices | Training Session with Teddy Burriss- Career Coach"
 videoId = "vy-nd8m6M88"
+guest = "Teddy Burriss"
+guestTitle = "Career Coach"
 slug = "resume-best-practices-training-session-with-teddy-burriss-career-coach"
 filename = "2021-10-12-vy-nd8m6M88.md"
 date = "2021-10-12T22:23:25.000Z"
@@ -525,14 +548,14 @@ tags = [ "job-fairs" ]
 [5sMY4HgPtW0]
 title = "Virtual Job Fair #5 | HBO Max - 100 Open Positions NOW! | Noreli Garcia Valentin and Charles Cox"
 videoId = "5sMY4HgPtW0"
-guest = "HBO Max"
-guestTitle = "100 Open Positions NOW! | Noreli Garcia Valentin and Charles Cox"
-slug = "job-fair-5-hbo-max-100-open-positions-now-noreli-garcia-valentin-charles-cox"
+guest = "Noreli Garcia Valentin & Charles Cox"
+guestTitle = "HBO Max"
+slug = "job-fair-5-noreli-garcia-valentin-charles-cox-hbo-max"
 num = "5"
 filename = "2021-10-21-5sMY4HgPtW0.md"
 date = "2021-10-21T18:02:47.000Z"
 draft = false
-tags = [ "job-fairs" ]
+tags = [ "job-fairs", "companies" ]
 
 [CfwJ0AuxMk4]
 title = "Reskill Americans Final Demo Day 2021"
