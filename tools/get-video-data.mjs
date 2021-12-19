@@ -68,6 +68,12 @@ async function getPlaylistVideoInfo(playlistId, part, key) {
     const json = await resp.json();
     results.push(...json.items);
     if (!json.nextPageToken) {
+      // Sort in chonological order.
+      results.sort((a, b) => {
+        const aDate = new Date(a.contentDetails.videoPublishedAt);
+        const bDate = new Date(b.contentDetails.videoPublishedAt);
+        return aDate - bDate;
+      });
       return results;
     }
     params.set('pageToken', json.nextPageToken);
