@@ -10,13 +10,10 @@ const sourceFile = 'data/youtube-videos.json';
 const metadataFile = 'data/video-metadata.toml';
 
 let verbose = false;
-let force = false;
 
 for (let arg of process.argv.slice(2)) {
   if (arg === '--verbose') {
     verbose = true;
-  } else if (arg === '--force') {
-    force = true;
   } else {
     console.error(`Unknown argument: ${arg}`);
     exit(1);
@@ -39,22 +36,25 @@ const metadata = await readFile(metadataFile, 'utf8')
 
 let changed = false;
 
-// Only add to videos w/o current metadata
+// Only ADD metadata - never change existing metadata.
 for (let video of videos) {
   const {videoId} = video.contentDetails;
-  if (!force && metadata[videoId] !== undefined) {
-    continue;
+  if (metadata[videoId] === undefined) {
+    metadata[videoId] = {};
   }
-  console.log("Adding metadata for " + video.snippet.title);
-  changed = true;
-  metadata[videoId] = getFrontMatter(video, tags[videoId]);
+  const added = mergeUndefined(metadata[videoId],
+    getFrontMatter(video, tags[videoId]));
+  if (added) {
+    console.log("Adding metadata for " + video.snippet.title);
+    changed = changed || added;
+  }
 }
 
 if (changed) {
   console.log("Writing updated metadata to " + metadataFile);
   writeFile(metadataFile, TOML.stringify(metadata));
 } else {
-  console.log("No new video files.");
+  console.log("No changes made to metadata.");
 }
 
 // Object with videoId keys and array of slugified tags as values
@@ -117,6 +117,7 @@ function getFrontMatter(video, tags) {
 
   return {
     title,
+    videoId,
     guest: guestName,
     guestTitle,
     slug,
@@ -150,4 +151,21 @@ function parseTitle(title) {
   }
 
   return {num, guestName, guestTitle};
+}
+
+function mergeUndefined(target, source) {
+  let added = false;
+  for (let key of Object.keys(source)) {
+    if (source[key] === undefined) {
+      continue;
+    }
+    if (target[key] === undefined) {
+      if (verbose) {
+        console.log(`Adding ${key}`);
+      }
+      target[key] = source[key];
+      added = true;
+    }
+  }
+  return added;
 }
