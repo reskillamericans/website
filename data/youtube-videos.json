@@ -49,6 +49,17 @@
       "contentDetails": {
         "videoId": "CfwJ0AuxMk4",
         "videoPublishedAt": "2021-12-09T17:00:58Z"
+      },
+      "statistics": {
+        "viewCount": "70",
+        "likeCount": "5",
+        "favoriteCount": "0",
+        "commentCount": "1"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2021-12-08T00:02:32Z",
+        "actualEndTime": "2021-12-08T01:08:47Z",
+        "scheduledStartTime": "2021-12-08T00:00:00Z"
       }
     },
     {
@@ -100,6 +111,17 @@
       "contentDetails": {
         "videoId": "5sMY4HgPtW0",
         "videoPublishedAt": "2021-10-22T07:03:35Z"
+      },
+      "statistics": {
+        "viewCount": "227",
+        "likeCount": "16",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2021-10-21T18:02:47Z",
+        "actualEndTime": "2021-10-21T19:01:22Z",
+        "scheduledStartTime": "2021-10-21T18:00:00Z"
       }
     },
     {
@@ -141,6 +163,12 @@
       "contentDetails": {
         "videoId": "vy-nd8m6M88",
         "videoPublishedAt": "2021-10-12T22:23:25Z"
+      },
+      "statistics": {
+        "viewCount": "108",
+        "likeCount": "7",
+        "favoriteCount": "0",
+        "commentCount": "0"
       }
     },
     {
@@ -192,6 +220,17 @@
       "contentDetails": {
         "videoId": "Pdvy3Qinxgw",
         "videoPublishedAt": "2021-09-28T08:11:15Z"
+      },
+      "statistics": {
+        "viewCount": "155",
+        "likeCount": "12",
+        "favoriteCount": "0",
+        "commentCount": "1"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2021-09-27T19:00:38Z",
+        "actualEndTime": "2021-09-27T20:14:32Z",
+        "scheduledStartTime": "2021-09-27T19:00:00Z"
       }
     },
     {
@@ -243,6 +282,12 @@
       "contentDetails": {
         "videoId": "iubjqvaqZHM",
         "videoPublishedAt": "2021-09-27T21:23:45Z"
+      },
+      "statistics": {
+        "viewCount": "50",
+        "likeCount": "2",
+        "favoriteCount": "0",
+        "commentCount": "1"
       }
     },
     {
@@ -294,6 +339,12 @@
       "contentDetails": {
         "videoId": "BXD2hjpkd8I",
         "videoPublishedAt": "2021-09-22T20:01:28Z"
+      },
+      "statistics": {
+        "viewCount": "93",
+        "likeCount": "4",
+        "favoriteCount": "0",
+        "commentCount": "2"
       }
     },
     {
@@ -345,6 +396,17 @@
       "contentDetails": {
         "videoId": "S1F4ihlSzqU",
         "videoPublishedAt": "2021-09-15T11:12:57Z"
+      },
+      "statistics": {
+        "viewCount": "107",
+        "likeCount": "6",
+        "favoriteCount": "0",
+        "commentCount": "1"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2021-09-14T22:00:58Z",
+        "actualEndTime": "2021-09-14T23:01:57Z",
+        "scheduledStartTime": "2021-09-14T22:00:00Z"
       }
     },
     {
@@ -396,6 +458,17 @@
       "contentDetails": {
         "videoId": "nCtPz2LdDyc",
         "videoPublishedAt": "2021-09-15T07:14:11Z"
+      },
+      "statistics": {
+        "viewCount": "184",
+        "likeCount": "9",
+        "favoriteCount": "0",
+        "commentCount": "2"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2021-09-14T18:03:13Z",
+        "actualEndTime": "2021-09-14T19:10:31Z",
+        "scheduledStartTime": "2021-09-14T18:00:00Z"
       }
     },
     {
@@ -447,6 +520,17 @@
       "contentDetails": {
         "videoId": "-yuW6_6ghkE",
         "videoPublishedAt": "2021-09-14T04:12:41Z"
+      },
+      "statistics": {
+        "viewCount": "136",
+        "likeCount": "6",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2021-09-13T15:00:48Z",
+        "actualEndTime": "2021-09-13T16:07:02Z",
+        "scheduledStartTime": "2021-09-13T15:00:00Z"
       }
     },
     {
@@ -498,6 +582,12 @@
       "contentDetails": {
         "videoId": "wmndmt58I4g",
         "videoPublishedAt": "2021-09-14T00:10:36Z"
+      },
+      "statistics": {
+        "viewCount": "38",
+        "likeCount": "4",
+        "favoriteCount": "0",
+        "commentCount": "0"
       }
     },
     {
@@ -539,6 +629,12 @@
       "contentDetails": {
         "videoId": "b9ahOiieV20",
         "videoPublishedAt": "2021-09-08T07:22:20Z"
+      },
+      "statistics": {
+        "viewCount": "48",
+        "likeCount": "3",
+        "favoriteCount": "0",
+        "commentCount": "0"
       }
     },
     {
@@ -580,6 +676,12 @@
       "contentDetails": {
         "videoId": "zzK1MiUnXvE",
         "videoPublishedAt": "2021-08-31T04:35:23Z"
+      },
+      "statistics": {
+        "viewCount": "98",
+        "likeCount": "5",
+        "favoriteCount": "0",
+        "commentCount": "0"
       }
     },
     {
@@ -626,6 +728,12 @@
       "contentDetails": {
         "videoId": "DxZzcFASKlU",
         "videoPublishedAt": "2021-08-27T20:36:14Z"
+      },
+      "statistics": {
+        "viewCount": "107",
+        "likeCount": "2",
+        "favoriteCount": "0",
+        "commentCount": "0"
       }
     },
     {
@@ -677,6 +785,17 @@
       "contentDetails": {
         "videoId": "i74Vq2hxBcw",
         "videoPublishedAt": "2021-08-24T03:57:03Z"
+      },
+      "statistics": {
+        "viewCount": "207",
+        "likeCount": "8",
+        "favoriteCount": "0",
+        "commentCount": "5"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2021-08-23T15:01:43Z",
+        "actualEndTime": "2021-08-23T15:53:51Z",
+        "scheduledStartTime": "2021-08-23T15:00:00Z"
       }
     },
     {
@@ -728,6 +847,17 @@
       "contentDetails": {
         "videoId": "RLX-6YJHubg",
         "videoPublishedAt": "2021-08-19T07:44:57Z"
+      },
+      "statistics": {
+        "viewCount": "243",
+        "likeCount": "14",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2021-08-18T18:01:53Z",
+        "actualEndTime": "2021-08-18T18:54:33Z",
+        "scheduledStartTime": "2021-08-18T18:00:00Z"
       }
     },
     {
@@ -769,6 +899,12 @@
       "contentDetails": {
         "videoId": "jArq87HDq90",
         "videoPublishedAt": "2021-08-19T07:23:02Z"
+      },
+      "statistics": {
+        "viewCount": "163",
+        "likeCount": "7",
+        "favoriteCount": "0",
+        "commentCount": "0"
       }
     },
     {
@@ -820,6 +956,12 @@
       "contentDetails": {
         "videoId": "ZxdT45iR5rc",
         "videoPublishedAt": "2021-08-15T17:31:37Z"
+      },
+      "statistics": {
+        "viewCount": "125",
+        "likeCount": "8",
+        "favoriteCount": "0",
+        "commentCount": "0"
       }
     },
     {
@@ -871,6 +1013,17 @@
       "contentDetails": {
         "videoId": "SXkgB-cDpd4",
         "videoPublishedAt": "2021-08-10T04:13:52Z"
+      },
+      "statistics": {
+        "viewCount": "289",
+        "likeCount": "15",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2021-08-09T15:01:08Z",
+        "actualEndTime": "2021-08-09T16:08:07Z",
+        "scheduledStartTime": "2021-08-09T15:00:00Z"
       }
     },
     {
@@ -922,6 +1075,17 @@
       "contentDetails": {
         "videoId": "g7hCp8is2qg",
         "videoPublishedAt": "2021-08-03T04:07:42Z"
+      },
+      "statistics": {
+        "viewCount": "125",
+        "likeCount": "10",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2021-08-02T15:01:23Z",
+        "actualEndTime": "2021-08-02T16:03:00Z",
+        "scheduledStartTime": "2021-08-02T15:00:00Z"
       }
     },
     {
@@ -973,6 +1137,17 @@
       "contentDetails": {
         "videoId": "XZCt4Jyn378",
         "videoPublishedAt": "2021-07-13T04:07:16Z"
+      },
+      "statistics": {
+        "viewCount": "149",
+        "likeCount": "5",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2021-07-12T15:01:04Z",
+        "actualEndTime": "2021-07-12T16:02:19Z",
+        "scheduledStartTime": "2021-07-12T15:00:00Z"
       }
     },
     {
@@ -1024,6 +1199,17 @@
       "contentDetails": {
         "videoId": "NivSoU2jTrY",
         "videoPublishedAt": "2021-06-29T04:15:53Z"
+      },
+      "statistics": {
+        "viewCount": "147",
+        "likeCount": "10",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2021-06-28T15:00:33Z",
+        "actualEndTime": "2021-06-28T16:09:26Z",
+        "scheduledStartTime": "2021-06-28T15:00:00Z"
       }
     },
     {
@@ -1075,6 +1261,17 @@
       "contentDetails": {
         "videoId": "WiH8B-NbD-o",
         "videoPublishedAt": "2021-06-22T04:14:24Z"
+      },
+      "statistics": {
+        "viewCount": "267",
+        "likeCount": "14",
+        "favoriteCount": "0",
+        "commentCount": "1"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2021-06-21T15:00:28Z",
+        "actualEndTime": "2021-06-21T16:05:48Z",
+        "scheduledStartTime": "2021-06-21T15:00:00Z"
       }
     },
     {
@@ -1126,6 +1323,17 @@
       "contentDetails": {
         "videoId": "ZO8qQx-bS1I",
         "videoPublishedAt": "2021-06-15T04:02:25Z"
+      },
+      "statistics": {
+        "viewCount": "296",
+        "likeCount": "17",
+        "favoriteCount": "0",
+        "commentCount": "1"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2021-06-14T15:00:44Z",
+        "actualEndTime": "2021-06-14T15:58:00Z",
+        "scheduledStartTime": "2021-06-14T15:00:00Z"
       }
     },
     {
@@ -1177,6 +1385,17 @@
       "contentDetails": {
         "videoId": "1CV9kVYZXCc",
         "videoPublishedAt": "2021-06-08T04:07:05Z"
+      },
+      "statistics": {
+        "viewCount": "331",
+        "likeCount": "14",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2021-06-07T15:00:19Z",
+        "actualEndTime": "2021-06-07T16:01:12Z",
+        "scheduledStartTime": "2021-06-07T15:00:00Z"
       }
     },
     {
@@ -1228,6 +1447,17 @@
       "contentDetails": {
         "videoId": "GW-EJ9MixFs",
         "videoPublishedAt": "2021-05-25T04:07:00Z"
+      },
+      "statistics": {
+        "viewCount": "345",
+        "likeCount": "25",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2021-05-24T15:00:39Z",
+        "actualEndTime": "2021-05-24T16:02:11Z",
+        "scheduledStartTime": "2021-05-24T15:00:00Z"
       }
     },
     {
@@ -1279,6 +1509,17 @@
       "contentDetails": {
         "videoId": "24uOcGj-6sM",
         "videoPublishedAt": "2021-05-18T04:10:43Z"
+      },
+      "statistics": {
+        "viewCount": "220",
+        "likeCount": "15",
+        "favoriteCount": "0",
+        "commentCount": "1"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2021-05-17T15:00:18Z",
+        "actualEndTime": "2021-05-17T16:05:44Z",
+        "scheduledStartTime": "2021-05-17T15:00:00Z"
       }
     },
     {
@@ -1330,6 +1571,17 @@
       "contentDetails": {
         "videoId": "xZ2O6F0gF5k",
         "videoPublishedAt": "2021-05-11T04:08:29Z"
+      },
+      "statistics": {
+        "viewCount": "252",
+        "likeCount": "16",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2021-05-10T15:00:49Z",
+        "actualEndTime": "2021-05-10T16:03:38Z",
+        "scheduledStartTime": "2021-05-10T15:00:00Z"
       }
     },
     {
@@ -1376,6 +1628,17 @@
       "contentDetails": {
         "videoId": "IKaTxeq013w",
         "videoPublishedAt": "2021-05-04T04:04:49Z"
+      },
+      "statistics": {
+        "viewCount": "378",
+        "likeCount": "20",
+        "favoriteCount": "0",
+        "commentCount": "1"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2021-05-03T15:01:23Z",
+        "actualEndTime": "2021-05-03T16:00:39Z",
+        "scheduledStartTime": "2021-05-03T15:00:00Z"
       }
     },
     {
@@ -1427,6 +1690,17 @@
       "contentDetails": {
         "videoId": "Qxy1moUCANA",
         "videoPublishedAt": "2021-04-27T04:08:01Z"
+      },
+      "statistics": {
+        "viewCount": "296",
+        "likeCount": "16",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2021-04-26T15:01:19Z",
+        "actualEndTime": "2021-04-26T16:02:33Z",
+        "scheduledStartTime": "2021-04-26T15:00:00Z"
       }
     },
     {
@@ -1478,6 +1752,17 @@
       "contentDetails": {
         "videoId": "zcq9mu5SItE",
         "videoPublishedAt": "2021-04-20T03:56:05Z"
+      },
+      "statistics": {
+        "viewCount": "304",
+        "likeCount": "22",
+        "favoriteCount": "0",
+        "commentCount": "1"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2021-04-19T15:02:03Z",
+        "actualEndTime": "2021-04-19T15:51:14Z",
+        "scheduledStartTime": "2021-04-19T15:00:00Z"
       }
     },
     {
@@ -1529,6 +1814,17 @@
       "contentDetails": {
         "videoId": "HzmsXMX6F5A",
         "videoPublishedAt": "2021-04-13T04:04:28Z"
+      },
+      "statistics": {
+        "viewCount": "459",
+        "likeCount": "20",
+        "favoriteCount": "0",
+        "commentCount": "1"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2021-04-12T15:00:38Z",
+        "actualEndTime": "2021-04-12T16:00:46Z",
+        "scheduledStartTime": "2021-04-12T15:00:00Z"
       }
     },
     {
@@ -1580,6 +1876,17 @@
       "contentDetails": {
         "videoId": "FaZuzZc1-5w",
         "videoPublishedAt": "2021-04-05T15:52:08Z"
+      },
+      "statistics": {
+        "viewCount": "1371",
+        "likeCount": "38",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2021-04-05T15:01:18Z",
+        "actualEndTime": "2021-04-05T15:47:20Z",
+        "scheduledStartTime": "2021-04-05T15:00:00Z"
       }
     },
     {
@@ -1631,6 +1938,12 @@
       "contentDetails": {
         "videoId": "yjaHKGhKpqE",
         "videoPublishedAt": "2021-04-05T05:09:56Z"
+      },
+      "statistics": {
+        "viewCount": "90",
+        "likeCount": "3",
+        "favoriteCount": "0",
+        "commentCount": "1"
       }
     },
     {
@@ -1682,6 +1995,12 @@
       "contentDetails": {
         "videoId": "1viR1v4Iw4o",
         "videoPublishedAt": "2021-04-05T02:46:06Z"
+      },
+      "statistics": {
+        "viewCount": "147",
+        "likeCount": "9",
+        "favoriteCount": "0",
+        "commentCount": "2"
       }
     },
     {
@@ -1733,6 +2052,12 @@
       "contentDetails": {
         "videoId": "7zXiwnwde9g",
         "videoPublishedAt": "2021-03-30T21:42:53Z"
+      },
+      "statistics": {
+        "viewCount": "242",
+        "likeCount": "5",
+        "favoriteCount": "0",
+        "commentCount": "0"
       }
     },
     {
@@ -1784,6 +2109,17 @@
       "contentDetails": {
         "videoId": "DUCEmcR1BjA",
         "videoPublishedAt": "2021-03-29T16:16:49Z"
+      },
+      "statistics": {
+        "viewCount": "704",
+        "likeCount": "18",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2021-03-29T15:01:18Z",
+        "actualEndTime": "2021-03-29T16:02:29Z",
+        "scheduledStartTime": "2021-03-29T15:00:00Z"
       }
     },
     {
@@ -1835,6 +2171,12 @@
       "contentDetails": {
         "videoId": "6COHb0WxRwA",
         "videoPublishedAt": "2021-03-23T23:03:11Z"
+      },
+      "statistics": {
+        "viewCount": "454",
+        "likeCount": "21",
+        "favoriteCount": "0",
+        "commentCount": "1"
       }
     },
     {
@@ -1886,6 +2228,12 @@
       "contentDetails": {
         "videoId": "RjGRfYAesFw",
         "videoPublishedAt": "2021-03-23T05:02:02Z"
+      },
+      "statistics": {
+        "viewCount": "1153",
+        "likeCount": "37",
+        "favoriteCount": "0",
+        "commentCount": "18"
       }
     },
     {
@@ -1937,6 +2285,17 @@
       "contentDetails": {
         "videoId": "UDl4_KdT_Q4",
         "videoPublishedAt": "2021-03-23T04:16:58Z"
+      },
+      "statistics": {
+        "viewCount": "886",
+        "likeCount": "35",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2021-03-22T15:01:29Z",
+        "actualEndTime": "2021-03-22T16:09:10Z",
+        "scheduledStartTime": "2021-03-22T15:00:00Z"
       }
     },
     {
@@ -1988,6 +2347,12 @@
       "contentDetails": {
         "videoId": "G9OnzhCaipw",
         "videoPublishedAt": "2021-03-20T21:05:39Z"
+      },
+      "statistics": {
+        "viewCount": "520",
+        "likeCount": "26",
+        "favoriteCount": "0",
+        "commentCount": "1"
       }
     },
     {
@@ -2039,6 +2404,17 @@
       "contentDetails": {
         "videoId": "gKWm3rfPJh4",
         "videoPublishedAt": "2021-03-19T16:24:11Z"
+      },
+      "statistics": {
+        "viewCount": "1515",
+        "likeCount": "46",
+        "favoriteCount": "0",
+        "commentCount": "2"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2021-03-19T15:59:19Z",
+        "actualEndTime": "2021-03-19T16:22:02Z",
+        "scheduledStartTime": "2021-03-19T16:03:49Z"
       }
     },
     {
@@ -2090,6 +2466,17 @@
       "contentDetails": {
         "videoId": "E2J1rfd49ZI",
         "videoPublishedAt": "2021-03-18T18:05:58Z"
+      },
+      "statistics": {
+        "viewCount": "2747",
+        "likeCount": "80",
+        "favoriteCount": "0",
+        "commentCount": "2"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2021-03-18T15:59:27Z",
+        "actualEndTime": "2021-03-18T17:59:45Z",
+        "scheduledStartTime": "2021-03-18T15:58:16Z"
       }
     },
     {
@@ -2141,6 +2528,17 @@
       "contentDetails": {
         "videoId": "0pmyohlou1A",
         "videoPublishedAt": "2021-03-17T17:43:30Z"
+      },
+      "statistics": {
+        "viewCount": "2613",
+        "likeCount": "69",
+        "favoriteCount": "0",
+        "commentCount": "1"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2021-03-17T15:59:43Z",
+        "actualEndTime": "2021-03-17T17:37:25Z",
+        "scheduledStartTime": "2021-03-17T16:04:13Z"
       }
     },
     {
@@ -2192,6 +2590,17 @@
       "contentDetails": {
         "videoId": "_uD0UDNoRo4",
         "videoPublishedAt": "2021-03-16T16:57:41Z"
+      },
+      "statistics": {
+        "viewCount": "2220",
+        "likeCount": "47",
+        "favoriteCount": "0",
+        "commentCount": "8"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2021-03-16T15:52:22Z",
+        "actualEndTime": "2021-03-16T16:50:09Z",
+        "scheduledStartTime": "2021-03-16T15:56:20Z"
       }
     },
     {
@@ -2243,6 +2652,12 @@
       "contentDetails": {
         "videoId": "YoZu_knVjdo",
         "videoPublishedAt": "2021-03-16T00:17:11Z"
+      },
+      "statistics": {
+        "viewCount": "915",
+        "likeCount": "60",
+        "favoriteCount": "0",
+        "commentCount": "13"
       }
     },
     {
@@ -2289,6 +2704,17 @@
       "contentDetails": {
         "videoId": "OpE39nGFA6U",
         "videoPublishedAt": "2021-03-15T16:19:11Z"
+      },
+      "statistics": {
+        "viewCount": "2504",
+        "likeCount": "70",
+        "favoriteCount": "0",
+        "commentCount": "1"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2021-03-15T15:02:05Z",
+        "actualEndTime": "2021-03-15T16:14:40Z",
+        "scheduledStartTime": "2021-03-15T15:00:00Z"
       }
     },
     {
@@ -2340,6 +2766,17 @@
       "contentDetails": {
         "videoId": "SYCi8ofMoy0",
         "videoPublishedAt": "2021-03-09T05:06:51Z"
+      },
+      "statistics": {
+        "viewCount": "2783",
+        "likeCount": "172",
+        "favoriteCount": "0",
+        "commentCount": "4"
+      },
+      "liveStreamingDetails": {
+        "actualStartTime": "2021-03-08T16:07:00Z",
+        "actualEndTime": "2021-03-08T17:01:55Z",
+        "scheduledStartTime": "2021-03-08T16:00:00Z"
       }
     },
     {
@@ -2391,6 +2828,12 @@
       "contentDetails": {
         "videoId": "QcpvFn_P1YU",
         "videoPublishedAt": "2021-02-07T00:06:59Z"
+      },
+      "statistics": {
+        "viewCount": "178",
+        "likeCount": "13",
+        "favoriteCount": "0",
+        "commentCount": "0"
       }
     },
     {
@@ -2442,6 +2885,12 @@
       "contentDetails": {
         "videoId": "vfaXXMtUHzU",
         "videoPublishedAt": "2021-02-06T23:50:52Z"
+      },
+      "statistics": {
+        "viewCount": "786",
+        "likeCount": "14",
+        "favoriteCount": "0",
+        "commentCount": "1"
       }
     },
     {
@@ -2493,6 +2942,12 @@
       "contentDetails": {
         "videoId": "otY278TmCYE",
         "videoPublishedAt": "2021-02-06T23:41:04Z"
+      },
+      "statistics": {
+        "viewCount": "166",
+        "likeCount": "7",
+        "favoriteCount": "0",
+        "commentCount": "0"
       }
     },
     {
@@ -2544,6 +2999,12 @@
       "contentDetails": {
         "videoId": "_1dfUzkKNII",
         "videoPublishedAt": "2020-12-07T19:39:58Z"
+      },
+      "statistics": {
+        "viewCount": "315",
+        "likeCount": "10",
+        "favoriteCount": "0",
+        "commentCount": "0"
       }
     },
     {
@@ -2595,6 +3056,12 @@
       "contentDetails": {
         "videoId": "ecL_cz4P-cA",
         "videoPublishedAt": "2020-10-12T21:20:12Z"
+      },
+      "statistics": {
+        "viewCount": "744",
+        "likeCount": "23",
+        "favoriteCount": "0",
+        "commentCount": "1"
       }
     }
   ],
