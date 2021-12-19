@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// get-video-data --- Use youtube search api to get info on all out videos.
+// get-video-data.mjs --- Use youtube search api to get info on all our videos.
 
 import { mkdir, readFile, writeFile } from 'fs/promises';
 import slugify from 'slugify';
@@ -16,6 +16,7 @@ const { channelId, apiKey } = youtube;
 
 const playlists = await getChannelPlaylistInfo(channelId, apiKey);
 const videos = await getChannelVideoInfo(channelId, apiKey);
+await getAdditionalVideoInfo(videos, apiKey);
 
 await writeFile(outFile, JSON.stringify({videos, playlists}, null, 2));
 console.log(`Found video info for ${videos.length} videos and ${playlists.length} playlists.`);
@@ -84,4 +85,45 @@ async function getUploadPlaylist(channelId, key) {
   const resp = await fetch(`${API_URL}channels?${channelParams}`);
   const json = await resp.json();
   return json.items[0].contentDetails.relatedPlaylists.uploads;
+}
+
+async function getAdditionalVideoInfo(videos, key) {
+  const videoMap = new Map();
+
+  for (const video of videos) {
+    const videoId = video.contentDetails.videoId;
+    videoMap.set(videoId, video);
+  }
+
+  for (const ids of chunkKeys(videoMap, 50)) {
+    const params = new URLSearchParams({
+      key,
+      part: 'statistics,liveStreamingDetails',
+      id: ids.join(',')
+    });
+
+    const resp = await fetch(`${API_URL}videos?${params}`);
+    const json = await resp.json();
+
+    for (const video of json.items) {
+      const videoInfo = videoMap.get(video.id);
+      videoInfo.statistics = video.statistics;
+      videoInfo.liveStreamingDetails = video.liveStreamingDetails;
+    }
+  }
+}
+
+// Takes an interater of key/value pairs.
+function *chunkKeys(iter, size) {
+  let chunk = [];
+  for (const item of iter) {
+    chunk.push(item[0]);
+    if (chunk.length === size) {
+      yield chunk;
+      chunk = [];
+    }
+  }
+  if (chunk.length) {
+    yield chunk;
+  }
 }
