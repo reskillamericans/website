@@ -112,29 +112,15 @@ function getFrontMatter(video, tags) {
 
   const {num, guestName, guestTitle} = parseTitle(title);
 
-  const slugParts = [];
-
-  if (tags) {
-    slugParts.push(tags[0]);
-  }
-
-  if (num) {
-    slugParts.push(num.toString());
-  }
-
-  if (guestName) {
-    slugParts.push(slugify(guestName, {lower: true, strict: true}));
-  }
-
-  const slug = slugParts.join('-');
-
-  let filename = `${date.toISOString().slice(0, 10)}-${videoId}-${slug}`;
+  const slug = slugify(title, {lower: true, strict: true});
+  let filename = `${date.toISOString().slice(0, 10)}-${videoId}.md`;
 
   return {
     title,
     guest: guestName,
     guestTitle,
     slug,
+    num,
     filename,
     date: date.toISOString(),
     draft: false,
