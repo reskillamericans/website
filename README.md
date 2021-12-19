@@ -74,14 +74,16 @@ Data is stored in two files in the data directory:
 - `youtube-videos.json`<br>
   This is all updated via the YouTube data api.  It contains data
   on all our uploaded videos and playlists.  Refresh this information
-  by running `get-video-data.mjs`.
+  by running `get-video-data.mjs`.  *You will need an api-key to
+  do this. Run `api-keys-update --decrypt` if you have the password
+  for the shared (secret) api key.*
 - `video-metadata.toml`<br>
   This file can be updated by running `update-video-metadata.mjs`.
   This will grab any updated information from `youtube-videos.json`
-  and create new metadata block for new videos - or updated any
-  missing metadata for an already listed video (if will NOT EVER
+  and create new metadata block for new videos - or update any
+  missing metadata for already listed videos (if will NOT EVER
   change any metadata that has been hand-edited here).<br>
-  ***Warning: comments in this file will be stripped by running this command.***
+  ***But warning: comments in this file will be stripped by running this command.***
 
 The `create-video-content-files.mjs` command will regenerate ALL the video
 content files in the `content/videos` directory by combining the information in the `video-metadata.toml` file with the `youtube-videos.json` file.
