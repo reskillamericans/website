@@ -109,7 +109,7 @@ function getPlaylistsTags(videos, playlists) {
 // slug = "job-fair-1-software-one"
 // date = "2021-08-19T07:29:26Z"
 // draft = false
-// tags = ['job-fair', 'companies']
+// tags = ['job-fair', 'partners']
 // videoID = 'RLX-6YJHubg'
 function getFrontMatter(video, tags) {
   const {snippet, statistics, contentDetails, liveStreamingDetails} = video;

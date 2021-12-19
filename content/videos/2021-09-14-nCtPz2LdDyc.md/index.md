@@ -8,7 +8,7 @@ slug = "technical-interview-training-david-fowler-software-architect-microsoft"
 filename = "2021-09-14-nCtPz2LdDyc.md"
 date = "2021-09-14T18:03:13.000Z"
 draft = false
-tags = [ "job-fairs", "companies" ]
+tags = [ "job-fairs", "partners" ]
 
 +++
 
