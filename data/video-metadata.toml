@@ -5,17 +5,6 @@ filename = "2021-12-08-CfwJ0AuxMk4.md"
 date = "2021-12-08T00:02:32.000Z"
 draft = false
 
-[5sMY4HgPtW0]
-title = "Virtual Job Fair #5 | HBO Max - 100 Open Positions NOW! | Noreli Garcia Valentin and Charles Cox"
-guest = "HBO Max"
-guestTitle = "100 Open Positions NOW! | Noreli Garcia Valentin and Charles Cox"
-slug = "virtual-job-fair-5-or-hbo-max-100-open-positions-now-or-noreli-garcia-valentin-and-charles-cox"
-num = "5"
-filename = "2021-10-21-5sMY4HgPtW0.md"
-date = "2021-10-21T18:02:47.000Z"
-draft = false
-tags = [ "job-fairs" ]
-
 [Pdvy3Qinxgw]
 title = "Virtual Job Fair #3 | Teddy Burriss - Learn How to Use LinkedIn as a Career Transition Tool"
 guest = "Teddy Burriss"
@@ -101,14 +90,6 @@ title = "Coding Challenges with Pam | Isograms"
 slug = "coding-challenges-with-pam-or-isograms"
 filename = "2021-08-31-zzK1MiUnXvE.md"
 date = "2021-08-31T04:35:23.000Z"
-draft = false
-tags = [ "coding-challenges" ]
-
-[DxZzcFASKlU]
-title = "Maze Generator | Reskill Americans Coding Challenge (JavaScript)"
-slug = "maze-generator-or-reskill-americans-coding-challenge-javascript"
-filename = "2021-08-27-DxZzcFASKlU.md"
-date = "2021-08-27T20:36:14.000Z"
 draft = false
 tags = [ "coding-challenges" ]
 
@@ -480,3 +461,22 @@ filename = "2021-10-12-vy-nd8m6M88.md"
 date = "2021-10-12T22:23:25.000Z"
 draft = false
 tags = [ "job-fairs" ]
+
+[5sMY4HgPtW0]
+title = "Virtual Job Fair #5 | HBO Max - 100 Open Positions NOW! | Noreli Garcia Valentin and Charles Cox"
+guest = "HBO Max"
+guestTitle = "100 Open Positions NOW! | Noreli Garcia Valentin and Charles Cox"
+slug = "virtual-job-fair-5-or-hbo-max-100-open-positions-now-or-noreli-garcia-valentin-and-charles-cox"
+num = "5"
+filename = "2021-10-21-5sMY4HgPtW0.md"
+date = "2021-10-21T18:02:47.000Z"
+draft = false
+tags = [ "job-fairs" ]
+
+[DxZzcFASKlU]
+title = "Maze Generator | Reskill Americans Coding Challenge (JavaScript)"
+slug = "maze-generator-or-reskill-americans-coding-challenge-javascript"
+filename = "2021-08-27-DxZzcFASKlU.md"
+date = "2021-08-27T20:36:14.000Z"
+draft = false
+tags = [ "coding-challenges" ]
