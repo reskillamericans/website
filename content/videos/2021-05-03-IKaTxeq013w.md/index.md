@@ -3,12 +3,13 @@ title = "Reskill Americans Town Hall #9 | Columbus Steward - Microsoft"
 videoId = "IKaTxeq013w"
 guest = "Columbus Steward"
 guestTitle = "Microsoft"
+quote = "Stay curious, pop the hood, and DO: writers improve when they write, coders improve when they code. So, practice solving coding challenges and speaking the language."
 slug = "town-hall-9-columbus-steward-microsoft"
 num = "9"
 filename = "2021-05-03-IKaTxeq013w.md"
 date = "2021-05-03T15:01:23.000Z"
 draft = false
-tags = [ "town-halls" ]
+tags = [ "town-halls", "companies" ]
 
 +++
 

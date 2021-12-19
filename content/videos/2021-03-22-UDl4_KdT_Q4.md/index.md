@@ -3,12 +3,13 @@ title = "Reskill Americans Town Hall #3 | Covid Act Now"
 videoId = "UDl4_KdT_Q4"
 guest = "Michael Lehenbauer & Chelsi Asulin"
 guestTitle = "Covid Act Now"
+quote = "I’ve learned that you can have a huge impact through tech (with a product seen by millions of users), and it’s really hard to have that level of impact and visibility through work in other fields."
 slug = "town-hall-3-covid-act-now"
 num = "3"
 filename = "2021-03-22-UDl4_KdT_Q4.md"
 date = "2021-03-22T15:01:29.000Z"
 draft = false
-tags = [ "town-halls" ]
+tags = [ "town-halls", "companies" ]
 
 +++
 
