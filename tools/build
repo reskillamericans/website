@@ -19,6 +19,9 @@ tsc
 
 cd $PROJ_DIR
 
+echo "Updating video content files from metadata..."
+create-video-content-files.mjs
+
 echo "Building Hugo static site..."
 rm -rf public
 hugo
