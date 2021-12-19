@@ -10,10 +10,18 @@ const sourceFile = 'data/youtube-videos.json';
 const metadataFile = 'data/video-metadata.toml';
 
 let verbose = false;
+let showProps;
+let forceReplace;
 
-for (let arg of process.argv.slice(2)) {
+for (let i = 2; i < process.argv.length; i++) {
+  const arg = process.argv[i];
+
   if (arg === '--verbose') {
     verbose = true;
+  } else if (arg === '--show') {
+    showProps = process.argv[++i].split(',');
+  } else if (arg === '--replace') {
+    forceReplace = process.argv[++i].split(',');
   } else {
     console.error(`Unknown argument: ${arg}`);
     exit(1);
@@ -43,7 +51,7 @@ for (let video of videos) {
     metadata[videoId] = {};
   }
   const added = mergeUndefined(metadata[videoId],
-    getFrontMatter(video, tags[videoId]));
+    getFrontMatter(video, tags[videoId]), forceReplace);
   if (added) {
     console.log("Adding metadata for " + video.snippet.title);
     changed = changed || added;
@@ -112,7 +120,10 @@ function getFrontMatter(video, tags) {
 
   const {num, guestName, guestTitle} = parseTitle(title);
 
-  const slug = slugify(title, {lower: true, strict: true});
+  let slug = slugify(title, {lower: true, strict: true });
+  slug = slug.replace(/-or-|-and-/g, '-');
+  slug = slug.replace(/reskill-americans-/g, '');
+  slug = slug.replace(/virtual-job-fair/g, 'job-fair');
   let filename = `${date.toISOString().slice(0, 10)}-${videoId}.md`;
 
   return {
@@ -125,7 +136,7 @@ function getFrontMatter(video, tags) {
     filename,
     date: date.toISOString(),
     draft: false,
-    tags
+    tags,
   };
 }
 
@@ -159,7 +170,10 @@ function mergeUndefined(target, source) {
     if (source[key] === undefined) {
       continue;
     }
-    if (target[key] === undefined) {
+    if (showProps !== undefined && showProps.includes(key)) {
+      console.log(`${key}: ${source[key]}`);
+    }
+    if (target[key] === undefined || forceReplace !== undefined && forceReplace.includes(key)) {
       if (verbose) {
         console.log(`Adding ${key}`);
       }
