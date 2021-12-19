@@ -35,11 +35,14 @@ const metadata = await readFile(metadataFile, 'utf8')
 
 console.log(`There are ${videos.length} videos ${videoFile}.`);
 
-createVideoBundles(videos, metadata, targetDir);
+let created = await createVideoBundles(videos, metadata, targetDir);
+
+console.log(`Created ${created} markdown files.`);
 
 // Write a markdown file for each video
 async function createVideoBundles(videos, metadata, targetDir) {
   let hadError = false;
+  let count = 0;
 
   for (let video of videos) {
     const {videoId} = video.contentDetails;
@@ -64,7 +67,9 @@ async function createVideoBundles(videos, metadata, targetDir) {
     let markdown = `+++\n${TOML.stringify(frontMatter)}\n+++\n\n`;
     markdown += `${video.snippet.description}\n`;
 
-    console.log(`Creating ${dir}`);
+    if (verbose) {
+      console.log(`Creating ${dir}`);
+    }
 
     await mkdir(dir, {recursive: true});
     await writeFile(`${dir}index.md`, markdown);
@@ -79,12 +84,14 @@ async function createVideoBundles(videos, metadata, targetDir) {
     }
 
     await downloadImage(thumbnail.url, `${dir}/thumbnail.jpg`);
+    count++;
   }
 
   if (hadError) {
     console.log("Run update-video-metadata.mjs to update metadata for all videos.");
-    exit(1);
   }
+
+  return count;
 }
 
 async function downloadImage(url, filepath) {
