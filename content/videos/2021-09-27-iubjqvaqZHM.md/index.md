@@ -3,12 +3,13 @@ title = "Virtual Job Fair #3 | Teddy Burriss - Learn How to Use LinkedIn as a Ca
 videoId = "iubjqvaqZHM"
 guest = "Teddy Burriss"
 guestTitle = "Career Coach"
+quote = "Are you moving the right connections into meaningful and relevant conversations that can move you into a conversation focused on your career? At the end of the day, it’s all about moving the right people into the right conversations."
 slug = "job-fair-3-teddy-burriss-learn-how-to-use-linkedin-as-a-career-transition-tool"
 num = "3"
 filename = "2021-09-27-iubjqvaqZHM.md"
 date = "2021-09-27T21:23:45.000Z"
 draft = false
-tags = [ "job-fairs" ]
+tags = [ "job-fairs", "companies" ]
 
 +++
 

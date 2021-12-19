@@ -50,12 +50,14 @@ div.video-card {
 
   div.quote {
     text-align: center;
+    font-size: 14px;
+    line-height: 1.2em;
     font-style: italic;
   }
 
   hr {
     padding: 0;
-    margin: 1rem auto;
+    margin: 0.7rem auto;
     width: 300px;
     border-top: none;
     border-bottom: 1px solid #ccc;

@@ -3,6 +3,7 @@ title = "Reskill Americans Town Hall #16 | Tony Wright - Designer and Entreprene
 videoId = "NivSoU2jTrY"
 guest = "Tony Wright"
 guestTitle = "Designer and Entrepreneur"
+quote = "The doing is where the learning is. Getting armpit deep in designing is the best way to learn and also the most fun way to learn."
 slug = "town-hall-16-tony-wright-designer-entrepreneur"
 num = "16"
 filename = "2021-06-28-NivSoU2jTrY.md"

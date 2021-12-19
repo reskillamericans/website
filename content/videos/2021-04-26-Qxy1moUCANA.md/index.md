@@ -3,12 +3,13 @@ title = "Reskill Americans Town Hall #8 | BlackRock"
 videoId = "Qxy1moUCANA"
 guest = "Ajax Green & My Doan"
 guestTitle = "BlackRock Financial"
+quote = "A project might look opaque at first, and you think, ‘there’s no way I'm going to figure it out.’ It’s about being persistent and not giving up, and knowing that if it can be built, it can be taken apart."
 slug = "town-hall-8-blackrock"
 num = "8"
 filename = "2021-04-26-Qxy1moUCANA.md"
 date = "2021-04-26T15:01:19.000Z"
 draft = false
-tags = [ "town-halls" ]
+tags = [ "town-halls", "companies" ]
 
 +++
 

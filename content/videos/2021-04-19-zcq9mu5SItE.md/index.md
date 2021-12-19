@@ -3,12 +3,13 @@ title = "Reskill Americans Town Hall #7 | Deborah Russell - D.C. Workforce Inves
 videoId = "zcq9mu5SItE"
 guest = "Deborah Russell"
 guestTitle = "D.C. Workforce Investment Council"
+quote = "I always tell people that we are the best kept secret, but we shouldn’t be, because we provide a public opportunity and benefit for anybody who lives in the U.S."
 slug = "town-hall-7-deborah-russell-dc-workforce-investment-council"
 num = "7"
 filename = "2021-04-19-zcq9mu5SItE.md"
 date = "2021-04-19T15:02:03.000Z"
 draft = false
-tags = [ "town-halls" ]
+tags = [ "town-halls", "companies" ]
 
 +++
 

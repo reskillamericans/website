@@ -3,6 +3,7 @@ title = "Reskill Americans Town Hall #11 |  Dev Nambi - Data Scientist at Fred H
 videoId = "24uOcGj-6sM"
 guest = "Dev Nambi"
 guestTitle = "Data Scientist at Fred Hutch"
+quote = "Do lots of side projects. Do projects that interest you and are personally compelling so that when you’re stuck and frustrated, you’ll keep going."
 slug = "town-hall-11-dev-nambi-data-scientist-fred-hutch"
 num = "11"
 filename = "2021-05-17-24uOcGj-6sM.md"

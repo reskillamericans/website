@@ -3,12 +3,13 @@ title = "Reskill Americans Town Hall #6 | David Ortiz - SimWin Sports"
 videoId = "HzmsXMX6F5A"
 guest = "David Ortiz"
 guestTitle = "SimWin Sports"
+quote = "If you're looking to come into the game space, now is the best time: once you learn a few of the key skills, then you can contribute to a team right away, and will have a skillset that is universally sought after"
 slug = "town-hall-6-david-ortiz-simwin-sports"
 num = "6"
 filename = "2021-04-12-HzmsXMX6F5A.md"
 date = "2021-04-12T15:00:38.000Z"
 draft = false
-tags = [ "town-halls" ]
+tags = [ "town-halls", "companies" ]
 
 +++
 

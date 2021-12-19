@@ -2,13 +2,14 @@
 title = "Reskill Americans Town Hall #2 | Jeremiah Peoples"
 videoId = "OpE39nGFA6U"
 guest = "Jeremiah Peoples"
-guestTitle = "Self-taught developer"
+guestTitle = "Self-taught Developer"
+quote = "I started my YouTube channel because representation definitely matters.I didn’t know that you could be a software developer without going to college."
 slug = "town-hall-2-jeremiah-peoples"
 num = "2"
 filename = "2021-03-15-OpE39nGFA6U.md"
 date = "2021-03-15T15:02:05.000Z"
 draft = false
-tags = [ "town-halls" ]
+tags = [ "town-halls", "companies" ]
 
 +++
 
