@@ -19,7 +19,7 @@
       "side-by-side" "light-box"}}
     {{ $mainClass = (print $mainClass $sepMain . ) }}
     {{ $sepMain = " " }}
-  {{ else if eq . "contrast" "light-background" }}
+  {{ else if eq . "contrast" "light-background" "color-contrast" }}
     {{ $sectionClass = (print $sectionClass $sepSection . ) }}
     {{ $sepSection = " " }}
   {{ else }}
