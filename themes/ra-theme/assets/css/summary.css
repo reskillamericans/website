@@ -34,6 +34,11 @@ ul.summary {
       justify-content: space-between;
       font-size: 1rem;
       line-height: 1.2em;
+      text-align: justify;
+
+      @media (max-width: $break-width) {
+          text-align: left !important;
+      }
 
       max-width: 800px;
 
@@ -49,11 +54,19 @@ ul.summary {
       > h2 {
         font-size: 1.5rem;
         margin-top: 0;
+        text-align: left;
+        line-height: 1.2em;
       }
 
-      > a.read-more {
+      > div.summary-footer {
+        display: flex;
+        justify-content: space-between;
         margin-top: auto;
         padding-top: 0.5em;
+
+        span {
+          font-size: 0.9em;
+        }
       }
     }
   }
