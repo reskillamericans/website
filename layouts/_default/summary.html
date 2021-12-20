@@ -1,0 +1,22 @@
+{{ "<!-- layouts/_default/summary.html:extra-head-->" | safeHTML }}
+<li>
+  <!-- profile before thumbnail - alphabetical! -->
+  {{ with .Resources.GetMatch "*.jpg" }}
+    {{ $image := .Resize "300x" }}
+    <img src="{{ $image.RelPermalink }}" alt="{{ $.Title }}">
+    {{ else }}
+    <img src="/images/logo.png">
+  {{ end }}
+  <div>
+    <div class="tag-list">
+      {{ range .Params.tags }}
+        <a class="tags" href="{{ . }}">{{ . }}</a>
+      {{ end }}
+    </div>
+    <h2>{{ .Title }}</h2>
+    <div>
+      {{ .Summary | plainify }}
+    </div>
+    <a class="read-more" href="{{ .RelPermalink }}">Read More</a>
+  </div>
+</li>
