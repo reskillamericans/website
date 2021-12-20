@@ -24,7 +24,7 @@ future for all.
 {{% section centered %}}
 
 {{% section centered overlap %}}
-<div style="border: 20px solid red; max-width: 650px; margin: auto;">
+<div class="outline-box">
 {{< youtube 09TU0AdoOSY >}}
 </div>
 {{% /section %}}

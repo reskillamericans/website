@@ -78,3 +78,15 @@ div.video-card {
     margin: 0;
   }
 }
+
+div.outline-box {
+  box-sizing: border-box;
+  border: 20px solid red;
+  max-width: 650px;
+  margin: auto;
+
+  @media (max-width: $break-width) {
+    max-width: 100%;
+    border-width: 7px;
+  }
+}

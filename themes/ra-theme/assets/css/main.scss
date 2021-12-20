@@ -139,6 +139,10 @@ main {
     padding-inline: 4rem;
     text-align: center;
 
+    @media (max-width: $break-width) {
+      padding-inline: 1rem;
+    }
+
     li {
       text-align: left;
     }
