@@ -3,7 +3,6 @@
   {{ $file := "none" }}
   {{- with .Resources.GetMatch "profile.*" -}}
     {{ $file = . }}
-    {{ warnf "Using profile instead of thumbnail: %s" $.Title }}
   {{ else }}
     {{- with .Resources.GetMatch "thumbnail.*" -}}
       {{ $file = . }}

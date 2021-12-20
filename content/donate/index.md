@@ -21,13 +21,13 @@ future for all.
 
 {{% /section %}}
 
-{{% section centered %}}
-
 {{% section centered overlap %}}
 <div class="outline-box">
 {{< youtube 09TU0AdoOSY >}}
 </div>
 {{% /section %}}
+
+{{% section centered %}}
 
 ## Donate Today
 
@@ -53,9 +53,10 @@ Seattle, WA 98017
 
 **Other questions or ideas for how to support us?**
 
-
 We want to hear from you! Contact us at: [info@reskillamericans.org](mailto:info@reskillamericans.org).
 
 ### Matching Gifts
 
 Does your company match donations? Find out whether you can double your gift by checking your company’s policy. Thank you!
+
+{{% /section %}}
