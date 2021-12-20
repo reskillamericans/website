@@ -58,6 +58,15 @@ section {
     background-color: $light-background-color;
   }
 
+  &.color-contrast {
+    background-color: $color-contrast-color;
+    color: $contrast-text-color;
+    font-weight: 300;
+    @include all-headings {
+      color: $contrast-heading-color
+    }
+  }
+
   &.footer {
     background-color: $footer-color;
     color: $footer-text-color;

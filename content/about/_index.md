@@ -58,3 +58,15 @@ industry.
 {{< team-members Advisor >}}
 
 {{< /section >}}
+
+{{% section centered color-contrast %}}
+
+## A Conversation with our Co-Founder Femi Akinde
+
+Watch Femi Akinde speak about why he felt an urgency to launch Reskill Americans and help create opportunities for what he calls “undrafted free agents” to get into the tech industry.  The video was filmed as part of Microsoft’s internal speaker series, Outside in, and also featured Seattle Seahawks Coach Pete Carroll.
+
+<div style="max-width: 650px; margin: auto;">
+{{< youtube QtPIp0r2JQs >}}
+</div>
+
+{{% /section %}}
