@@ -3,8 +3,9 @@ title = "Donate"
 date = 2021-12-15T12:22:40-08:00
 draft = false
 tags = []
-layout = "document"
 +++
+
+{{% section centered contrast %}}
 
 # Why Donate?
 
@@ -18,14 +19,15 @@ professional get the skills they need to start a career in tech.
 You're also helping create long-term economic advancement and a more equitable
 future for all.
 
-### Matching Gifts
+{{% /section %}}
 
-Does your company match donations? Find out whether you can double your gift by checking your company’s policy. Thank you!
+{{% section centered %}}
 
-# Donate Today
+## Donate Today
 
-**Reskill Americans is a 501(c)(3) nonprofit organization. EIN: 85-3050408
-(All U.S. based donations are tax-deductible).**
+Reskill Americans is a 501(c)(3) nonprofit organization.<br>
+EIN: 85-3050408<br>
+(All U.S. based donations are tax-deductible).
 
 <form action="https://www.paypal.com/donate" method="post" target="_top">
   <input type="hidden" name="hosted_button_id" value="WTD9N9G5HBFSJ">
@@ -47,3 +49,7 @@ Seattle, WA 98017
 
 
 We want to hear from you! Contact us at: [info@reskillamericans.org](mailto:info@reskillamericans.org).
+
+### Matching Gifts
+
+Does your company match donations? Find out whether you can double your gift by checking your company’s policy. Thank you!
