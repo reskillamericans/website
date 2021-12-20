@@ -17,6 +17,9 @@
     <div>
       {{ .Summary | plainify }}
     </div>
-    <a class="read-more" href="{{ .RelPermalink }}">Read More</a>
+    <div class="summary-footer">
+      <a class="read-more" href="{{ .RelPermalink }}">Read More</a>
+      <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+    </div>
   </div>
 </li>
