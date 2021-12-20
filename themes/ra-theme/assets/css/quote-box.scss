@@ -1,19 +1,30 @@
 div.quote-box {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: 1fr;
+  grid-auto-columns: initial;
   column-gap: 2rem;
   align-items: stretch;
   overflow: hidden;
   border-radius: 6px;
-
   font-size: 12px;
   line-height: 1.3em;
-
-  padding: 1rem 2rem;
-  width: 400px;
-  height: 200px;
-
+  padding: 2rem 2rem;
+  width: 600px;
+  height: 100%;
+  @media (max-width: $break-width) {
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-columns: initial;
+    column-gap: 1rem;
+    align-items: stretch;
+    overflow: hidden;
+    border-radius: 6px;
+    font-size: 12px;
+    line-height: 1.3em;
+    padding: 2rem 2rem;
+    width: 300px;
+    height: 100%;
+  }
   // Alternate accent color.
   &:nth-child(odd) {
     background-color: $standout-color;
@@ -28,9 +39,18 @@ div.quote-box {
   // Profile picture on the left side.
   > img {
     box-sizing: border-box;
-    height: 200px;
+    height: 250px;
+    width: 250px;
     padding: 0;
     margin: 0;
+    @media (max-width: $break-width) {
+      box-sizing: border-box;
+      height: 250px;
+      width: 250px;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 15px;
+    }
   }
 
   // Quote paragraphs down the right side - ending in signature at bottom.
@@ -49,3 +69,4 @@ div.quote-box {
     margin-bottom: 0;
   }
 }
+
