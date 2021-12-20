@@ -67,11 +67,11 @@ in our rigorous, tuition-free software development program.
   class="footnote-mark">*</span>
 - Hire our participants for paid internships.&nbsp;<span
   class="footnote-mark">*</span>
-- Recruit your employees for our Volunteer Program. (See [Volunteer](/volunteer)
-  section for details).
+- Recruit your employees for our Volunteer Program. (See the
+  [Volunteer](/volunteer) section for details).
 
 <p class="footnote">
-* Reskill Americans is a 501(c)(3) nonprofit. We supplement donor funds through
+* Reskill Americans is a 501(c)(3) non-profit. We supplement donor funds through
   a fee-for-service placement program.
 </p>
 
@@ -81,15 +81,15 @@ in our rigorous, tuition-free software development program.
 
 ### Why partner with us:
 
-- Get access to a large pool of qualified, diverse tech candidates to recruit
-  from.&nbsp;<span class="footnote-mark">*</span>
+- Get access to a large pool of qualified, diverse tech candidates from which to
+  recruit.&nbsp;<span class="footnote-mark">*</span>
 - Engage your employees in impactful work that helps create a career path in
   tech for minorities.
 - Help increase the representation of minorities in the tech community and
   create long-term economic opportunities
 
 <p class="footnote">
-* Reskill Americans is a 501(c)(3) nonprofit. We supplement donor funds through
+* Reskill Americans is a 501(c)(3) non-profit. We supplement donor funds through
   a fee-for-service placement program.
 </p>
 
@@ -105,7 +105,7 @@ in our rigorous, tuition-free software development program.
 
 ## Volunteers
 
-We seek volunteers, ideally software developers or UI/X product designers, to
+We seek volunteers, ideally software developers or UI/UX product designers, to
 engage with -- and/or mentor -- our participants throughout our seven-month
 program.
 
@@ -125,7 +125,8 @@ in other industries, and some have graduate degrees.
   started in tech, your current job, and what you look for when hiring people.
 - Provide our participants one-on-one coaching and mentorship that's aligned to
   your tech skills.
-- Provide job prep advice such as mock interviews, resume review, job search tips, etc.
+- Provide job prep advice such as mock interviews, resume review, job search
+  tips, etc.
 
 {{% /image-box %}}
 

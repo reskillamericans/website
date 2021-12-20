@@ -31,7 +31,7 @@ future for all.
 
 ## Donate Today
 
-Reskill Americans is a 501(c)(3) nonprofit organization.<br>
+Reskill Americans is a 501(c)(3) non-profit organization.<br>
 EIN: 85-3050408<br>
 (All U.S. based donations are tax-deductible).
 

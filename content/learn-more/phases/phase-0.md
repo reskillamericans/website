@@ -15,7 +15,7 @@ order = 0
 Everyone comes to our program from a range of industries and experiences, and
 we've found that your diverse backgrounds can enhance your collective training.
 In our Intro Phase, you will be paired with a small group of your peers with
-complementary backgrounds in a "learning pod" to get to each other.
+complementary backgrounds in a "learning pod" to get to know each other.
 
 This Phase is designed to familiarize you with the tools and the materials that
 we'll be studying later.  This is also a good time to confirm your track.

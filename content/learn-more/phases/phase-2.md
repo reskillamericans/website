@@ -6,7 +6,7 @@ tags = []
 order = 2
 +++
 
-## Individual Project
+## Individual Projects
 
 ### (6 weeks)
 
@@ -15,10 +15,10 @@ order = 2
 In Phase 2, you will take everything you've learned from the classroom,
 exercises, and small projects in Phase I and apply it to an individual project.
 
-Your final individual project must be a complete hosted application.  We will
+Your final individual project will be a complete hosted application.  We will
 work with you to suggest a project, or help you to define your own.
 
-Each project must include user authentication, user-provided data, use of a
+Each project will include user authentication, user-provided data, use of a
 server-side database, and web hosting. This project should be an excellent
 addition to your portfolio to show to potential employers.
 

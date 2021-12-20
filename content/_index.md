@@ -72,7 +72,7 @@ your designs to stakeholders and developers.
 ## It's Free!
 
 If you self-identify as a historically underrepresented minority, then
-our program is completely free for you. We are a 501(c)(3) nonprofit
+our program is completely free for you. We are a 501(c)(3) non-profit
 organization funded by individual and corporate donors.
 
 ## Learn from<br>Anywhere, Anytime

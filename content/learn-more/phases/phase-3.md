@@ -12,12 +12,18 @@ order = 3
 
 {{% image-box src="People.png" resize="800x" %}}
 
-As a final project, you will be paired into teams to work on a project together.  In this phase, we will integrate our Product Design and Web Development tracks.
+As a final project, you will be grouped into teams to work on a project
+together.  In this phase, we will integrate our Product Design and Web
+Development tracks.
 
-You will be responsible for keeping your team on track and for defining your goals and milestones; you will have weekly mentor check-ins to help you get unblocked.
+You will be responsible for keeping your team on track and for defining your
+goals and milestones; you will have weekly mentor check-ins to help if you get
+stuck.
 
-We will ask each team to present their finished projects at a series of Demo Day events to cap off the program.
+We will ask each team to present their finished projects at a series of Demo Day
+events to cap off the program.
 
-***All participants who successfully complete these Phase 3 projects will be issued a Certificate of Completion in Web Development or in Product Design.***
+***All participants who successfully complete these Phase 3 projects will be
+issued a Certificate of Completion in Web Development or in Product Design.***
 
 {{% /image-box %}}
