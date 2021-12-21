@@ -9,23 +9,27 @@ ul.summary {
     /* height: 200px; */
     /* overflow: hidden; */
 
-    @media (max-width: $narrow-width) {
+    @media (max-width: $break-width) {
       flex-direction: column;
 
-      > img {
+      a.img {
         margin: auto;
       }
     }
 
     a {
       text-decoration: none;
+
+      h2:hover {
+        color: $link-color !important;
+      }
     }
 
-    > img {
-      width: 200px;
-      aspect-ratio: 1;
+    img {
+      width: 250px;
+      max-height: 300px;
       object-fit: cover;
-      align-self: flex-start;
+      aspect-ratio: 4/3;
     }
 
     > div {
@@ -42,7 +46,7 @@ ul.summary {
 
       max-width: 800px;
 
-      > div.tag-list {
+      div.tag-list {
         margin-bottom: 0.5em;
 
         > a {
@@ -51,14 +55,14 @@ ul.summary {
         }
       }
 
-      > h2 {
+      h2 {
         font-size: 1.5rem;
         margin-top: 0;
         text-align: left;
         line-height: 1.2em;
       }
 
-      > div.summary-footer {
+      div.summary-footer {
         display: flex;
         justify-content: space-between;
         margin-top: auto;
