@@ -6,25 +6,23 @@
 {{ define "main" }}
 {{ "<!-- layouts/_default/list.html:main-->" | safeHTML }}
 <section class="color-contrast">
-<main class="centered">
-  <h1>{{.Title}}</h1>
-</main>
+  <main class="centered">
+    <h1>{{.Title}}</h1>
+  </main>
 </section>
+
 <section>
   <main class="centered">
   {{.Content}}
   </main>
-</main>
 
-<!-- Some list pages have child content we don't want to enumerate -->
-{{ if not .Params.noList }}
-<main>
-  <ul class="summary">
-  {{ range .Pages.ByDate.Reverse }}
-    {{ .Render "summary" }}
-  {{ end }}
-  </ul>
-</main>
-{{ end }}
+  <main>
+    <ul class="summary">
+    {{ range .Pages.ByDate.Reverse }}
+      {{ .Render "summary" }}
+    {{ end }}
+    </ul>
+  </main>
 </section>
+
 {{ end }}
