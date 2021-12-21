@@ -5,7 +5,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-  position: relative;
+  // position: relative;
 
   .logo {
     @include hover-zoom;
@@ -61,7 +61,7 @@ header {
       }
 
       padding-block: 0;
-      padding-inline: clamp(3rem, 10vw, 7rem);
+      // padding-inline: clamp(3rem, 10vw, 5rem);
       margin: 0;
       list-style: none;
       display: flex;

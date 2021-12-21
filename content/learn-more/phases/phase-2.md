@@ -4,6 +4,7 @@ date = 2021-12-14T15:40:40-08:00
 draft = false
 tags = []
 order = 2
+layout = "document"
 +++
 
 ## Individual Projects

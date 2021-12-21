@@ -10,12 +10,16 @@
   <h1>{{.Title}}</h1>
   {{.Content}}
 </main>
+
+<!-- Some list pages have child content we don't want to enumerate -->
+{{ if not .Params.noList }}
 <main>
   <ul class="summary">
-  <!-- Ranges through content/posts/*.md -->
   {{ range .Pages.ByDate.Reverse }}
     {{ .Render "summary" }}
   {{ end }}
   </ul>
-</main></section>
+</main>
+{{ end }}
+</section>
 {{ end }}

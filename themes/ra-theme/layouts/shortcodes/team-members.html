@@ -1,7 +1,6 @@
 {{ $group := .Get 0 }}
-{{ with .Site.GetPage "/about" }}
-    {{ $members := where .Pages "Params.group" $group }}
-    {{ range sort $members "Params.order" }}
-        {{ partial "team-member" . }}
-    {{ end }}
+{{ $members := where $.Page.Pages "Params.group" $group }}
+
+{{ range sort $members "Params.order" }}
+    {{ partial "team-member" . }}
 {{ end }}

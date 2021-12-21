@@ -4,6 +4,7 @@ date = 2021-12-14T15:52:50-08:00
 draft = false
 tags = []
 order = 5
+layout = "document"
 +++
 
 ## Community & Support
