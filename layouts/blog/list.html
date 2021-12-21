@@ -7,15 +7,16 @@
 {{ "<!-- layouts/blog/list.html:main-->" | safeHTML }}
 {{.Content}}
 
-<!-- Some list pages have child content we don't want to enumerate -->
-{{ if not .Params.noList }}
+<!-- Merge video content with pages from the blog -->
+{{ $videos := (.Site.GetPage "/videos").Pages }}
+{{ $combined := (.Pages | append $videos).ByDate.Reverse }}
+<section>
 <main>
   <ul class="summary">
-  {{ range .Pages.ByDate.Reverse }}
+  {{ range $combined }}
     {{ .Render "summary" }}
   {{ end }}
   </ul>
 </main>
-{{ end }}
 </section>
 {{ end }}
