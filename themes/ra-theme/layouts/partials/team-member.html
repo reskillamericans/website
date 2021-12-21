@@ -11,5 +11,7 @@
     <p>
       "{{ .Params.cardText }}"
     </p>
-    {{ partial "social-links" .Params }}
+    <div class="social-wrapper" onclick="event.stopPropagation();">
+      {{ partial "social-links" .Params }}
+    </div>
 </div>

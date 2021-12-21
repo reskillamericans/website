@@ -53,9 +53,9 @@ div.team-member {
 
   // All the extra space in the column layout goes above the social
   // links - putting them at the bottom of the card.
-  .social-links {
-    margin-top: auto;
+  div.social-wrapper {
     margin-inline: auto;
+    margin-top: auto;
     opacity: 0.75;
   }
 }
