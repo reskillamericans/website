@@ -5,7 +5,6 @@ draft = false
 
 name = "{{ replace .Name "-" " " | title }}"
 location = "City, State"
-imageURL = "https://profile-image-url-here"
 +++
 
-Paste Tesimonial text here...
+<insert testimonial text here>
