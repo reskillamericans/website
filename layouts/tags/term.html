@@ -10,14 +10,8 @@
   <h1>{{.Title}}</h1>
 </main>
 </section>
-<section>
-  <main class="centered">
-  {{.Content}}
-  </main>
-</main>
 
-<!-- Some list pages have child content we don't want to enumerate -->
-{{ if not .Params.noList }}
+<section>
 <main>
   <ul class="summary">
   {{ range .Pages.ByDate.Reverse }}
@@ -25,6 +19,5 @@
   {{ end }}
   </ul>
 </main>
-{{ end }}
 </section>
 {{ end }}
