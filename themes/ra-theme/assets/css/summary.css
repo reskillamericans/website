@@ -43,6 +43,8 @@ ul.summary {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      // align-items: stretch;
+      width: 100%;
       font-size: 14px;
       line-height: 1.2em;
       text-align: justify;
