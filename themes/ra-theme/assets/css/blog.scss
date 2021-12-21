@@ -1,0 +1,33 @@
+main.blog-header {
+  div.tag-list {
+    margin-top: 1rem;
+    > a {
+      font-weight: 400;
+      font-style: italic;
+      color: $contrast-text-color;
+      text-decoration: none;
+    }
+
+    &:before {
+      content: '[ ';
+    }
+
+    &:after {
+      content: ' ]';
+    }
+  }
+}
+
+main.blog {
+  max-width: 800px;
+
+  img {
+    @include floating-shadow;
+    display: block;
+    height: 300px;
+    width: unset;
+    // aspect-ratio: 4/3;
+    // object-fit: contain;
+    margin: auto;
+  }
+}
