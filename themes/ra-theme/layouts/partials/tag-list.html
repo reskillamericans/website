@@ -1,6 +1,7 @@
 <div class="tag-list">
   {{ $sep := "" }}
   {{ range . }}
+  <!-- TODO: Fetch permalink from taxonomy -->
     {{- $sep }}<a class="tags" href="/tags/{{ . }}">{{ . }}</a>
     {{- $sep = "&nbsp;|&nbsp;" | safeHTML -}}
   {{ end }}
