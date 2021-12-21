@@ -8,7 +8,7 @@ draft = false
 
 linkedIn = "in/mckoss/"
 twitter = "mckoss"
-
+github = "mckoss"
 instagram = "mckoss"
 
 cardText = "I joined the board of Reskill Americans because I believe the fastest way to end the racial inequity in tech is to give everyone access to software development training."
