@@ -39,17 +39,19 @@ div.quote-box {
   // Profile picture on the left side.
   > img {
     box-sizing: border-box;
-    height: 250px;
+    height: 280px;
     width: 250px;
     padding: 0;
     margin: 0;
+    object-fit: cover;
     @media (max-width: $break-width) {
       box-sizing: border-box;
-      height: 184px;
+      height: 250px;
       width: 100%;
       padding: 0;
       margin: 0;
       margin-bottom: 15px;
+      object-fit: fill;
     }
   }
 
