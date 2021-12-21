@@ -12,7 +12,7 @@
   <div>
     <div class="tag-list">
       {{ range .Params.tags }}
-        <a class="tags" href="{{ . }}">{{ . }}</a>
+        <a class="tags" href="/tags/{{ . }}">{{ . }}</a>
       {{ end }}
     </div>
     <a href="{{ .RelPermalink }}"><h2>{{ .Title }}</h2></a>
