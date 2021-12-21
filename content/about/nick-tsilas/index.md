@@ -4,12 +4,8 @@ slug = "nick-tsilas"
 jobTitle = "Microsoft Asst. General Counsel"
 order = 50
 group = "Advisor"
-draft = false
-
+draft = true
 linkedIn = "in/ntsilas/"
-
-
-
 
 cardText = "I’m passionate about Reskill American’s mission to level the playing field and provide opportunities to underrepresented minorities."
 
