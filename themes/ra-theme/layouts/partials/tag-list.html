@@ -1,0 +1,7 @@
+<div class="tag-list">
+  {{ $sep := "" }}
+  {{ range . }}
+    {{- $sep }}<a class="tags" href="/tags/{{ . }}">{{ . }}</a>
+    {{- $sep = "&nbsp;|&nbsp;" | safeHTML -}}
+  {{ end }}
+</div>

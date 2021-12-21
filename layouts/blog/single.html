@@ -5,8 +5,21 @@
 
 {{ define "main" }}
 {{ "<!-- layouts/blog/single.html:main-->" | safeHTML }}
+<section class="color-contrast">
+  <main class="blog-header centered prep-overlap">
+    {{ partial "tag-list" .Params.tags}}
+    <h2>{{ .Title }}</h2>
+  </main>
+</section>
 <section>
-  <main>
+  <main class="blog overlap">
+  {{ with index (.Resources.ByType "image") 0 }}
+    {{ $image := .Resize "x300" }}
+    <img src="{{ $image.RelPermalink }}" alt="{{ $.Title }}">
+    {{ else }}
+      {{ $image := ((resources.Get "images/blog-default.jpg").Resize "x300") }}
+      <img src="{{ $image.RelPermalink }}">
+  {{ end }}
   {{.Content}}
   </main>
 </section>
