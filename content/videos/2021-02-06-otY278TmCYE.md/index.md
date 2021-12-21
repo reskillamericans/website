@@ -6,7 +6,7 @@ guestTitle = "Microsoft"
 slug = "intro-to-interview-with-ore"
 filename = "2021-02-06-otY278TmCYE.md"
 date = "2021-02-06T23:41:04.000Z"
-draft = false
+draft = true
 tags = [ "about-reskill-americans" ]
 
 +++
