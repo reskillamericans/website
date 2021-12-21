@@ -4,6 +4,7 @@ date = 2021-12-14T14:26:34-08:00
 draft = false
 tags = []
 order = 1
+layout = "document"
 +++
 
 ## Skills Building
