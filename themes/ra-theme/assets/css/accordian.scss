@@ -1,0 +1,22 @@
+.accordian-control {
+  color: $main-text-color;
+
+  &:hover {
+    cursor: pointer;
+    color: $link-color;
+  }
+  user-select: none;
+  margin-bottom: 0.5rem;
+
+  &.open {
+    color: $link-color;
+  }
+}
+
+.accordian-content {
+  @include floating-shadow;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+  padding-inline: 1rem;
+}
