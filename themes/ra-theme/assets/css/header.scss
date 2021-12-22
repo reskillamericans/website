@@ -53,11 +53,16 @@ header {
         position:fixed;
         z-index: 90;
         inset: 0 0 0 30%;
-        background-color: hsla(0, 0%, 0%, 0.1);
+        background-color: hsla(0, 0%, 100%, 0.5);
         @include webkit-prefix('backdrop-filter', 'blur(15px)');
         flex-direction: column;
+        gap: 2rem;
         justify-content: start;
         padding: 4rem 2rem;
+
+        a {
+          font-size: 1.5rem;
+        }
       }
 
       padding-block: 0;
