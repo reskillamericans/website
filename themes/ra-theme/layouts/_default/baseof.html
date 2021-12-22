@@ -23,7 +23,7 @@
     present in front matter. -->
 {{- $processors := .Params.process -}}
 {{- if $processors -}}
-    {{- infof "Processors: %s" (jsonify $processors) -}}
+    {{- warnf "Processors: %s" (jsonify $processors) -}}
     <!-- Load modules using name - they will register themselves -->
     {{- range $processors -}}
         <script type=module src="/scripts/{{ .name }}.js"></script>
