@@ -1,12 +1,18 @@
 {{ define "extra-head" }}
-{{ "<!-- layouts/single.html:extra-head-->" | safeHTML }}
+{{ "<!-- layouts/_default/document.html:extra-head-->" | safeHTML }}
 <script type="module" src="/scripts/reskill.js"></script>
 {{ end }}
 
 {{ define "main" }}
-{{ "<!-- layouts/single.html:main-->" | safeHTML }}
+{{ "<!-- layouts/_default/document.html:main-->" | safeHTML }}
+<section class="color-contrast">
+    <main class="centered">
+      <h1>{{.Title}}</h1>
+    </main>
+</section>
+
 <section>
-    <main>
+    <main class="document">
         {{.Content}}
     </main>
 </section>
