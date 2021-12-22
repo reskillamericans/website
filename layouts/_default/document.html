@@ -5,15 +5,30 @@
 
 {{ define "main" }}
 {{ "<!-- layouts/_default/document.html:main-->" | safeHTML }}
+
+{{- $mainClass := "" -}}
+{{- $hero := .Resources.GetMatch "hero.*" -}}
+
+{{- if $hero -}}
+    {{- $mainClass = "prep-overlap" -}}
+{{- end -}}
+
 <section class="color-contrast">
-    <main class="centered">
+    <main class="centered {{ $mainClass }}">
       <h1>{{.Title}}</h1>
     </main>
 </section>
 
 <section>
-    <main class="document">
-        {{.Content}}
+    {{ with $hero }}
+        <main class="document overlap">
+        {{- $image := $hero.Resize "x300" -}}
+        <img class="hero" src="{{ $image.RelPermalink }}" alt="{{ $.Title }}">
+    {{ else }}
+        <main class="document">
+    {{ end }}
+    {{.Content}}
     </main>
 </section>
+
 {{ end }}
