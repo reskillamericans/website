@@ -1,3 +1,9 @@
+@mixin webkit-prefix($name, $value) {
+  @each $vendor in ('-webkit-', '') {
+    #{$vendor}#{$name}: #{$value};
+  }
+}
+
 @mixin hover-zoom($scale: 1.15) {
   transition: transform 0.2s ease-in-out;
   &:hover {

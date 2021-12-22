@@ -54,7 +54,7 @@ header {
         z-index: 90;
         inset: 0 0 0 30%;
         background-color: hsla(0, 0%, 0%, 0.1);
-        backdrop-filter: blur(15px);
+        @include webkit-prefix('backdrop-filter', 'blur(15px)');
         flex-direction: column;
         justify-content: start;
         padding: 4rem 2rem;
