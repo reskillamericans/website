@@ -1,14 +1,12 @@
 +++
-title = "Privacy Policy"
+title = "Reskill Americans Privacy Notice"
 date = 2021-10-07
 draft = false
 tags = []
 layout = "document"
 +++
 
-# Reskill Americans Privacy Notice 
-
-Version: 1.0
+*Version: 1.0*
 
 October 7, 2021
 
