@@ -12,6 +12,7 @@
 @import "carousell";
 @import "summary";
 @import "blog";
+@import "accordian";
 
 :root {
   --codeFont: 'Roboto Mono', monospace;
@@ -179,6 +180,18 @@ main {
   &.overlap {
     margin-top: -8rem;
     background-color: transparent;
+  }
+
+  &.document {
+    max-width: 800px;
+    font-size: 16px;
+    line-height: 1.4em;
+
+    hr {
+      // border: none;
+      border-top: 3px solid $color-contrast-color;
+      margin: 1em 0;
+    }
   }
 }
 
