@@ -1,13 +1,13 @@
 {{ define "extra-head" }}
-{{ "<!-- layouts/blog/list.html:extra-head-->" | safeHTML }}
+{{ "<!-- layouts/news/list.html:extra-head-->" | safeHTML }}
 <script type="module" src="/scripts/reskill.js"></script>
 {{ end }}
 
 {{ define "main" }}
-{{ "<!-- layouts/blog/list.html:main-->" | safeHTML }}
+{{ "<!-- layouts/news/list.html:main-->" | safeHTML }}
 {{.Content}}
 
-<!-- Merge video content with pages from the blog -->
+<!-- Merge video content with pages from the news/blog section -->
 {{ $videos := (.Site.GetPage "/videos").Pages }}
 {{ $combined := (.Pages | append $videos).ByDate.Reverse }}
 <section>

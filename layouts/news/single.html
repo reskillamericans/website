@@ -1,23 +1,23 @@
 {{ define "extra-head" }}
-{{ "<!-- layouts/blog/single.html:extra-head-->" | safeHTML }}
+{{ "<!-- layouts/news/single.html:extra-head-->" | safeHTML }}
 <script type="module" src="/scripts/reskill.js"></script>
 {{ end }}
 
 {{ define "main" }}
-{{ "<!-- layouts/blog/single.html:main-->" | safeHTML }}
+{{ "<!-- layouts/news/single.html:main-->" | safeHTML }}
 <section class="color-contrast">
-  <main class="blog-header centered prep-overlap">
+  <main class="news-header centered prep-overlap">
     {{ partial "tag-list" .Params.tags}}
     <h2>{{ .Title }}</h2>
   </main>
 </section>
 <section>
-  <main class="blog overlap">
+  <main class="news overlap">
   {{ with index (.Resources.ByType "image") 0 }}
     {{ $image := .Resize "x300" }}
     <img src="{{ $image.RelPermalink }}" alt="{{ $.Title }}">
     {{ else }}
-      {{ $image := ((resources.Get "images/blog-default.jpg").Resize "x300") }}
+      {{ $image := ((resources.Get "images/news-default.jpg").Resize "x300") }}
       <img src="{{ $image.RelPermalink }}">
   {{ end }}
   {{.Content}}

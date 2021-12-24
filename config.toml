@@ -13,9 +13,6 @@ unsafe= true
 [taxonomies]
 tag = "tags"
 
-# [permalinks]
-# tags = "/blog/:slug/"
-
 [params]
 description = "Tuition-free software development training for underrepresented minorities"
 googleAnalytics = "G-Y2KQZFCB07"
