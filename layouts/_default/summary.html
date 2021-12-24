@@ -6,7 +6,7 @@
       {{ $image := .Resize "300x" }}
       <img src="{{ $image.RelPermalink }}" alt="{{ $.Title }}">
       {{ else }}
-        {{ $image := ((resources.Get "images/blog-default.jpg").Resize "300x") }}
+        {{ $image := ((resources.Get "images/news-default.jpg").Resize "300x") }}
         <img src="{{ $image.RelPermalink }}">
     {{ end }}
   </a>
