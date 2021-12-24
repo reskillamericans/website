@@ -26,8 +26,9 @@ class Tabs {
       }
     }
 
-    this.calcHeight();
+    this.initPages();
 
+    // Page radio button clicked - select the page
     parent.addEventListener('change', (event) => {
       let target = event.target as HTMLInputElement;
       this.setActivePage(target!.id);
@@ -40,20 +41,21 @@ class Tabs {
     this.setActivePage(activeId);
   }
 
-  calcHeight() {
+  initPages() {
     const pages = this.parent.querySelectorAll('.content [data-tab]') as Iterable<HTMLElement>;
-    let height = 0;
     for (let page of pages) {
       this.pages.set(page.dataset.tab!, page as HTMLElement);
-      height = Math.max(height, page.offsetHeight);
     }
+  }
 
-    this.content.style.height = `${height}px`;
+  calcHeight() {
+    if (this.activeId) {
+      const page = this.pages.get(this.activeId)!;
+      this.content.style.height = `${page.offsetHeight}px`;
+    }
   }
 
   setActivePage(id: string) {
-    console.log(`Activating ${id}`);
-
     if (this.activeId === id) {
       return;
     }
@@ -63,8 +65,10 @@ class Tabs {
     }
 
     if (this.pages.has(id)) {
-      this.pages.get(id)!.dataset.tabActive = 'true';
+      const page =  this.pages.get(id)!;
+      page.dataset.tabActive = 'true';
       this.activeId = id;
+      this.calcHeight();
     } else {
       console.warn(`Missing page ${id} - selecting none.`);
       this.activeId = '';
