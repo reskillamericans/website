@@ -33,7 +33,7 @@ Job Fairs or other virtual events and shared insights with our participants in
 {{% /section %}}
 
 {{< section light-background >}}
-{{< video-carousell partners >}}
+{{< video-carousel partners >}}
 {{< /section >}}
 
 {{% section light-background centered %}}
