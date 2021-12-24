@@ -54,6 +54,5 @@ function carousel(id: string) {
     function showControls() {
         divLeft.style.visibility = curChild === 0 ? 'hidden' : 'visible';
         divRight.style.visibility = curChild === numChildren - 1 ? 'hidden' : 'visible';
-        console.log(`Cur: ${curChild} Left: ${divLeft.style.visibility}, Right: ${divRight.style.visibility}`);
     }
 }
