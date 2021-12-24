@@ -232,7 +232,7 @@ div.image-box {
   min-width: 250px;
   min-height: 150px;
   background-color: white;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5em;
 
   @include all-headings {
@@ -240,10 +240,19 @@ div.image-box {
     text-align: center;
   }
 
+  div.image-wrapper {
+    padding: 0;
+    background-color: $main-color;
+    border-radius: 8px 8px 0 0;
+  }
+
   img {
+    display: block;
+    width: 100%;
     padding: 0;
     border-radius: 8px 8px 0 0;
-    width: 100%;
+    max-width: 400px;
+    margin: auto;
   }
 
   p {

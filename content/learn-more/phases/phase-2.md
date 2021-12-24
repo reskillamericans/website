@@ -11,7 +11,7 @@ layout = "document"
 
 ### (6 weeks)
 
-{{% image-box src="Phase-1.png" resize="800x" %}}
+{{% image-box src="Phase-1.png" %}}
 
 In Phase 2, you will take everything you've learned from the classroom,
 exercises, and small projects in Phase I and apply it to an individual project.

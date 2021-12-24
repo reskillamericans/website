@@ -37,7 +37,7 @@ mentorship.
 
 {{% section wrapped-boxes overlap %}}
 
-{{% image-box src="code-fe.png" resize="800x" %}}
+{{% image-box src="code-fe.png" %}}
 
 ## Full Stack Web<br>Development
 
@@ -49,7 +49,7 @@ applications on your own.
 
 {{% /image-box %}}
 
-{{% image-box src="Design.png" resize="800x" %}}
+{{% image-box src="Design.png" %}}
 
 ## Product Designer<br>UI/UX
 

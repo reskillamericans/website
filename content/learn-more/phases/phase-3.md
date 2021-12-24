@@ -11,7 +11,7 @@ layout = "document"
 
 ### (6 weeks)
 
-{{% image-box src="People.png" resize="800x" %}}
+{{% image-box src="People.png" %}}
 
 As a final project, you will be grouped into teams to work on a project
 together.  In this phase, we will integrate our Product Design and Web

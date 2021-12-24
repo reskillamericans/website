@@ -11,7 +11,7 @@ layout = "document"
 
 ### (throughout the program)
 
-{{% image-box src="Working_01.png" resize="800x" %}}
+{{% image-box src="Working_01.png" %}}
 
 Although delivered online, our program is designed to be social.  You will be
 paired with mentors and TAs from the beginning, and matched with a group of

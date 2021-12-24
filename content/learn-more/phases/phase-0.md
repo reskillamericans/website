@@ -11,7 +11,7 @@ layout = "document"
 
 ### (approximately 4 weeks)
 
-{{% image-box src="Working_01.png" resize="800x" %}}
+{{% image-box src="Working_01.png" %}}
 
 Everyone comes to our program from a range of industries and experiences, and
 we've found that your diverse backgrounds can enhance your collective training.
