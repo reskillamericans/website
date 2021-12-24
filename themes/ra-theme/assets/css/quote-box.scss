@@ -1,51 +1,69 @@
 div.quote-box {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
-  column-gap: 2rem;
-  align-items: stretch;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
   overflow: hidden;
   border-radius: 6px;
 
-  font-size: 12px;
-  line-height: 1.3em;
+  color: $contrast-color;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 1.5em;
 
   padding: 1rem 2rem;
-  width: 400px;
-  height: 200px;
+  width: 100%;
 
-  // Alternate accent color.
-  &:nth-child(odd) {
-    background-color: $standout-color;
-    color: $standout-text-color;
-  }
-
-  &:nth-child(even) {
-    background-color: $alternate-standout-color;
-    color: $standout-text-color;
+  @media (max-width: $break-width) {
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 16px;
+    width: 80%;
   }
 
   // Profile picture on the left side.
   > img {
+    flex-grow: 1;
+    flex-basis: 30%;
+    width: 80%;
     box-sizing: border-box;
-    height: 200px;
+    border-radius: 1rem;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: top center;
     padding: 0;
     margin: 0;
   }
 
   // Quote paragraphs down the right side - ending in signature at bottom.
   > div {
+    flex-grow: 1;
+    flex-basis: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    padding-block: 2rem;
+    border-block: 1px solid $color-contrast-color;
+
+    > p {
+      margin: 0;
+    }
+
+    @media (max-width: $break-width) {
+      justify-content: flex-start;
+    }
   }
 
-  > div > p:first-child {
-    margin-top: 0;
+  // The quuote text body.
+  p:first-child {
+    margin-bottom: 2rem;
   }
 
-  > div > p:last-child {
+  p.name {
     font-weight: bold;
-    margin-bottom: 0;
+    color: $color-contrast-color;
+  }
+
+  p.location {
+    font-weight: bold;
   }
 }

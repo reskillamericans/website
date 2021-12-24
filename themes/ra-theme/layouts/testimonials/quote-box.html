@@ -4,7 +4,7 @@
     because original might have EXIF rotation - so it is displayed
     correctly - BUT - the .Resize command strips in out! -->
   {{- with .Resources.GetMatch "profile.*" -}}
-    {{- $sizing := "300x" -}}
+    {{- $sizing := "400x" -}}
     {{- with $.Page.Params.rotation -}}
       {{- $sizing = printf "%s r%d" $sizing . -}}
     {{- end -}}
@@ -15,8 +15,10 @@
   {{ end }}
   <div>
     {{ .Content }}
-    <p>
-      {{ .Params.name }}<br>
+    <p class="name">
+      {{ .Params.name }}
+    </p>
+    <p class="location">
       {{ .Params.location }}
     </p>
   </div>

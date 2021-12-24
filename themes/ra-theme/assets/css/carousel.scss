@@ -20,17 +20,17 @@ div.directional {
   @include hover-zoom(1.2);
   background-color: white;
   border-radius: 25px;
-  opacity: 0.4;
+  opacity: 0.3;
   position: absolute;
   z-index: 1000;
   width: 50px;
   aspect-ratio: 1;
-  top: calc(50% - 25px);
+  top: 75%;
 
   background-repeat:no-repeat;
   background-size: contain;
   background-position: center;
-  filter: invert(100%);
+  // filter: invert(100%);
 
   &.left {
     left: 5px;
