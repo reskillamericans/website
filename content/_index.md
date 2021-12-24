@@ -104,10 +104,13 @@ will provide the best experience.
 {{% /section %}}
 
 
-{{< section >}}
+{{% section centered light-background %}}
+# Testimonials {#head-testimonials}
+{{% /section %}}
+
+{{< section light-background >}}
 {{< testimonials >}}
 {{< /section >}}
-
 
 {{% section centered %}}
 
