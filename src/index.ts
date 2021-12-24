@@ -6,13 +6,13 @@ import { signInWithEmailAndPassword, signInWithPopup, linkWithPopup,
 import type { User, AuthProvider } from "firebase/auth";
 import { addDoc, collection } from "firebase/firestore";
 
-import { carousell } from './carousell.js';
+import { carousel } from './carousel.js';
 
 import { bindButtons } from './dom-utils.js';
 import { db, auth } from "./setup.js";
 import { linkLinkedIn, continueLinkedIn } from "./linkedin.js";
 
-export { main, continueLinkedIn, carousell };
+export { main, continueLinkedIn, carousel };
 
 const googleProvider = new GoogleAuthProvider();
 const emailProvider = new EmailAuthProvider();
