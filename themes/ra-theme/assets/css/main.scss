@@ -242,7 +242,8 @@ div.image-box {
 
   div.image-wrapper {
     padding: 0;
-    background-color: $main-color;
+    // Hack: Set to match images being used on the RA site.
+    background-color: #f7f7f8;
     border-radius: 8px 8px 0 0;
   }
 
