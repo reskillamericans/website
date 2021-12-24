@@ -1,6 +1,6 @@
 export { carousel };
 
-// carousel has one child that is a horizantal band of "cards".
+// Carousel has one child that is a horizantal band of "cards".
 function carousel(id: string) {
     let curPos = 0;
     let curChild = 0;
