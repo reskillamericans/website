@@ -1,7 +1,7 @@
 {{ $tag := .Get 0 }}
 {{- with .Site.GetPage "/videos" -}}
 
-<div id="videos" class="carousell">
+<div id="videos" class="carousel">
   <div>
       {{- range sort .Pages "Date" -}}
         {{ if in .Params.tags $tag }}
@@ -12,8 +12,8 @@
 </div>
 
 <script type="module">
-  import { carousell } from '/scripts/reskill.js';
-  carousell('videos');
+  import { carousel } from '/scripts/reskill.js';
+  carousel('videos');
 </script>
 
 {{- else -}}
