@@ -24,7 +24,8 @@ historically underrepresented racial minorities across the U.S.
 
 ## Learning Tracks
 
-We have two tracks to choose from. A Full-Stack Web Development course, and a
+
+We have two tracks to choose from: a Full-Stack Web Development Course, and a
 Product Designer UI/UX course.
 
 Our seven-month course is project-based with hands-on learning and weekly
@@ -41,11 +42,11 @@ mentorship.
 
 ## Full Stack Web<br>Development
 
-We will start from the basics of web development: HTML and CSS. And
-then move into JavaScript as used in the browser, and then on the
-server.<br><br>No prior experience is needed as we will begin with the
-basics and progress until you are able to develop complete web sites and
-applications on your own.
+We will start from the basics of web development: HTML and CSS. Then we will
+move into JavaScript as used in the browser, and then on the server.
+
+No prior experience is needed as we will begin with the basics and progress
+until you are able to develop complete web sites and applications on your own.
 
 {{% /image-box %}}
 
@@ -82,7 +83,7 @@ participate on your own schedule, as long as you submit your assignments
 on time.&nbsp;<span class="footnote-mark">*</span>
 
 <p class="footnote">
-* We will provide twice-weekly mentor and peer-group video conference
+* We will provide weekly mentor and peer-group video conference
 calls to meet your schedule.
 </p>
 

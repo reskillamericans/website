@@ -24,11 +24,11 @@ our program.
 
 {{% section light-background centered %}}
 
-## Vote of Thanks
+## Thank You!
 
-We want to thank the many industry experts who participated in our Town Halls,
-Job Fairs or other virtual events and shared insights with our participants in
-2021.
+We want to thank the many industry experts who participate in our town halls,
+job fairs or other virtual events and share their insights with our
+participants.
 
 {{% /section %}}
 
