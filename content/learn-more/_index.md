@@ -55,3 +55,77 @@ working individually on exercises and projects.
 {{% section centered light-background %}}
 
 {{% /section %}}
+
+{{% section centered %}}
+
+## Stats from our First Cohort
+
+{{% metric src=dollars.jpg %}}
+### $0 Zero Dollars
+Our program is offered completely free for the participants because of the
+generosity of our donors and partners.
+{{% /metric %}}
+
+{{% metric src=signups.png %}}
+### 2,000+ Signups
+More than 2,000 people enrolled for our inaugural cohort that started in March
+2021.
+{{% /metric %}}
+
+{{% metric src=job-search.png %}}
+### 48% Unemployed
+Of those who enrolled in our inaugural cohort were unemployed.
+{{% /metric %}}
+
+{{% metric src=active.jpg %}}
+### 1,000 Active
+1,000 of our enrollees began taking classes and became active participants in
+the program.
+{{% /metric %}}
+
+{{% metric src=learning.jpg %}}
+### 66,000 Hours of Learning
+Our participants completed more than 8,000 lessons in 66,000 hours learning
+time.
+{{% /metric %}}
+
+{{% metric src=instructors.jpg %}}
+### 40+ Instructors
+We had more than 40 instructors, Technical Advisors and project managers in the
+program who helped train our participants.
+{{% /metric %}}
+
+{{% metric src=mentors.png %}}
+### Mentorship from Experts
+We hosted 18 Town Halls with professionals from Google, Microsoft, HBO, Sonos
+and other companies.
+{{% /metric %}}
+
+{{% metric src=tracks.png %}}
+### 7 Learning Tracks
+We trained participants in frontend, backend, mobile and UI/UX Design tracks.
+{{% /metric %}}
+
+{{% metric src=projects.png %}}
+### Project Phase
+200 participants completed our training and got into our project phase.
+{{% /metric %}}
+
+{{% metric src=build.png %}}
+### 16 Projects
+Our participants built 16 full stack projects working on crossfunctional teams
+of developers and designers.
+{{% /metric %}}
+
+{{% metric src=completions.png %}}
+### 130+ Completed the program
+On October 23rd, 2021, 130 participants completed the program and received
+certificates of completion.
+{{% /metric %}}
+
+{{% metric src=girls.jpg %}}
+### Girl Power!
+58% of the participants who completed our program were women.
+{{% /metric %}}
+
+{{% /section %}}

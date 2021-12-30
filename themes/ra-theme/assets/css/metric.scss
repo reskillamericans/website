@@ -1,0 +1,54 @@
+div.metric {
+  box-sizing: border-box;
+  display: grid;
+  font-size: 16px;
+  grid-template-rows: min-content 1fr;
+  gap: 0 1rem;
+  max-width: 50%;
+
+  @media (max-width: $break-width) {
+    max-width: 100%;
+  }
+
+  ~ div.metric {
+    margin-top: -20px;
+
+    @media (max-width: $break-width) {
+      margin-top: 1rem;
+    }
+  }
+
+  &:nth-child(even) {
+    grid-template-areas:
+    "image heading"
+    "image content";
+    margin-left: auto;
+    padding-left: 0.5rem;
+    text-align: left;
+  }
+
+  &:nth-child(odd) {
+    grid-template-areas:
+    "heading image"
+    "content image";
+    margin-right: auto;
+    padding-right: 0.5rem;
+    text-align: right;
+  }
+
+  img {
+    grid-area: image;
+  }
+
+  h3 {
+    grid-area: heading;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    padding: 0;
+  }
+
+  p {
+    grid-area: content;
+    margin: 0;
+  }
+}
