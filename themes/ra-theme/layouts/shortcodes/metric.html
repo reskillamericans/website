@@ -1,0 +1,12 @@
+{{ "<!-- shortcode: " | safeHTML }}{{ .Name }}{{ " -->" | safeHTML }}
+
+<div class="metric">
+{{ $src := .Page.Resources.GetMatch (.Get "src")  }}
+{{ with $src }}
+  {{ $image := $src.Resize "125x" }}
+<img src="{{ $image.Permalink }}">
+{{ else }}
+  {{ warnf "No metric image found: %s." (.Get "src") }}
+{{ end }}
+{{ .Inner }}
+</div>
