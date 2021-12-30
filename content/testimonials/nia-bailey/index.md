@@ -3,7 +3,7 @@ title = "Testimonial of Nia Bailey"
 date = 2021-12-06T18:53:23-08:00
 draft = true
 
-name = "Queens, NY"
+name = "Nia Bailey"
 location = "Queens, NY"
 # imageURL = "https://profile-image-url-here"
 +++
