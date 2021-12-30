@@ -2,14 +2,9 @@
 title = "Bambo Sofola"
 slug = "bambo-sofola"
 jobTitle = "General Manager, Microsoft"
-
 group = "Advisor"
 draft = false
-
-
-
-
-
+linkedIn = "in/bambo-sofola-64970a6"
 
 cardText = "Providing access to an education in technology can transform lives, and I joined the Advisory Board of Reskill Americans because I want to help give underrepresented minorities the opportunity to start exciting and fulfilling careers in technology."
 
