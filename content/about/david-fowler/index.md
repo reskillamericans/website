@@ -1,15 +1,11 @@
 +++
 title = "David Fowler"
 slug = "david-fowler"
-jobTitle = "Microsoft Software Architect"
+jobTitle = "Software Architect, Microsoft"
 order = 1
 group = "Advisor"
 draft = false
-
 linkedIn = "in/davidfowl/"
-
-
-
 
 cardText = "Everyone can build a fulfilling career in tech if given the opportunity, and I want to make sure that more people that look like me have that opportunity.”"
 
