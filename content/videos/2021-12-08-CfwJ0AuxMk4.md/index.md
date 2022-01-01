@@ -1,5 +1,5 @@
 +++
-title = "Reskill Americans Final Demo Day 2021"
+title = "Final Demo Day Featuring A Few Projects from our Inaugural Cohort"
 guest = "Eric Amemiya & Manrique Zuniga"
 guestTitle = "Rigetti Computing"
 quote = "You guys took on some really challenging projecs ... you attacked real world problems and brought solutions that were relevant…it was eye opening to see how these apps were developed and thought out."

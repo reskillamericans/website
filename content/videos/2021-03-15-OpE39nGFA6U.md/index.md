@@ -1,5 +1,5 @@
 +++
-title = "Reskill Americans Town Hall #2 | Jeremiah Peoples"
+title = "Reskill Americans Hosts Jeremiah Peoples for 2nd Town Hall, Monday, March 15th"
 videoId = "OpE39nGFA6U"
 guest = "Jeremiah Peoples"
 guestTitle = "Self-taught Developer"

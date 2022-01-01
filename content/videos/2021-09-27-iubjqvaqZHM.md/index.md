@@ -1,5 +1,5 @@
 +++
-title = "Virtual Job Fair #3 | Teddy Burriss - Learn How to Use LinkedIn as a Career Transition Tool"
+title = "Job Fair with LinkedIn Strategist, Trainer and Coach Teddy Burriss"
 videoId = "iubjqvaqZHM"
 guest = "Teddy Burriss"
 guestTitle = "Career Coach"

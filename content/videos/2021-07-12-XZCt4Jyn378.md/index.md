@@ -1,5 +1,5 @@
 +++
-title = "Reskill Americans Town Hall #17 | Mike Coleman - Google Developer Advocate"
+title = "Reskill Americans Hosts Developer Advocate at Google, Mike Coleman"
 videoId = "XZCt4Jyn378"
 guest = "Mike Coleman"
 guestTitle = "Google Developer Advocate"

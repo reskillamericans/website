@@ -1,5 +1,5 @@
 +++
-title = "Reskill Americans Town Hall #6 | David Ortiz - SimWin Sports"
+title = "Reskill Americans Hosts David Ortiz for 6th Town Hall, Monday, April 12th"
 videoId = "HzmsXMX6F5A"
 guest = "David Ortiz"
 guestTitle = "SimWin Sports"

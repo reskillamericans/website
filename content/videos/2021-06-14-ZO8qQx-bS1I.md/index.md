@@ -1,5 +1,5 @@
 +++
-title = "Reskill Americans Town Hall #14 | Laurent Pierre - Microsoft Customer Experience"
+title = "Reskill Americans Hosts General Manager for Customer Experience at Microsoft Azure at 14th Town Hall"
 videoId = "ZO8qQx-bS1I"
 guest = "Laurent Pierre"
 guestTitle = "Microsoft Customer Experience"

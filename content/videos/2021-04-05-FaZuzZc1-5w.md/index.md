@@ -1,5 +1,5 @@
 +++
-title = "Reskill Americans Town Hall #5 | Nick Curry - Amazon Web Services"
+title = "Reskill Americans Hosts Nick Curry from AWS for 5th Town Hall, Monday, April 5th"
 videoId = "FaZuzZc1-5w"
 guest = "Nick Curry"
 guestTitle = "Amazon Web Services"

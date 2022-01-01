@@ -1,5 +1,5 @@
 +++
-title = "Virtual Job Fair #2 | Marina Nitze- Small Business and Entrepreneurship"
+title = "Reskill Americans Hosts Job Fair with an Entrepreneur, Freelancer and former CTO"
 videoId = "S1F4ihlSzqU"
 guest = "Marina Nitze"
 guestTitle = "Entrepreneur"

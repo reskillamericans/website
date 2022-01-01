@@ -1,5 +1,5 @@
 +++
-title = "Virtual Job Fair #1 | Software One"
+title = "Reskill Americans Hosts Job Fair with SoftwareONE"
 videoId = "RLX-6YJHubg"
 guest = "Nina Unger"
 guestTitle = "Software One"

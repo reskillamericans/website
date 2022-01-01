@@ -1,5 +1,5 @@
 +++
-title = "Reskill Americans Town Hall #3 | Covid Act Now"
+title = "Reskill Americans Hosts Guest Speakers from Covid Act Now for 3rd Town Hall, Monday, March 22nd"
 videoId = "UDl4_KdT_Q4"
 guest = "Michael Lehenbauer & Chelsi Asulin"
 guestTitle = "Covid Act Now"

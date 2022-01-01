@@ -1,5 +1,5 @@
 +++
-title = "Reskill Americans Town Hall #16 | Tony Wright - Designer and Entrepreneur"
+title = "Reskill Americans Hosts Entrepreneur, CEO and UI/UX Designer Tony Wright at Town Hall"
 videoId = "NivSoU2jTrY"
 guest = "Tony Wright"
 guestTitle = "Designer and Entrepreneur"

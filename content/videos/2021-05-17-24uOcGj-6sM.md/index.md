@@ -1,5 +1,5 @@
 +++
-title = "Reskill Americans Town Hall #11 |  Dev Nambi - Data Scientist at Fred Hutch"
+title = "Reskill Americans Hosts Dev Nambi, Data Engineer at Fred Hutch Cancer Research Center 11th Town Hall"
 videoId = "24uOcGj-6sM"
 guest = "Dev Nambi"
 guestTitle = "Data Scientist at Fred Hutch"

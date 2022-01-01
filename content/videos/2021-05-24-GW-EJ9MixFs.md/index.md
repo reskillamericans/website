@@ -1,5 +1,5 @@
 +++
-title = "Reskill Americans Town Hall #12 |  Kedasha Kerr - @itsthatladydev"
+title = "Reskill Americans Hosts Design Systems Engineer Kedasha Kerr for 12th Town Hall"
 videoId = "GW-EJ9MixFs"
 guest = "Kedasha Kerr"
 guestTitle = "@itsthatladydev"

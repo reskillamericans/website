@@ -1,5 +1,5 @@
 +++
-title = "Reskill Americans Town Hall #7 | Deborah Russell - D.C. Workforce Investment Council"
+title = "Reskill Americans Hosts Deborah Russell from Workforce Investment Council for 7th Town Hall"
 videoId = "zcq9mu5SItE"
 guest = "Deborah Russell"
 guestTitle = "D.C. Workforce Investment Council"

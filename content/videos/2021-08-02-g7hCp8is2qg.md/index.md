@@ -1,5 +1,5 @@
 +++
-title = "Reskill Americans Town Hall #18 | Andrew Kwatinetz and Eric Patey - Sonos"
+title = "Reskill Americans Hosts Two Leaders at Sonos"
 videoId = "g7hCp8is2qg"
 guest = "Andrew Kwatinetz and Eric Patey"
 guestTitle = "Sonos"

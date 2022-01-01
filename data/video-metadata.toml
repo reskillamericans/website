@@ -50,7 +50,7 @@ draft = false
 tags = [ "about-reskill-americans" ]
 
 [SYCi8ofMoy0]
-title = "Reskill Americans Town Hall #1"
+title = "Reskill Americans Launches First Town Hall: Monday, March 8th"
 videoId = "SYCi8ofMoy0"
 slug = "town-hall-1"
 num = "1"
@@ -60,7 +60,7 @@ draft = false
 tags = [ "town-halls" ]
 
 [OpE39nGFA6U]
-title = "Reskill Americans Town Hall #2 | Jeremiah Peoples"
+title = "Reskill Americans Hosts Jeremiah Peoples for 2nd Town Hall, Monday, March 15th"
 videoId = "OpE39nGFA6U"
 guest = "Jeremiah Peoples"
 guestTitle = "Self-taught Developer"
@@ -127,7 +127,7 @@ draft = false
 tags = [ "mikes-live-coding-demos" ]
 
 [UDl4_KdT_Q4]
-title = "Reskill Americans Town Hall #3 | Covid Act Now"
+title = "Reskill Americans Hosts Guest Speakers from Covid Act Now for 3rd Town Hall, Monday, March 22nd"
 videoId = "UDl4_KdT_Q4"
 guest = "Michael Lehenbauer & Chelsi Asulin"
 guestTitle = "Covid Act Now"
@@ -160,7 +160,7 @@ draft = false
 tags = [ "explainer" ]
 
 [DUCEmcR1BjA]
-title = "Reskill Americans Town Hall #4"
+title = "Reskill Americans 4th Town Hall with Mike, Seyi and Juwon, Monday, March 29th"
 videoId = "DUCEmcR1BjA"
 slug = "town-hall-4"
 num = "4"
@@ -202,7 +202,7 @@ draft = false
 tags = [ "first-time-dart" ]
 
 [FaZuzZc1-5w]
-title = "Reskill Americans Town Hall #5 | Nick Curry - Amazon Web Services"
+title = "Reskill Americans Hosts Nick Curry from AWS for 5th Town Hall, Monday, April 5th"
 videoId = "FaZuzZc1-5w"
 guest = "Nick Curry"
 guestTitle = "Amazon Web Services"
@@ -215,7 +215,7 @@ draft = false
 tags = [ "town-halls", "partners" ]
 
 [HzmsXMX6F5A]
-title = "Reskill Americans Town Hall #6 | David Ortiz - SimWin Sports"
+title = "Reskill Americans Hosts David Ortiz for 6th Town Hall, Monday, April 12th"
 videoId = "HzmsXMX6F5A"
 guest = "David Ortiz"
 guestTitle = "SimWin Sports"
@@ -228,7 +228,7 @@ draft = false
 tags = [ "town-halls", "partners" ]
 
 [zcq9mu5SItE]
-title = "Reskill Americans Town Hall #7 | Deborah Russell - D.C. Workforce Investment Council"
+title = "Reskill Americans Hosts Deborah Russell from Workforce Investment Council for 7th Town Hall"
 videoId = "zcq9mu5SItE"
 guest = "Deborah Russell"
 guestTitle = "D.C. Workforce Investment Council"
@@ -241,7 +241,7 @@ draft = false
 tags = [ "town-halls", "partners" ]
 
 [Qxy1moUCANA]
-title = "Reskill Americans Town Hall #8 | BlackRock"
+title = "Reskill Americans Hosts Two Software Engineers from BlackRock, Inc. for 8th Town Hall"
 videoId = "Qxy1moUCANA"
 guest = "Ajax Green & My Doan"
 guestTitle = "BlackRock Financial"
@@ -254,7 +254,7 @@ draft = false
 tags = [ "town-halls", "partners" ]
 
 [IKaTxeq013w]
-title = "Reskill Americans Town Hall #9 | Columbus Steward - Microsoft"
+title = "Reskill Americans Hosts a Principal Software Engineer Manager at Microsoft for 9th Town Hall"
 videoId = "IKaTxeq013w"
 guest = "Columbus Steward"
 guestTitle = "Microsoft"
@@ -267,7 +267,7 @@ draft = false
 tags = [ "town-halls", "partners" ]
 
 [xZ2O6F0gF5k]
-title = "Reskill Americans Town Hall #10 | Eric Johnson - Bright Machines"
+title = "Reskill Americans Hosts Director of Innovation at Bright Machines, Eric Johnson for 10th Town Hall"
 videoId = "xZ2O6F0gF5k"
 guest = "Eric Johnson"
 guestTitle = "Bright Machines"
@@ -280,7 +280,7 @@ draft = false
 tags = [ "town-halls", "partners" ]
 
 [24uOcGj-6sM]
-title = "Reskill Americans Town Hall #11 |  Dev Nambi - Data Scientist at Fred Hutch"
+title = "Reskill Americans Hosts Dev Nambi, Data Engineer at Fred Hutch Cancer Research Center 11th Town Hall"
 videoId = "24uOcGj-6sM"
 guest = "Dev Nambi"
 guestTitle = "Data Scientist at Fred Hutch"
@@ -293,7 +293,7 @@ draft = false
 tags = [ "town-halls", "partners" ]
 
 [GW-EJ9MixFs]
-title = "Reskill Americans Town Hall #12 |  Kedasha Kerr - @itsthatladydev"
+title = "Reskill Americans Hosts Design Systems Engineer Kedasha Kerr for 12th Town Hall"
 videoId = "GW-EJ9MixFs"
 guest = "Kedasha Kerr"
 guestTitle = "@itsthatladydev"
@@ -306,7 +306,7 @@ draft = false
 tags = [ "town-halls", "partners" ]
 
 [1CV9kVYZXCc]
-title = "Reskill Americans Town Hall #13 | Software One"
+title = "Reskill Americans Hosts SoftwareONE Employees at 13th Town Hall"
 videoId = "1CV9kVYZXCc"
 guest = "Nina Unger & Bill Winans"
 guestTitle = "Software One"
@@ -319,7 +319,7 @@ draft = false
 tags = [ "town-halls", "partners" ]
 
 [ZO8qQx-bS1I]
-title = "Reskill Americans Town Hall #14 | Laurent Pierre - Microsoft Customer Experience"
+title = "Reskill Americans Hosts General Manager for Customer Experience at Microsoft Azure at 14th Town Hall"
 videoId = "ZO8qQx-bS1I"
 guest = "Laurent Pierre"
 guestTitle = "Microsoft Customer Experience"
@@ -343,7 +343,7 @@ draft = false
 tags = [ "town-halls" ]
 
 [NivSoU2jTrY]
-title = "Reskill Americans Town Hall #16 | Tony Wright - Designer and Entrepreneur"
+title = "Reskill Americans Hosts Entrepreneur, CEO and UI/UX Designer Tony Wright at Town Hall"
 videoId = "NivSoU2jTrY"
 guest = "Tony Wright"
 guestTitle = "Designer and Entrepreneur"
@@ -356,7 +356,7 @@ draft = false
 tags = [ "town-halls", "partners" ]
 
 [XZCt4Jyn378]
-title = "Reskill Americans Town Hall #17 | Mike Coleman - Google Developer Advocate"
+title = "Reskill Americans Hosts Developer Advocate at Google, Mike Coleman"
 videoId = "XZCt4Jyn378"
 guest = "Mike Coleman"
 guestTitle = "Google Developer Advocate"
@@ -369,7 +369,7 @@ draft = false
 tags = [ "town-halls", "partners" ]
 
 [g7hCp8is2qg]
-title = "Reskill Americans Town Hall #18 | Andrew Kwatinetz and Eric Patey - Sonos"
+title = "Reskill Americans Hosts Two Leaders at Sonos"
 videoId = "g7hCp8is2qg"
 guest = "Andrew Kwatinetz and Eric Patey"
 guestTitle = "Sonos"
@@ -412,7 +412,7 @@ draft = false
 tags = [ "explainer" ]
 
 [RLX-6YJHubg]
-title = "Virtual Job Fair #1 | Software One"
+title = "Reskill Americans Hosts Job Fair with SoftwareONE"
 videoId = "RLX-6YJHubg"
 guest = "Nina Unger"
 guestTitle = "Software One"
@@ -480,7 +480,7 @@ draft = false
 tags = [ "coding-challenges" ]
 
 [-yuW6_6ghkE]
-title = "Reskill Americans Town Hall #21 | Danielle Storlie"
+title = "Reskill Americans Speaks with Senior Director of Design at Procore Technologies"
 videoId = "-yuW6_6ghkE"
 guest = "Danielle Storlie"
 guestTitle = "Designer"
@@ -493,7 +493,7 @@ draft = false
 tags = [ "town-halls", "partners" ]
 
 [nCtPz2LdDyc]
-title = "Technical Interview Training | David Fowler - Software Architect | Microsoft"
+title = "Microsoft Software Architect David Fowler Offers Interview Training in Town Hall"
 videoId = "nCtPz2LdDyc"
 guest = "David Fowler"
 guestTitle = "Software Architect, Microsoft"
@@ -505,7 +505,7 @@ draft = false
 tags = [ "job-fairs", "partners" ]
 
 [S1F4ihlSzqU]
-title = "Virtual Job Fair #2 | Marina Nitze- Small Business and Entrepreneurship"
+title = "Reskill Americans Hosts Job Fair with an Entrepreneur, Freelancer and former CTO"
 videoId = "S1F4ihlSzqU"
 guest = "Marina Nitze"
 guestTitle = "Entrepreneur"
@@ -530,7 +530,7 @@ draft = false
 tags = [ "coding-challenges" ]
 
 [iubjqvaqZHM]
-title = "Virtual Job Fair #3 | Teddy Burriss - Learn How to Use LinkedIn as a Career Transition Tool"
+title = "Job Fair with LinkedIn Strategist, Trainer and Coach Teddy Burriss"
 videoId = "iubjqvaqZHM"
 guest = "Teddy Burriss"
 guestTitle = "Career Coach"
@@ -543,7 +543,7 @@ draft = false
 tags = [ "job-fairs", "partners" ]
 
 [Pdvy3Qinxgw]
-title = "Virtual Job Fair #4 | Teddy Burriss - Learn How to Use LinkedIn as a Career Transition Tool"
+title = "Virtual Job Fair #3 | Teddy Burriss - Learn How to Use LinkedIn as a Career Transition Tool"
 videoId = "Pdvy3Qinxgw"
 guest = "Teddy Burriss"
 guestTitle = "Career Coach"
@@ -555,7 +555,7 @@ draft = false
 tags = [ "job-fairs" ]
 
 [vy-nd8m6M88]
-title = "Resume Best Practices | Training Session with Teddy Burriss- Career Coach"
+title = "Resume Training Session with Career Coach and LinkedIn Strategist Teddy Burriss"
 videoId = "vy-nd8m6M88"
 guest = "Teddy Burriss"
 guestTitle = "Career Coach"
@@ -566,7 +566,7 @@ draft = false
 tags = [ "job-fairs" ]
 
 [5sMY4HgPtW0]
-title = "Virtual Job Fair #5 | HBO Max - 100 Open Positions NOW! | Noreli Garcia Valentin and Charles Cox"
+title = "Job Fair with HBO Max on the Company’s 100+ Open Roles"
 videoId = "5sMY4HgPtW0"
 guest = "Noreli Garcia Valentin & Charles Cox"
 guestTitle = "HBO Max"
@@ -579,7 +579,7 @@ draft = false
 tags = [ "job-fairs", "partners" ]
 
 [CfwJ0AuxMk4]
-title = "Reskill Americans Final Demo Day 2021"
+title = "Final Demo Day Featuring A Few Projects from our Inaugural Cohort"
 guest = "Eric Amemiya & Manrique Zuniga"
 guestTitle = "Rigetti Computing"
 quote = "You guys took on some really challenging projecs ... you attacked real world problems and brought solutions that were relevant…it was eye opening to see how these apps were developed and thought out."

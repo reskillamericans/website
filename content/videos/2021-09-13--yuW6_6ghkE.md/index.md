@@ -1,5 +1,5 @@
 +++
-title = "Reskill Americans Town Hall #21 | Danielle Storlie"
+title = "Reskill Americans Speaks with Senior Director of Design at Procore Technologies"
 videoId = "-yuW6_6ghkE"
 guest = "Danielle Storlie"
 guestTitle = "Designer"

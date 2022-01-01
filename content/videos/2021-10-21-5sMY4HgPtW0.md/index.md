@@ -1,5 +1,5 @@
 +++
-title = "Virtual Job Fair #5 | HBO Max - 100 Open Positions NOW! | Noreli Garcia Valentin and Charles Cox"
+title = "Job Fair with HBO Max on the Company’s 100+ Open Roles"
 videoId = "5sMY4HgPtW0"
 guest = "Noreli Garcia Valentin & Charles Cox"
 guestTitle = "HBO Max"

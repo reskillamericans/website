@@ -1,5 +1,5 @@
 +++
-title = "Reskill Americans Town Hall #1"
+title = "Reskill Americans Launches First Town Hall: Monday, March 8th"
 videoId = "SYCi8ofMoy0"
 slug = "town-hall-1"
 num = "1"

@@ -1,5 +1,5 @@
 +++
-title = "Reskill Americans Town Hall #10 | Eric Johnson - Bright Machines"
+title = "Reskill Americans Hosts Director of Innovation at Bright Machines, Eric Johnson for 10th Town Hall"
 videoId = "xZ2O6F0gF5k"
 guest = "Eric Johnson"
 guestTitle = "Bright Machines"

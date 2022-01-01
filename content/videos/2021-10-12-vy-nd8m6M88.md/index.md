@@ -1,5 +1,5 @@
 +++
-title = "Resume Best Practices | Training Session with Teddy Burriss- Career Coach"
+title = "Resume Training Session with Career Coach and LinkedIn Strategist Teddy Burriss"
 videoId = "vy-nd8m6M88"
 guest = "Teddy Burriss"
 guestTitle = "Career Coach"

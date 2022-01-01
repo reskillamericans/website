@@ -1,5 +1,5 @@
 +++
-title = "Technical Interview Training | David Fowler - Software Architect | Microsoft"
+title = "Microsoft Software Architect David Fowler Offers Interview Training in Town Hall"
 videoId = "nCtPz2LdDyc"
 guest = "David Fowler"
 guestTitle = "Software Architect, Microsoft"
