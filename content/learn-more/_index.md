@@ -15,13 +15,14 @@ development through a range of formats: recorded and live video sessions,
 training modules, and online video conferences with your instructors and mentors
 (collectively requiring a minimum of 15 hours a week).
 
-## Next Cohort Starts In:
+## The Next Cohort Starts In:
 
 {{< countdown "2022-02-07T08:00-08:00" >}}
 
 <a class="button-like standout" href="/enroll">Join Our Next Cohort</a>
 
-{{< image class="hero" src="828457-1.png" resize="1080x jpg" >}}
+{{< image class="hero high" src="tasha-at-computer-4.jpg" resize="1080x jpg"
+    caption="Tasha Taylor completed our 2021 program as a front-end developer.">}}
 
 {{% /section %}}
 
