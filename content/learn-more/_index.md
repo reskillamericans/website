@@ -60,7 +60,7 @@ working individually on exercises and projects.
 
 ## Stats from our First Cohort
 
-{{% metric src=dollars.jpg %}}
+{{% metric src=dollars.png %}}
 ### $0 Zero Dollars
 Our program is offered completely free for the participants because of the
 generosity of our donors and partners.
@@ -77,19 +77,19 @@ More than 2,000 people enrolled for our inaugural cohort that started in March
 Of those who enrolled in our inaugural cohort were unemployed.
 {{% /metric %}}
 
-{{% metric src=active.jpg %}}
+{{% metric src=active.png %}}
 ### 1,000 Active
 1,000 of our enrollees began taking classes and became active participants in
 the program.
 {{% /metric %}}
 
-{{% metric src=learning.jpg %}}
+{{% metric src=learning.png %}}
 ### 66,000 Hours of Learning
 Our participants completed more than 8,000 lessons in 66,000 hours learning
 time.
 {{% /metric %}}
 
-{{% metric src=instructors.jpg %}}
+{{% metric src=instructors.png %}}
 ### 40+ Instructors
 We had more than 40 instructors, Technical Advisors and project managers in the
 program who helped train our participants.
@@ -123,7 +123,7 @@ On October 23rd, 2021, 130 participants completed the program and received
 certificates of completion.
 {{% /metric %}}
 
-{{% metric src=girls.jpg %}}
+{{% metric src=girls.png %}}
 ### Girl Power!
 58% of the participants who completed our program were women.
 {{% /metric %}}
