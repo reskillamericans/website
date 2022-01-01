@@ -22,9 +22,13 @@ future for all.
 {{% /section %}}
 
 {{% section centered overlap %}}
+
 <div class="outline-box">
 {{< youtube 09TU0AdoOSY >}}
 </div>
+
+*Our Co-Founder Femi Akinde discusses the power of providing access to tuition-free software development training, citing our 2021 enrollment statistics. The video was filmed as part of Microsoft’s internal speaker series, Outside in, and also featured Seattle Seahawks Coach Pete Carroll.*
+
 {{% /section %}}
 
 {{% section centered %}}
