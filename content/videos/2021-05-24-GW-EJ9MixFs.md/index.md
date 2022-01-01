@@ -9,7 +9,7 @@ num = "12"
 filename = "2021-05-24-GW-EJ9MixFs.md"
 date = "2021-05-24T15:00:39.000Z"
 draft = false
-tags = [ "town-halls" ]
+tags = [ "town-halls", "partners" ]
 
 +++
 
