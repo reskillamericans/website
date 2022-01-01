@@ -13,10 +13,4 @@ tags = [ "town-halls", "partners" ]
 
 +++
 
-Join us for our 3nrd Town Hall meeting of the 2021 class of Reskill Americans.  Last week you got information on choosing a Track, which many of you should have done by now.  And your first assignments are due this week.
-
-Today's presenters are Michael Lehenbauer and Chelsi Asulin from the CovidActNow.org team.  CovidActNow is a modern web application which was designed to help promote better public health decisions during the pandemic by showing real health metrics across every state and county in the US.  The team consisted of many volunteers and paid staff.  Chelsi was a recent bootcamp graduate herself, and she will describe how it felt to be thrown into the deep end on such an ambitious project.
-
-We will be taking questions in Slack (on our #town-hall-questions channel).  And you'll be invited to join our Zoom call to ask questions in person at the end of the meeting.
-
-Thanks for joining us!
+On Monday, March 22nd, we launched the first week of learning for our software development training program: participants made a decision about which track they would select, and began their journey installing their development environment and completing their first assignments. Our third Town Hall featured the organization Covid Act Now, a group of developers who came together in the beginning of the pandemic to provide timely and accurate data about Covid in every state across the country. CTO Mike Koss interviewed CTO Michael Lehenbauer and software engineer Chelsi Asulin about working in tech and how their simple site – which includes extensive data and easy-to-read visualizations – is helping encourage responsible public health measures across the country. “It’s been a whirlwind,” said Lehenbauer. He said that one of the aspects he likes most about working in tech is that you get to work with amazing people and build really cool things.

@@ -13,12 +13,12 @@ tags = [ "town-halls", "partners" ]
 
 +++
 
-Join us for our 6th Town Hall meeting of the 2021 class of Reskill Americans.
+On Monday, April 12th as nearly 1,000 participants started their fifth week of course instruction, we hosted our sixth Town Hall with guest speaker David Ortiz, CEO and Founder of SimWin Sports, which develops groundbreaking experiences at the intersection of fantasy sports, sports betting, and E-sports. 
 
-Our guest speaker is Reskill American's advisor: David Ortiz.
+David, also a Reskill Americans advisory board member, shared how he launched his career in software development with a testing internship at Atari while he was still in college, ultimately accepting his first salaried position with Atari at 19 years old. David joined Microsoft as the company was building Xbox in 2000, and he was the first person they hired with the tile game designer. He spoke about his long career in the video gaming and gaming industry, which includes jobs with EA Sports, Sony, Warner Brothers, and Abu Dhabi Media. 
 
-David Ortiz joined the video game industry in 1996 and is an innovative executive with over two decades of global experience pioneering award-winning products in both the video game and real money gaming markets. David is currently CEO and Founder of SimWin Sports, a company focused on developing groundbreaking experiences at the intersection of fantasy sports, sports betting, and esports. While at EA Sports, David held a senior leadership role on the Madden NFL team and helped pioneer the Game Designer role for Microsoft, working on the NFL Fever franchise and helping launch the first ever title on the XBOX LIVE platform. David has also held director and senior executive roles at Sony and Warner Bros Games.
+“One of the things I like most about working in this industry,” said David, “Is that if you’ve done a good job building something (a game), people are going to bond over it, spend time on it, and use it as their social outlet.” 
 
-“Tech provides an opportunity for creativity and ideas to reach masses and influence everything from how we work to how we are entertained. Having people from all backgrounds develop the skills to contribute to these creations will improve and enhance their quality and relatability. A career in tech can provide a livable wage, but it can also provide opportunities to earn generational wealth.”
+David said that what’s exciting to him is that now, more than ever, there’s a need for a more diverse set of voices creating games. “This brings different experiences and perspectives, and that’s an amazing thing,” he said. 
 
-“I am committed to helping as many organizations as possible that want to make a real impact on diversity, equality, and inclusion. Reskill American’s unique and noble approach is refreshing, and I am sure it will be effective in changing the trajectory of many lives.”
+“If you’re looking to come into the game space, now is the best time,” he said. Once you learn a few of the key skills (like Unreal or Unity), “then you can contribute to a team right away, and will have a skillset that is universally sought after.” When interviewing candidates, David often looks for people who have built something on their own, as a side passion project.

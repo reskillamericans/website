@@ -12,4 +12,6 @@ tags = [ "job-fairs", "partners" ]
 
 +++
 
-Nina Unger from Software One will answer questions about their internship program with information about how to apply.
+On August 18th, we hosted a Job Fair with SoftwareONE, the global cloud software management and consulting company, which was recruiting for its SoftwareONE Academy, 12-week paid apprenticeship program. Nina Unger, Talent Acquisition Partner at SoftwareONE shared details about the program, the four-step interview process, and links to apply.  
+
+“This whole program is intended to bring people in from all walks of life,” said Nina. “So, it’s not like there are certifications or education that will make your more valuable than the next person; it’s about finding the people who want to start at a company and grow their career here.”

@@ -13,6 +13,13 @@ tags = [ "job-fairs", "partners" ]
 
 +++
 
-Teddy is a Certified Career Coach, Certified Social Media Strategist, DDI leadership facilitator, Dale Carnegie graduate coach, Sandlers Sales Trained Professional, YouTuber, columnist, keynote speaker and author who teaches creating success in business and career through building relationships and Using LinkedIn as a Business Tool.
+On September 27th, Teddy Buriss, a LinkedIn Strategist, Trainer and Coach, hosted a Job Fair for our participants about using LinkedIn as a career transition tool. Teddy’s offered tips and insights for ways to leverage LinkedIn to help your job search and career transition and shared some of best practices for building a professional LinkedIn Profile, a relevant LinkedIn Network, and building a professional brand on LinkedIn.  
 
-Teddy’s presentation, Using LinkedIn as a Career Transition Tool, will include tips and insights for ways you can leverage LinkedIn to help you in your job search and career transition.  Teddy will introduce you to some of the best practices of building a professional LinkedIn Profile, building a relevant LinkedIn Network and engaging on LinkedIn to build a professional brand. You will be able to leave the session and begin using the ideas Teddy shares with you.
+“Are you moving the right connections into meaningful and relevant conversations that can move you into a conversation focused on your career?” Teddy asked participants. “At the end of the day, it’s all about moving the right people into the right conversations.” 
+
+Teddy hosts a weekly show for job seekers: Lunch Conversations with Randy & Teddy (http://www.ncwiseman.com/), produces weekly YouTube Videos, and has answered 5,500+ questions about LinkedIn on Quora. To learn more about Teddy, visit his LinkedIn Profile, or his website and his host of online resources.  
+
+http://www.youtube.com/c/tlburriss
+https://www.quora.com/profile/TLBurriss
+https://www.linkedin.com/in/tlburriss/
+https://www.burrissconsulting.com/about/

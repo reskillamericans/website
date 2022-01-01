@@ -12,6 +12,4 @@ tags = [ "partners" ]
 
 +++
 
-130 bright, determined, and entrepreneurial participants completed the Reskill Americans inaugural 2021 software development training program in October 2021.
-
-This Demo Day is an opportunity for a few of our participants (that we have hand-selected based on the quality of their work) to showcase their projects to you so that you can learn a bit more about our program and our participant base
+In October 2021, 130 bright, determined, and entrepreneurial participants completed the Reskill Americans inaugural 2021 software development training program. On December 7, we hosted a Final Demo Day as an opportunity for a few of our participants to showcase their projects so that the tech community could learn a bit more about our program and our participant base.

@@ -13,6 +13,15 @@ tags = [ "town-halls", "partners" ]
 
 +++
 
-Join us for our 8th Town Hall meeting of the 2021 class of Reskill Americans.
+On Monday, May 10th, as participants started their ninth week of course instruction, we hosted our 10th Town Hall with Eric Johnson, Director of Innovation at Bright Machines, which is an industrial automation start up that’s building the digital infrastructure for modern manufacturing. Eric showed footage of robots on the factory floors, and spoke about how technology is transforming the manufacturing industry and the growing demand for software development skills.
 
-Our guest will be Eric Johnson, Director in Innovation at Bright Machines.   He will speak about growing need for technology skills in the manufacturing industry.  Eric is focused on developing technologies for software-defined automation. With two decades of experience as a mechanical engineer, he’s worked on a range of challenges, including world-first products at Google and Mojo Vision. Johnson’s interest in using modern manufacturing technology to transform an industry began when he co-founded Skyline Solar, and it continues to drive his work today.
+“At Bright Machines, we’ve tried to bring together two worlds: the world of software and the world of process automation in the factory,” Eric said. He spoke about the range of career opportunities available in a factory setting, and said that the skills that Reskill Americans participants are learning are immediately applicable. “Even with basic python skills or front-end skills, you can contribute to any factory out there,” he said. (The challenge is that they just don’t know it yet; it takes pounding on the door to tell them they need help.)”
+
+Bright Machines is hiring at all of its 12 locations, including in: Austin, TX., San Francisco, CA., Charlotte, N.C., Minneapolis, MN., Washington, D.C., Seattle, WA., Israel, China, Europe and two locations in Mexico. “And most importantly, we’re hiring at your kitchen table or garage,” Eric said, and showed a picture of a colleague’s garage, where Bright Machines will ship a robotic cell so that the employee can work remotely. To access the job board for Bright Machines, click here.
+
+Eric spoke about the benefits of working in a team environment at a factory. “You get to work with a lot of different people and every single skill is required to keep the factory running,” he said. “Give factories a chance. They’re fun, they run on software, they need better software, and they need all kinds of different skills. At Bright Machines, we’re just doing our part to connect modern software with those places, and we need help!”
+
+To learn more about Eric’s thoughts on the industry, you can read his article in The Robot Report or connect with Eric on LinkedIn:
+
+https://www.therobotreport.com/innovation-latency-in-industrial-automation/
+https://www.linkedin.com/in/ericjohnsonsf/

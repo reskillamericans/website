@@ -13,8 +13,10 @@ tags = [ "town-halls", "partners" ]
 
 +++
 
-Join us for our 2nd Town Hall meeting of the 2021 class of Reskill Americans.  This week your course work begins.  We have a guest speaker joining us that many of you already know from YouTube - Jeremiah Peoples.  We'll be talking to him about his journey to becoming a Software Engineer and his advice for those just getting started.
+On Monday, March 15th, we officially launched our software development training program: a week-long orientation where participants were introduced to the details of each track (Front-End, Back-end, Mobile, and User Experience & Design).
 
-We will be taking questions in YouTube chat as well as inviting anyone that wants to join us in Zoom at the end of the Town Hall for live Q&A.
+We kicked off the week with our second Town Hall which featured tech YouTuber, Jeremiah Peoples, as our guest speaker. CTO Mike Koss interviewed Jeremiah about his journey to becoming a software engineer and asked his advice for people just getting started.
 
-Thanks for joining us!
+“I started my YouTube channel because representation definitely matters,” he said. “I didn’t know that you could be a software developer without going to college.” Peoples added that he thought the same thing about being a Black man in tech. “A lot of people out there didn’t know that Black men could get into tech just by learning the skills, so I hope to be that point of representation for people.”
+
+https://www.youtube.com/c/JeremiahPeoples/featured

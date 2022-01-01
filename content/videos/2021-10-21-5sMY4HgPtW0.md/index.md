@@ -13,14 +13,8 @@ tags = [ "job-fairs", "partners" ]
 
 +++
 
-Learn about HBO Max’s Open Roles and participate in a Career Q&A
+On October 21st, HBO Max, a WarnerMedia company, hosted a Job Fair with Reskill Americans to share details about more than 100 of its open roles ranging from software developers and UX roles to product designers and program managers. 
 
-Are you interested in working at a leading, award-winning, world-class technology organization at the intersection of media and culture? 
+Noreli Garcia Valentin, Director of Strategic Initiatives & Chair of Equity and Inclusion at WM’s Direct to Consumer organization spoke about current and future opportunities with HBO Max, the interview process, and how to apply. HBO Max, a standalone streaming platform that launched in 2020, expanded to 40 markets with the addition of Latin America in July 2021 and is scaling to 190 countries over the next year. 
 
-HBO Max, a WarnerMedia company, is recruiting to fill many over the 100 open roles, ranging from software developers and UX roles to product designers and program managers, all available at www.warnermediacareers.com.
-
-HBO Max is a standalone streaming platform that launched in 2020, expanded to 40 markets with the addition of Latin America in July and scaling to 190 countries over the next year - including a Europe launch later this month!
-
-Please join Noreli Garcia Valentin, Director of Strategic Initiatives & Chair of Equity and Inclusion at WM’s Direct to Consumer organization.
-
-She will share details about current and future opportunities with HBO Max, the interview process, and how to apply.  After a brief overview presentation, you will have the opportunity to introduce yourself and ask questions.
+“I know there’s a lot of competition out there for your amazing talent and skills, and we are aware of that,” Noreli said. “So, for us, bringing a culture of innovation that is supportive of diversifying and getting more underrepresented communities into our pipeline is critical because that’s what our customer base is, that’s what the majority demands, and it’s really our values. We are a media company that is powered by tech and that moves culture through stories.”

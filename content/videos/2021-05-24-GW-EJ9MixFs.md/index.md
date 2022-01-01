@@ -13,8 +13,10 @@ tags = [ "town-halls", "partners" ]
 
 +++
 
-Join us for our 12th Town Hall meeting of the 2021 class of Reskill Americans.
+On Monday, May 24th, as participants started their 11th week of course instruction, we hosted our 12th Town Hall with guest speaker Kedasha Kerr, a Design Systems Engineer at a large insurance company. Kasha helps new coders learn about tech through her Instagram and Twitter handles @itsthatlady.dev. 
 
-Our guest speaker will be Kedasha Kerr.  Kedasha has made the jump from bootcamp to full time developer at a mid-west insurance company.  But she's also sharing her knowledge and experience on social media for other who are on a similar journey.
+She has a bachelor’s degree in social work and attended a coding Bootcamp to make her transition into tech. She first started coding in December 2018. By December 2019, she was moving across the country for a tech job that almost tripled her income.  
 
-Find Kedasha (ka-day-sha) on Instagram:  https://www.instagram.com/itsthatlady.dev/
+Kasha shared advice for getting into the field and the challenges of programs like JavaScript.  “Stay the course and build more projects outside the classroom,” she said. “The more projects you build and the more times you fail, the better you become at that particular technology.”  
+
+She also told people to ask lots of questions when in a new job. “Be open and have an appetite for learning, as there’s so much to learn!”

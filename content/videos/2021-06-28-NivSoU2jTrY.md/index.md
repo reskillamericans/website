@@ -13,8 +13,8 @@ tags = [ "town-halls", "partners" ]
 
 +++
 
-Join us for our 16th Town Hall meeting of the 2021 class of Reskill Americans.
+On Monday June 28th, we invited Tony Wright, CEO, entrepreneur and UI/UX designer to speak at our Town Hall. Tony, CEO of Rescue Time, has a long career as an entrepreneur, founding numerous startups, including through the famed Y-Combinator startup incubator.  He shared details about his career progression, the importance of good design in product development and company success, as well as inspiring tips on how to master new skills and develop routines. 
 
-We've gotten several requests to have a guest to represent the product design and UI/UX career path.  So,  our guest this week is a long-time friend, Tony Wright.  Tony started his career as a web designing and small business owner.  He's had a long career as an entrepreneur founding numerous Start Ups include through the famed Y-Combinator start-up incubator.
+“The doing is where the learning is,” Tony said. “Getting armpit deep in designing is the best way to learn and also the most fun way to learn.” 
 
-We will be discussing how Tony got his career progression as well as the importance of good design in product development and company success.  We'll also get his thoughts on navigating opportunities as a small-business owner and start-up founder.
+https://www.linkedin.com/in/webwright/

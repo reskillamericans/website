@@ -10,6 +10,6 @@ tags = [ "town-halls" ]
 
 +++
 
-Watch the replay of our first live stream of the Reskill Americans staff and board, along with Q&A for all participants.
+On Monday, March 8th, we hosted our very first Town Hall for our inaugural software development training program, with more than 400 participants following the Livestream on YouTube from around the country.  
 
-Thanks for joining us!
+After all of us at Reskill Americans and Zuri/HNG Tech introduced ourselves, our CTO Mike Koss gave an overview of the program and what to expect over the next seven months. Then many participants joined the Zoom call to ask their questions in person, while others posted them in the YouTube chat.

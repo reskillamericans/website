@@ -13,4 +13,6 @@ tags = [ "town-halls", "partners" ]
 
 +++
 
-Danielle Storlie is an experienced UX Designer who has been responsible for hiring many other designers herself.  She and I will discuss how to get hired as a designer.  We'll cover creating an effective portfolio, your resume and the interview process for UX and Design positions.
+On September 13th, we chatted with Danielle (Dani) Storlie, Senior Director of Design at Procore Technologies, a construction management software company. Dani has worked for more than a decade in software design, including at Sonos and Deloitte Digital, and consulted for early-stage startup and fortune 500 brands while at Deloitte such as Target, Amazon, and FoxSports.  
+
+Dani spoke about her career path, shared interview and resume tips, and discussed what companies look for when evaluating design candidates. “Everyone wants a really good candidate experience because that’s also a reflection of the business and the culture,” Dani said. “So even though an interview can be intimidating, just be yourself because that’s the most important thing.”

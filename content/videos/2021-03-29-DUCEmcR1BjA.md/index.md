@@ -10,10 +10,4 @@ tags = [ "town-halls" ]
 
 +++
 
-Join us for our 4th Town Hall meeting of the 2021 class of Reskill Americans.  This is the beginning of the second week of real class work.
-
-We will devote the majority of this time to Q&A and getting feedback on how things are going in your courses.
-
-We will be taking questions in Slack (on our #town-hall-questions channel).  And you'll be invited to join our Zoom call to ask questions in person at the end of the meeting.
-
-Thanks for joining us!
+On Monday, March 29th, we hosted our weekly fourth Town Hall for participants in our software development training program.  Participants just completed their first week of learning about the program and so we dedicated the entire session to taking questions from them.  Mike Koss, CTO; Seyi Onifade, instructor and Senior Software Developer Team Lead of HNG Tech/Zuri; and Juwon Isola-Osobu, Director of Program Management, managed and addressed questions.
