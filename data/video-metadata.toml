@@ -64,10 +64,7 @@ title = "Reskill Americans Town Hall #2 | Jeremiah Peoples"
 videoId = "OpE39nGFA6U"
 guest = "Jeremiah Peoples"
 guestTitle = "Self-taught Developer"
-quote = """\
-  I started my YouTube channel because representation definitely matters.\
-  I didn’t know that you could be a software developer without going to college.\
-  """
+quote = "I started my YouTube channel because representation definitely matters.I didn’t know that you could be a software developer without going to college."
 slug = "town-hall-2-jeremiah-peoples"
 num = "2"
 filename = "2021-03-15-OpE39nGFA6U.md"
@@ -425,6 +422,7 @@ filename = "2021-08-18-RLX-6YJHubg.md"
 date = "2021-08-18T18:01:53.000Z"
 draft = false
 tags = [ "job-fairs", "partners" ]
+slug = "job-fair-1-software-one"
 
 [i74Vq2hxBcw]
 title = "Reskill Americans Town Hall #20 | Phase III Start"
@@ -500,7 +498,6 @@ videoId = "nCtPz2LdDyc"
 guest = "David Fowler"
 guestTitle = "Software Architect, Microsoft"
 quote = "I personally look to see if the person has done anything that they’re passionate about: have you done anything on the side that has taught you some skill that you wouldn't have otherwise learned if you hadn’t done the project?"
-
 slug = "technical-interview-training-david-fowler-software-architect-microsoft"
 filename = "2021-09-14-nCtPz2LdDyc.md"
 date = "2021-09-14T18:03:13.000Z"
@@ -593,3 +590,20 @@ date = "2021-12-08T00:02:32.000Z"
 draft = false
 tags = [ "partners" ]
 
+[09TU0AdoOSY]
+title = "Reskill Americans | Femi Akinde - Co-Founder"
+videoId = "09TU0AdoOSY"
+slug = "femi-akinde-co-founder"
+filename = "2021-12-20-09TU0AdoOSY.md"
+date = "2021-12-20T01:38:24.000Z"
+draft = true
+tags = [ "about-reskill-americans" ]
+
+[QtPIp0r2JQs]
+title = "A Conversation with our Co-Founder Femi Akinde"
+videoId = "QtPIp0r2JQs"
+slug = "a-conversation-with-our-co-founder-femi-akinde"
+filename = "2021-12-20-QtPIp0r2JQs.md"
+date = "2021-12-20T01:47:32.000Z"
+draft = true
+tags = [ "about-reskill-americans" ]
