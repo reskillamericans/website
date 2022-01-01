@@ -7,18 +7,17 @@
         file-path: {{- with .File }} {{ .Path | safeHTML }} {{ end }}
     {{ "-->" | safeHTML }}
 <head>
-    {{ partial "head.html" . }}
-    {{ block "extra-head" . }}{{ end }}
+{{ partial "head.html" . }}
+{{ partial "extra-head" . }}
 </head>
 <body>
-    <section class="header">
-        {{ partial "header.html" . }}
-    </section>
-    {{- block "main" . }}{{- end }}
-    <section class="footer">
-        {{- partial "footer.html" . -}}
-    </section>
-
+<section class="header">
+    {{ partial "header.html" . }}
+</section>
+{{- block "main" . }}{{- end }}
+<section class="footer">
+    {{- partial "footer.html" . -}}
+</section>
 <!-- Dyanimic page processors loaded as ES-modules when [[process]]
     present in front matter. -->
 {{- $processors := .Params.process -}}
