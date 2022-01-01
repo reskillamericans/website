@@ -1,10 +1,15 @@
 {{- $path := (print "images/" (.Get "src")) -}}
 {{- with (resources.Get $path) -}}
+<figure>
   {{- if $.Get "resize" -}}
     {{- $image := .Resize ($.Get "resize") -}}
       <img {{ with $.Get "class" }}class="{{.}}" {{ end -}} src="{{ $image.Permalink }}">
   {{- else -}}
       <img {{ with $.Get "class" }}class="{{.}}" {{ end -}} src="{{ .Permalink }}">
+  {{- end -}}
+  {{- if $.Get "caption" -}}
+    <figcaption>{{ $.Get "caption" }}</figcaption>
+</figure>
   {{- end -}}
 
 {{- else -}}

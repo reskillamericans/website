@@ -126,16 +126,33 @@ main {
     text-indent: -1em;
   }
 
-  > img {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 0;
+  // Top-level images should be in figure's with captions.
+  // See esp hero images.
+  > figure {
+    margin: 0;
 
-    &.hero {
-      aspect-ratio: 2 / 1;
-      object-fit: cover;
-      object-position: 50% 75%;
-      border-radius: 6px;
+    img {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0;
+
+      &.hero {
+        aspect-ratio: 2 / 1;
+        object-fit: cover;
+        object-position: 50% 75%;
+        border-radius: 6px;
+      }
+
+      &.hero.high {
+        object-position: center 25%;
+      }
+    }
+
+    // Caption for image
+    figcaption {
+      font-size: 12px;
+      font-style: italic;
+      line-height: 1em;
     }
   }
 
