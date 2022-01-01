@@ -57,8 +57,7 @@ We understand that software development can be overwhelming for a lot of people,
 especially beginners. We will do all we can to support you throughout the
 program. If you do decide to leave, you can re-enroll in the next cohort.
 
-I’m not a very fast learner. Do you think I can become a technology expert in 7
-months?
+### I’m not a very fast learner. Do you think I can become a technology expert in 7 months?
 
 Whatever your level of knowledge is about the industry, our instructors and
 mentors will meet you at that level and work with you to address your questions.
