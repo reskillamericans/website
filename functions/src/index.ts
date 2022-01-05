@@ -1,9 +1,9 @@
 import * as functions from "firebase-functions";
-import {extractLinkedInInfo} from "./linkedin-info";
+import {getLinkedInAuthCode} from "./linkedin.js";
 
 export {
   helloWorld as hello,
-  extractLinkedInInfo as linkedIn,
+  getLinkedInAuthCode as linkedIn,
 };
 
 // Start writing Firebase Functions

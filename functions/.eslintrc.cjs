@@ -25,8 +25,16 @@ module.exports = {
     "import",
   ],
   rules: {
-    "quotes": ["error", "double"],
+    "camelcase": "off",
+    "padded-blocks": "off",
+    "require-jsdoc": "off",
+    "comma-dangle": "off",
+    "quotes": "off",
+    "object-curly-spacing": "off",
+    "max-len": ["error", { code: 100 }],
     "import/no-unresolved": 0,
     "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
   },
 };
