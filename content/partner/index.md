@@ -18,7 +18,7 @@ training, mentorship and community to our participants. We also seek companies
 to hire our participants into entry-level jobs or paid internships at the end
 our program.
 
-{{< image class="hero" src="typing-behind.jpg" resize="1080x jpg" >}}
+{{< image class="hero high" src="nia-smiling.jpg" resize="1080x jpg" >}}
 
 {{% /section %}}
 
