@@ -1,7 +1,7 @@
 <div id="testimonials" class="carousel">
   <div>
     {{ with .Site.GetPage "/testimonials" }}
-      {{ range .Pages }}
+      {{ range sort .Pages "Params.name" "desc" }}
         {{ .Render "quote-box" }}
       {{ end }}
     {{ end }}
