@@ -1,12 +1,27 @@
 import { addDoc, setDoc, doc, collection, serverTimestamp } from "firebase/firestore";
-import { httpsCallable } from "firebase/functions";
 
 import { auth, db, functions } from "./setup.js";
+import { generateId } from './util.js';
 
 export { OAuthParams, OAuthRequest };
 
 const SESSION_KEY = 'oauth-linkedin-code';
 const REQUEST_COLLECTION = 'oauth_requests';
+
+const LINKEDIN_WRAPPER_URL = 'https://us-central1-reskill-learning.cloudfunctions.net/linkedIn';
+
+// Linkedin OAuth sequence:
+// https://docs.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow
+// 1. User clicks "Sign In" button
+// 2. User is redirected to LinkedIn's authorization page
+//    Request includes our appid (client_id), and state (to ensure redirection
+//    comes from a real request we just made.
+// 3. LinkedIn redirects to returnURL with code and state in URL params.
+//    Confirm state matches our stored state - otherwise this is a falsified request.
+// 4. We exchange the code for an access token.
+//    This is  done in a firebase function "linkedIn".  We pass it our
+//    code, and it adds client_secret to the request and forwards to /oauth/v2/accessToken.
+// 5. LinkedIn sends us a user profile
 
 type OAuthParams = {
     type: string,
@@ -22,10 +37,13 @@ type OAuthParams = {
 
 class OAuthRequest {
     params: OAuthParams;
-    requestID: string | null = null;
+    requestID: string;
+    redirect_uri: string;
 
     constructor(params: OAuthParams) {
         this.params = params;
+        this.requestID = generateId(8);
+        this.redirect_uri = `${location.protocol}//${location.host}${this.params.returnURL}`;
     }
 
     buildURL(): string {
@@ -33,7 +51,7 @@ class OAuthRequest {
         for (let [param, value] of Object.entries(this.params.authorizationParams)) {
             params.set(param, value);
         }
-        params.set('redirect_uri', `${location.protocol}//${location.host}${this.params.returnURL}`);
+        params.set('redirect_uri', this.redirect_uri);;
         params.set('scope', this.params.scopes.join(' '));
         params.set('state', this.requestID!);
 
@@ -43,15 +61,7 @@ class OAuthRequest {
     }
 
     async start() {
-        // Write our request to the database, and remember the key
-        // in local storage.
-
-        const ref = await addDoc(collection(db, REQUEST_COLLECTION), {
-            created: serverTimestamp(),
-            type: this.params.type,
-        });
-        this.requestID = ref.id;
-        sessionStorage.setItem(SESSION_KEY, ref.id);
+        sessionStorage.setItem(SESSION_KEY, this.requestID);
 
         console.log(`Redirecting to ${this.buildURL()}`);
         location.href = this.buildURL();
@@ -64,7 +74,7 @@ class OAuthRequest {
 
         params.forEach((value, param) => console.log(`${param}: ${value}`));
 
-        this.requestID = sessionStorage.getItem(SESSION_KEY);
+        this.requestID = sessionStorage.getItem(SESSION_KEY)!;
 
         if (this.requestID === null) {
             console.error("Redirecting linkedin but we are not in OAuth process now");
@@ -78,27 +88,22 @@ class OAuthRequest {
 
         let code = params.get('code');
 
-        // const ref = doc(db, REQUEST_COLLECTION, this.requestID);
-
-        // // This is the code we need to exchange it for a bearer token.
-        // // This must happen on the server, though - since we don't want
-        // // to reveal our client secret in the browser.
-        // await setDoc(ref, { code }, { merge: true });
-
-        // console.log("Wrote LinkedIn authorization code to server.");
-
         console.log("Calling Firebase Function");
 
-        const linkedIn = httpsCallable(functions, 'linkedIn');
-        const res = await linkedIn({
+        // These are the LinkedIn Auth params
+        // @ts-ignore - TypeScript does not have proper type for args
+        const authParams = new URLSearchParams({
+            grant_type: "authorization_code",
             code,
-            request_id: this.requestID,
-            user_id: auth.currentUser?.uid
+            client_id: this.params.authorizationParams.client_id,
+            // client_secret added on server pass-through
+            redirect_uri: this.redirect_uri
         });
 
-        console.log("Successful return from function: ${res.data.text}");
+        const linkedIn = await fetch(LINKEDIN_WRAPPER_URL + '?' + authParams.toString());
+        const json = await linkedIn.json();
 
-        // Don't write the code more than once.
+        console.log(`Successful return from function: ${JSON.stringify(json)}`);
         sessionStorage.removeItem(SESSION_KEY);
     }
 }
