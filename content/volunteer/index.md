@@ -9,13 +9,20 @@ layout = "document"
 # Reskill Americans Volunteer Application
 2022 Cohort
 
-Thank you for your interest in volunteering with Reskill Americans.  We are looking for volunteer mentors to meet regularly with our participants during the course of our seven month training program.
+Thank you for your interest in volunteering with Reskill Americans.  We are
+looking for volunteer mentors to meet regularly with our participants during the
+course of our seven month training program.
 
-We are looking for those that have technical expertise in one or more of the areas we offer training.  Whether you are an industry veteran, or someone who has just completed a boot camp yourself, we could use your help!
+We are looking for those that have technical expertise in one or more of the
+areas we offer training.  Whether you are an industry veteran, or someone who
+has just completed a boot camp yourself, we could use your help!
 
-We are asking for a minimum commitment of 2 hours per week, over a period of at least 2 months.  During that time you will be paired with a group of participants who are working in the area's you've identified as skills you have.
+We are asking for a minimum commitment of two hours per week, over a period of at
+least two months.  During that time you will be paired with a group of
+participants who are working in the area's you've identified as skills you have.
 
-Please answer the survey below to get started.  We can then match you with the most appropriate group.
+Please answer the survey below to get started.  We can then match you with the
+most appropriate group.
 
 1. Your Name
 Enter your answer

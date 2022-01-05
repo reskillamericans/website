@@ -136,8 +136,8 @@ in other industries, and some have graduate degrees.
 
 - Perfect your skills: there's no better way to hone your skills than by
   teaching them to others. It's fun and rewarding!
-- Volunteer when it works for you: we just require a minimum of 2 hours per week
-  for at least 2 consecutive months.
+- Volunteer when it works for you: we just require a minimum of two hours per week
+  for at least two consecutive months.
 - No mentoring background required: just commitment and an openness to sharing
   your career experiences.
 
