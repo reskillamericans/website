@@ -8,6 +8,10 @@ source $TOOLS_DIR/use
 
 cd $PROJ_DIR
 
+# Redundant - but get errors from typescript since esbuild does not check.
+echo "Checking Typescript errors in site code"
+tsc --noEmit
+
 # Compile TS into a sigle JS file in static/scripts
 echo "Bundling Site TypeScript code..."
 bundle
