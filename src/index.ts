@@ -9,7 +9,7 @@ import { addDoc, collection } from "firebase/firestore";
 import { carousel } from './carousel.js';
 
 import { bindButtons } from './dom-utils.js';
-import { db, auth } from "./setup.js";
+import { db, auth, user } from "./setup.js";
 import { linkLinkedIn, continueLinkedIn } from "./linkedin.js";
 
 export { main, continueLinkedIn, carousel };
@@ -45,15 +45,32 @@ async function linkWith(provider: AuthProvider) {
     }
 }
 
-const authButtonHandlers: Map<string, () => void> = new Map([
-    ['sign-in-google', () => signInWith(googleProvider)],
-    // ['sign-in-email', () => signInWith(emailProvider)],
-    ['link-to-github', () => linkWith(githubProvider)],
-    ['sign-out', () => auth.signOut()],
-    ['reset-password', () => sendPasswordResetEmail(auth, auth.currentUser!.email!)],
-    ['link-to-linkedin', linkLinkedIn],
-]);
-
 function main() {
-    bindButtons(authButtonHandlers);
+    const signIn = document.querySelector('#sign-in')!;
+    const linkedIn = document.querySelector('#linkedin-button');
+
+    auth.onAuthStateChanged((user: User | null) => {
+        if (user) {
+            signIn.textContent = 'Sign Out';
+        } else {
+            signIn.textContent = 'Sign In';
+        }
+    });
+
+    signIn.addEventListener('click', (e) => {
+        // Signing out
+        if (user) {
+            e.preventDefault();
+            auth.signOut();
+        }
+        // Otherwise - go to our sign in page to
+        // explain sign in options.
+    });
+
+    if (linkedIn) {
+        linkedIn.addEventListener('click', (e) => {
+            e.preventDefault();
+            linkLinkedIn();
+        });
+    }
 }

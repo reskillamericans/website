@@ -321,3 +321,7 @@ div.image-box {
     max-width: calc(#{$max-width}/2);
   }
 }
+
+#linkedin-button {
+  @include hover-zoom;
+}
