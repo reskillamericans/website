@@ -1,8 +1,13 @@
+import { initializeApp } from "firebase-admin/app";
+import { getAuth } from "firebase-admin/auth";
 import * as functions from "firebase-functions";
 import fetch from "node-fetch";
 import { corsBuilder } from "./cors.js";
 
 export {getLinkedInAuthCode};
+
+// Use default Service Account for Firebase functions.
+initializeApp();
 
 const ACCESS_TOKEN_URL = "https://www.linkedin.com/oauth/v2/accessToken";
 const ME_URL =
@@ -85,14 +90,29 @@ const getLinkedInAuthCode = functions.https.onRequest(cors(async (request, respo
     }
   });
   const email = await emailResp.json();
+  // @ts-ignore
+  const emailAddress = email.elements[0].handle.emailAddress;
+
+  const jwt = await createJWT(`linkedin:${me.id}`, {email: emailAddress});
 
   // @ts-ignore
   response.json({
+    jwt,
     ...auth,
     firstName: me.localizedFirstName,
     lastName: me.localizedLastName,
     id: me.id,
-    // @ts-ignore
-    email: email.elements[0]['handle~'].emailAddress
+
+    email: emailAddress
   });
 }));
+
+async function createJWT(uid: string, claims: { [key: string]: string }): Promise<string> {
+  let token = "invalid";
+  try {
+    token = await getAuth().createCustomToken(uid, claims);
+  } catch (e) {
+    functions.logger.error(e);
+  }
+  return token;
+}
