@@ -1,4 +1,4 @@
-#!/bin/env node
+#!/usr/bin/env node
 // create-video-content-files --- Generate markdown files from video and metadata.
 
 import { mkdir, readFile, writeFile, access } from 'fs/promises';
