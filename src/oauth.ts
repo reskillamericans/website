@@ -8,8 +8,6 @@ export { OAuthParams, OAuthRequest };
 const SESSION_KEY = 'oauth-linkedin-code';
 const REQUEST_COLLECTION = 'oauth_requests';
 
-const LINKEDIN_WRAPPER_URL = 'https://us-central1-reskill-learning.cloudfunctions.net/linkedIn';
-
 // Linkedin OAuth sequence:
 // https://docs.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow
 // 1. User clicks "Sign In" button
@@ -67,7 +65,7 @@ class OAuthRequest {
         location.href = this.buildURL();
     }
 
-    async continue() {
+    async continue(): Promise<string | undefined> {
         // Check out URL params to see what LinkedIn has sent us!
 
         const params = new URLSearchParams(location.search.slice(1));
@@ -86,24 +84,10 @@ class OAuthRequest {
             return;
         }
 
-        let code = params.get('code');
+        let code = params.get('code')!;
 
-        console.log("Calling Firebase Function");
-
-        // These are the LinkedIn Auth params
-        // @ts-ignore - TypeScript does not have proper type for args
-        const authParams = new URLSearchParams({
-            grant_type: "authorization_code",
-            code,
-            client_id: this.params.authorizationParams.client_id,
-            // client_secret added on server pass-through
-            redirect_uri: this.redirect_uri
-        });
-
-        const linkedIn = await fetch(LINKEDIN_WRAPPER_URL + '?' + authParams.toString());
-        const json = await linkedIn.json();
-
-        console.log(`Successful return from function: ${JSON.stringify(json)}`);
         sessionStorage.removeItem(SESSION_KEY);
+
+        return code;
     }
 }
