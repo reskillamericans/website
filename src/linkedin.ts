@@ -17,12 +17,32 @@ const linkedInOAuthParams: OAuthParams = {
     accessTokenURL: "https://www.linkedin.com/oauth/v2/accessToken",
 };
 
+// Better way to get this - esp if we want to test with local functions impl.
+const LINKEDIN_WRAPPER_URL = 'https://us-central1-reskill-learning.cloudfunctions.net/linkedIn';
+
 function linkLinkedIn() {
     let req = new OAuthRequest(linkedInOAuthParams);
     req.start();
 }
 
-function continueLinkedIn() {
+async function continueLinkedIn() {
     let req = new OAuthRequest(linkedInOAuthParams);
-    req.continue();
+    const code = await req.continue();
+
+    console.log("Calling Firebase Function");
+
+    // These are the LinkedIn Auth params
+    // @ts-ignore - TypeScript does not have proper type for args
+    const authParams = new URLSearchParams({
+        grant_type: "authorization_code",
+        code,
+        client_id: linkedInOAuthParams.authorizationParams.client_id,
+        // client_secret will be added on server pass-through
+        redirect_uri: req.redirect_uri
+    });
+
+    const linkedIn = await fetch(LINKEDIN_WRAPPER_URL + '?' + authParams.toString());
+    const json = await linkedIn.json();
+
+    console.log(`Successful return from function: ${JSON.stringify(json)}`);
 }
