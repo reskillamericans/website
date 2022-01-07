@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# watch  --- Build and start watching with server
+
+set -e
+TOOLS_DIR="$(unset CDPATH; cd $(dirname ${BASH_SOURCE[0]}) && pwd)"
+source $TOOLS_DIR/use
+
+cd $PROJ_DIR
+
+hugo-watch restart
+test-server restart
+ps
