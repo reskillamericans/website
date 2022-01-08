@@ -1,0 +1,47 @@
+form {
+  li {
+    margin-bottom: 1rem;
+  }
+}
+
+input {
+  font: inherit;
+  color: inherit;
+}
+
+input[type="text"] {
+  display: block;
+  box-sizing: border-box;
+  margin-top: 0.5rem;
+  padding: 0.5em;
+  border: 1px solid #eee;
+  width: 100%;
+
+  // Other option in radio group
+  &.other {
+    // width: 80%;
+  }
+}
+
+label {
+  display: block;
+  padding-left: 1rem;
+  user-select: none;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+}
+
+input[type="radio"] {
+  margin-top: 0.5rem;
+  margin-left: -1rem;
+}
+
+select {
+  display: block;
+  margin-top: 0.5rem;
+  padding: 0.5em;
+  border: 1px solid #eee;
+  width: 100%;
+}

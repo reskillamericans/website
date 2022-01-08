@@ -1,0 +1,44 @@
+#sign-in-block {
+  border-block: 3px solid $color-contrast-color;
+
+  &[data-signed-in="true"] div.out {
+    display: none;
+  }
+
+  &[data-signed-in="false"] div.in {
+    display: none;
+  }
+
+  h3 {
+    margin-top: 0;
+  }
+
+  div.in {
+    padding: 0.5rem;
+
+    div.box {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+
+      p {
+        margin: 0;
+        padding-left: 1rem;
+      }
+    }
+
+    a {
+      @include hover-zoom;
+      text-decoration: none;
+    }
+  }
+
+  div.out {
+    padding: 1rem;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
