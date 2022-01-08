@@ -17,7 +17,7 @@ training modules, and online video conferences with your instructors and mentors
 
 ## The Next Cohort Starts In:
 
-{{< countdown "2022-02-07T08:00-08:00" >}}
+{{< countdown "2022-03-07T08:00-08:00" >}}
 
 <a class="button-like standout" href="/enroll">Join Our Next Cohort</a>
 
