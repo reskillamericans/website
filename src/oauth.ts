@@ -1,6 +1,5 @@
 import { addDoc, setDoc, doc, collection, serverTimestamp } from "firebase/firestore";
 
-import { auth, db, functions } from "./setup.js";
 import { generateId } from './util.js';
 
 export { OAuthParams, OAuthRequest };
@@ -53,15 +52,12 @@ class OAuthRequest {
         params.set('scope', this.params.scopes.join(' '));
         params.set('state', this.requestID!);
 
-        params.forEach((value, param) => console.log(`${param}: ${value}`));
-
         return `${this.params.authorizationURL}?${params.toString()}`;
     }
 
     async start() {
         sessionStorage.setItem(SESSION_KEY, this.requestID);
 
-        console.log(`Redirecting to ${this.buildURL()}`);
         location.href = this.buildURL();
     }
 
@@ -69,8 +65,6 @@ class OAuthRequest {
         // Check out URL params to see what LinkedIn has sent us!
 
         const params = new URLSearchParams(location.search.slice(1));
-
-        params.forEach((value, param) => console.log(`${param}: ${value}`));
 
         this.requestID = sessionStorage.getItem(SESSION_KEY)!;
 
