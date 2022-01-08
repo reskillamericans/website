@@ -21,6 +21,7 @@ Once you submit your enrollment form, you'll get an email from us that will incl
 
 We are accepting applications for participation in our seven month software development training program.
 
+{{< sign-in >}}
 
 1. First name
 
