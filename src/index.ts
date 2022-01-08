@@ -46,26 +46,45 @@ async function linkWith(provider: AuthProvider) {
 }
 
 function main() {
-    const signIn = document.querySelector('#sign-in')!;
+    // const signIn = document.querySelector('#sign-in')!;
     const linkedIn = document.querySelector('#linkedin-button');
+    const signInBlock = document.querySelector('#sign-in-block');
+    const signOut = document.querySelector('#sign-out');
 
     auth.onAuthStateChanged((user: User | null) => {
         if (user) {
-            signIn.textContent = 'Sign Out';
+            // signIn.textContent = 'Sign Out';
+            if (signInBlock) {
+                const nameSpan = document.querySelector('#signed-in-name')!;
+                const emailSpan = document.querySelector('#signed-in-email')!;
+                nameSpan.textContent = user.displayName;
+                emailSpan.textContent = user.email;
+                signInBlock.setAttribute('data-signed-in', 'true');
+            }
         } else {
-            signIn.textContent = 'Sign In';
+            // signIn.textContent = 'Sign In';
+            if (signInBlock) {
+                signInBlock.setAttribute('data-signed-in', 'false');
+            }
         }
     });
 
-    signIn.addEventListener('click', (e) => {
-        // Signing out
-        if (user) {
+    if (signOut) {
+        signOut.addEventListener('click', (e) => {
             e.preventDefault();
             auth.signOut();
-        }
-        // Otherwise - go to our sign in page to
-        // explain sign in options.
-    });
+        });
+    }
+
+    // signIn.addEventListener('click', (e) => {
+    //     // Signing out
+    //     if (user) {
+    //         e.preventDefault();
+    //         auth.signOut();
+    //     }
+    //     // Otherwise - go to our sign in page to
+    //     // explain sign in options.
+    // });
 
     if (linkedIn) {
         linkedIn.addEventListener('click', (e) => {

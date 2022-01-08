@@ -6,6 +6,8 @@ import { signInWithCustomToken } from "firebase/auth";
 import { OAuthParams, OAuthRequest } from "./oauth.js";
 import { auth, db } from './setup.js';
 
+const SIGN_IN_PAGE_KEY = "sign-in-page";
+
 export { linkLinkedIn, continueLinkedIn };
 
 const linkedInOAuthParams: OAuthParams = {
@@ -24,6 +26,7 @@ const linkedInOAuthParams: OAuthParams = {
 const LINKEDIN_WRAPPER_URL = 'https://us-central1-reskill-learning.cloudfunctions.net/linkedIn';
 
 function linkLinkedIn() {
+    sessionStorage.setItem(SIGN_IN_PAGE_KEY, location.pathname);
     let req = new OAuthRequest(linkedInOAuthParams);
     req.start();
 }
@@ -48,4 +51,10 @@ async function continueLinkedIn() {
     console.log(`User authenticated with LinkedIn: ${JSON.stringify(json)}`);
 
     const user = await signInWithCustomToken(auth, json.jwt);
+
+    const sourcePage = sessionStorage.getItem(SIGN_IN_PAGE_KEY);
+    if (sourcePage) {
+        sessionStorage.removeItem(SIGN_IN_PAGE_KEY);
+        location.href = sourcePage;
+    }
 }
