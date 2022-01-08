@@ -1,7 +1,10 @@
 // LinkedIn OAuth described here:
 // https://docs.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow
 
+import { signInWithCustomToken } from "firebase/auth";
+
 import { OAuthParams, OAuthRequest } from "./oauth.js";
+import { auth, db } from './setup.js';
 
 export { linkLinkedIn, continueLinkedIn };
 
@@ -29,8 +32,6 @@ async function continueLinkedIn() {
     let req = new OAuthRequest(linkedInOAuthParams);
     const code = await req.continue();
 
-    console.log("Calling Firebase Function");
-
     // These are the LinkedIn Auth params
     // @ts-ignore - TypeScript does not have proper type for args
     const authParams = new URLSearchParams({
@@ -44,5 +45,7 @@ async function continueLinkedIn() {
     const linkedIn = await fetch(LINKEDIN_WRAPPER_URL + '?' + authParams.toString());
     const json = await linkedIn.json();
 
-    console.log(`Successful return from function: ${JSON.stringify(json)}`);
+    console.log(`User authenticated with LinkedIn: ${JSON.stringify(json)}`);
+
+    const user = await signInWithCustomToken(auth, json.jwt);
 }

@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase-admin/app";
-import { getAuth } from "firebase-admin/auth";
+import { getAuth, UserRecord } from "firebase-admin/auth";
 import * as functions from "firebase-functions";
 import fetch from "node-fetch";
 import { corsBuilder } from "./cors.js";
@@ -8,6 +8,7 @@ export {getLinkedInAuthCode};
 
 // Use default Service Account for Firebase functions.
 initializeApp();
+const auth = getAuth();
 
 const ACCESS_TOKEN_URL = "https://www.linkedin.com/oauth/v2/accessToken";
 const ME_URL =
@@ -74,35 +75,58 @@ const getLinkedInAuthCode = functions.https.onRequest(cors(async (request, respo
   });
 
   // Contains access_token and expires_in.
-  const auth = await resp.json() as LinkedInAuth;
+  const linkedinAuth = await resp.json() as LinkedInAuth;
 
   // Now add in the other linkedin identity fields.
   const meResp = await fetch(ME_URL, {
     headers: {
-      "Authorization": `Bearer ${auth.access_token}`
+      "Authorization": `Bearer ${linkedinAuth.access_token}`
     }
   });
   const me = await meResp.json() as LinkedInMe;
 
   const emailResp = await fetch(EMAIL_URL, {
     headers: {
-      "Authorization": `Bearer ${auth.access_token}`
+      "Authorization": `Bearer ${linkedinAuth.access_token}`
     }
   });
   const email = await emailResp.json();
-  // @ts-ignore
-  const emailAddress = email.elements[0].handle.emailAddress;
 
-  const jwt = await createJWT(`linkedin:${me.id}`, {email: emailAddress});
+  functions.logger.info(`Email: ${JSON.stringify(email)}`);
+
+  // @ts-ignore
+  const emailAddress = email.elements[0]["handle~"].emailAddress;
+
+  const uid = `linkedin:${me.id}`;
+  const fullName = `${me.localizedFirstName} ${me.localizedLastName}`;
+
+  const jwt = await createJWT(uid, {email: emailAddress});
+
+  // Check to see if the User exists - if not create one with verified email.
+  let user: UserRecord;
+  try {
+    user = await auth.getUser(uid);
+  } catch (err) {
+    const userProps = {
+      uid,
+      email: emailAddress,
+      emailVerified: true,
+      displayName: fullName,
+    };
+    functions.logger.info(`Creating LinkedIn user: ${emailAddress} because ${err}\n` +
+      `with props ${JSON.stringify(userProps)}`);
+    user = await auth.createUser(userProps);
+  }
+
+  functions.logger.info(`User: ${JSON.stringify(user)}`);
 
   // @ts-ignore
   response.json({
     jwt,
-    ...auth,
+    ...linkedinAuth,
     firstName: me.localizedFirstName,
     lastName: me.localizedLastName,
-    id: me.id,
-
+    id: uid,
     email: emailAddress
   });
 }));
@@ -110,7 +134,7 @@ const getLinkedInAuthCode = functions.https.onRequest(cors(async (request, respo
 async function createJWT(uid: string, claims: { [key: string]: string }): Promise<string> {
   let token = "invalid";
   try {
-    token = await getAuth().createCustomToken(uid, claims);
+    token = await auth.createCustomToken(uid, claims);
   } catch (e) {
     functions.logger.error(e);
   }
