@@ -4,6 +4,9 @@ date = 2021-12-15T12:30:03-08:00
 draft = false
 tags = []
 layout = "document"
+
+[[process]]
+name = "form"
 +++
 
 {{< sign-in >}}
@@ -24,7 +27,13 @@ We are accepting applications for participation in our seven month software deve
 <form id="enrollment-form">
 <ol>
 
-<li><label> State of Residence:<input name="state" type="text"></label></li>
+<li><label> State of Residence:
+  <select name="state">
+    <option value=""></option>
+    {{< state-options >}}
+  </select>
+  </label>
+</li>
 
 <li>
   <fieldset><legend>Employment Status</legend>
@@ -95,18 +104,16 @@ We are accepting applications for participation in our seven month software deve
   </fieldset>
 </li>
 
+<li>
+  <fieldset><legend>How many hours per week are you able to commit to this program (dedicated to learning, doing assignments, and peer/instructor interaction) over the seven months you are enrolled?</legend>
+    <label><input name="time-commitment" type="radio" value="15">15 hours per week (minimum)</label>
+    <label><input name="time-commitment" type="radio" value="ui-ux">16 - 24 hours per week</label>
+    <label><input name="time-commitment" type="radio" value="ui-ux">25 - 30 hours per week</label>
+  </fieldset>
+</li>
+
+<input type="submit" value="Submit">
+
 </ol>
-
-
-
-
-11.  Which learning track are you considering joining at this time (you may change tracks up until the 3rd week of the program).
-Full-Stack Web Development
-Product Designer - UI/UX
-I'm unsure
-
-12. Are you able to devote a minimum of 15 hours per week (dedicated to learning, doing assignments, and peer/instructor interaction) over the seven months you are enrolled?
-Yes
-No
 
 </form>
