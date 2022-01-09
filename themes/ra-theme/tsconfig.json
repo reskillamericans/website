@@ -5,7 +5,7 @@
     "module": "esnext",
     "rootDir": "src",
     "moduleResolution": "Node",
-    "outDir": "static/scripts",
+    "outDir": "../../public/scripts",
     "sourceMap": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
