@@ -5,7 +5,7 @@ type AccordianOptions = {
   target: string;
 }
 
-// Apply syling to all option.target elements to turn them into
+// Apply styling to all option.target elements to turn them into
 // buttons to accordian all the following p-tags.
 register('accordian', (options: any) => {
   const selector = options['selector'];

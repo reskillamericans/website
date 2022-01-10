@@ -107,8 +107,8 @@ We are accepting applications for participation in our seven month software deve
 <li>
   <fieldset><legend>How many hours per week are you able to commit to this program (dedicated to learning, doing assignments, and peer/instructor interaction) over the seven months you are enrolled?</legend>
     <label><input name="time-commitment" type="radio" value="15">15 hours per week (minimum)</label>
-    <label><input name="time-commitment" type="radio" value="ui-ux">16 - 24 hours per week</label>
-    <label><input name="time-commitment" type="radio" value="ui-ux">25 - 30 hours per week</label>
+    <label><input name="time-commitment" type="radio" value="16-24">16 - 24 hours per week</label>
+    <label><input name="time-commitment" type="radio" value="25-40">25 - 40 hours per week</label>
   </fieldset>
 </li>
 
