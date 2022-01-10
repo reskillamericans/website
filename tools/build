@@ -41,4 +41,4 @@ create-video-content-files.mjs
 
 echo "Building Hugo static site ..."
 hugo
-tree 0L 2 public
+tree -L 2 public

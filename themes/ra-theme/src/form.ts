@@ -9,7 +9,7 @@ register('form', (options: any) => {
   // Assume only one form per page.
   const names: string[] = [];
   const listElements: Map<string, Element> = new Map();
-  const controls: Map<string, HTMLElement> = new Map();
+  const controls: Map<string, HTMLInputElement> = new Map();
   const errors: Set<HTMLElement> = new Set();
 
   const form = document.querySelector('form')!;
@@ -27,7 +27,7 @@ register('form', (options: any) => {
 
       if (name && !names.includes(name)) {
         names.push(name);
-        controls.set(name, elt as HTMLElement);
+        controls.set(name, elt as HTMLInputElement);
         let listElt = parentListElement(elt);
         if (listElt) {
           listElements.set(name, listElt);
@@ -35,12 +35,10 @@ register('form', (options: any) => {
       }
   }
 
-  form.onsubmit = submitForm;
-
   // Focus the first form element.
   controls.get(names[0])!.focus();
 
-  function submitForm(e: Event) {
+  form.addEventListener('submit', (e: Event) => {
     e.preventDefault();
     const data = new FormData(form);
     const json: {[key: string]: FormDataEntryValue} = {};
@@ -50,12 +48,12 @@ register('form', (options: any) => {
     }
     errors.clear();
 
-    let firstError = false;
+    let hasError = false;
 
     for (const name of names) {
-      if (!data.has(name) || data.get(name) == '') {
+      if (!data.has(name) || data.get(name) === '') {
         // Ignore disabled controls.
-        if (controls.get(name)!.getAttribute('disabled') == 'true') {
+        if (controls.get(name)!.disabled) {
           continue;
         }
         const li = listElements.get(name)!;
@@ -63,12 +61,16 @@ register('form', (options: any) => {
         const error = makeError();
         errors.add(error);
         li.after(error);
-        if (!firstError) {
-          firstError = true;
+        if (!hasError) {
+          hasError = true;
           controls.get(name)!.focus();
           li.scrollIntoView();
         }
       }
+    }
+
+    if (hasError) {
+      return;
     }
 
     for (let name of names) {
@@ -82,12 +84,10 @@ register('form', (options: any) => {
       json[name] = value;
     }
 
-    console.log(json);
-
-    if (firstError) {
-      return false;
-    }
-  }
+    console.log("Form submitting:", json);
+    const evt = new CustomEvent('form-submit', {detail: json});
+    form.dispatchEvent(evt);
+  });
 });
 
 function makeError(): HTMLElement {

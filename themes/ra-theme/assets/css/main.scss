@@ -160,6 +160,7 @@ main {
       font-style: italic;
       line-height: 1em;
     }
+
   }
 
   &.centered {
@@ -194,6 +195,17 @@ main {
   &.light-box {
     background-color: $main-color;
     width: 80%;
+  }
+
+  #message-box {
+    @include floating-shadow;
+    box-sizing: border-box;
+    display: none;
+    padding: 1.5rem;
+    background-color: rgb(240, 170, 39);
+    color: rgb(68, 40, 4);
+    font-weight: bold;
+    font-style: italic;
   }
 
   // Allow for overlapping section after this one.
