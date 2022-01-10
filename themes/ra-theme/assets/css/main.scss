@@ -21,6 +21,10 @@
   --codeFont: 'Roboto Mono', monospace;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Open Sans', san-serif;
   min-width: $min-width;
