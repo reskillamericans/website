@@ -6,6 +6,6 @@ set -e
 TOOLS_DIR="$(unset CDPATH; cd $(dirname ${BASH_SOURCE[0]}) && pwd)"
 source $TOOLS_DIR/use
 
-cd $PROJ_DIR/themes/ra-theme/static
+cd $PROJ_DIR
 
-mocha --ui tdd scripts/**/*.test.js
+mocha --ui tdd public/scripts/**/*.test.js
