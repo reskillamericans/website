@@ -16,5 +16,5 @@ require('esbuild').buildSync({
     treeShaking: true,
     minify: true,
     sourcemap: true,
-    outfile: 'static/scripts/reskill.js',
+    outfile: 'public/scripts/reskill.js',
   })

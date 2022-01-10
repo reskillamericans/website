@@ -1,8 +1,6 @@
 # Logs
 node_modules/
-scripts/
 bin/
-static/scripts/
 public/
 resources/
 .vscode/

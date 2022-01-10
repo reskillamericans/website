@@ -7,6 +7,7 @@
     "moduleResolution": "Node",
     "outDir": "../../public/scripts",
     "sourceMap": true,
+    "inlineSources": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true
