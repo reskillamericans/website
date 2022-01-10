@@ -131,6 +131,9 @@ function main() {
 
             const ref = await addDoc(collection(db, "enrollments"), enrollment);
             console.log(`Submitted enrollment: ${ref.id}`);
+
+            // Refresh the page.
+            location.reload();
         });
     }
 }
