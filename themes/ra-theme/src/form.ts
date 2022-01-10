@@ -10,6 +10,7 @@ register('form', (options: any) => {
   const names: string[] = [];
   const listElements: Map<string, Element> = new Map();
   const controls: Map<string, HTMLElement> = new Map();
+  const errors: Set<HTMLElement> = new Set();
 
   const form = document.querySelector('form')!;
   const elements = form.querySelectorAll('input, select, textarea');
@@ -43,17 +44,34 @@ register('form', (options: any) => {
     const data = new FormData(form);
     const json: {[key: string]: FormDataEntryValue} = {};
 
+    for (const error of errors) {
+      error.remove();
+    }
+    errors.clear();
+
+    let firstError = false;
+
     for (const name of names) {
       if (!data.has(name) || data.get(name) == '') {
         // Ignore disabled controls.
         if (controls.get(name)!.getAttribute('disabled') == 'true') {
           continue;
         }
+        const li = listElements.get(name)!;
         console.log(`Missing value for ${name}`);
-        controls.get(name)!.focus();
-        listElements.get(name)!.scrollIntoView();
-        return false;
+        const error = makeError();
+        errors.add(error);
+        li.after(error);
+        if (!firstError) {
+          firstError = true;
+          controls.get(name)!.focus();
+          li.scrollIntoView();
+        }
       }
+    }
+
+    if (firstError) {
+      return false;
     }
 
     for (const [key, value] of data.entries()) {
@@ -63,3 +81,10 @@ register('form', (options: any) => {
     console.log(json);
   }
 });
+
+function makeError(): HTMLElement {
+  const required = document.createElement('p');
+  required.classList.add('form-error');
+  required.textContent = 'This field is required.';
+  return required;
+}
