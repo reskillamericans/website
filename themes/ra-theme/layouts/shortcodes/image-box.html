@@ -1,12 +1,18 @@
 <div class="image-box">
-<!-- TODO: Would like to share this code from image shortcode - not supported in
-HUGO? -->
+{{- $path := (print "images/" (.Get "src")) -}}
+
+{{- $altText := (print "") -}}
+{{- with $.Get "alt" -}}
+  {{- $altText = (printf "alt=\"%s\" " . | safeHTMLAttr ) -}}
+{{- else -}}
+  {{- warnf "Missing alt attribute for image %s in %s" $path .Page.File -}}
+{{- end -}}
+
 {{- if .Get "src" -}}
   <div class="image-wrapper">
-  {{- $path := (print "images/" (.Get "src")) -}}
   {{- with (resources.Get $path) -}}
     {{- $image := .Resize "400x" -}}
-      <img src="{{ $image.Permalink }}">
+      <img {{ $altText }} src="{{ $image.Permalink }}">
   {{- else -}}
     {{- warnf "Unable to find image: %s" $path -}}
   {{- end -}}

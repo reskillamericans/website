@@ -2,7 +2,6 @@
 {{- $altText := (print "") -}}
 {{- with $.Get "alt" -}}
   {{- $altText = (printf "alt=\"%s\" " . | safeHTMLAttr ) -}}
-  {{ warnf "%s" $altText }}
 {{- else -}}
   {{- warnf "Missing alt attribute for image %s in %s" $path .Page.File -}}
 {{- end -}}
@@ -17,8 +16,8 @@
   {{- end -}}
   {{- if $.Get "caption" -}}
     <figcaption>{{ $.Get "caption" }}</figcaption>
-</figure>
   {{- end -}}
+</figure>
 
 {{- else -}}
 

@@ -26,7 +26,6 @@ historically underrepresented racial minorities across the U.S.
 
 ## Learning Tracks
 
-
 We have two tracks to choose from: a Full-Stack Web Development Course, and a
 Product Designer UI/UX course.
 
@@ -40,9 +39,10 @@ mentorship.
 
 {{% section wrapped-boxes overlap %}}
 
-{{% image-box src="code-fe.png" %}}
+{{% image-box alt="Drawing of a developer working on a laptop and phone"
+    src="code-fe.png" %}}
 
-## Full Stack Web<br>Development
+## Full Stack Web<br>Development {#full-stack}
 
 We will start from the basics of web development: HTML and CSS. Then we will
 move into JavaScript as used in the browser, and then on the server.
@@ -52,9 +52,10 @@ until you are able to develop complete web sites and applications on your own.
 
 {{% /image-box %}}
 
-{{% image-box src="Design.png" %}}
+{{% image-box alt="Drawing of a designer working on a laptop."
+    src="Design.png" %}}
 
-## Product Designer<br>UI/UX
+## Product Designer<br>UI/UX {#design}
 
 Our Product Designer course is designed to give you the tools you need to gather requirements from users, do
 customer research, and architect product solutions to solve end-user problems.
@@ -102,7 +103,8 @@ will provide the best experience.
 
 </div>
 
-{{< image src="Working_01.png" resize="800x" >}}
+{{< image alt="Drawing of a team meeting on a tablet."
+    src="Working_01.png" resize="800x" >}}
 
 {{% /section %}}
 
