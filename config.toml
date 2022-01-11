@@ -1,9 +1,10 @@
 # baseURL = 'https://reskill-learning.web.app/'
-languageCode = 'en-us'
+languageCode = 'en-US'
 title = 'Reskill Americans'
 theme = 'ra-theme'
 assetDir = 'assets'
 summaryLength = 30
+disableHugoGeneratorInject = true
 
 [markup.goldmark.renderer]
 # We use nested shortcodes - this is needed to allow them to be nested

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html {{ with .Site.LanguageCode }}language="{{ . }}"{{ end }}>
+<html {{ with .Site.LanguageCode }}lang="{{ . }}"{{ end }}>
     {{ "<!--" | safeHTML }}
         ra-theme/layouts/baseof.html
         kind: {{ .Kind | safeHTML }}
