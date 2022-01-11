@@ -1,13 +1,13 @@
 {{ define "main" }}
 {{ "<!-- layouts/news/single.html:main-->" | safeHTML }}
 <section class="color-contrast">
-  <main class="news-header centered prep-overlap">
+  <div class="content news-header centered prep-overlap">
     {{ partial "tag-list" .Params.tags}}
     <h2>{{ .Title }}</h2>
-  </main>
+  </div>
 </section>
 <section>
-  <main class="news overlap">
+  <div class="content news overlap">
   {{ with index (.Resources.ByType "image") 0 }}
     {{ $image := .Resize "x300" }}
     <img src="{{ $image.RelPermalink }}" alt="{{ $.Title }}">
@@ -16,6 +16,6 @@
       <img src="{{ $image.RelPermalink }}">
   {{ end }}
   {{.Content}}
-  </main>
+  </div>
 </section>
 {{ end }}

@@ -1,13 +1,13 @@
 {{ define "main" }}
 {{ "<!-- layouts/about/single.html:main-->" | safeHTML }}
 <section class="contrast">
-  <main class="centered">
+  <div class="content centered">
     <h1>{{ .Title }}</h1>
-  </main>
+  </div>
 </section>
 
 <section>
-    <main class="team-member">
+    <div class="content team-member">
       <div>
         {{ with .Resources.GetMatch "profile.jpg" }}
           {{ $image := .Resize "800x" }}
@@ -20,6 +20,6 @@
         <h3>{{ .Params.jobTitle }}</h3>
         {{ .Content }}
       </div>
-    </main>
+    </div>
 </section>
 {{ end }}

@@ -6,12 +6,12 @@
 {{ $videos := (.Site.GetPage "/videos").Pages }}
 {{ $combined := (.Pages | append $videos).ByDate.Reverse }}
 <section>
-<main>
+<div class="content">
   <ul class="summary">
   {{ range $combined }}
     {{ .Render "summary" }}
   {{ end }}
   </ul>
-</main>
+</div>
 </section>
 {{ end }}

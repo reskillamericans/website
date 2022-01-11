@@ -37,7 +37,7 @@ body {
 
 // Sections are full-bleed across the page and for background for content elements.
 // Page structure is a sequence of sections down the page.  With each section
-// there is a content block (either header, main, or footer) that defines how
+// there is a content block (either header, div.content, or footer) that defines how
 // wide it will be on the page.
 section {
   margin: 0;
@@ -88,7 +88,7 @@ section {
 }
 
 // These are the content-holding blocks in each section of the page.
-main {
+div.content {
   @include content(1rem 2rem);
 
   @media (max-width: $break-width) {

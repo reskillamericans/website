@@ -29,7 +29,7 @@
 {{ end -}}
 
 <section {{ with $sectionClass }}class="{{ . }}"{{ end }}>
-  <main {{ with $mainClass }}class="{{ . }}"{{ end }}>
+  <div {{ with $mainClass }}class="content {{ . }}"{{ else }}class="content"{{ end }}>
     {{ .Inner }}
-  </main>
+  </div>
 </section>
