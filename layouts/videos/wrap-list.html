@@ -1,25 +1,25 @@
 {{ define "main" }}
 {{ "<!-- layouts/show-pages.html:main-->" | safeHTML }}
 <section>
-    <main>
+    <div class="content">
         {{.Content}}
-    </main>
+    </div>
 </section>
 
 {{ $namedSections := .Params.sections }}
 {{ range $namedSections }}
 {{ $sectionName := . }}
 <section>
-  <main>
+  <div class="content">
     <h1>{{ . }}</h1>
-  </main>
-  <main class="wrapped-boxes">
+  </div>
+  <div class="content wrapped-boxes">
     {{ range sort $.Pages "Date" }}
       {{ if in .Params.tags $sectionName }}
         {{ .Render "card" }}
       {{ end }}
     {{ end }}
-  </main>
+  </div>
 </section>
 {{ end }}
 

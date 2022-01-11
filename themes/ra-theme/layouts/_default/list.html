@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ "<!-- ra-theme/layouts/_default/list.html -->" | safeHTML }}
 <section>
-  <main>
+  <div class="content">
       <h2>List of {{.Title}} Pages</h2>
       {{.Content}}
     <ul>
@@ -12,6 +12,6 @@
         </li>
     {{ end }}
     </ul>
-  </main>
+  </div>
 </section>
 {{ end }}

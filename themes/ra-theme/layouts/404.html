@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ "<!-- ra-theme/layouts/404.html -->" | safeHTML }}
 <section class="contrast">
-    <main class="centered">
+    <div class="content centered">
       <h1>404 - Page not found</h1>
       <p>
         I'm sorry! The page you are looking for does not exist.
@@ -12,6 +12,6 @@
       {{ else }}
         {{ warnf "Could not find image for 404 page" }}
       {{ end }}
-    </main>
+    </div>
 </section>
 {{ end }}

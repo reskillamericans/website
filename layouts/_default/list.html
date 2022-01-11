@@ -1,23 +1,23 @@
 {{ define "main" }}
 {{ "<!-- layouts/_default/list.html:main-->" | safeHTML }}
 <section class="color-contrast">
-  <main class="centered">
+  <div class="content centered">
     <h1>{{.Title}}</h1>
-  </main>
+  </div>
 </section>
 
 <section>
-  <main class="centered">
+  <div class="content centered">
   {{.Content}}
-  </main>
+  </div>
 
-  <main>
+  <div class="content">
     <ul class="summary">
     {{ range .Pages.ByDate.Reverse }}
       {{ .Render "summary" }}
     {{ end }}
     </ul>
-  </main>
+  </div>
 </section>
 
 {{ end }}

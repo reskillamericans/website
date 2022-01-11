@@ -9,21 +9,21 @@
 {{- end -}}
 
 <section class="color-contrast">
-    <main class="centered {{ $mainClass }}">
+    <div class="content centered {{ $mainClass }}">
       <h1>{{.Title}}</h1>
-    </main>
+    </div>
 </section>
 
 <section>
     {{ with $hero }}
-        <main class="document overlap">
-        {{- $image := $hero.Resize "x300" -}}
-        <img class="hero" src="{{ $image.RelPermalink }}" alt="{{ $.Title }}">
+    <div class="content document overlap">
+    {{- $image := $hero.Resize "x300" -}}
+    <img class="hero" src="{{ $image.RelPermalink }}" alt="{{ $.Title }}">
     {{ else }}
-        <main class="document">
+    <div class="content document">
     {{ end }}
     {{.Content}}
-    </main>
+    </div>
 </section>
 
 {{ end }}

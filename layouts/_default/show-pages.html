@@ -1,13 +1,13 @@
 {{ define "main" }}
 {{ "<!-- layouts/show-pages.html:main-->" | safeHTML }}
 <section>
-    <main>
+    <div class="content">
         {{.Content}}
-    </main>
+    </div>
 </section>
 
 <section class="light-background">
-    <main>
+    <div class="content">
     <ol>
         {{ range .Pages }}
         <li>
@@ -16,6 +16,6 @@
         </li>
         {{ end }}
     </ol>
-</main>
+    </div>
 </section>
 {{ end }}
