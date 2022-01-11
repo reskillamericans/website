@@ -16,6 +16,7 @@ historically underrepresented racial minorities across the U.S.
 <a class="button-like standout" href="/enroll">Join Our Next Cohort</a>
 
 {{< image class="hero high" src="nia.jpg" resize="1080x jpg"
+    alt="Nia Bailey standing in front of the Public Library in New York"
     caption="Nia Bailey completed the UI/UX Designer track in 2021." >}}
 
 {{% /section %}}

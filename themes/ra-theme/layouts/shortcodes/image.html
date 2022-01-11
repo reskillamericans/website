@@ -1,11 +1,19 @@
 {{- $path := (print "images/" (.Get "src")) -}}
+{{- $altText := (print "") -}}
+{{- with $.Get "alt" -}}
+  {{- $altText = (printf "alt=\"%s\" " . | safeHTMLAttr ) -}}
+  {{ warnf "%s" $altText }}
+{{- else -}}
+  {{- warnf "Missing alt attribute for image %s in %s" $path .Page.File -}}
+{{- end -}}
+
 {{- with (resources.Get $path) -}}
 <figure>
   {{- if $.Get "resize" -}}
     {{- $image := .Resize ($.Get "resize") -}}
-      <img {{ with $.Get "class" }}class="{{.}}" {{ end -}} src="{{ $image.Permalink }}">
+    <img {{ $altText }}{{ with $.Get "class" }}class="{{.}}" {{ end -}} src="{{ $image.Permalink }}">
   {{- else -}}
-      <img {{ with $.Get "class" }}class="{{.}}" {{ end -}} src="{{ .Permalink }}">
+    <img {{ $altText }}{{ with $.Get "class" }}class="{{.}}" {{ end -}} src="{{ .Permalink }}">
   {{- end -}}
   {{- if $.Get "caption" -}}
     <figcaption>{{ $.Get "caption" }}</figcaption>
