@@ -1,5 +1,5 @@
 {{- $path := (print "images/" (.Get "src")) -}}
-{{- $altText := (print "") -}}
+{{- $altText := (print "" | safeHTMLAttr) -}}
 {{- with $.Get "alt" -}}
   {{- $altText = (printf "alt=\"%s\" " . | safeHTMLAttr ) -}}
 {{- else -}}

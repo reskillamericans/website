@@ -3,7 +3,7 @@
 
 {{- $altText := (print "") -}}
 {{- with $.Get "alt" -}}
-  {{- $altText = (printf "alt=\"%s\" " . | safeHTMLAttr ) -}}
+  {{- $altText = (printf "alt=\"%s\" " . ) -}}
 {{- else -}}
   {{- warnf "Missing alt attribute for image %s in %s" $path .Page.File -}}
 {{- end -}}
@@ -12,7 +12,7 @@
   <div class="image-wrapper">
   {{- with (resources.Get $path) -}}
     {{- $image := .Resize "400x" -}}
-      <img {{ $altText }} src="{{ $image.Permalink }}">
+      <img {{ $altText | safeHTMLAttr }} src="{{ $image.Permalink }}">
   {{- else -}}
     {{- warnf "Unable to find image: %s" $path -}}
   {{- end -}}
