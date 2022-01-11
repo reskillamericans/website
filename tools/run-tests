@@ -9,3 +9,11 @@ source $TOOLS_DIR/use
 cd $PROJ_DIR
 
 mocha --ui tdd public/scripts/**/*.test.js
+
+echo Checking html for template errors ...
+if grep -l -r --include "*.html" "ZgotmplZ" public; then
+    echo -e "\nERROR: Some .html files contain the ZgotmplZ placeholder."
+    echo "Possible unsafe content in rendered HTML has been detected."
+    echo "Fix before deploying."
+    exit 1
+fi

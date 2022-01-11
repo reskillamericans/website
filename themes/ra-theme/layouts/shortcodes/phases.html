@@ -6,7 +6,7 @@
 <div class="menu">
 {{- range $phases -}}
   {{- $name := .File.BaseFileName -}}
-  <input type="radio" id="{{ $name }}" name="phases" {{ $checked }}>
+  <input type="radio" id="{{ $name }}" name="phases" {{ $checked | safeHTMLAttr }}>
   <label for="{{ $name }}">{{ .Title }}</label>
   {{ $checked = "" }}
 {{- end -}}
