@@ -35,7 +35,7 @@ This will combine the "marketing" website with a log-in site for participants.
 
 - User profile (add LinkedIn profile pic)
 - Integrations:
-  - Mailchimp - for cohort mass-mailing
+  - Mailchimp - for {{< cohort >}} mass-mailing
   - Sendgrid - for transaction emails
   - Canvas LMS (or Zuir LMS)
   - GitHub

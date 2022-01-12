@@ -13,7 +13,7 @@ Reskill Americans is a nonprofit founded by tech veterans that provides
 tuition-free software development training, mentorship and community for
 historically **underrepresented racial minorities** across the U.S.
 
-<a class="button-like standout" href="/enroll">Join Our Next Cohort</a>
+<a class="button-like standout" href="/enroll">Join Our Next {{< cohort caps >}}</a>
 
 {{< image class="hero high" src="nia.jpg" resize="1080x jpg"
     alt="Nia Bailey standing in front of the Public Library in New York"
@@ -81,7 +81,7 @@ organization funded by individual and corporate donors.
 
 ## Learn from<br>Anywhere, Anytime
 
-Our course is entirely online. Once your cohort begins, you can
+Our course is entirely online. Once your {{< cohort >}} begins, you can
 participate on your own schedule, as long as you submit your assignments
 on time.&nbsp;<span class="footnote-mark">*</span>
 
