@@ -18,21 +18,6 @@
 <section class="footer">
     {{- partial "footer.html" . -}}
 </section>
-<!-- Dyanimic page processors loaded as ES-modules when [[process]]
-    present in front matter. -->
-{{- $processors := .Params.process -}}
-{{- if $processors -}}
-    {{- warnf "Processors: %s" (jsonify $processors) -}}
-    <!-- Load modules using name - they will register themselves -->
-    {{- range $processors -}}
-        <script type=module src="/scripts/{{ .name }}.js"></script>
-    {{- end -}}
-
-    <script type="module">
-        import { runProcessors } from "/scripts/process.js";
-        runProcessors({{ $processors | jsonify | safeJS }});
-    </script>
-{{ end -}}
-
+{{ partial "process.html" . }}
 </body>
 </html>
