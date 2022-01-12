@@ -15,7 +15,9 @@ In this phase, we focus on project-based learning: we define a series of project
 
 <div class="wrapped-boxes">
 
-{{% image-box src="code-fe.png" %}}
+{{% image-box
+    alt="Drawing of a developer working on a laptop and a phone."
+    src="code-fe.png" %}}
 
 ## Web Development
 
@@ -34,7 +36,9 @@ By this time you'll be ready to build a complete web application.
 
 {{% /image-box %}}
 
-{{% image-box src="Design.png" %}}
+{{% image-box
+    alt="Drawing of a Designer working at a laptop."
+    src="Design.png" %}}
 
 ## Product Design
 

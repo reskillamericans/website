@@ -11,7 +11,9 @@ layout = "document"
 
 ### (throughout the program)
 
-{{% image-box src="Working_01.png" %}}
+{{% image-box
+    alt="Drawing of an online meeting on a tablet computer."
+    src="Working_01.png" %}}
 
 Although delivered online, our program is designed to be social.  You will be
 paired with mentors and TAs from the beginning, and matched with a group of

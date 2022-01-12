@@ -5,7 +5,10 @@
 {{- with $.Get "alt" -}}
   {{- $altText = (printf "alt=\"%s\" " . ) -}}
 {{- else -}}
-  {{- warnf "Missing alt attribute for image %s in %s" $path .Page.File -}}
+  <!-- Don't complain about alt text if no image! -->
+  {{ if $.Get "src" }}
+    {{- warnf "Missing alt attribute for image %s in %s" $path .Page.File -}}
+  {{ end }}
 {{- end -}}
 
 {{- if .Get "src" -}}
