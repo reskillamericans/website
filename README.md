@@ -6,10 +6,24 @@ View the current [staging version here](https://reskill-learning.web.app/).
 
 This will combine the "marketing" website with a log-in site for participants.
 
+## Current Features
+
+- Complete "Marketing" web site:
+  - / (home)
+  - /learn-more
+  - /partner
+  - /donate
+  - /about-us
+  - /news
+  - /faq
+- 
+
+## Future Goals
+
 The primary features here are:
 
-- Collecting user information, including linking to LinkedIn identity
-  for all participants.
+- Collecting user information, including linking to LinkedIn identity for all
+  participants.
 - Collecting ongoing metrics via surveys, content engagement, and course
   completions so we have longitudinal data on all participants, progess, and
   success rates.
