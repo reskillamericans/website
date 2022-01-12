@@ -5,6 +5,7 @@
   "rules": {
     "no-trailing-whitespace": "off",
     "no-inline-style": "off",
-    "prefer-button": "off"
+    "prefer-button": "off",
+    "long-title": "off"
   }
 }

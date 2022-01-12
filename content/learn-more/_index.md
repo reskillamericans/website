@@ -51,6 +51,7 @@ give you all the skills you need to become a productive software development
 professional. Plan on a minimum of 15 hours per week for class time and for
 working individually on exercises and projects.
 
+
 {{< phases >}}
 
 {{% /section %}}
@@ -116,7 +117,7 @@ We trained participants in frontend, backend, mobile and UI/UX Design tracks.
 
 {{% metric src=build.png %}}
 ### 16 Projects
-Our participants built 16 full stack projects working on crossfunctional teams
+Our participants built 16 full stack projects working on cross-functional teams
 of developers and designers.
 {{% /metric %}}
 

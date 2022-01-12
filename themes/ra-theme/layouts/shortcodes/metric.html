@@ -4,7 +4,7 @@
 {{ $src := .Page.Resources.GetMatch (.Get "src")  }}
 {{ with $src }}
   {{ $image := $src.Resize "125x" }}
-<img src="{{ $image.Permalink }}">
+<img alt="" src="{{ $image.Permalink }}">
 {{ else }}
   {{ warnf "No metric image found: %s." (.Get "src") }}
 {{ end }}

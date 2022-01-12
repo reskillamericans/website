@@ -9,8 +9,7 @@ ul.summary {
     display: flex;
     gap: 1.5rem;
     margin-bottom: 2rem;
-    overflow-x: hidden;
-    /* height: 200px; */
+    overflow: hidden;
 
     @media (max-width: $summary-break) {
       flex-direction: column;
@@ -43,7 +42,6 @@ ul.summary {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      // align-items: stretch;
       width: 100%;
       font-size: 14px;
       line-height: 1.2em;

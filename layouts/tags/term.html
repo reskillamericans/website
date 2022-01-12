@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ "<!-- layouts/_default/list.html:main-->" | safeHTML }}
+{{- "<!-- layouts/_default/list.html:main-->" | safeHTML }}
 <section class="color-contrast">
 <div class="content centered">
   <h1>{{.Title}}</h1>
@@ -9,10 +9,10 @@
 <section>
 <div class="content">
   <ul class="summary">
-  {{ range .Pages.ByDate.Reverse }}
-    {{ .Render "summary" }}
-  {{ end }}
+  {{- range .Pages.ByDate.Reverse }}
+    {{- .Render "summary" }}
+  {{- end }}
   </ul>
 </div>
 </section>
-{{ end }}
+{{- end }}
