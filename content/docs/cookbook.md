@@ -169,3 +169,65 @@ home page carousel.
 a testimonial page).*
 
 ## Updating YouTube Video Posts
+
+This repo includes content files that are generated from YouTube video files
+from our [YouTube Channel](https://www.youtube.com/c/ReskillAmericans).
+
+The process to update the site from YouTube is:
+
+```
+$ api-keys-update --decrypt   # Only once - you need a password for this.
+$ get-video-data.mjs          # Updates the data/youtube-videos.json file.
+$ update-video-metadata.mjs   # Merge new youtube-data with edited
+                              # video-metadata.toml file.
+```
+
+If there are extra edits to apply to the *front-matter* of a video, edit the
+corresponding fields in the
+[data/video-metadata.toml](https://github.com/reskillamericans/website/blob/main/data/video-metadata.toml)
+file.  Then re-run `update-video-metadata.mjs`.
+
+### Where video data is stored
+
+Data is stored in two files in the
+[data](https://github.com/reskillamericans/website/tree/main/data) directory:
+
+- `youtube-videos.json`<br>
+  This is all updated via the YouTube data api.  It contains data
+  on all our uploaded videos and playlists.  Refresh this information
+  by running `get-video-data.mjs`.  *You will need an api-key to
+  do this. Run `api-keys-update --decrypt` if you have the password
+  for the shared (secret) api key.*
+- `video-metadata.toml`<br>
+  This file can be updated by running `update-video-data.mjs`.
+  This will grab any updated information from `youtube-videos.json`
+  and create new metadata block for new videos - or update any
+  missing metadata for already listed videos (if will NOT EVER
+  change any metadata that has been hand-edited here).<br>
+  ***But warning: comments in this file will be stripped by running this
+  command.***
+
+The `create-video-content-files.mjs` command will regenerate ALL the video
+content files in the `content/videos` directory by combining the information in
+the `video-metadata.toml` file with the `youtube-videos.json` file.
+
+A sample metadata entry for a video looks like this:
+
+```
+[g7hCp8is2qg]
+title = "Reskill Americans Town Hall #18 | Andrew Kwatinetz and Eric Patey - Sonos"
+videoId = "g7hCp8is2qg"
+guest = "Andrew Kwatinetz & Eric Patey"
+guestTitle = "Sonos"
+slug = "town-hall-18-andrew-kwatinetz-eric-patey-sonos"
+num = "18"
+filename = "2021-08-02-g7hCp8is2qg.md"
+date = "2021-08-02T15:01:23.000Z"
+draft = false
+tags = [ "town-halls" ]
+quote = "This is a sample pull-quote for the video."
+```
+
+All but the filename will be added to the [Front
+Matter](https://gohugo.io/content-management/front-matter/) of the corresponding
+Markdown file.

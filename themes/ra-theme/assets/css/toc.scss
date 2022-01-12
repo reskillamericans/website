@@ -5,7 +5,12 @@
 
   ul {
     list-style-type: none;
-    padding-left: 0;
+    padding-left: 1rem;
+
+    ul {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+    }
   }
 
   li {
