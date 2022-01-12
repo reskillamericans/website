@@ -18,7 +18,9 @@ training, mentorship and community to our participants. We also seek companies
 to hire our participants into entry-level jobs or paid internships at the end
 our program.
 
-{{< image class="hero high" src="nia-smiling.jpg" resize="1080x jpg" >}}
+{{< image class="hero high"
+          alt="Woman working at a laptop in a library."
+          src="nia-smiling.jpg" resize="1080x jpg" >}}
 
 {{% /section %}}
 
@@ -61,7 +63,6 @@ in our rigorous, tuition-free software development program.
 {{% image-box %}}
 
 ### We seek partners to:
-
 
 - Hire our participants for full-time software development roles.&nbsp;<span
   class="footnote-mark">*</span>

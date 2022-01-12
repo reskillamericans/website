@@ -21,7 +21,9 @@ training modules, and online video conferences with your instructors and mentors
 
 <a class="button-like standout" href="/enroll">Join Our Next Cohort</a>
 
-{{< image class="hero high" src="tasha-at-computer-4.jpg" resize="1080x jpg"
+{{< image class="hero high"
+    alt="Tasha Taylor sitting in a library in front of a laptop."
+    src="tasha-at-computer-4.jpg" resize="1080x jpg"
     caption="Tasha Taylor completed our 2021 program as a front-end developer.">}}
 
 {{% /section %}}

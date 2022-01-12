@@ -10,7 +10,9 @@ order = 4
 
 ### (ongoing)
 
-{{% image-box src="Community.png" %}}
+{{% image-box
+    alt="Drawing of four people meeting to discuss a project."
+    src="Community.png" %}}
 
 Throughout every phase of our program, we will work with you each week on your
 job preparedness skills.  We will host weekly Town Hall meetings with experts
