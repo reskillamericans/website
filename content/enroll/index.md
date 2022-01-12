@@ -13,18 +13,21 @@ name = "form"
 
 {{< message-box >}}
 
-We are currently accepting enrollment for the training period that starts in March 2022.
+We are currently accepting enrollment for the training period that starts in
+March 2022.
 
-Once you submit your enrollment form, you'll get an email from us that will include access to our online learning platform.
+Once you submit your enrollment form, you'll get an email from us that will
+include access to our online learning platform.
 
 ## Eligibility Requirements:
 
 - You must self-identify as a historically underrepresented minority.
 - You must be eligible to work in the United States.
 
-## Reskill Americans - 2022 Bootcamp Enrollment Form
+## Reskill Americans - 2022 Enrollment Form
 
-We are accepting applications for participation in our seven month software development training program.
+We are now enrollments for our seven-month software development training
+program.
 
 <form id="enrollment-form">
 <ol>
@@ -104,6 +107,7 @@ We are accepting applications for participation in our seven month software deve
     <label><input name="track" type="radio" value="full-stack">Full-Stack Web Development</label>
     <label><input name="track" type="radio" value="ui-ux">Product Design - UI/UX</label>
     <label><input name="track" type="radio" value="unsure">I'm unsure</label>
+    <p class="note">Note: You may change tracks up until the third week of the program.</p>
   </fieldset>
 </li>
 
