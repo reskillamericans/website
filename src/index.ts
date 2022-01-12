@@ -62,6 +62,7 @@ async function linkWith(provider: AuthProvider) {
 
 function main() {
     // const signIn = document.querySelector('#sign-in')!;
+    const body = document.querySelector('body')!;
     const linkedIn = document.querySelector('#linkedin-button');
     const signInBlock = document.querySelector('#sign-in-block');
     const signOut = document.querySelector('#sign-out');
@@ -75,13 +76,11 @@ function main() {
                 const emailSpan = document.querySelector('#signed-in-email')!;
                 nameSpan.textContent = user.displayName;
                 emailSpan.textContent = user.email;
-                signInBlock.setAttribute('data-signed-in', 'true');
             }
+            body.setAttribute('data-signed-in', 'true');
         } else {
+            body.setAttribute('data-signed-in', 'false');
             // signIn.textContent = 'Sign In';
-            if (signInBlock) {
-                signInBlock.setAttribute('data-signed-in', 'false');
-            }
         }
     });
 

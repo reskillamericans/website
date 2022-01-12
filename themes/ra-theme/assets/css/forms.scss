@@ -52,10 +52,3 @@ p.form-error {
   font-style: italic;
   margin-top: 0.5rem;
 }
-
-// Hack for FF to bubble events to disabled inputs
-// and also has side-effect of selecting the parent
-// input radio button to a disabled option input.
-input[disabled] {
-  pointer-events:none
-}
