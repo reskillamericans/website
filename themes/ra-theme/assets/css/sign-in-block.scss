@@ -1,19 +1,11 @@
 #sign-in-block {
   border-block: 3px solid $color-contrast-color;
 
-  &[data-signed-in="true"] div.out {
-    display: none;
-  }
-
-  &[data-signed-in="false"] div.in {
-    display: none;
-  }
-
   h3 {
     margin-top: 0;
   }
 
-  div.in {
+  div.signed-in {
     padding: 0.5rem;
 
     div.box {
@@ -34,11 +26,21 @@
     }
   }
 
-  div.out {
+  div.signed-out {
     padding: 1rem;
     img {
       display: block;
       margin: 0 auto;
     }
   }
+}
+
+// These classes can be used for any conditional display of an element
+// depending on the signed-in status of the user.
+body[data-signed-in="true"] .signed-out {
+  display: none;
+}
+
+body[data-signed-in="false"] .signed-in {
+  display: none;
 }

@@ -50,13 +50,14 @@ register('form', (options: any) => {
 
     let hasError = false;
 
+    // All form fields are "required".
     for (const name of names) {
       if (!data.has(name) || data.get(name) === '') {
-        // Ignore disabled controls.
-        if (controls.get(name)!.disabled) {
+        const li = listElements.get(name)!;
+        // Empty other text is FINE as long as the other control is not selected.
+        if (name.endsWith('-other') && data.get(name.slice(0, -6)) !== 'other') {
           continue;
         }
-        const li = listElements.get(name)!;
         console.log(`Missing value for ${name}`);
         const error = makeError();
         errors.add(error);
@@ -114,16 +115,16 @@ function handleOtherControl(other: HTMLInputElement) {
   const name = other.getAttribute('name')!;
   let li = parentListElement(other)!;
   const otherText = li.querySelector(`[name="${name}-other"]`) as HTMLInputElement;
-  otherText.setAttribute('disabled', 'true');
 
   if (!otherText) {
     console.log(`No linked text input for other ${name}.`);
     return;
   }
 
+  // Clicks in text field should select the "other" option.
   otherText.addEventListener('click', (e: Event) => {
-    console.log(`Clicked other ${name}.`);
-    other.checked = true;
+      console.log(`Clicked other ${name}.`);
+      other.checked = true;
   });
 
   li.addEventListener('change', (evt) => {
@@ -133,10 +134,8 @@ function handleOtherControl(other: HTMLInputElement) {
     }
 
     if (radio.value === 'other') {
-      otherText.disabled = false;
       otherText.focus();
     } else {
-      otherText.disabled = true;
       otherText.value = '';
     }
   });
