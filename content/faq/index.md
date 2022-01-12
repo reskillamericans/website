@@ -96,6 +96,13 @@ There are no set classes; participants will work individually on assignments and
 then meet with the instructor and/or mentors at their convenience when they have
 questions and or need help.
 
+### What will be the teaching format?
+
+Over seven months, you will learn the fundamental concepts of software
+development through a range of formats: recorded and live video sessions,
+training modules, and online video conferences with your instructors and mentors
+(collectively requiring a minimum of 15 hours a week).
+
 ### For individuals who work days, will live zoom meetings/classes be available as a recording?
 
 There won’t be weekly classes. Participants will watch recorded video content
@@ -148,12 +155,13 @@ Express, React, and Node.js ("MERN" stack) to complete a full web application.
 
 ### Are there any software/hardware recommendations?
 
-You can use any computer or laptop /desktop, Mac or Windows. In terms of RAM, we
-recommend the following for each track:
+You can use any computer or laptop /desktop, Mac or Windows. A Windows or
+Macintosh laptop where you can install VS-Code will provide the best experience.
+In terms of RAM, we recommend at least 4GB.
 
-For full stack web development: Min. 4GB RAM
-
-For product design UX/UI:  Min. 4GB
+All the software used will be free - either online or installed on your computer.
+It is possible to do every part of this program using all online resources, so
+you just need a computer with a web browser.
 
 ## Support & Community
 
