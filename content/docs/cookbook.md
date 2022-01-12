@@ -54,25 +54,27 @@ that your PR branch is rebased to the HEAD of main before submitting it.
 
 All the content for the site is stored in
 [MarkDown](https://www.markdownguide.org/tools/hugo/) under the
-[content](../content) directory.
+[content](https://github.com/reskillamericans/website/tree/main/content)
+directory.
 
 *Please format paragraph text to line break at 80 characters.*
 
-We augment some of the features of MarkDown with the addition Hugo
-[Shortcodes](https://gohugo.io/content-management/shortcodes/).  The primary
-ones you should know about are:
+We augment some of the features of MarkDown with the addition [Hugo
+Shortcodes](https://gohugo.io/content-management/shortcodes/).  The primary ones
+you should know about are (see [source
+code](https://github.com/reskillamericans/website/tree/main/themes/ra-theme/layouts/shortcodes)
+for further reference):
 
 - `{{%/* section */%}}` - This wraps a section of MarkDown and applies some
   optional styles to the section.  Note that all content on our site is wrapped
   in a `<section>` tag, and then within that a `<div class="content">`.
   Together, these provide the styling for the section.  The available section
-  class options are (see [source
-  code](../themes/ra-theme/layouts/shortcodes/section.html) for details.).
+  class options are:
   - `contrast` - Make the section a dark (black)  background color.
   - `light-background` - A light blue background color.
   - `color-contrast` - A dark-blue background color.
   - `centered` - All text and headings default centered.
-  - `wrapped-boxes` - Child divs are hightlighted as boxes and wrap in a flex
+  - `wrapped-boxes` - Child divs are highlighted as boxes and wrap in a flex
     container.
   - `team-boxes` - Used on the /about page to show the team members.
   - `prep-overlap` - Added to the section BEFORE a section that will overlap it.
@@ -81,9 +83,9 @@ ones you should know about are:
     overlaps the previous section.
   - `side-by-side` - Used to show just two children (div or image) side-by-side.
   - `light-box` - Uses a contrasting white box over a light-background section.
-- `{{</* image */>}}` - Used to reference an image from the [assets](../assets)
-  diretory.  The parameters are (see [source
-  code](../themes/ra-theme/layouts/shortcodes/image.html)).
+- `{{</* image */>}}` - Used to reference an image from the
+  [assets/images](https://github.com/reskillamericans/website/tree/main/assets/images)
+  directory.  The parameters are:
   - `src` - The file name of the image.
   - `resize` - A sizing instruction.  E.g. `"800x"` would mean resize the image
     to be 800 px wide.  See
@@ -107,3 +109,63 @@ ones you should know about are:
 - `{{</* team-members */>}}` - Displays a collection of team boxes that match a
   given tag (e.g., `{{</* team-members Team */>}}` or
   `{{</* team-members Advisor */>}}`).
+
+## Uploading an Image
+
+Miscellaneous images are saved in the
+[assets/images](https://github.com/reskillamericans/website/tree/main/assets/images)
+directory.  You should always upload the highest resolution of the image
+available.  When embedding the image with the `{{</* image */>}}` shortcode (see
+above) it can be down-scaled to the most appropriate size where it is included
+in the site.
+
+## Adding a Testimonial
+
+Testimonials are all stored in the
+[content/testimonials](https://github.com/reskillamericans/website/tree/main/content/testimonials)
+directory.  The best way to create a new one is to use the hugo command:
+
+```
+$ hugo new testimonials/name-of-person
+```
+
+This will create a new folder for that person's testimonial.  The `index.md` file
+that was created by the testimonial template can now be edited.  A sample looks
+like this:
+
+```
++++
+title = "Testimonial of Ethel Mertz"
+date = 2022-01-12T12:50:21-08:00
+draft = false
+
+name = "Ethel Mertz"
+location = "City, State"
++++
+
+<insert testimonial text here>
+```
+
+Be sure to edit the location *front-matter* and paste in the content of their
+quotation as plain text as the body of `index.md`.
+
+You should also upload a profile picture of the person and store it in the same
+directory, naming it `profile.jpg`.  Please be sure to save the profile picture
+in the maximum resolution available, since Hugo will downscale it appropriately.
+
+In rare cases, we have been given an image that was taken with a rotation in it.
+The rescaling process removes that knowledge, and so it will display sideways!
+This can be fixed by adding a `rotation` field to the *front-matter*, e.g.:
+
+```
+rotation = 270
+```
+
+You should build the site and make sure the new testimonial is showing in the
+home page carousel.
+
+*You can make the folder manually as well - just be sure to name it
+`firstname-lastname` in all lower case (this is the standard slug-text for
+a testimonial page).*
+
+## Updating YouTube Video Posts
