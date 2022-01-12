@@ -14,5 +14,7 @@ For more information on contributing, see the documentation in this repository.
 
 - [Formatted Documentation](https://reskill-learning.web.app/docs) - self hosted
   version of the docs as they are appear on our own (staging) website.
-- [Local repository documentation](content/docs) - You can view the docs
-  on GitHub as well - they are just not process by Hugo and formatting as well.
+- [Local repository documentation](content/docs) - You can view the docs on
+  GitHub as well - they are just not processed by Hugo and formatted as nicely
+  (also, the inter-document links will not work when using the GitHub UI for
+  reading the MarkDown files).

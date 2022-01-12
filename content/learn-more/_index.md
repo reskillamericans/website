@@ -10,10 +10,9 @@ layout = "like-single"
 
 # Our Program
 
-Over seven months, you will learn the fundamental concepts of software
-development through a range of formats: recorded and live video sessions,
-training modules, and online video conferences with your instructors and mentors
-(collectively requiring a minimum of 15 hours a week).
+Participants who complete our seven-month program will have applied their new
+skills to software development projects, worked on cross-functional teams and
+built a portfolio of work to show future employers.
 
 ## The Next Cohort Starts In:
 
