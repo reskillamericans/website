@@ -6,7 +6,7 @@ tags = []
 order = 4
 +++
 
-## Getting your first job or internship
+## Getting Your First Job or Internship
 
 ### (ongoing)
 

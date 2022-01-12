@@ -27,7 +27,7 @@ HTML and CSS, and you'll build your first web page projects.
 
 We then continue on to in-depth instruction in the JavaScript programming
 language. As before, we rely heavily on (fun) projects along the way to help
-cement concepts and build your confidence
+cement concepts and build your confidence.
 
 Finally, we move to the back-end and learn how to implement a web application
 server by implementing data storage and user authentication.
