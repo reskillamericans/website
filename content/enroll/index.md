@@ -74,7 +74,8 @@ We are accepting applications for participation in our seven month software deve
     <label><input name="ethnicity" type="radio" value="filipino">Filipino</label>
     <label><input name="ethnicity" type="radio" value="thai">Thai</label>
     <label><input name="ethnicity" type="radio" value="disabled">Disabled (as defined under the American Disabilities Act)</label>
-    <label><input name="ethnicity" type="radio" value="other">Other:<input class="other" name="ethnicity-other" type="text"></label>
+    <label><input name="ethnicity" type="radio" value="other">Other:</label>
+           <input class="other" name="ethnicity-other" type="text">
   </fieldset>
 </li>
 
@@ -114,8 +115,9 @@ We are accepting applications for participation in our seven month software deve
   </fieldset>
 </li>
 
-<input type="submit" value="Submit">
-
 </ol>
+
+<input type="submit" class="signed-in" value="Submit">
+<p class="form-error signed-out">You must sign in with LinkedIn to submit this form.</p>
 
 </form>
