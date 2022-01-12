@@ -9,7 +9,7 @@ layout = "document"
 
 ## Individual Projects
 
-### (6 weeks)
+### (6 weeks) {#6-weeks-2}
 
 {{% image-box
     alt="Stylized drawing of two people collaborating on a web site."

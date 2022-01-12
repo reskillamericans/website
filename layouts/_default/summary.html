@@ -4,10 +4,10 @@
     <!-- profile before thumbnail - alphabetical! -->
     {{ with index (.Resources.ByType "image") 0 }}
       {{ $image := .Resize "300x" }}
-      <img src="{{ $image.RelPermalink }}" alt="{{ $.Title }}">
+      <img  alt="{{ $.Title }}" src="{{ $image.RelPermalink }}">
       {{ else }}
         {{ $image := ((resources.Get "images/news-default.jpg").Resize "300x") }}
-        <img src="{{ $image.RelPermalink }}">
+        <img alt="Laptop on a desk." src="{{ $image.RelPermalink }}">
     {{ end }}
   </a>
   <div>

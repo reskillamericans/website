@@ -1,30 +1,31 @@
+{{ "<!-- shortcode-start: " | safeHTML }}{{ .Name }}{{ " -->" | safeHTML }}
 <div id="phase-tabs" class="tabbed">
 
-{{ $phases := sort $.Page.Pages "Params.order" }}
+{{- $phases := sort $.Page.Pages "Params.order" }}
 
-{{ $checked := "checked" }}
+{{- $checked := "checked" }}
 <div class="menu">
-{{- range $phases -}}
-  {{- $name := .File.BaseFileName -}}
+{{- range $phases }}
+  {{- $name := .File.BaseFileName }}
   <input type="radio" id="{{ $name }}" name="phases" {{ $checked | safeHTMLAttr }}>
   <label for="{{ $name }}">{{ .Title }}</label>
-  {{ $checked = "" }}
-{{- end -}}
+  {{- $checked = "" }}
+{{- end }}
 </div>
 
 <div class="content">
-{{- range $phases -}}
-  {{- $name := .File.BaseFileName -}}
+  {{- range $phases -}}
+  {{- $name := .File.BaseFileName }}
   <div data-tab="{{ $name }}" data-tab-active="false">
-    {{- .Content -}}
+  {{- .Content }}
   </div>
-{{- end -}}
+{{- end }}
 </div>
 
 </div>
 
 <script type="module">
-  import { Tabs } from '/scripts/tabs.js';
-
-  const tabs = new Tabs(document.getElementById('phase-tabs'));
+import { Tabs } from '/scripts/tabs.js';
+const tabs = new Tabs(document.getElementById('phase-tabs'));
 </script>
+{{ "<!-- shortcode-end: " | safeHTML }}{{ .Name }}{{ " -->" | safeHTML }}

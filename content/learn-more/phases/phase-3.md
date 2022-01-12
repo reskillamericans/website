@@ -9,7 +9,7 @@ layout = "document"
 
 ## Team Projects
 
-### (6 weeks)
+### (6 weeks) {#6-weeks-3}
 
 {{% image-box
     alt="Drawing of three people working around a table."

@@ -22,7 +22,7 @@ industry experts.
 
 Here are a few examples of our ongoing community support:
 
-- Weekly Town Hall livestreams with industry professionals and former
+- Weekly Town Hall live-streams with industry professionals and former
   participants that have successfully completed our training program.
 - Access to office hours with mentors and TAs when you need individual support.
 - Coding challenges: get practice solving coding problems that you might
