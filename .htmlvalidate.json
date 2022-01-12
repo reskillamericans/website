@@ -6,6 +6,7 @@
     "no-trailing-whitespace": "off",
     "no-inline-style": "off",
     "prefer-button": "off",
-    "long-title": "off"
+    "long-title": "off",
+    "element-required-attributes": "warn"
   }
 }
