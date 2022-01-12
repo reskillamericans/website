@@ -94,12 +94,7 @@ calls to meet your schedule.
 
 No credit check or entrance exam is required. We don't require prior
 knowledge or experience in software development. All you need is a
-computer with a web browser.&nbsp;<span class="footnote-mark">*</span>
-
-<p class="footnote">
-* Having a Windows or Macinstosh laptop where you can install VS-Code
-will provide the best experience.
-</p>
+computer with a web browser.
 
 </div>
 
