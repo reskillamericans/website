@@ -85,6 +85,6 @@ Only PR's that have passed testing can be merged to the main branch (and only FF
 
 Further documentation for content editors and maintainers:
 
-- [Cookbook](cookbook) - How to perform common tasks.
-- [Architecture](architecture) - Describes technology choices and
+- [Cookbook](/docs/cookbook) - How to perform common tasks.
+- [Architecture](/docs/architecture) - Describes technology choices and
   customizations.
