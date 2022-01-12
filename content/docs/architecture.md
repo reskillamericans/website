@@ -1,4 +1,9 @@
-# Reskill Americans Website - Architecture
++++
+title = "Architecture\nReskill Americans Website"
+date = 2022-01-12
+draft = false
+layout = "document"
++++
 
 ## Site Generation
 

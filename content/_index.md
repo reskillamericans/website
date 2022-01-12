@@ -11,7 +11,7 @@ tags = []
 
 Reskill Americans is a nonprofit founded by tech veterans that provides
 tuition-free software development training, mentorship and community for
-historically underrepresented racial minorities across the U.S.
+historically **underrepresented racial minorities** across the U.S.
 
 <a class="button-like standout" href="/enroll">Join Our Next Cohort</a>
 
