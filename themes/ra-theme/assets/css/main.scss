@@ -16,6 +16,7 @@
 @import "metric";
 @import "sign-in-block";
 @import "forms";
+@import "toc";
 
 :root {
   --codeFont: 'Roboto Mono', monospace;
@@ -47,7 +48,18 @@ section {
   background-color: transparent;
   color: $main-text-color;
   @include all-headings {
-    color: $main-heading-color
+    color: $main-heading-color;
+    white-space: pre-line;
+  }
+
+  code {
+    font-family: var(--codeFont);
+    font-weight: 500;
+  }
+
+  pre {
+    padding: 1rem;
+    background-color: $code-background-color;
   }
 
   &.header {

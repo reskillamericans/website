@@ -14,6 +14,13 @@
     </div>
 </section>
 
+{{- if .Params.toc }}
+<section><div class="content document">
+<h2>Table of Contents</h2>
+{{.TableOfContents}}
+</div></section>
+{{ end -}}
+
 <section>
     {{ with $hero }}
     <div class="content document overlap">
