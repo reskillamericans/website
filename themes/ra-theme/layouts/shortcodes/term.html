@@ -1,0 +1,11 @@
+{{ $term := .Get 0 }}
+{{- with (index .Site.Params.terms $term) }}
+  {{- $term = . }}
+{{- else }}
+  {{- warnf "Missing term in config.toml: %s" $term }}
+{{- end }}
+{{- if eq ($.Get 1) "caps" }}
+  {{- $term | humanize }}
+{{- else }}
+  {{- $term }}
+{{- end -}}

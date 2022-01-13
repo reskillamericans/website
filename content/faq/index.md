@@ -44,7 +44,7 @@ terms.
 ### Does this course allow you to participate while working full-time?
 
 Yes, our program is structured for you to complete it on your own schedule as
-long as you complete your assignments on time. In our 2021 {{< cohort >}}, many
+long as you complete your assignments on time. In our 2021 {{< term cohort >}}, many
 participants took our program while juggling jobs or school; that being said,
 the program is very rigorous and demands a minimum of 15 hours per week focused
 on studying, completing assignments, and meeting with mentors and instructors.
@@ -55,7 +55,7 @@ accommodate your schedule.
 
 We understand that software development can be overwhelming for a lot of people,
 especially beginners. We will do all we can to support you throughout the
-program. If you do decide to leave, you can re-enroll in the next {{< cohort >}}.
+program. If you do decide to leave, you can re-enroll in the next {{< term cohort >}}.
 
 ### I’m not a very fast learner. Do you think I can become a technology expert in 7 months?
 
@@ -130,7 +130,7 @@ participants to form a study group.
 
 No. In order to successfully complete the program you must successfully move
 through all phases. If you need more time, you can re-enroll in the next
-{{< cohort >}}.
+{{< term cohort >}}.
 
 ## Tracks
 

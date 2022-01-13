@@ -18,6 +18,8 @@ tag = "tags"
 description = "Tuition-free software development training for underrepresented minorities"
 googleAnalytics = "G-Y2KQZFCB07"
 email = "info@reskillamericans.org"
+
+[params.terms]
 cohort = "session"
 
 [params.socials]

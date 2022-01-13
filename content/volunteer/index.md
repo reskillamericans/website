@@ -7,7 +7,7 @@ layout = "document"
 +++
 
 # Reskill Americans Volunteer Application
-2022 {{< cohort caps >}}
+2022 {{< term cohort caps >}}
 
 Thank you for your interest in volunteering with Reskill Americans.  We are
 looking for volunteer mentors to meet regularly with our participants during the
