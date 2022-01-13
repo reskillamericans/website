@@ -1,12 +1,7 @@
 {{ "<!-- ra-theme/layouts/partials/head.html -->" | safeHTML }}
 
 <meta charset="UTF-8">
-<meta name="description" content="
-    {{- if .Params.summary }}
-        {{- .Params.summary }}
-    {{- else if .Site.Params.description }}
-        {{- .Site.Params.description }}
-    {{- end -}}">
+<meta name="description" content="{{ .Summary | plainify }}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="/images/ra-favicon.png" type="image/png">
 <style>
