@@ -16,7 +16,7 @@ economic advancement.
 Our partners enable us to deliver our tuition-free software development
 training, mentorship and community to our participants. We also seek companies
 to hire our participants into entry-level jobs or paid internships at the end
-our program.
+of our program.
 
 {{< image class="hero high"
           alt="Woman working at a laptop in a library."
