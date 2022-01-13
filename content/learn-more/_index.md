@@ -14,11 +14,11 @@ Participants who complete our seven-month program will have applied their new
 skills to software development projects, worked on cross-functional teams and
 built a portfolio of work to show future employers.
 
-## The Next {{< cohort caps >}} Starts In:
+## The Next {{< term cohort caps >}} Starts In:
 
 {{< countdown "2022-03-07T08:00-08:00" >}}
 
-<a class="button-like standout" href="/enroll">Join Our Next {{< cohort caps >}}</a>
+<a class="button-like standout" href="/enroll">Join Our Next {{< term cohort caps >}}</a>
 
 {{< image class="hero high"
     alt="Tasha Taylor sitting in a library in front of a laptop."
@@ -61,7 +61,7 @@ working individually on exercises and projects.
 
 {{% section centered %}}
 
-## Stats from our First {{< cohort caps >}}
+## Stats from our First {{< term cohort caps >}}
 
 {{% metric src=dollars.png %}}
 ### $0 Zero Dollars
@@ -71,13 +71,13 @@ generosity of our donors and partners.
 
 {{% metric src=signups.png %}}
 ### 2,000+ Signups
-More than 2,000 people enrolled for our inaugural {{< cohort >}} that started in March
+More than 2,000 people enrolled for our inaugural {{< term cohort >}} that started in March
 2021.
 {{% /metric %}}
 
 {{% metric src=job-search.png %}}
 ### 48% Unemployed
-Of those who enrolled in our inaugural {{< cohort >}} were unemployed.
+Of those who enrolled in our inaugural {{< term cohort >}} were unemployed.
 {{% /metric %}}
 
 {{% metric src=active.png %}}
