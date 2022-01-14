@@ -26,5 +26,9 @@ export { app, auth, db, functions, user };
 
 auth.onAuthStateChanged((userT: User | null) => {
   user = userT;
-  console.log(`Auth user: ${JSON.stringify(user)}`);
+  if (user) {
+    console.log(`Current user: ${user?.email} (${user?.uid})`);
+  } else {
+    console.log("No current user signed in.");
+  }
 });
