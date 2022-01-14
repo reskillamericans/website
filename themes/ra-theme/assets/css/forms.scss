@@ -2,60 +2,73 @@ form {
   li {
     margin-bottom: 1rem;
   }
-}
 
-input, select {
-  font: inherit;
-  color: inherit;
-}
+  p.note {
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
 
-input[type="text"] {
-  display: block;
-  box-sizing: border-box;
-  margin-top: 0.5rem;
-  padding: 0.5em;
-  border: 1px solid #eee;
-  width: 100%;
-
-  // Other option in radio group
-  &.other {
-    // width: 80%;
+    &.top {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
   }
-}
 
-label {
-  display: block;
-  padding-left: 1rem;
-  user-select: none;
-}
+  p.form-error {
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 0.5rem;
+  }
 
-fieldset {
-  border: 1px solid #ddd;
-}
+  input, select, textarea {
+    font: inherit;
+    color: inherit;
+  }
 
-input[type="radio"] {
-  margin-top: 0.5rem;
-  margin-left: -1rem;
-}
+  input[type="text"], textarea {
+    display: block;
+    box-sizing: border-box;
+    margin-top: 0.5rem;
+    padding: 0.5em;
+    border: 1px solid #eee;
+    width: 100%;
 
-select {
-  display: block;
-  margin-top: 0.5rem;
-  padding: 0.5em;
-  border: 1px solid #eee;
-  width: 100%;
-}
+    // Other option in radio group
+    &.other {
+      // width: 80%;
+    }
+  }
 
-p.form-error {
-  color: red;
-  font-weight: bold;
-  font-style: italic;
-  margin-top: 0.5rem;
-}
+  textarea {
+    height: auto;
+  }
 
-p.note {
-  font-size: 14px;
-  font-style: italic;
-  margin-top: 0.5rem;
-  margin-bottom: 0;
+  label {
+    display: block;
+    padding-left: 1rem;
+    user-select: none;
+  }
+
+  fieldset {
+    border: 1px solid #ddd;
+  }
+
+  input[type="radio"], input[type="checkbox"] {
+    margin-top: 0.5rem;
+    margin-left: -1rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  select {
+    display: block;
+    margin-top: 0.5rem;
+    padding: 0.5em;
+    border: 1px solid #eee;
+    width: 100%;
+  }
+
+
 }

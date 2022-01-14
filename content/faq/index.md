@@ -22,7 +22,31 @@ stick with it, and legal authorization to work in the U.S.
 
 ### What does the program cost?
 
-If you’re an underrepresented racial minority, our program is free
+Our program is free to participants, with no financial obligation.
+
+### Who qualifies as an under-represented minority? {#minority}
+
+Reskill Americans' charter is to increase opportunities for traditionally
+underrepresented minorities in the tech industry.  We are primarily informed by
+the National Science Foundation
+[study](https://www.nsf.gov/statistics/2017/nsf17310/digest/occupation/overall.cfm)
+on racial representation of minority groups working in STEM (Science,
+Technology, Engineering, and Math) fields as well as other published studies on
+diversity in the technology workforce.
+
+We specifically accept those who self-identify as:
+
+- Native American
+- Alaska Native
+- Black
+- Hispanic
+- Pacific Islander
+- Southeast Asian
+- Disabled (as defined by the American Disabilities Act)
+
+If you identify with a group we have not listed, that is also underrepresented
+in technology, please let us know in your [enrollment](/enroll) form and we will
+consider you.
 
 ### Is there an age limit?
 

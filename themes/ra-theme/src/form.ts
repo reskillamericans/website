@@ -18,6 +18,9 @@ register('form', (options: any) => {
       const name = elt.getAttribute('name');
 
       if (name === null) {
+        if (elt.getAttribute('type') !== 'submit') {
+          console.error(`Form element ${elt} has no name attribute - and will not be submitted.`, elt);
+        }
         continue;
       }
 

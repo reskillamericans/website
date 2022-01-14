@@ -10,6 +10,7 @@ type AccordianOptions = {
 register('accordian', (options: any) => {
   const selector = options['selector'];
   const stopSelector = options['stop'];
+
   let currentOpen: HTMLElement | null = null;
   let currentDiv: HTMLElement | null = null;
 
@@ -22,6 +23,37 @@ register('accordian', (options: any) => {
     currentOpen = null;
     currentDiv = null;
   }
+
+  function openElt(elt: Element) {
+    closeCurrent();
+    const div = elt.nextElementSibling as HTMLElement;
+    div.style.maxHeight = div.scrollHeight + 'px';
+    elt.classList.add('open');
+    currentOpen = elt as HTMLElement;
+    currentDiv = div;
+  }
+
+  function showHash() {
+    const hash = window.location.hash;
+    const elt = document.querySelector(hash);
+    if (elt) {
+      openElt(elt);
+      // The CSS animation seems to sometime scroll to the wrong location
+      // perhaps because of a prior element collapsing.  So, this
+      // ensures the URL-targeted section is visible - it waits 1/2 second
+      // for the prior animation to complete.
+      // We don't do this for the on-click case in order to avoid the site
+      // feeling sluggish.
+      window.setTimeout(() => {
+        console.log("scrolling");
+        elt.scrollIntoView();
+      }, 500);
+    }
+  }
+
+  // Open up a group who's id matches the current hash in the URL.
+  window.addEventListener('load', showHash);
+  window.addEventListener('hashchange', showHash);
 
   for (let section of document.querySelectorAll('section')) {
     if (section.classList.contains('footer') || section.classList.contains('header')) {
@@ -53,11 +85,7 @@ register('accordian', (options: any) => {
           closeCurrent();
           return;
         }
-        closeCurrent();
-        div.style.maxHeight = div.scrollHeight + 'px';
-        elt.classList.add('open');
-        currentOpen = elt;
-        currentDiv = div;
+        openElt(elt);
       });
     }
   }

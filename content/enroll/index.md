@@ -69,16 +69,9 @@ program.
 
 <li>
   <fieldset><legend>Minority Representation - "I identify as ... "</legend>
-    <label><input name="ethnicity" type="radio" value="native-american">American Indian or Alaska Native</label>
-    <label><input name="ethnicity" type="radio" value="black">Black (not of Hispanic Origin)</label>
-    <label><input name="ethnicity" type="radio" value="hispanic">Hispanic (including persons of Mexican, Puerto Rican, Cuban, and Central or South American Origin)</label>
-    <label><input name="ethnicity" type="radio" value="pacific-islander">Pacific Islander</label>
-    <label><input name="ethnicity" type="radio" value="southeast-asian">Southeast Asian (Cambodian, Laotian, Vietnamese, Hmong, Cham)</label>
-    <label><input name="ethnicity" type="radio" value="filipino">Filipino</label>
-    <label><input name="ethnicity" type="radio" value="thai">Thai</label>
-    <label><input name="ethnicity" type="radio" value="disabled">Disabled (as defined under the American Disabilities Act)</label>
-    <label><input name="ethnicity" type="radio" value="other">Other:</label>
-           <input class="other" name="ethnicity-other" type="text">
+    {{< minority-options >}}
+    <p class="note">See our <a href="/faq/#minority" target="_blank">FAQ</a> for our definition of
+      underrepresented minorities.</p>
   </fieldset>
 </li>
 
