@@ -131,15 +131,25 @@ function handleOtherControl(other: HTMLInputElement) {
   });
 
   li.addEventListener('change', (evt) => {
-    const radio = evt.target as HTMLInputElement;
-    if (radio.tagName !== 'INPUT' || radio.type !== 'radio') {
+    // Control will be either a radio or checkbox input element.
+    const control = evt.target as HTMLInputElement;
+
+    if (control.tagName !== 'INPUT') {
       return;
     }
 
-    if (radio.value === 'other') {
-      otherText.focus();
-    } else {
-      otherText.value = '';
+    if (control.type === 'radio') {
+      if (control.value === 'other') {
+        otherText.focus();
+      } else {
+        otherText.value = '';
+      }
+    } else if (control.type === 'checkbox' && control.value === 'other') {
+      if (control.checked) {
+        otherText.focus();
+      } else {
+        otherText.value = '';
+      }
     }
   });
 }
