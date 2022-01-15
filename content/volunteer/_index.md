@@ -82,7 +82,8 @@ most appropriate group.
     <label><input name="topics" type="checkbox" value="node">Node.js (server-side JavaScript)</label>
     <label><input name="topics" type="checkbox" value="cloud">Cloud (AWS, Google, or Azure)</label>
     <label><input name="topics" type="checkbox" value="career">General Career Advice</label>
-    <label>Other: <input name="other-topics" type="text"></label>
+    <label><input name="topics" type="checkbox" value="other">Other:</label>
+       <input class="other" name="topics-other" type="text">
   </fieldset>
 </li>
 
@@ -94,9 +95,10 @@ most appropriate group.
     <label><input name="activity" type="checkbox" value="mentor">Match 1:1 with participants and be available via email/chat.</label>
     <label><input name="activity" type="checkbox" value="office-hours">Hold Zoom office hours to work with participants live.</label>
     <label><input name="activity" type="checkbox" value="interview">Practice (simulated) interview training.</label>
-    <label><input name="avtivity" type="checkbox" value="town-hall">Appear in a 1-hour Town Hall interview</label>
-    <label><input name="avtivity" type="checkbox" value="job-fair">Appear in a 1-hour Job Fair interview for participants to hear about job opportunities in my organization.</label>
-    <label>Other: <input name="other-activity" type="text"></label>
+    <label><input name="activity" type="checkbox" value="town-hall">Appear in a 1-hour Town Hall interview</label>
+    <label><input name="activity" type="checkbox" value="job-fair">Appear in a 1-hour Job Fair interview for participants to hear about job opportunities in my organization.</label>
+    <label><input name="activity" type="checkbox" value="other">Other:</label>
+       <input class="other" name="activity-other" type="text">
   </fieldset>
 </li>
 
