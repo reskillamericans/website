@@ -11,15 +11,17 @@ cd $PROJ_DIR
 HAS_ERROR="false"
 
 # Get errors from typescript since esbuild does not check.
-echo "Checking Typescript errors in site code"
+echo "Checking Typescript errors in site code ..."
 if ! tsc --noEmit; then
   HAS_ERROR="true"
 fi
 
+echo "Linting site code ..."
 if ! eslint src; then
   HAS_ERROR="true"
 fi
 
+echo "Linting ra-theme code ..."
 if ! eslint themes/ra-theme/src; then
   HAS_ERROR="true"
 fi
@@ -27,4 +29,6 @@ fi
 if [[ $HAS_ERROR == "true" ]]; then
   echo "Lint failed."
   exit 1
+else
+  echo "Lint checks passed!"
 fi
