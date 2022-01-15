@@ -112,7 +112,7 @@ function main() {
     if (enrollmentForm) {
         auth.onAuthStateChanged(async (user: User | null) => {
             if (user) {
-                checkEnrollment(enrollmentForm);
+                checkUserForm(enrollmentForm, 'enrollments');
             }
         });
 
@@ -124,8 +124,16 @@ function main() {
     }
 
     if (volunteerForm) {
+        auth.onAuthStateChanged(async (user: User | null) => {
+            if (user) {
+                checkUserForm(volunteerForm, 'volunteers');
+            }
+        });
+
         volunteerForm.addEventListener('form-submit', async (e: CustomEventInit) => {
             await submitUserForm(e.detail, "volunteers");
+            // Refresh the page.
+            location.reload();
         });
     }
 }
@@ -150,30 +158,29 @@ async function submitUserForm(
     console.log(`Submitted at: ${ref.id}`);
 }
 
-async function checkEnrollment(form: HTMLFormElement) {
-    const q = query(collection(db, "enrollments"),
+async function checkUserForm(form: HTMLFormElement, collectionName: string) {
+    const q = query(collection(db, collectionName),
         where("uid", "==", user?.uid),
         orderBy("created", "desc")
         );
 
-
     const querySnapshot = await getDocs(q).catch(e => {
-        console.error(`Error getting enrollment: ${e}`);
+        console.error(`Error getting form data: ${e}`);
     });
 
     if (querySnapshot && !querySnapshot.empty) {
-        const enrollment = querySnapshot.docs[0].data() as Enrollment;
-        console.log(`Found (${querySnapshot.size}) Enrollments: ${JSON.stringify(enrollment)}`);
+        const data = querySnapshot.docs[0].data() as Enrollment;
+        console.log(`Found (${querySnapshot.size}) Data: ${JSON.stringify(data)}`);
 
         const message = document.getElementById('message-box');
         if (message) {
-            message.textContent = `We received the enrollment form you submitted on ${enrollment.created.toDate().toLocaleString()}.`;
+            message.textContent = `We received the form you submitted on ${data.created.toDate().toLocaleString()}.`;
             message.style.display = 'block'
         } else {
-            console.error("Page is missing mesage-box.");
+            console.error("Page is missing message-box.");
         }
         form.style.display = 'none';
     } else {
-        console.log("No enrollments found");
+        console.log("No form submissions found.");
     }
 }

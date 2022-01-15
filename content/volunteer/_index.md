@@ -57,13 +57,13 @@ most appropriate group.
 
 <li>
   <fieldset><legend>Do you self-identify as a historically underrepresented minority?</legend>
-  {{< minority-options >}}
+    <label><input name="minority" type="radio" value="none">Non-minority</label>
+    {{< minority-options >}}
     <p class="note">Note: We <b>do not</b> require that our volunteers identify as underrepresented
       minorities.</p>
     <p class="note">See our <a href="/faq/#minority" target="_blank">FAQ</a> for our definition of
       underrepresented minorities.</p>
   </fieldset>
-
 </li>
 
 <li>
