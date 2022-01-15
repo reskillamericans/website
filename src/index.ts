@@ -32,7 +32,7 @@ interface Enrollment {
     gender: string,
     track: string,
     timeCommitment: string
-};
+}
 
 async function signInWith(provider: AuthProvider) {
     try {

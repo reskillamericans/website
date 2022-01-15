@@ -48,7 +48,7 @@ class OAuthRequest {
         for (let [param, value] of Object.entries(this.params.authorizationParams)) {
             params.set(param, value);
         }
-        params.set('redirect_uri', this.redirect_uri);;
+        params.set('redirect_uri', this.redirect_uri);
         params.set('scope', this.params.scopes.join(' '));
         params.set('state', this.requestID!);
 

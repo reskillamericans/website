@@ -6,7 +6,7 @@ tags = []
 layout = "document"
 
 [[process]]
-name = "accordian"
+name = "accordion"
 selector = "h3"
 stop = "h2"
 +++

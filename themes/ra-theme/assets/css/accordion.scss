@@ -1,4 +1,4 @@
-.accordian-control {
+.accordion-control {
   color: $main-text-color;
 
   &:hover {
@@ -13,7 +13,7 @@
   }
 }
 
-.accordian-content {
+.accordion-content {
   @include floating-shadow;
   max-height: 0;
   overflow: hidden;
