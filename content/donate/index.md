@@ -49,11 +49,11 @@ EIN: 85-3050408<br>
 
 Please make checks payable to:
 
-```
+<pre style="margin: auto; width: min-content;">
 Reskill Americans
 5608 17th Ave NW, Suite 619
 Seattle, WA 98017
-```
+</pre>
 
 **Other questions or ideas for how to support us?**
 
