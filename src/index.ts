@@ -67,6 +67,7 @@ function main() {
     const signInBlock = document.querySelector('#sign-in-block');
     const signOut = document.querySelector('#sign-out');
     const enrollmentForm = document.querySelector('#enrollment-form') as HTMLFormElement;
+    const volunteerForm = document.querySelector('#volunteer-form') as HTMLFormElement;
 
     auth.onAuthStateChanged((user: User | null) => {
         if (user) {
@@ -115,26 +116,38 @@ function main() {
             }
         });
 
-        enrollmentForm.addEventListener('form-submit', async (e: CustomEventInit<Enrollment>) => {
-            console.log(`Ready to submit form: ${JSON.stringify(e.detail)}`);
-            if (user === null) {
-                console.error("Form submitted without user authentication?");
-                return;
-            }
-
-            const enrollment = e.detail!;
-            enrollment.created = Timestamp.now();
-            enrollment.email = user.email!;
-            enrollment.uid = user.uid;
-            enrollment.name = user.displayName!;
-
-            const ref = await addDoc(collection(db, "enrollments"), enrollment);
-            console.log(`Submitted enrollment: ${ref.id}`);
-
+        enrollmentForm.addEventListener('form-submit', async (e: CustomEventInit) => {
+            await submitUserForm(e.detail, "enrollments");
             // Refresh the page.
             location.reload();
         });
     }
+
+    if (volunteerForm) {
+        volunteerForm.addEventListener('form-submit', async (e: CustomEventInit) => {
+            await submitUserForm(e.detail, "volunteers");
+        });
+    }
+}
+
+async function submitUserForm(
+    data: Record<string, string | string[] | Timestamp>,
+    collectionName: string) {
+
+    console.log(`Ready to submit ${collection} form: ${JSON.stringify(data)}`);
+
+    if (user === null) {
+        console.error("Form submitted without user authentication?");
+        throw new Error("Can't submit unauthenticated form.");
+    }
+
+    data.created = Timestamp.now();
+    data.email = user.email!;
+    data.uid = user.uid;
+    data.name = user.displayName!;
+
+    const ref = await addDoc(collection(db, collectionName), data);
+    console.log(`Submitted at: ${ref.id}`);
 }
 
 async function checkEnrollment(form: HTMLFormElement) {
