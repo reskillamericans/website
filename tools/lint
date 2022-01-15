@@ -1,0 +1,30 @@
+#!/bin/bash
+#
+# lint  --- Check for coding errors (not caught in build).
+
+set -e
+TOOLS_DIR="$(unset CDPATH; cd $(dirname ${BASH_SOURCE[0]}) && pwd)"
+source $TOOLS_DIR/use
+
+cd $PROJ_DIR
+
+HAS_ERROR="false"
+
+# Get errors from typescript since esbuild does not check.
+echo "Checking Typescript errors in site code"
+if ! tsc --noEmit; then
+  HAS_ERROR="true"
+fi
+
+if ! eslint src; then
+  HAS_ERROR="true"
+fi
+
+if ! eslint themes/ra-theme/src; then
+  HAS_ERROR="true"
+fi
+
+if [[ $HAS_ERROR == "true" ]]; then
+  echo "Lint failed."
+  exit 1
+fi
