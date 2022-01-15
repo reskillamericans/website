@@ -105,7 +105,9 @@ computer with a web browser.
 
 
 {{% section centered light-background %}}
+
 # Testimonials {#head-testimonials}
+
 {{% /section %}}
 
 {{< section light-background >}}
