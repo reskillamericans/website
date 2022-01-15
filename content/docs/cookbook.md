@@ -29,7 +29,8 @@ install needed tools.
 $ source tools/use  # Put the tools directory in your PATH.
 $ configure         # Only needed for a newly installed repo
                     # or when npm packages updated.
-$ build             # Build the site.
+$ lint              # Check code for errors (including Typescript errors)
+$ build             # Compile code and build the site pages.
 $ run-tests         # Run all acceptance tests.
 $ test-server       # Launch a dev server to view the site locally.
 ```
