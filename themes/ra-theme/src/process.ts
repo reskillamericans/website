@@ -1,6 +1,6 @@
 export { register, runProcessors };
 
-type Processor = (options: Object) => void;
+type Processor = (options: Record<string, string>) => void;
 
 type ProcessorInfo = {
   name: string;

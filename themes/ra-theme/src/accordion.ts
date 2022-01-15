@@ -1,13 +1,8 @@
 import { register } from './process.js';
 
-type AccordianOptions = {
-  name: string;
-  target: string;
-}
-
 // Apply styling to all option.target elements to turn them into
-// buttons to accordian all the following p-tags.
-register('accordian', (options: any) => {
+// buttons to accordion all the following p-tags.
+register('accordion', (options) => {
   const selector = options['selector'];
   const stopSelector = options['stop'];
 
@@ -61,12 +56,12 @@ register('accordian', (options: any) => {
     }
 
     for (const elt of section.querySelectorAll(selector)) {
-      elt.classList.add('accordian-control');
+      elt.classList.add('accordion-control');
 
       const div = document.createElement('div');
-      div.classList.add('accordian-content');
+      div.classList.add('accordion-content');
 
-      // Move all following content up until the next accordian-control
+      // Move all following content up until the next accordion-control
       // into the newly created div.
       let child = elt.nextElementSibling;
       while (child !== null) {
