@@ -120,13 +120,18 @@ function handleOtherControl(other: HTMLInputElement) {
   const otherText = li.querySelector(`[name="${name}-other"]`) as HTMLInputElement;
 
   if (!otherText) {
-    console.log(`No linked text input for other ${name}.`);
+    console.error(`No linked text input for other ${name}.`);
     return;
   }
 
+  otherText.addEventListener('blur', (evt) => {
+    if (otherText.value === '') {
+      other.checked = false;
+    }
+  });
+
   // Clicks in text field should select the "other" option.
   otherText.addEventListener('click', (e: Event) => {
-      console.log(`Clicked other ${name}.`);
       other.checked = true;
   });
 

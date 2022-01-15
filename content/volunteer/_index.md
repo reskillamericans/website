@@ -95,15 +95,15 @@ most appropriate group.
     <label><input name="activity" type="checkbox" value="mentor">Match 1:1 with participants and be available via email/chat.</label>
     <label><input name="activity" type="checkbox" value="office-hours">Hold Zoom office hours to work with participants live.</label>
     <label><input name="activity" type="checkbox" value="interview">Practice (simulated) interview training.</label>
-    <label><input name="activity" type="checkbox" value="town-hall">Appear in a 1-hour Town Hall interview</label>
-    <label><input name="activity" type="checkbox" value="job-fair">Appear in a 1-hour Job Fair interview for participants to hear about job opportunities in my organization.</label>
+    <label><input name="activity" type="checkbox" value="town-hall">Appear in a 1-hour Town Hall live-stream</label>
+    <label><input name="activity" type="checkbox" value="job-fair">Appear in a 1-hour Job Fair live-stream for participants to hear about job opportunities in my organization.</label>
     <label><input name="activity" type="checkbox" value="other">Other:</label>
        <input class="other" name="activity-other" type="text">
   </fieldset>
 </li>
 
 <li>
-  <fieldset><legend>If you are willing to be identified in our volunteer mentor directory
+  <fieldset><legend>If you are willing to be identified in our volunteer directory
     (distributed to participants)</legend>
     <textarea name="bio" placeholder="Please tell as about yourself..." rows="4"></textarea>
   </fieldset>
