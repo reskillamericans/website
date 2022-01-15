@@ -105,7 +105,7 @@ most appropriate group.
 <li>
   <fieldset><legend>If you are willing to be identified in our volunteer directory
     (distributed to participants)</legend>
-    <textarea name="bio" placeholder="Please tell as about yourself..." rows="4"></textarea>
+    <textarea data-optional="true" name="bio" placeholder="Please tell as about yourself..." rows="4"></textarea>
   </fieldset>
 </li>
 
