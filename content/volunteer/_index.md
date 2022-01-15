@@ -15,16 +15,15 @@ name = "form"
 
 Thank you for your interest in volunteering with Reskill Americans.  We are
 looking for volunteer mentors to meet regularly with our participants during the
-course of our seven month training program.
+course of our seven-month training program.
 
-We are looking for those that have technical expertise in one or more of the
-areas we offer training (Front End, Back End (node.js), and Design UI/UX).
-Whether you are an industry veteran, or someone who has just completed a boot
-camp yourself, we could use your help!
+We seek volunteers that have technical expertise in product design and/or full
+stack web development. Whether you are an industry veteran, or someone who has
+just completed a boot camp yourself, we could use your help!
 
-We are asking for a minimum commitment of two hours per week, over a period of at
-least two months.  During that time you will be paired with a group of
-participants who are working in the area's you've identified as skills you have.
+We are asking for a minimum commitment of two hours per week, over a period of
+at least two months.  During that time, you will be paired with participants
+learning a track that's aligned to your skill set.
 
 Please answer the survey below to get started.  We can then match you with the
 most appropriate group.
@@ -90,7 +89,7 @@ most appropriate group.
 <li>
   <fieldset><legend>In which ways would you be available to volunteer?</legend>
     <label><input name="activity" type="checkbox" value="chat">Answer questions posted online in Slack/Discord.</label>
-    <label><input name="activity" type="checkbox" value="TA">Serve a primary TA for a group of 15 participants - twice weekly meetings.</label>
+    <label><input name="activity" type="checkbox" value="TA">Serve as primary TA for a group of 15 participants - weekly meetings.</label>
     <label><input name="activity" type="checkbox" value="TA-assistant">Act as a TA assistant for a group of 15 participants.</label>
     <label><input name="activity" type="checkbox" value="mentor">Match 1:1 with participants and be available via email/chat.</label>
     <label><input name="activity" type="checkbox" value="office-hours">Hold Zoom office hours to work with participants live.</label>
