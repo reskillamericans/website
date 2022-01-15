@@ -2,13 +2,21 @@ import { register } from './process.js';
 
 register('form', (options) => {
   // Assume only one form per page.
+  // Text fields with name like "*-other" are attached to a checkbox
+  // or radio button with name like "*".
+
+  // List of field names to be submitted by this form.
   const names: string[] = [];
+
+  // Each field is surrounded by a containing <li>
   const listElements: Map<string, Element> = new Map();
+
   const controls: Map<string, HTMLInputElement> = new Map();
   const errors: Set<HTMLElement> = new Set();
 
   const form = document.querySelector('form')!;
   const elements = form.querySelectorAll('input, select, textarea');
+
   for (const elt of elements) {
       const name = elt.getAttribute('name');
 
@@ -24,11 +32,16 @@ register('form', (options) => {
       }
 
       if (name && !names.includes(name)) {
-        names.push(name);
         controls.set(name, elt as HTMLInputElement);
-        let listElt = parentListElement(elt);
-        if (listElt) {
-          listElements.set(name, listElt);
+
+        // "Other" fields are not directly submitted - leave out of names list.
+        if (!name.endsWith('-other')) {
+          names.push(name);
+
+          let listElt = parentListElement(elt);
+          if (listElt) {
+            listElements.set(name, listElt);
+          }
         }
       }
   }
@@ -56,36 +69,30 @@ register('form', (options) => {
 
       if (isMultiple) {
         value = data.getAll(name) as string[];
-        // Remove "other" from the list of values.
+
+        // If other is checked - get the value from the "*-other" text field.
         const iOther = value.indexOf('other');
         if (iOther !== -1) {
           value.splice(iOther, 1);
+
+          const otherValue = getOtherControlValue(name, controls);
+          if (otherValue !== '') {
+            value.push(otherValue);
+          }
         }
-        console.log('getAll', value);
       } else {
+        // Single value - like text field or radio button.
         if (data.get(name) === null) {
           continue;
         }
         value = (data.get(name) as string).trim();
+        if (value === 'other') {
+          value = getOtherControlValue(name, controls);
+        }
       }
 
-      if (value === '') {
-        continue;
-      }
-
-      // Normal field - single or multiple values.
-      if (!name.endsWith('-other')) {
-        json[name] = value;
-        continue;
-      }
-
-      // Handle an "other" field.
-      name = name.slice(0, -6);
-      if (controls.get(name)!.type === 'checkbox') {
-        console.log(1, json);
-        (json[name] as string[]).push(value as string);
-      } else {
-        console.log(2);
+      // String empty or empty array - no value recorded for the field.
+      if (value.length !== 0) {
         json[name] = value;
       }
     }
@@ -140,6 +147,16 @@ function parentListElement(elt: Element): Element | null {
     listElt = listElt.parentElement!;
   }
   return listElt;
+}
+
+function getOtherControlValue(name: string, controls: Map<string, HTMLInputElement>): string {
+  const otherControl = controls.get(`${name}-other`)!;
+  if (otherControl === null) {
+    console.error(`Form element ${name}-other is missing.`, otherControl);
+    return '';
+  }
+
+  return otherControl.value.trim();
 }
 
 // Other type radio button.  There is a linked input field that should
