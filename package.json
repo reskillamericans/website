@@ -4,10 +4,11 @@
   "description": "Static website generation for reskillamericans.org",
   "main": "index.js",
   "scripts": {
-    "test": "tools/run-tests",
+    "lint": "tools/lint",
     "build": "tools/build",
+    "test": "tools/run-tests",
     "serve": "tools/test-server",
-    "ci": "tsc"
+    "ci": "tools/configure --ci"
   },
   "repository": {
     "type": "git",
@@ -27,8 +28,11 @@
     "@iarna/toml": "^2.2.5",
     "@types/chai": "^4.3.0",
     "@types/mocha": "^9.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.9.1",
+    "@typescript-eslint/parser": "^5.9.1",
     "chai": "^4.3.4",
     "esbuild": "^0.13.8",
+    "eslint": "^8.6.0",
     "html-validate": "^6.1.6",
     "http-server": "^14.0.0",
     "mocha": "^9.1.3",

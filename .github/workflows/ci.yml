@@ -13,5 +13,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: tools/configure --ci
+      - run: tools/lint
       - run: tools/build
       - run: npm test

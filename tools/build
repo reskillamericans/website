@@ -11,14 +11,6 @@ cd $PROJ_DIR
 echo "Clearing public directory ..."
 rm -rf public
 
-# Redundant - but get errors from typescript since esbuild does not check.
-echo "Checking Typescript errors in site code"
-tsc --noEmit
-
-# echo "Checking Typescript errors in functions code"
-# cd functions
-# tsc --noEmit
-
 cd $PROJ_DIR
 
 # Compile TS into a sigle JS file in static/scripts
