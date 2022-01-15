@@ -92,9 +92,8 @@ calls to meet your schedule.
 
 ## Enrolling is Easy
 
-No credit check or entrance exam is required. We don't require prior
-knowledge or experience in software development. All you need is a
-computer with a web browser.
+No credit check, entrance exam, or prior knowledge/experience required. All you
+need is a computer with a web browser.
 
 </div>
 
