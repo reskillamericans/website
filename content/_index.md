@@ -26,29 +26,24 @@ historically **underrepresented racial minorities** across the U.S.
 
 ## Learning Tracks
 
-We have two tracks to choose from: a Full-Stack Web Development Course, and a
-Product Designer UI/UX course.
+No prior experience is required for our seven-month course.
 
-Our seven-month course is project-based with hands-on learning and weekly
+Choose a track below and receive project-based, hands-on learning and weekly
 mentorship.
-
-<a class="button-like " href="/learn-more">Learn More</a>
 
 {{% /section %}}
 
 
-{{% section wrapped-boxes overlap %}}
+{{% section contrast wrapped-boxes overlap %}}
 
 {{% image-box alt="Drawing of a developer working on a laptop and phone"
     src="code-fe.png" %}}
 
 ## Full Stack Web<br>Development {#full-stack}
 
-We will start from the basics of web development: HTML and CSS. Then we will
-move into JavaScript as used in the browser, and then on the server.
-
-No prior experience is needed as we will begin with the basics and progress
-until you are able to develop complete web sites and applications on your own.
+- We start with the basics: HTML and CSS, then take a deep-dive into JavaScript.
+- By the end of the program, you will be able to develop web sites and
+  applications on your own.
 
 {{% /image-box %}}
 
@@ -57,14 +52,19 @@ until you are able to develop complete web sites and applications on your own.
 
 ## Product Designer<br>UI/UX {#design}
 
-Our Product Designer course is designed to give you the tools you need to gather requirements from users, do
-customer research, and architect product solutions to solve end-user problems.
-
-This is a hands-on course with practical product design experience. You will be
-trained to use Figma, the industry standard interface-design tool to communicate
-your designs to stakeholders and developers.
+- Learn how to gather requirements from users, do customer research, and
+  architect product solutions to solve end-user problems.
+- Get practical product design experience: learn Figma, the industry standard
+  interface-design tool, to communicate your designs to stakeholders and
+  developers.
 
 {{% /image-box %}}
+
+{{% /section %}}
+
+{{% section centered contrast %}}
+
+<a class="button-like " href="/learn-more">Learn More</a>
 
 {{% /section %}}
 

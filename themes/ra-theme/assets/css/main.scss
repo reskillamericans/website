@@ -276,6 +276,10 @@ div.list {
 }
 
 div.image-box {
+  // Reset font color and weight in case we are nested in a contrast section.
+  color: $main-text-color;
+  font-weight: 400;
+
   border-radius: 8px;
   min-width: 250px;
   min-height: 150px;
@@ -284,6 +288,7 @@ div.image-box {
   line-height: 1.5em;
 
   @include all-headings {
+    color: $main-heading-color;
     margin-top: 0;
     text-align: center;
   }
@@ -310,6 +315,19 @@ div.image-box {
 
   div {
     padding: 1rem;
+  }
+
+  ul {
+    // Default is 40px - too much here.
+    padding-left: 1rem;
+
+    li {
+      list-style-type: '-  ';
+
+      &::marker {
+        font-weight: bold;
+      }
+    }
   }
 }
 
