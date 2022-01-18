@@ -18,6 +18,14 @@ footer {
   .logo {
     @include hover-zoom;
     height: 50px;
+
+    .brackets {
+      stroke: white;
+    }
+
+    text {
+      fill: white;
+    }
   }
 }
 

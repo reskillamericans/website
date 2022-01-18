@@ -1,0 +1,41 @@
+<svg class="logo" alt="Reskill Americans Logo" viewbox="-140 -116 1057 232">
+  <style>
+    :root {
+      font-family: "Open Sans", san-serif;
+      stroke: black;
+      stroke-width: 32;
+    }
+
+    text {
+      stroke: none;
+      fill: black;
+      text-transform: uppercase;
+    }
+
+    text.reskill {
+      font-size: 140px;
+      font-weight: bold;
+      letter-spacing: 30px;
+    }
+
+    text.americans {
+      font-size: 105px;
+      font-weight: 400;
+      letter-spacing: 18px;
+    }
+
+    .brackets {
+      fill: none;
+    }
+
+    .slash {
+      stroke: #3c64b1;
+  }
+  </style>
+
+  <line class="slash" x1="-150" y1="150" x2="150" y2="-150"/>
+  <polyline class="brackets" points="-100,0 -100,-100 0,-100"/>
+  <polyline class="brackets" points="0,100 100,100 100,0"/>
+  <text class="reskill" x="190" y="-13">Reskill</text>
+  <text class="americans" x="190" y="115">Americans</text>
+</svg>
