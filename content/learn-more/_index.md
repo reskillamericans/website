@@ -14,11 +14,15 @@ Participants who complete our seven-month program will have applied their new
 skills to software development projects, worked on cross-functional teams and
 built a portfolio of work to show future employers.
 
+{{% if-equal enroll true %}}
+
 ## The Next {{< term cohort caps >}} Starts In:
 
 {{< countdown "2022-03-07T08:00-08:00" >}}
 
 <a class="button-like standout" href="/enroll">Join Our Next {{< term cohort caps >}}</a>
+
+{{% /if-equal %}}
 
 {{< image class="hero high"
     alt="Tasha Taylor sitting in a library in front of a laptop."

@@ -19,6 +19,9 @@ description = "Tuition-free software development training for underrepresented m
 googleAnalytics = "G-Y2KQZFCB07"
 email = "info@reskillamericans.org"
 
+# Not yet ready to enroll participants
+enroll = false
+
 [params.terms]
 cohort = "session"
 

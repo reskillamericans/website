@@ -15,6 +15,16 @@ stop = "h2"
 
 <hr>
 
+{{% if-equal enroll false %}}
+
+### When can I enroll in the next {{< term cohort >}}?
+
+We have not yet set a firm date for our 2022 session but are planning to
+begin in the Spring of 2022.  This web site will be
+updated with an enrollment form as soon as we have opened enrollment.
+
+{{% /if-equal %}}
+
 ### What do I need to be a part of the program?
 
 You need a computer with internet access, a passion to learn, determination to
@@ -42,11 +52,13 @@ We specifically accept those who self-identify as:
 - Hispanic
 - Pacific Islander
 - Southeast Asian
-- Disabled (as defined by the American Disabilities Act)
 
+
+{{% if-equal enroll %}}
 If you identify with a group we have not listed, that is also underrepresented
 in technology, please let us know in your [enrollment](/enroll) form and we will
 consider you.
+{{% /if-equal %}}
 
 ### Is there an age limit?
 

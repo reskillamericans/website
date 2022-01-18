@@ -9,6 +9,17 @@ layout = "document"
 name = "form"
 +++
 
+{{% if-equal enroll false %}}
+
+## Enrollment Information to come Soon
+
+We have not yet set a firm date for our 2022 {{< term cohort >}}.  Please check this
+website for updates.
+
+{{% /if-equal %}}
+
+{{% if-equal enroll true %}}
+
 {{< sign-in >}}
 
 {{< message-box >}}
@@ -118,3 +129,5 @@ program.
 <p class="form-error signed-out">You must sign in with LinkedIn to submit this form.</p>
 
 </form>
+
+{{% /if-equal %}}

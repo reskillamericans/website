@@ -9,7 +9,9 @@
       <li><a href="/about">About Us</a></li>
       <li><a href="/news">News</a></li>
       <!-- <li><a href="/sign-in" id="sign-in">Sign In</a></li> -->
-      <li><a class="button-like standout" href="/enroll">Enroll</a></li>
+      {{ if .Site.Params.enroll -}}
+        <li><a class="button-like standout" href="/enroll">Enroll</a></li>
+      {{- end }}
     </ul>
   </nav>
 </header>

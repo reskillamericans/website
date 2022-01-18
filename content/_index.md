@@ -13,7 +13,9 @@ Reskill Americans is a nonprofit founded by tech veterans that provides
 tuition-free software development training, mentorship and community for
 historically **underrepresented racial minorities** across the U.S.
 
+{{% if-equal enroll true %}}
 <a class="button-like standout" href="/enroll">Join Our Next {{< term cohort caps >}}</a>
+{{% /if-equal %}}
 
 {{< image class="hero high" src="nia.jpg" resize="1080x jpg"
     alt="Nia Bailey standing in front of the Public Library in New York"
