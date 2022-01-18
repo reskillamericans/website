@@ -2,11 +2,23 @@
   "extends": [
     "html-validate:recommended"
   ],
+  "elements": [
+    "html5",
+    {
+      "th": {
+        "attributes": {
+          "scope": {
+            "required": false
+          }
+        }
+      }
+    }
+  ],
   "rules": {
     "no-trailing-whitespace": "off",
     "no-inline-style": "off",
     "prefer-button": "off",
     "long-title": "off",
-    "element-required-attributes": "warn"
+    "svg-focusable": "off"
   }
 }
