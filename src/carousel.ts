@@ -1,9 +1,7 @@
 export { carousel };
 
-// Carousel has one child that is a horizantal band of "cards".
-function carousel(id: string) {
-    let curChild = 0;
-
+// Carousel has one child that is a horizontal band of "cards".
+function carousel(id: string, curChild=0) {
     const divParent = document.getElementById(id)!;
     const divScroller = divParent.children[0] as HTMLDivElement;
     const numChildren = divScroller.children.length;
