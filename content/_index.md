@@ -84,13 +84,8 @@ organization funded by individual and corporate donors.
 ## Learn from<br>Anywhere, Anytime
 
 Our course is entirely online. Once your {{< term cohort >}} begins, you can
-participate on your own schedule, as long as you submit your assignments
-on time.&nbsp;<span class="footnote-mark">*</span>
-
-<p class="footnote">
-* We will provide weekly mentor and peer-group video conference
-calls to meet your schedule.
-</p>
+participate on a flexible schedule, as long as you submit your assignments
+on time.
 
 ## Enrolling is Easy
 
