@@ -1,7 +1,7 @@
 +++
 title = "Testimonial of Jarla Kornegay"
 name = "Jarla Kornegay"
-location = "Lithonia, GA"
+location = "Atlanta, GA"
 date = 2021-12-31T17:56:52-08:00
 draft = false
 tags = []
