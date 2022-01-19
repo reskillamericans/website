@@ -90,6 +90,14 @@ div.team-member {
     padding-top: 1rem;
     padding-left: 2em;
     padding-bottom: 1em;
+
+    p::before {
+      content: open-quote;
+    }
+
+    p::after {
+      content: close-quote;
+    }
   };
 
   .social-links {
