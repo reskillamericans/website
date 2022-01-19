@@ -119,8 +119,9 @@ progress through the program.
 
 ### Can I catch up if I miss a live class?
 
-Yes, you will have the opportunity to meet weekly with your mentor and with peer
-group video calls to have your questions answered.
+There are no set classes; participants will work individually on assignments and
+then meet with the instructor and/or mentors at their convenience when they have
+questions and or need help.
 
 ### Do we get a certificate at the end?
 
