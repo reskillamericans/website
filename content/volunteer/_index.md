@@ -23,7 +23,7 @@ just completed a boot camp yourself, we could use your help!
 
 We are asking for a minimum commitment of two hours per week, over a period of
 at least two months.  During that time, you will be paired with participants
-learning a track that's aligned to your skill set.
+that are learning a track that's aligned to your skill set.
 
 Please answer the survey below to get started.  We can then match you with the
 most appropriate group.
@@ -55,18 +55,7 @@ most appropriate group.
 </li>
 
 <li>
-  <fieldset><legend>Do you self-identify as a historically underrepresented minority?</legend>
-    <label><input name="minority" type="radio" value="none">Non-minority</label>
-    {{< minority-options >}}
-    <p class="note">Note: We <b>do not</b> require that our volunteers identify as underrepresented
-      minorities.</p>
-    <p class="note">See our <a href="/faq/#minority" target="_blank">FAQ</a> for our definition of
-      underrepresented minorities.</p>
-  </fieldset>
-</li>
-
-<li>
-  <fieldset><legend>What are the technologies or topics in which you can help participants?</legend>
+  <fieldset><legend>In what specific areas would you like to help participants?</legend>
     <p class="note top">Select all that apply.</p>
     <label><input name="topics" type="checkbox" value="html-css">HTML/CSS</label>
     <label><input name="topics" type="checkbox" value="javascript">JavaScript</label>
@@ -105,6 +94,17 @@ most appropriate group.
   <fieldset><legend>If you are willing to be identified in our volunteer directory
     (distributed to participants)</legend>
     <textarea data-optional="true" name="bio" placeholder="Please tell as about yourself..." rows="4"></textarea>
+  </fieldset>
+</li>
+
+<li>
+  <fieldset><legend>Do you self-identify as a historically underrepresented minority?</legend>
+    <label><input name="minority" type="radio" value="none">Non-minority</label>
+    {{< minority-options >}}
+    <p class="note">Note: We <b>do not</b> require that our volunteers identify as underrepresented
+      minorities.</p>
+    <p class="note">See our <a href="/faq/#minority" target="_blank">FAQ</a> for our definition of
+      underrepresented minorities.</p>
   </fieldset>
 </li>
 
