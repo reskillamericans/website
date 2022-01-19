@@ -34,11 +34,11 @@ stick with it, and legal authorization to work in the U.S.
 
 Our program is free to participants, with no financial obligation.
 
-### Who qualifies as an under-represented minority? {#minority}
+### Who qualifies as an underrepresented minority? {#minority}
 
-Reskill Americans' charter is to increase opportunities for traditionally
-underrepresented minorities in the tech industry.  We are primarily informed by
-the National Science Foundation
+Reskill Americans' charter is to increase access to careers in tech for
+historically underrepresented minorities.  We are primarily informed by the
+National Science Foundation
 [study](https://www.nsf.gov/statistics/2017/nsf17310/digest/occupation/overall.cfm)
 on racial representation of minority groups working in STEM (Science,
 Technology, Engineering, and Math) fields as well as other published studies on
@@ -54,7 +54,7 @@ We specifically accept those who self-identify as:
 - Southeast Asian
 
 
-{{% if-equal enroll %}}
+{{% if-equal enroll true %}}
 If you identify with a group we have not listed, that is also underrepresented
 in technology, please let us know in your [enrollment](/enroll) form and we will
 consider you.
