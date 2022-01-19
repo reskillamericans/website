@@ -1,5 +1,5 @@
 {{ "<!-- ra-theme/layouts/partials/team-member.html -->" | safeHTML }}
-<div class="team-member" onclick="window.location.href = '/about/{{ .Params.slug }}';">
+<div class="team-member-card" onclick="window.location.href = '/about/{{ .Params.slug }}';">
     <div>
       {{ with .Resources.GetMatch "profile.jpg" }}
         {{ $image := .Resize "400x" }}

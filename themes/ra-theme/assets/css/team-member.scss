@@ -1,5 +1,5 @@
 // Card format for team-members view.
-div.team-member {
+div.team-member-card {
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -61,7 +61,7 @@ div.team-member {
 }
 
 // Format for full team member page.
-main.team-member {
+div.team-member {
   max-width: 800px;
   display: grid;
   grid-auto-flow: column;

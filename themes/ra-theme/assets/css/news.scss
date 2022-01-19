@@ -1,4 +1,4 @@
-main.news-header {
+div.news-header {
   div.tag-list {
     margin-top: 1rem;
     > a {
@@ -18,7 +18,7 @@ main.news-header {
   }
 }
 
-main.news {
+div.news {
   max-width: 800px;
 
   img {
