@@ -1,5 +1,5 @@
 {{- $value := (index .Site.Params (.Get 0)) }}
 {{- $target := (.Get 1) }}
-{{- if eq $value $target }}
+{{- if (eq $value $target) }}
   {{- .Inner }}
 {{- end -}}
