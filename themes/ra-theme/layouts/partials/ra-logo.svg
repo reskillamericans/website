@@ -1,4 +1,8 @@
-<svg class="logo" alt="Reskill Americans Logo" viewbox="-140 -116 1057 232">
+<svg class="logo"
+     xmlns="http://www.w3.org/2000/svg"
+     alt="Reskill Americans Logo"
+     viewBox="-140 -116 1057 232"
+     preserveAspectRatio="xMinYMin none">
   <style>
     :root {
       font-family: "Open Sans", san-serif;
@@ -33,7 +37,13 @@
   }
   </style>
 
-  <line class="slash" x1="-150" y1="150" x2="150" y2="-150"/>
+  <defs>
+    <clipPath id="logo-box">
+      <rect x="-116" y="-116" width="232" height="232" />
+    </clipPath>
+  </defs>
+
+  <line class="slash" clip-path="url(#logo-box)" x1="-150" y1="150" x2="150" y2="-150"/>
   <polyline class="brackets" points="-100,0 -100,-100 0,-100"/>
   <polyline class="brackets" points="0,100 100,100 100,0"/>
   <text class="reskill" x="190" y="-13">Reskill</text>
