@@ -249,31 +249,35 @@ function restoreFormState(controls: Map<string, HTMLInputElement>,
         break;
 
       case 'radio':
-        const elt = li.querySelector(`input[value="${value}"`)! as HTMLInputElement;
-        if (elt === null) {
-          const otherRadio = li.querySelector(`input[value="other"]`)! as HTMLInputElement;
-          otherRadio.checked = true;
-          const other = li.querySelector(`input[name="${name}-other"]`)! as HTMLInputElement;
-          other.value = value as string;
-        } else {
-          elt.checked = true;
+        {
+          const elt = li.querySelector(`input[value="${value}"`)! as HTMLInputElement;
+          if (elt === null) {
+            const otherRadio = li.querySelector(`input[value="other"]`)! as HTMLInputElement;
+            otherRadio.checked = true;
+            const other = li.querySelector(`input[name="${name}-other"]`)! as HTMLInputElement;
+            other.value = value as string;
+          } else {
+            elt.checked = true;
+          }
         }
         break;
 
       case 'checkbox':
-        const values = value as string[];
-        const elts = li.querySelectorAll(`input[type="checkbox"]`) as NodeListOf<HTMLInputElement>;
-        for (const elt of elts) {
-          if (values.includes(elt.value)) {
-            elt.checked = true;
-            values.splice(value.indexOf(elt.value), 1);
+        {
+          const values = value as string[];
+          const elts = li.querySelectorAll(`input[type="checkbox"]`) as NodeListOf<HTMLInputElement>;
+          for (const elt of elts) {
+            if (values.includes(elt.value)) {
+              elt.checked = true;
+              values.splice(value.indexOf(elt.value), 1);
+            }
           }
-        }
-        if (values.length > 0) {
-          const otherCheck = li.querySelector(`input[value="other"]`)! as HTMLInputElement;
-          otherCheck.checked = true;
-          const other = li.querySelector(`input[name="${name}-other"]`)! as HTMLInputElement;
-          other.value = values[0];
+          if (values.length > 0) {
+            const otherCheck = li.querySelector(`input[value="other"]`)! as HTMLInputElement;
+            otherCheck.checked = true;
+            const other = li.querySelector(`input[name="${name}-other"]`)! as HTMLInputElement;
+            other.value = values[0];
+          }
         }
       break;
 
