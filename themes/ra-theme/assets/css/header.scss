@@ -35,7 +35,7 @@ header {
     aspect-ratio: 1;
     border: 0;
     background-image: url("/images/icon-hamburger.svg");
-    background-color: transparent;
+    background-color: 'transparent';
     background-size: cover;
     &[data-popout="true"] {
       background-image: url("/images/icon-close.svg");
@@ -53,7 +53,7 @@ header {
         position:fixed;
         z-index: 90;
         inset: 0 0 0 30%;
-        background-color: hsla(0, 0%, 100%, 0.5);
+        background-color: 'hsla(0, 0%, 100%, 0.5)';
         @include webkit-prefix('backdrop-filter', 'blur(15px)');
         flex-direction: column;
         gap: 2rem;
