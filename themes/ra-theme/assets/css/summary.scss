@@ -3,13 +3,16 @@ $summary-break: 600px;
 ul.summary {
   margin: 1rem auto;
   padding: 0;
-  max-width: 800px;
+  max-width: 990px;
 
   > li {
     display: flex;
     gap: 1.5rem;
     margin-bottom: 2rem;
+    padding: 10px;
     overflow: hidden;
+    border-radius: 5px;
+    background-color: #f4f4f5;
 
     @media (max-width: $summary-break) {
       flex-direction: column;
@@ -28,8 +31,8 @@ ul.summary {
     }
 
     img {
-      width: 200px;
-      max-height: 200px;
+      width: 300px;
+      max-height: 300px;
       object-fit: cover;
       aspect-ratio: 4/3;
 
@@ -43,7 +46,7 @@ ul.summary {
       flex-direction: column;
       justify-content: space-between;
       width: 100%;
-      font-size: 14px;
+      font-size: 18px;
       line-height: 1.2em;
       text-align: justify;
 
@@ -57,11 +60,12 @@ ul.summary {
         > a {
           font-weight: 400;
           color: $main-text-color;
+          font-size: 16px;
         }
       }
 
       h2 {
-        font-size: 20px;
+        font-size: 30px;
         margin-top: 0;
         text-align: left;
         line-height: 1.2em;
@@ -69,6 +73,7 @@ ul.summary {
 
       div.summary-footer {
         display: flex;
+        font-size: 16px;
         justify-content: space-between;
         margin-top: auto;
         padding-top: 0.5em;
