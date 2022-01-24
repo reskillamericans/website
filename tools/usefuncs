@@ -31,6 +31,13 @@
 export PROJ_DIR="$(dirname $TOOLS_DIR)"
 export PATH
 
+# Differences in flag names between OSX and Linux
+if [ "$(uname)" = "Darwin" ]; then
+    FIND_EXEC="-perm +111"
+else
+    FIND_EXEC="-executable"
+fi
+
 ENV_ALIASES=""
 
 reuse () {
@@ -100,7 +107,7 @@ show-commands () {
 
     echo
 
-    for prog in $(find $TOOLS_DIR -maxdepth 1 -executable -type f | sort); do
+    for prog in $(find $TOOLS_DIR -maxdepth 1 $FIND_EXEC -type f | sort); do
         DESC=$(grep '^[#/].*\-\-\-' $prog | sed 's/^.*\-\-\- //')
 
         display-command "$(basename $prog)" "$DESC"

@@ -1,5 +1,7 @@
 import { register } from './process.js';
 
+type JSONFormData = Record<string, string | string[]>;
+
 register('form', (options) => {
   // Assume only one form per page.
   // Text fields with name like "*-other" are attached to a checkbox
@@ -46,20 +48,23 @@ register('form', (options) => {
       }
   }
 
+  const formState = localStorage.getItem(`${form.id}-state`);
+  if (formState !== null) {
+    restoreFormState(controls, listElements, JSON.parse(formState) as JSONFormData);
+    localStorage.removeItem(`${form.id}-state`);
+  }
+
   // Focus the first form element.
   controls.get(names[0])!.focus();
 
-  form.addEventListener('submit', (e: Event) => {
-    e.preventDefault();
-    const data = new FormData(form);
-    const json: {[key: string]: string | string[]} = {};
+  // Save the form state
+  window.addEventListener('beforeunload', () => {
+    localStorage.setItem(`${form.id}-state`, JSON.stringify(getFormAsJSON()));
+  });
 
-    // Clear out any form errors display on the form initially
-    // from a past submission.
-    for (const error of errors) {
-      error.remove();
-    }
-    errors.clear();
+  function getFormAsJSON(): JSONFormData {
+    const data = new FormData(form);
+    const json: Record<string, string | string[]> = {};
 
     // Extract the form data into a JSON object.
     for (let name of names) {
@@ -96,6 +101,20 @@ register('form', (options) => {
         json[name] = value;
       }
     }
+
+    return json;
+  }
+
+  form.addEventListener('submit', (e: Event) => {
+    e.preventDefault();
+    const json = getFormAsJSON();
+
+    // Clear out any form errors display on the form initially
+    // from a past submission.
+    for (const error of errors) {
+      error.remove();
+    }
+    errors.clear();
 
     console.log("Form data:", json);
 
@@ -206,4 +225,65 @@ function handleOtherControl(other: HTMLInputElement) {
       }
     }
   });
+}
+
+function restoreFormState(controls: Map<string, HTMLInputElement>,
+  listElements: Map<string, Element>, state: JSONFormData) {
+  console.log("Restoring form state:", state);
+
+  for (const [name, value] of Object.entries(state)) {
+    if (value === undefined || value === '') {
+      continue;
+    }
+
+    const control = controls.get(name)!;
+    const li = listElements.get(name)!;
+
+    console.log(`Restoring ${name} (a ${control.type}) to ${state[name]}`, control);
+
+    switch (control.type) {
+      case 'select-one':
+      case 'text':
+      case 'textarea':
+        control.value = state[name] as string;
+        break;
+
+      case 'radio':
+        {
+          const elt = li.querySelector(`input[value="${value}"`)! as HTMLInputElement;
+          if (elt === null) {
+            const otherRadio = li.querySelector(`input[value="other"]`)! as HTMLInputElement;
+            otherRadio.checked = true;
+            const other = li.querySelector(`input[name="${name}-other"]`)! as HTMLInputElement;
+            other.value = value as string;
+          } else {
+            elt.checked = true;
+          }
+        }
+        break;
+
+      case 'checkbox':
+        {
+          const values = value as string[];
+          const elts = li.querySelectorAll(`input[type="checkbox"]`) as NodeListOf<HTMLInputElement>;
+          for (const elt of elts) {
+            if (values.includes(elt.value)) {
+              elt.checked = true;
+              values.splice(value.indexOf(elt.value), 1);
+            }
+          }
+          if (values.length > 0) {
+            const otherCheck = li.querySelector(`input[value="other"]`)! as HTMLInputElement;
+            otherCheck.checked = true;
+            const other = li.querySelector(`input[name="${name}-other"]`)! as HTMLInputElement;
+            other.value = values[0];
+          }
+        }
+      break;
+
+      default:
+        console.log(`Unknown control type ${control.type} for ${name}`);
+        break;
+    }
+  }
 }
