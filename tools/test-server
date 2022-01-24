@@ -11,8 +11,8 @@ PORT=5500
 cd $PROJ_DIR
 
 if [[ -z "$1" ]]; then
-    daemon-command start http-server public --port $PORT
+    daemon-command start http-server public -c-1 --port $PORT
     echo run test-server stop ... to stop.
 else
-    daemon-command $1 http-server --port $PORT
+    daemon-command $1 http-server -c-1 --port $PORT
 fi
