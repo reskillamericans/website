@@ -19,9 +19,9 @@ stop = "h2"
 
 ### When can I enroll in the next {{< term cohort >}}?
 
-We have not yet set a firm date for our 2022 session but are planning to
-begin in the Spring of 2022.  This web site will be
-updated with an enrollment form as soon as we have opened enrollment.
+We expect to launch our next session in the Spring of 2022, and will be
+announcing the exact date shortly. Please check our homepage regularly for an
+update as when we announce the 2022 date, we will also post the enrollment form.
 
 {{% /if-equal %}}
 
