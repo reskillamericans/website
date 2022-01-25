@@ -22,6 +22,7 @@ if ! command -v hugo; then
   if [ "$(uname)" = "Darwin" ]; then
     if ! command -v brew; then
       echo "Please install brew - so you can install Hugo ..."
+      exit 1
     fi
 
     brew install hugo
@@ -44,3 +45,13 @@ fi
 
 echo "Hugo installed at $(which hugo)"
 echo "Version: $(hugo version)"
+
+if ! command -v tree; then
+  echo "Installing tree command line app ..."
+  if [ "$(uname)" = "Darwin" ]; then
+    brew install tree
+  else
+    sudo apt-get install tree
+  fi
+fi
+
