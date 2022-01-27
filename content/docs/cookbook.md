@@ -232,3 +232,21 @@ quote = "This is a sample pull-quote for the video."
 All but the filename will be added to the [Front
 Matter](https://gohugo.io/content-management/front-matter/) of the corresponding
 Markdown file.
+
+## Our Logo
+
+Our logo on most pages uses a very streamlined SVG file that we can change
+colors via CSS.  But it relies on their being a valid Open-San web font present
+to render the text properly.
+
+We have a nearly identical version as a standalone SVG file:
+
+<img style="width: 100%" src="/images/ra-logo.svg" alt="SVG Logo">
+
+If you need a PNG with transparency:
+
+<img style="width: 100%" src="/images/ra-logo.png" alt="PNG Logo">
+
+Or a PNG with just the mark-only:
+
+<img style="width: 480px" src="/images/ra-logo-box.png" alt="PNG Logo w/o Text">
