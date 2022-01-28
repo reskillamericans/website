@@ -14,6 +14,7 @@
       stroke: none;
       fill: black;
       text-transform: uppercase;
+      text-decoration: none;
     }
 
     text.reskill {
@@ -41,11 +42,14 @@
     <clipPath id="logo-box">
       <rect x="-138" y="-116" width="276" height="232" />
     </clipPath>
+    <clipPath id="reskill-box">
+      <rect x="190" y="-116" width="800" height="103" />
+    </clipPath>
   </defs>
 
   <line class="slash" clip-path="url(#logo-box)" x1="-150" y1="150" x2="150" y2="-150"/>
   <polyline class="brackets" points="-100,0 -100,-100 0,-100"/>
   <polyline class="brackets" points="0,100 100,100 100,0"/>
-  <text class="reskill" x="190" y="-13">Reskill</text>
+  <text class="reskill" clip-path="url(#reskill-box)" x="190" y="-13">Reskill</text>
   <text class="americans" x="190" y="115">Americans</text>
 </svg>
