@@ -51,6 +51,26 @@ We generally prefer that all code changes are `rebased` rather than `merged` so
 we have a linear commit history in the main branch.  Please be sure
 that your PR branch is rebased to the HEAD of main before submitting it.
 
+### One Pull Request - One Concern
+
+Each Pull Request needs to be *about* a single thing.  Usually, it will be related
+to a single Issue.  We can relax this rule a little, if there several very minor
+edits being made to content.  But, in no circumstances, should some major piece
+of functionality be bundled together with unrelated changes.
+
+The reasons for this are:
+
+- Your PR can be approved much more quickly.  Making many smaller changes
+  is much easier to review than one big mega change.
+- You don't want to hold up improvement to the site in one area, while you
+  are waiting for complex review of another.
+- It's a lot easier to understand the history of changes if they are batched
+  together in a way that makes sense.  If something breaks in your PR that
+  we only dectect later - it can be very confusing to have many different
+  changes in the offending Pull Request.
+- If a Pull Request needs to be reverted due to a bug - then many different
+  unrelated changes will all be backed out unnecessarily.
+
 ## Editing Content
 
 All the content for the site is stored in
