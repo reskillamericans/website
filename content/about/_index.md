@@ -8,7 +8,7 @@ layout = "like-single"
 
 {{% section centered %}}
 
-# Increasing Access to Careers<br>in Tech
+# Our Mission
 
 Reskill Americans is a nonprofit founded by tech veterans that provides
 tuition-free software development training, mentorship and community to
