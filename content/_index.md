@@ -7,7 +7,13 @@ tags = []
 
 {{% section centered %}}
 
+{{% if-equal enroll false %}}
+# Increasing Access to Careers in Tech
+{{% /if-equal %}}
+
+{{% if-equal enroll true %}}
 # Launch Your Career in Tech:<br>Enroll in Our Free Training Program
+{{% /if-equal %}}
 
 Reskill Americans is a nonprofit founded by tech veterans that provides
 tuition-free software development training, mentorship and community for
