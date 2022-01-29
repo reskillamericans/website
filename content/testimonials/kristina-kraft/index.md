@@ -2,7 +2,7 @@
 title = "Testimonial of Kristina Kraft"
 date = 2021-12-06T18:51:32-08:00
 draft = false
-
+order = 12
 name = "Kristina Kraft"
 location = "Edmonds, WA"
 +++
