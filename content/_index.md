@@ -36,6 +36,13 @@ for enrollment details!
     alt="Nia Bailey standing in front of the Public Library in New York"
     caption="Nia Bailey completed the UI/UX Designer track in 2021." >}}
 
+{{% if-equal enroll false %}}
+# Do you share our mission to help underrepresented minorities get access to training so that they can build careers in tech?
+
+
+{{% /if-equal %}}
+<a class="button-like standout" href="/partner" target="_blank">Partner with Us</a>
+
 {{% /section %}}
 
 
@@ -127,9 +134,17 @@ need is a computer with a web browser.
 
 {{% section centered %}}
 
+{{% if-equal enroll true %}}
 # Partner with Us
+{{% /if-equal %}}
+
+{{% if-equal enroll true %}}
 
 We are seeking partners in the tech industry that share our mission to help underrepresented minorities get access to training so they can build careers in technology.
+
+{{% /if-equal %}}
+
+
 
 <a class="button-like standout" href="mailto:{{< site-param email >}}" target="_blank">Contact Us</a>
 
