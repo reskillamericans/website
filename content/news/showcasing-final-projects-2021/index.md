@@ -14,6 +14,8 @@ of them.
 
 ## Live Look
 
+![LL2](images/live-look-2.jpg)
+
 Team: Michael Bostick<br>
 [Design Board](https://www.figma.com/file/HxsYe8XaKV7mtHlI2WxxoO/Design-Board?node-id=53%3A648)
 
@@ -31,6 +33,9 @@ to do,” said Michael.
 <hr>
 
 ## COVID Tracker
+
+![Covid Tracker Screenshot](images/covid-tracker-2.jpg)
+
 Team: Lauren Smalls, Talisa Foster, Sharifa Nichols, Richard Jackson, Shelique Richardson<br>
 [COVID Tracker](https://unruffled-kalam-99707e.netlify.app/)
 
@@ -44,9 +49,17 @@ resilient as they learned to coordinate within time zones worldwide. The team
 also expanded their skills when they unexpectedly had to play the role of
 backend developer and designer.
 
+<div class="thumbnails">
+{{< thumbnail src="images/covid-tracker-1.jpg" >}}
+{{< thumbnail src="images/covid-tracker-2.jpg" >}}
+{{< thumbnail src="images/covid-tracker-3.jpg" >}}
+</div>
+
 <hr>
 
 ## More Knickknacks
+
+![More Knickknacks](images/more-knick-knacks-1.jpg)
 
 Team: Karl and Lorraine Boehringer<br>
 [Knickknacks](https://kboeh.github.io/knickknacks/)
@@ -58,9 +71,16 @@ to communicate as colleagues, working together in a designer-developer
 relationship. As a first-generation student, Lorraine said that she left the
 program with “confidence and enough work to build a portfolio.”
 
+<div class="thumbnails">
+{{< thumbnail src="images/more-knick-knacks-1.jpg" >}}
+{{< thumbnail src="images/more-knick-knacks-2.jpg" >}}
+</div>
+
 <hr>
 
 ## Century Health
+
+![Century Health](images/century-health-1.jpg)
 
 Team: Jarla Kornegay, Christian Villaroel, Tasha Taylor, Micheleine Beaucejour<br>
 [Century Health](https://medical-aids-fe-1.netlify.app/index.html)
@@ -73,3 +93,9 @@ appointment submission, and a physician schedule. Jarla said that one of the
 biggest lessons she took away was “the need for persistence in finding a
 solution to a problem and for sometimes testing your own instincts even if
 you’re a beginner.”
+
+<div class="thumbnails">
+{{< thumbnail src="images/century-health-1.jpg" >}}
+{{< thumbnail src="images/century-health-2.jpg" >}}
+{{< thumbnail src="images/century-health-3.jpg" >}}
+</div>
