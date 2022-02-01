@@ -193,9 +193,9 @@ viewed full-screen, enter them like this:
 
 ```
 <div class="thumbnails">
-{{< thumbnail src="images/covid-tracker-1.jpg" >}}
-{{< thumbnail src="images/covid-tracker-2.jpg" >}}
-{{< thumbnail src="images/covid-tracker-3.jpg" >}}
+{{</* thumbnail src="images/covid-tracker-1.jpg" */>}}
+{{</* thumbnail src="images/covid-tracker-2.jpg" */>}}
+{{</* thumbnail src="images/covid-tracker-3.jpg" */>}}
 </div>
 ```
 
