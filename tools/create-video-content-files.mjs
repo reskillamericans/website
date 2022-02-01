@@ -62,6 +62,9 @@ async function createVideoBundles(videos, metadata, targetDir) {
       continue;
     }
 
+    // Don't publish the full size video thumbnails by default.
+    frontMatter._build = { publishResources: false };
+
     const dir = `${targetDir}${filename}/`;
 
     let markdown = `+++\n${TOML.stringify(frontMatter)}\n+++\n\n`;
