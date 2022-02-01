@@ -1,5 +1,5 @@
 +++
-title = "Final Demo Day for 2021 Section"
+title = "Final Demo Day for 2021 Session"
 guest = "Eric Amemiya & Manrique Zuniga"
 guestTitle = "Rigetti Computing"
 quote = "You guys took on some really challenging projects ... you attacked real world problems and brought solutions that were relevant…it was eye opening to see how these apps were developed and thought out."
