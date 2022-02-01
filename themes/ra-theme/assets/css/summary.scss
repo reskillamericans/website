@@ -49,6 +49,9 @@ ul.summary {
       font-size: 18px;
       line-height: 1.2em;
       text-align: justify;
+      margin-right: 1rem;
+      hyphens: auto;
+
 
       @media (max-width: $summary-break) {
         text-align: left !important;
