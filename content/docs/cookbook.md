@@ -140,6 +140,68 @@ available.  When embedding the image with the `{{</* image */>}}` shortcode (see
 above) it can be down-scaled to the most appropriate size where it is included
 in the site.
 
+## Creating a Blog/News post
+
+The best way to start is to use the Hugo command line:
+
+```
+$ hugo new news/slug-text-for-my-post
+```
+
+The "slug text" should be all lower-case, separating words by dashes.  This
+should closely match the actual title of the blog post.
+
+You will find a file, `index.md` created in the
+`content/news/slug-text-for-my-post` folder.  Edit the front-matter as needed
+(if you set draft as "true" the post will be NOT be published on the live site).
+
+```
++++
+title = "Slug Text for My Post"
+date = 2022-01-31T20:30:27-08:00
+draft = false
+tags = ['blog']
++++
+```
+
+Add the content of the blog post using MarkDown.  Don't use the `#` (h1) heading
+level - start any sub-headings with `##` (h2).
+
+Please word-wrap MarkDown paragraphs to no more than 80 characters per line
+if possible.
+
+### Adding Images to Blog/News
+
+Placing ANY image file in the same folder as the post will make that the
+thumbnail image and display it at the top of the single-page view.  If you
+do not add an image - your post will be assigned the "generic" blog image
+and thumbnail.
+
+If you have multiple images you want to use in the post itself, first create an
+`images` subdirectory and copy your images there.
+
+You can then use standard MarkDown syntax to link to the images:
+
+```
+![My Post Image](image/link-to-image.jpg)
+```
+
+#### Thumbnails
+
+If you want to include thumbnail images in the post that are designed to be
+viewed full-screen, enter them like this:
+
+```
+<div class="thumbnails">
+{{< thumbnail src="images/covid-tracker-1.jpg" >}}
+{{< thumbnail src="images/covid-tracker-2.jpg" >}}
+{{< thumbnail src="images/covid-tracker-3.jpg" >}}
+</div>
+```
+
+This will place 100 pixel tall images in a row (and wrap around if you have
+many of them).  Each will be hyperlinked to the full size image.
+
 ## Adding a Testimonial
 
 Testimonials are all stored in the
