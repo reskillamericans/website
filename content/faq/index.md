@@ -5,6 +5,10 @@ draft = false
 tags = []
 layout = "document"
 
+# Don't publish full size image
+[_build]
+publishResources = false
+
 [[process]]
 name = "accordion"
 selector = "h3"
