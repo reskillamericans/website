@@ -3,7 +3,6 @@ title = "Frequently Asked Questions"
 date = 2021-12-21T16:43:31-08:00
 draft = false
 tags = []
-layout = "document"
 
 # Don't publish full size image
 [_build]
@@ -14,6 +13,14 @@ name = "accordion"
 selector = "h3"
 stop = "h2"
 +++
+
+{{% section centered color-contrast %}}
+
+# Frequently Asked Questions
+
+{{% /section %}}
+
+{{% section  document %}}
 
 ## Getting Started
 
@@ -248,3 +255,7 @@ receive interview training and mock interviews from tech professionals.
 We are committed to helping you get on a path to a tech career: when you
 complete the program, the professional training will end, but our job search
 support and resources will continue.
+
+{{% /section %}}
+
+{{< mailing-list-section >}}

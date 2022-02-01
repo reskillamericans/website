@@ -16,7 +16,7 @@
 
 {{- range .Params }}
   {{- if eq . "centered" "wrapped-boxes" "team-boxes" "prep-overlap" "overlap"
-      "side-by-side" "light-box"}}
+      "side-by-side" "light-box" "document" }}
     {{- $mainClass = (print $mainClass $sepMain . ) }}
     {{- $sepMain = " " }}
   {{- else if eq . "contrast" "light-background" "color-contrast" }}
