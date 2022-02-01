@@ -24,7 +24,8 @@ div.news {
   img {
     @include floating-shadow;
     display: block;
-    height: 300px;
+    max-height: 300px;
+    max-width: 100%;
     width: unset;
     // aspect-ratio: 4/3;
     // object-fit: contain;
