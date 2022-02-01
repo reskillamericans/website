@@ -134,3 +134,5 @@ We are seeking partners in the tech industry that share our mission to help unde
 <a class="button-like standout" href="mailto:{{< site-param email >}}" target="_blank">Contact Us</a>
 
 {{% /section %}}
+
+{{< mailing-list-section >}}
