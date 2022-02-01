@@ -30,4 +30,18 @@ div.news {
     // object-fit: contain;
     margin: auto;
   }
+
+  .thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    img {
+      @include floating-shadow;
+      @include hover-zoom;
+      height: 100px;
+      object-fit: cover;
+      margin: 0.5rem;
+    }
+  }
 }

@@ -8,6 +8,7 @@
 </section>
 <section>
   <div class="content news overlap">
+  <!-- Use the alphabetically first image found in the folder -->
   {{ with index (.Resources.ByType "image") 0 }}
     {{ $image := .Resize "x300" }}
     <img src="{{ $image.RelPermalink }}" alt="{{ $.Title }}">
