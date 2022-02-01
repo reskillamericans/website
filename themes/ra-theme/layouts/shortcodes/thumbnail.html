@@ -1,0 +1,10 @@
+{{ $src := .Get "src" }}
+
+{{- with (.Page.Resources.GetMatch $src) -}}
+    {{- $image := .Resize "x100" -}}
+    <a href="{{ .Permalink }}">
+      <img alt="Thumbnail image" {{ with $.Get "class" }}class="{{.}}" {{ end -}} src="{{ $image.Permalink }}">
+    </a>
+{{- else -}}
+  {{- errorf "Unable to find image: %s" $src -}}
+{{- end }}
