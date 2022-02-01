@@ -10,6 +10,9 @@ date = "2021-09-22T20:01:28.000Z"
 draft = false
 tags = [ "coding-challenges" ]
 
+[_build]
+publishResources = false
+
 +++
 
 Pam discusses the effectiveness of taking some time to think about ways to solve a coding problem before writing the code.

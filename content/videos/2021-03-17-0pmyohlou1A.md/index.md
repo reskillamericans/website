@@ -6,6 +6,9 @@ filename = "2021-03-17-0pmyohlou1A.md"
 date = "2021-03-17T15:59:43.000Z"
 draft = false
 
+[_build]
+publishResources = false
+
 +++
 
 

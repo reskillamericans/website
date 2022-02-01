@@ -11,6 +11,9 @@ date = "2021-04-26T15:01:19.000Z"
 draft = false
 tags = [ "town-halls", "partners" ]
 
+[_build]
+publishResources = false
+
 +++
 
 On Monday, April 26th, as participants started their seventh week of course instruction, we hosted our eighth Town Hall with two software engineers who work in technology groups at BlackRock, Inc., the world’s largest asset management company which has approximately 1,500 technologists.  

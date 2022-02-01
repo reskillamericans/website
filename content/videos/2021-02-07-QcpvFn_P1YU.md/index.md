@@ -9,6 +9,9 @@ date = "2021-02-07T00:06:59.000Z"
 draft = false
 tags = [ "about-reskill-americans" ]
 
+[_build]
+publishResources = false
+
 +++
 
 Ore and I discuss learning to program and the benefits of the Reskill Americans internship, along with other career advice.

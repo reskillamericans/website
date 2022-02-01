@@ -9,6 +9,9 @@ date = "2021-10-12T22:23:25.000Z"
 draft = false
 tags = [ "job-fairs" ]
 
+[_build]
+publishResources = false
+
 +++
 
 To help participants hone their resumes in preparation for the job search, Teddy Burriss hosted a Town Hall to share tips, best practices, and a few tricks for crafting the best resume when seeking a job in tech or in a career transition.  

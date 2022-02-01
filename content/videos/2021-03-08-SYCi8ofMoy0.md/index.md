@@ -8,6 +8,9 @@ date = "2021-03-08T16:07:00.000Z"
 draft = false
 tags = [ "town-halls" ]
 
+[_build]
+publishResources = false
+
 +++
 
 On Monday, March 8th, we hosted our very first Town Hall for our inaugural software development training program, with more than 400 participants following the Livestream on YouTube from around the country.  

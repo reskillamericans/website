@@ -5,6 +5,10 @@ draft = false
 order = 13
 name = "Michael Bostick"
 location = "Alexandria, VA"
+
+# Don't publish full size image by default
+[_build]
+publishResources = false
 +++
 
 Through my experience with Reskill Americans, I was able to create my own personal website for selling my artwork. For my final project, I developed a potential new feature for the Yelp app, something I had been thinking about for years, and with this program, I was finally able to develop it.

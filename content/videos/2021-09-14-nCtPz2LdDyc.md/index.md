@@ -10,6 +10,9 @@ date = "2021-09-14T18:03:13.000Z"
 draft = false
 tags = [ "job-fairs", "partners" ]
 
+[_build]
+publishResources = false
+
 +++
 
 At our Town Hall on September 14th, David Fowler, Software Architect at Microsoft, shared insights and advice about how to prepare for a technical interview. David started his career at Microsoft as an intern, and has over 13 years of experience working on developer frameworks and tools. He is also on the advisory board for Reskill Americans.  In his current role, David’s responsibilities include working on .NET and the Azure SignalR service, a scalable service for running web, mobile and IoT applications in the cloud.  

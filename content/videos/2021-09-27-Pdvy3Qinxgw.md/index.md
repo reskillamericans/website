@@ -10,6 +10,9 @@ date = "2021-09-27T19:00:38.000Z"
 draft = false
 tags = [ "job-fairs" ]
 
+[_build]
+publishResources = false
+
 +++
 
 Teddy is a Certified Career Coach, Certified Social Media Strategist, DDI leadership facilitator, Dale Carnegie graduate coach, Sandlers Sales Trained Professional, YouTuber, columnist, keynote speaker and author who teaches creating success in business and career through building relationships and Using LinkedIn as a Business Tool.

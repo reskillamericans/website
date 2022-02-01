@@ -11,6 +11,9 @@ date = "2021-03-22T15:01:29.000Z"
 draft = false
 tags = [ "town-halls", "partners" ]
 
+[_build]
+publishResources = false
+
 +++
 
 On Monday, March 22nd, we launched the first week of learning for our software development training program: participants made a decision about which track they would select, and began their journey installing their development environment and completing their first assignments. Our third Town Hall featured the organization Covid Act Now, a group of developers who came together in the beginning of the pandemic to provide timely and accurate data about Covid in every state across the country. CTO Mike Koss interviewed CTO Michael Lehenbauer and software engineer Chelsi Asulin about working in tech and how their simple site – which includes extensive data and easy-to-read visualizations – is helping encourage responsible public health measures across the country. “It’s been a whirlwind,” said Lehenbauer. He said that one of the aspects he likes most about working in tech is that you get to work with amazing people and build really cool things.

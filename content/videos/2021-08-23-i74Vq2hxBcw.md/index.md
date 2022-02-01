@@ -9,6 +9,9 @@ date = "2021-08-23T15:01:43.000Z"
 draft = false
 tags = [ "town-halls" ]
 
+[_build]
+publishResources = false
+
 +++
 
 Phase III starts August 23 and continues to October 23.  We'll review all the aspects of the program and how you can get the most from your last 2 months of our program.

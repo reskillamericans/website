@@ -10,6 +10,9 @@ date = "2021-04-05T05:09:56.000Z"
 draft = false
 tags = [ "first-time-dart" ]
 
+[_build]
+publishResources = false
+
 +++
 
 Try it yourself at:

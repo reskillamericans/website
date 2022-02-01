@@ -11,6 +11,9 @@ date = "2021-05-10T15:00:49.000Z"
 draft = false
 tags = [ "town-halls", "partners" ]
 
+[_build]
+publishResources = false
+
 +++
 
 On Monday, May 10th, as participants started their ninth week of course instruction, we hosted our 10th Town Hall with Eric Johnson, Director of Innovation at Bright Machines, which is an industrial automation start up that’s building the digital infrastructure for modern manufacturing. Eric showed footage of robots on the factory floors, and spoke about how technology is transforming the manufacturing industry and the growing demand for software development skills.

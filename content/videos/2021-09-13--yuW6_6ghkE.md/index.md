@@ -11,6 +11,9 @@ date = "2021-09-13T15:00:48.000Z"
 draft = false
 tags = [ "town-halls", "partners" ]
 
+[_build]
+publishResources = false
+
 +++
 
 On September 13th, we chatted with Danielle (Dani) Storlie, Senior Director of Design at Procore Technologies, a construction management software company. Dani has worked for more than a decade in software design, including at Sonos and Deloitte Digital, and consulted for early-stage startup and fortune 500 brands while at Deloitte such as Target, Amazon, and FoxSports.  

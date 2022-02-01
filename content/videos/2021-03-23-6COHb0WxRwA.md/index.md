@@ -7,6 +7,9 @@ date = "2021-03-23T23:03:11.000Z"
 draft = false
 tags = [ "explainer" ]
 
+[_build]
+publishResources = false
+
 +++
 
 Demo of a fresh install of VS Code on Windows and use of the Live Server extension to automatically refresh the target web page.

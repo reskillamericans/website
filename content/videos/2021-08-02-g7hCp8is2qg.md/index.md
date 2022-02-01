@@ -11,6 +11,9 @@ date = "2021-08-02T15:01:23.000Z"
 draft = false
 tags = [ "town-halls", "partners" ]
 
+[_build]
+publishResources = false
+
 +++
 
 As we entered the ninth week of the Project Phase of our program, our 18th Town Hall featured two leaders in software at Sonos, Inc: Andrew Kwatinetz, Director of Software Product, and Eric Patey, Senior Director.  Andrew is an experienced product leader who has worked at both start-ups and tech giants, and Eric has 30 years of experience building and leading high power software development teams. They spoke about the software and hardware behind Sonos products and what they love about the company, and shared details about their career paths and the skills they look for when hiring people. 

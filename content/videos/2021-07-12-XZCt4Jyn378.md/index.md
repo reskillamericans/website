@@ -11,6 +11,9 @@ date = "2021-07-12T15:01:04.000Z"
 draft = false
 tags = [ "town-halls", "partners" ]
 
+[_build]
+publishResources = false
+
 +++
 
 On July 12th, we spoke with Mike Coleman who works for Google Cloud as a developer advocate where he’s focused on helping to inspire people to do amazing things with Google Cloud's technology. Prior to his current role, he was at Amazon Web Services, and has also worked at Microsoft, VMware, Intel, HP, as well as a couple of startups (Docker and Puppet).  

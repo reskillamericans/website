@@ -11,6 +11,9 @@ draft = false
 tags = [ "job-fairs", "partners" ]
 slug = "job-fair-1-software-one"
 
+[_build]
+publishResources = false
+
 +++
 
 On August 18th, we hosted a Job Fair with SoftwareONE, the global cloud software management and consulting company, which was recruiting for its SoftwareONE Academy, 12-week paid apprenticeship program. Nina Unger, Talent Acquisition Partner at SoftwareONE shared details about the program, the four-step interview process, and links to apply.  
