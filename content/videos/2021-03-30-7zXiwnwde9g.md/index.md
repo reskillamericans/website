@@ -7,6 +7,9 @@ date = "2021-03-30T21:42:53.000Z"
 draft = false
 tags = [ "mikes-live-coding-demos" ]
 
+[_build]
+publishResources = false
+
 +++
 
 We worked some git examples today.  Just in case anyone wants to follow along.

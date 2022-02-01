@@ -6,6 +6,9 @@ filename = "2021-03-16-_uD0UDNoRo4.md"
 date = "2021-03-16T15:52:22.000Z"
 draft = false
 
+[_build]
+publishResources = false
+
 +++
 
 We go into more detail on what is involved in the four tracks to help you decide which one you will focus on during the program.  You should plan to make your decision by the end of next week (week #2).

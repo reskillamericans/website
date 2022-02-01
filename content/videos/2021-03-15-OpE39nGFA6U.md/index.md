@@ -11,6 +11,9 @@ date = "2021-03-15T15:02:05.000Z"
 draft = false
 tags = [ "town-halls", "partners" ]
 
+[_build]
+publishResources = false
+
 +++
 
 On Monday, March 15th, we officially launched our software development training program: a week-long orientation where participants were introduced to the details of each track (Front-End, Back-end, Mobile, and User Experience & Design).

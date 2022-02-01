@@ -9,6 +9,9 @@ date = "2021-03-23T05:02:02.000Z"
 draft = false
 tags = [ "explainer" ]
 
+[_build]
+publishResources = false
+
 +++
 
 A walk-through of the first assignment lessons and assignments in Introduction to Programming course from week #2.

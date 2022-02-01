@@ -7,6 +7,9 @@ date = "2021-08-27T20:36:14.000Z"
 draft = false
 tags = [ "coding-challenges" ]
 
+[_build]
+publishResources = false
+
 +++
 
 Write a program to generate a maze.  The instructions to get started are here:

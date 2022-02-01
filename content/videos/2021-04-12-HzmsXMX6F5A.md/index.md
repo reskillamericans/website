@@ -11,6 +11,9 @@ date = "2021-04-12T15:00:38.000Z"
 draft = false
 tags = [ "town-halls", "partners" ]
 
+[_build]
+publishResources = false
+
 +++
 
 On Monday, April 12th as nearly 1,000 participants started their fifth week of course instruction, we hosted our sixth Town Hall with guest speaker David Ortiz, CEO and Founder of SimWin Sports, which develops groundbreaking experiences at the intersection of fantasy sports, sports betting, and E-sports. 

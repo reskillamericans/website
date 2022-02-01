@@ -11,6 +11,9 @@ date = "2021-04-19T15:02:03.000Z"
 draft = false
 tags = [ "town-halls", "partners" ]
 
+[_build]
+publishResources = false
+
 +++
 
 On Monday, April 19th as participants started their sixth week of course instruction, we hosted our seventh Town Hall with guest speaker Deborah Russell, from the Workforce Investment Council, a national governmental organization that provides people with job resources to help them enter the workforce.   

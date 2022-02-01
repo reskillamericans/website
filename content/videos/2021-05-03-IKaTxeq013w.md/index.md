@@ -11,6 +11,9 @@ date = "2021-05-03T15:01:23.000Z"
 draft = false
 tags = [ "town-halls", "partners" ]
 
+[_build]
+publishResources = false
+
 +++
 
 On Monday, May 3rd, as participants started their eighth week of course instruction, we hosted our ninth Town Hall with Columbus Steward, a principal software engineer manager at Microsoft who was looking to hire a software developer to join his ten-person team.

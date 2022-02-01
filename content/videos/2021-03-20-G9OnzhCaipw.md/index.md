@@ -9,6 +9,9 @@ date = "2021-03-20T21:05:39.000Z"
 draft = false
 tags = [ "mikes-live-coding-demos" ]
 
+[_build]
+publishResources = false
+
 +++
 
 This video is not part of our standard curriculum, but is in response to a conversation started in the #projects-feedback-qa channel.

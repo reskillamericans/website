@@ -11,6 +11,9 @@ date = "2021-09-27T21:23:45.000Z"
 draft = false
 tags = [ "job-fairs", "partners" ]
 
+[_build]
+publishResources = false
+
 +++
 
 On September 27th, Teddy Buriss, a LinkedIn Strategist, Trainer and Coach, hosted a Job Fair for our participants about using LinkedIn as a career transition tool. Teddy’s offered tips and insights for ways to leverage LinkedIn to help your job search and career transition and shared some of best practices for building a professional LinkedIn Profile, a relevant LinkedIn Network, and building a professional brand on LinkedIn.  

@@ -11,6 +11,9 @@ date = "2021-10-21T18:02:47.000Z"
 draft = false
 tags = [ "job-fairs", "partners" ]
 
+[_build]
+publishResources = false
+
 +++
 
 On October 21st, HBO Max, a WarnerMedia company, hosted a Job Fair with Reskill Americans to share details about more than 100 of its open roles ranging from software developers and UX roles to product designers and program managers. 

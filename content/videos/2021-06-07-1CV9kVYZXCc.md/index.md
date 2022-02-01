@@ -11,6 +11,9 @@ date = "2021-06-07T15:00:19.000Z"
 draft = false
 tags = [ "town-halls", "partners" ]
 
+[_build]
+publishResources = false
+
 +++
 
 On Monday, June 7th, as participants started the Project Phase (Phase II) of our program, we hosted our 13th Town Hall with SoftwareONE employees Nina Unger, Talent Acquisition Partner, and Bill Winans, Regional Director.    

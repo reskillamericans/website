@@ -9,6 +9,9 @@ date = "2021-03-16T00:17:11.000Z"
 draft = false
 tags = [ "mikes-live-coding-demos" ]
 
+[_build]
+publishResources = false
+
 +++
 
 If you've never built any kind of web page before, the terms HTML, CSS, and JavaScript can be a little confusing.  In this demo, I show what those three languages do, and how you can use them to create a simple application in a web page.

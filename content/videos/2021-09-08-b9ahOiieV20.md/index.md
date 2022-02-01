@@ -10,6 +10,9 @@ date = "2021-09-08T07:22:20.000Z"
 draft = false
 tags = [ "coding-challenges" ]
 
+[_build]
+publishResources = false
+
 +++
 
 We discuss this problem on leetcode:

@@ -7,6 +7,9 @@ date = "2021-08-15T17:31:37.000Z"
 draft = false
 tags = [ "explainer" ]
 
+[_build]
+publishResources = false
+
 +++
 
 Watch this Google provided example interview - and come back here for additional commentary.

@@ -6,6 +6,10 @@ order = 14
 name = "Micheleine Beaucejour"
 location = "New York, NY"
 tags = []
+
+# Don't publish full size image by default
+[_build]
+publishResources = false
 +++
 
 This program has widened my horizons and understanding within the UX field. I

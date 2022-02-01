@@ -10,6 +10,9 @@ date = "2021-08-09T15:01:08.000Z"
 draft = false
 tags = [ "town-halls" ]
 
+[_build]
+publishResources = false
+
 +++
 
 As most teams have completed their Phase II work, we are entering a new phase of our program.  We will talk about what we hope to accomplish in preparing you for successful job interviews, and scheduling 1:1 assessment meetings for everyone.

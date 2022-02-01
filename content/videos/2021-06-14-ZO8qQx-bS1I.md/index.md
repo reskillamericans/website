@@ -11,6 +11,9 @@ date = "2021-06-14T15:00:44.000Z"
 draft = false
 tags = [ "town-halls", "partners" ]
 
+[_build]
+publishResources = false
+
 +++
 
 On Monday, June 14th, we hosted our 14th Town Hall with Laurent Pierre, General Manager of Customer Experience, Engineering Support (CXP) for Microsoft Azure. Laurent shared his background, the positions that his department is hiring for, the opportunities for candidates that have nontraditional (non-tech) backgrounds, and advice for how to grow your career in tech. 

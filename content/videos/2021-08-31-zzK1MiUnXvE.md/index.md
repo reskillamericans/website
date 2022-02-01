@@ -9,6 +9,9 @@ date = "2021-08-31T04:35:23.000Z"
 draft = false
 tags = [ "coding-challenges" ]
 
+[_build]
+publishResources = false
+
 +++
 
 Pam walks through solutions to this online coding problem:

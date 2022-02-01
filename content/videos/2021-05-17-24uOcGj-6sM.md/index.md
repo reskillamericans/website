@@ -11,6 +11,9 @@ date = "2021-05-17T15:00:18.000Z"
 draft = false
 tags = [ "town-halls", "partners" ]
 
+[_build]
+publishResources = false
+
 +++
 
 On Monday, May 17th, as participants started their tenth week of course instruction, we hosted our 11th Town Hall with guest speaker Dev Nambi, Principal Data Engineer at Fred Hutchinson Cancer Research Center (@fredhutch).   

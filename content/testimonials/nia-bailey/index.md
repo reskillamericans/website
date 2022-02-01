@@ -5,6 +5,10 @@ draft = false
 order = 15
 name = "Nia Bailey"
 location = "Queens, NY"
+
+# Don't publish full size image by default
+[_build]
+publishResources = false
 +++
 
 This program has helped me find my path in technology. Prior to this program

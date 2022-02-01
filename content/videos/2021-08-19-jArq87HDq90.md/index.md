@@ -7,6 +7,9 @@ date = "2021-08-19T07:23:02.000Z"
 draft = false
 tags = [ "explainer" ]
 
+[_build]
+publishResources = false
+
 +++
 
 The Self Assessment survey for Phase III asked about some Computer Science related terms.  Many of you have stated that you are not very familiar with them.  Yet, many technical interviewers may ask you about these things.  So, here is a crash course so you will at least be able to speak to each of the topics mentioned in the survey.

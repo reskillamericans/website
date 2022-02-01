@@ -7,6 +7,9 @@ date = "2020-10-12T21:20:12.000Z"
 draft = true
 tags = [ "about-reskill-americans" ]
 
+[_build]
+publishResources = false
+
 +++
 
 

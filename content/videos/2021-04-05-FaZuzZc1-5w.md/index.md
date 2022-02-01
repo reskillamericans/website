@@ -11,6 +11,9 @@ date = "2021-04-05T15:01:18.000Z"
 draft = false
 tags = [ "town-halls", "partners" ]
 
+[_build]
+publishResources = false
+
 +++
 
 On Monday, April 5th, we hosted our fifth Town Hall which featured our guest speaker, Nick Curry, Head of Military Initiatives, Technical Apprenticeships, and Diversity Internships at Amazon Web Services (AWS).  

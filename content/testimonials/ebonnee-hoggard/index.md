@@ -5,6 +5,10 @@ draft = false
 order = 7
 name = "Ebonnee Hoggard"
 location = "Connecticut"
+
+# Don't publish full size image by default
+[_build]
+publishResources = false
 +++
 
 It gave me experience learning how to code when I thought it was too late for me to get into the field. During my training program, I started a freelance business.

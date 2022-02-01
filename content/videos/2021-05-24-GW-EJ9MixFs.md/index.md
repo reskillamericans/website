@@ -11,6 +11,9 @@ date = "2021-05-24T15:00:39.000Z"
 draft = false
 tags = [ "town-halls", "partners" ]
 
+[_build]
+publishResources = false
+
 +++
 
 On Monday, May 24th, as participants started their 11th week of course instruction, we hosted our 12th Town Hall with guest speaker Kedasha Kerr, a Design Systems Engineer at a large insurance company. Kasha helps new coders learn about tech through her Instagram and Twitter handles @itsthatlady.dev. 
