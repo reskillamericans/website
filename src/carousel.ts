@@ -1,3 +1,5 @@
+import Hammer from 'hammerjs';
+
 export { carousel };
 
 // Carousel has one child that is a horizontal band of "cards".

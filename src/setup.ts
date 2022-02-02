@@ -1,9 +1,10 @@
+// This file is to centralize importing the Firebase SDK
+
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getFirestore } from 'firebase/firestore';
 import { getAuth, User } from "firebase/auth";
 import { getFunctions } from "firebase/functions";
-import 'hammerjs'
 
 const firebaseConfig = {
   apiKey: "AIzaSyCpNW4y3jENwllOQqAxPdImKYbUhz5VMew",

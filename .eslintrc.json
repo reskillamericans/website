@@ -16,6 +16,8 @@
         "@typescript-eslint"
     ],
     "rules": {
+        "semi": "off",
+        "@typescript-eslint/semi": ["error", "always"],
         "eqeqeq": "error",
         "prefer-const": "off",
         "@typescript-eslint/no-non-null-assertion": "off",
