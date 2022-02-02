@@ -8,7 +8,6 @@ function carousel(id: string, curChild = 0) {
     const hammer = new Hammer(divParent);
     const divScroller = divParent.children[0] as HTMLDivElement;
     const numChildren = divScroller.children.length;
-    const windowSize = window.screen.width;
 
     const divLeft = document.createElement('div');
     divLeft.classList.add('directional', 'left');
@@ -26,9 +25,6 @@ function carousel(id: string, curChild = 0) {
         centerCard(curChild);
     });
 
-
-    //Enable Swipe on mobile/tablet devices only
-    hammer.set({ enable: windowSize <= 1024 ? true : false });
     //Detect swipe left or right on divParent
     hammer.on("swipeleft swiperight", (e: HammerInput) => {
         const { type, isFinal } = e;
