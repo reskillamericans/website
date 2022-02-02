@@ -38,7 +38,7 @@ for enrollment details!
 
 {{% if-equal enroll false %}}
 
-## Do you share our mission to help underrepresented minorities get access to training so that they can build careers in tech?
+## Do you want to help underrepresented minorities access careers in tech?
 
 <a class="button-like standout" href="/partner">Partner with Us</a>
 
