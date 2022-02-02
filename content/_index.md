@@ -32,7 +32,7 @@ for enrollment details!
 <a class="button-like standout" href="/enroll">Join Our Next {{< term cohort caps >}}</a>
 {{% /if-equal %}}
 
-{{< youtube id="ATcXz4ZmnTQ" autoplay="true" color="white" yt_start="12" yt_end="24">}}
+{{< youtube id="ATcXz4ZmnTQ" autoplay="true" >}}
 
 {{% if-equal enroll false %}}
 
