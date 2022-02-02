@@ -1,5 +1,5 @@
 +++
-title = "News and Blog"
+title = "News"
 date = 2021-12-20T17:12:33-08:00
 draft = false
 tags = []
