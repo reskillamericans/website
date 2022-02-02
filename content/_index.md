@@ -133,17 +133,18 @@ need is a computer with a web browser.
 {{< testimonials >}}
 {{< /section >}}
 
+{{% if-equal enroll true %}}
+
 {{% section centered %}}
 
-{{% if-equal enroll true %}}
 # Partner with Us
 
 We are seeking partners in the tech industry that share our mission to help underrepresented minorities get access to training so they can build careers in technology.
 
 <a class="button-like standout" href="mailto:{{< site-param email >}}" target="_blank">Contact Us</a>
 
-{{% /if-equal %}}
-
 {{% /section %}}
+
+{{% /if-equal %}}
 
 {{< mailing-list-section >}}
