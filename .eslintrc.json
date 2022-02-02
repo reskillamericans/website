@@ -16,6 +16,13 @@
         "@typescript-eslint"
     ],
     "rules": {
+        "keyword-spacing": [
+            "error",
+            {
+                "before": true,
+                "after": true
+            }
+        ],
         "semi": "off",
         "@typescript-eslint/semi": ["error", "always"],
         "eqeqeq": "error",
