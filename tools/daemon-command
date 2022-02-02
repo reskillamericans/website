@@ -22,7 +22,7 @@ DIVIDER="================================"
 usage () {
     local flag command service
 
-    echo "Run the $* command as a background process."
+    echo "Run a command as a background process."
     usage_helper
     sep="["
     for command in $ALL_COMMANDS; do
@@ -49,9 +49,44 @@ else
   COMMAND=status
 fi
 
-cmd_name="$1"
-pid_file="$VAR_DIR/pids/$cmd_name.pid"
-log_file="$VAR_DIR/logs/$cmd_name.log"
+do_command() {
+  pid_file="$VAR_DIR/pids/$cmd_name.pid"
+  log_file="$VAR_DIR/logs/$cmd_name.log"
+  pid="$(get_pid)"
+
+  case $COMMAND in
+    start)
+      if [ -n "$pid" ]; then
+        echo "$cmd_name is already running:"
+        status_cmd
+      else
+        start_cmd "$@"
+      fi
+      ;;
+    stop)
+      if [ -z "$pid" ]; then
+        echo "$cmd_name is not running."
+      else
+        stop_cmd
+      fi
+      ;;
+    restart)
+      if [ -n "$pid" ]; then
+        stop_cmd
+      fi
+      start_cmd "$@"
+      ;;
+    status)
+      status_cmd
+      ;;
+    logs)
+      log_cmd
+      ;;
+    tail)
+      tail_cmd
+      ;;
+  esac
+}
 
 start_cmd() {
   echo -e "Starting command: $* @ $(date).\n$DIVIDER" > "$log_file"
@@ -122,37 +157,21 @@ if [[ "$COMMAND" == "status" ]]; then
   echo "$(printf "%-${MAX_NAME}s" "Root") $status"
 fi
 
-pid="$(get_pid)"
+cmd_name="$1"
 
-case $COMMAND in
-  start)
-    if [ -n "$pid" ]; then
-      echo "$cmd_name is already running:"
-      status_cmd
-    else
-      start_cmd "$@"
-    fi
-    ;;
-  stop)
-    if [ -z "$pid" ]; then
-      echo "$cmd_name is not running."
-    else
-      stop_cmd
-    fi
-    ;;
-  restart)
-    if [ -n "$pid" ]; then
-      stop_cmd
-    fi
-    start_cmd "$@"
-    ;;
-  status)
-    status_cmd
-    ;;
-  logs)
-    log_cmd
-    ;;
-  tail)
-    tail_cmd
-    ;;
-esac
+if [ -n "$cmd_name" ]; then
+  do_command "$@"
+else
+  if [[ "$COMMAND" != "status" && "$COMMAND" != "logs" && "$COMMAND" != "stop" ]]; then
+    echo "Error: Missing command name."
+    usage $COMMAND
+    exit 1
+  fi
+
+  for cmd_name in $(ls $VAR_DIR/logs); do
+    cmd_name="${cmd_name%.log}"
+    do_command
+  done
+
+  exit 0
+fi
