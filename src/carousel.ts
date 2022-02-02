@@ -3,8 +3,10 @@ export { carousel };
 // Carousel has one child that is a horizontal band of "cards".
 function carousel(id: string, curChild=0) {
     const divParent = document.getElementById(id)!;
+    const hammer = new Hammer(divParent);
     const divScroller = divParent.children[0] as HTMLDivElement;
     const numChildren = divScroller.children.length;
+    const windowSize = window.screen.width;
 
     const divLeft = document.createElement('div');
     divLeft.classList.add('directional', 'left');
@@ -21,6 +23,34 @@ function carousel(id: string, curChild=0) {
     window.addEventListener('resize', () => {
         centerCard(curChild);
     });
+
+
+    //Enable Swipe on mobile devices only
+    hammer.set({enable: windowSize <= 768 ? true : false})
+    //Detect swipe left or right on divParent
+    hammer.on("swipeleft swiperight", function(e: any) {
+        const {type, isFinal} = e;
+
+        //Event listener fires mutiple times. Waits until events are done.
+        if(isFinal){
+            //Check if user swipes right (image moves right)
+            if(type === 'swiperight'){
+                if(curChild === 0){
+                    return;
+                }
+                centerCard(--curChild);
+                showControls();
+            }
+            //Check if user swipes left (image moves left)
+            if(type === 'swipeleft'){
+                if(curChild === numChildren - 1){
+                    return;
+                }
+                centerCard(++curChild);
+                showControls();
+            }
+        }
+      },);
 
     divLeft.addEventListener('click', () => {
         if (curChild === 0) {

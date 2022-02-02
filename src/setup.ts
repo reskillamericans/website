@@ -3,6 +3,7 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from 'firebase/firestore';
 import { getAuth, User } from "firebase/auth";
 import { getFunctions } from "firebase/functions";
+import 'hammerjs'
 
 const firebaseConfig = {
   apiKey: "AIzaSyCpNW4y3jENwllOQqAxPdImKYbUhz5VMew",
