@@ -27,48 +27,24 @@ function carousel(id: string, curChild=0) {
     });
 
 
-    //Enable Swipe on mobile devices only
-    hammer.set({enable: windowSize <= 768 ? true : false});
+    //Enable Swipe on mobile/tablet devices only
+    hammer.set({enable: windowSize <= 1024 ? true : false});
     //Detect swipe left or right on divParent
-    hammer.on("swipeleft swiperight", function(e: any) {
+    hammer.on("swipeleft swiperight", (e) => {
         const {type, isFinal} = e;
 
         //Event listener fires mutiple times. Waits until events are done.
-        if(isFinal){
+        if (isFinal){
             //Check if user swipes right (image moves right)
-            if(type === 'swiperight'){
-                if(curChild === 0){
-                    return;
-                }
-                centerCard(--curChild);
-                showControls();
-            }
+            if (type === 'swiperight') scrollBy(-1);
             //Check if user swipes left (image moves left)
-            if(type === 'swipeleft'){
-                if(curChild === numChildren - 1){
-                    return;
-                }
-                centerCard(++curChild);
-                showControls();
-            }
+            if (type === 'swipeleft') scrollBy(1);
         }
       });
 
-    divLeft.addEventListener('click', () => {
-        if (curChild === 0) {
-            return;
-        }
-        centerCard(--curChild);
-        showControls();
-    });
+    divLeft.addEventListener('click', () => scrollBy(-1));
 
-    divRight.addEventListener('click', () => {
-        if (curChild === numChildren - 1) {
-            return;
-        }
-        centerCard(++curChild);
-        showControls();
-    });
+    divRight.addEventListener('click', () => scrollBy(1));
 
     function centerCard(child: number) {
         let card = divScroller.children[child] as HTMLDivElement;
@@ -84,5 +60,17 @@ function carousel(id: string, curChild=0) {
     function showControls() {
         divLeft.style.visibility = curChild === 0 ? 'hidden' : 'visible';
         divRight.style.visibility = curChild === numChildren - 1 ? 'hidden' : 'visible';
+    }
+
+    function scrollBy(n: number){
+        const nextChild = curChild + n;
+        console.log("nuChildren:", numChildren);
+        console.log("nextChild:", nextChild);
+        if (nextChild < 0 || nextChild >= numChildren){
+            return;
+        }
+        curChild = nextChild;
+        centerCard(curChild);
+        showControls();
     }
 }
