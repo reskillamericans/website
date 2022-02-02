@@ -329,6 +329,11 @@ If you need a PNG with transparency:
 
 <img style="width: 100%" src="/images/ra-logo.png" alt="PNG Logo">
 
+A small PNG (good for use in email signatures):
+
+<img src="/images/ra-logo-small.png" alt="PNG Logo">
+
+
 Or a PNG with just the mark-only:
 
 <img style="width: 480px" src="/images/ra-logo-box.png" alt="PNG Logo w/o Text">
