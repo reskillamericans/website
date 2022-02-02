@@ -28,7 +28,7 @@ function carousel(id: string, curChild=0) {
 
 
     //Enable Swipe on mobile devices only
-    hammer.set({enable: windowSize <= 768 ? true : false})
+    hammer.set({enable: windowSize <= 768 ? true : false});
     //Detect swipe left or right on divParent
     hammer.on("swipeleft swiperight", function(e: any) {
         const {type, isFinal} = e;

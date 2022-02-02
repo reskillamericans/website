@@ -21,7 +21,7 @@ suite("Countdown", () => {
         assert.deepEqual(c.dhms(d1), {isFuture: true, days: 0, hours: 0, minutes: 0, seconds: 0});
         assert.deepEqual(c.dhms(d2), {isFuture: true, days: 6, hours: 0, minutes: 0, seconds: 0});
         assert.deepEqual(c.dhms(d3), {isFuture: true, days: 5, hours: 12, minutes: 0, seconds: 0});
-        
+
     });
 
     test("dhms - negative dates", () => {
@@ -33,7 +33,7 @@ suite("Countdown", () => {
         assert.deepEqual(c.dhms(d1), {isFuture: false, days: 6, hours: 0, minutes: 0, seconds: 0});
         const c3 = new Countdown(d3.toISOString());
         assert.deepEqual(c3.dhms(d1), {isFuture: false, days: 5, hours: 12, minutes: 0, seconds: 0});
-    })
+    });
 
     test("isFuture", () => {
         const d1 = new Date("2022-02-07");
@@ -41,5 +41,5 @@ suite("Countdown", () => {
         const c = new Countdown(d1.toISOString());
         assert.isTrue(c.isFuture(d2));
         assert.isFalse(c.isFuture(d1));
-    })
+    });
 });
