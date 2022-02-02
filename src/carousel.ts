@@ -50,7 +50,7 @@ function carousel(id: string, curChild=0) {
                 showControls();
             }
         }
-      },);
+      });
 
     divLeft.addEventListener('click', () => {
         if (curChild === 0) {
