@@ -2,7 +2,7 @@
 title = "Testimonial of Morenike Fapojuwo"
 date = 2022-02-02T06:15:36Z
 draft = false
-order = 2
+order = 1.5
 name = "Morenike Fapojuwo"
 location = "Austin, TX"
 

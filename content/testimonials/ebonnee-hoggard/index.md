@@ -2,7 +2,7 @@
 title = "Testimonial of Ebonnee Hoggard"
 date = 2021-12-06T18:48:33-08:00
 draft = false
-order = 8
+order = 7
 name = "Ebonnee Hoggard"
 location = "Connecticut"
 
