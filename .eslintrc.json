@@ -16,6 +16,7 @@
         "@typescript-eslint"
     ],
     "rules": {
+        "curly": "error",
         "keyword-spacing": [
             "error",
             {

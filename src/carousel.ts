@@ -3,7 +3,7 @@ import Hammer from 'hammerjs';
 export { carousel };
 
 // Carousel has one child that is a horizontal band of "cards".
-function carousel(id: string, curChild=0) {
+function carousel(id: string, curChild = 0) {
     const divParent = document.getElementById(id)!;
     const hammer = new Hammer(divParent);
     const divScroller = divParent.children[0] as HTMLDivElement;
@@ -28,19 +28,20 @@ function carousel(id: string, curChild=0) {
 
 
     //Enable Swipe on mobile/tablet devices only
-    hammer.set({enable: windowSize <= 1024 ? true : false});
+    hammer.set({ enable: windowSize <= 1024 ? true : false });
     //Detect swipe left or right on divParent
-    hammer.on("swipeleft swiperight", (e) => {
-        const {type, isFinal} = e;
+    hammer.on("swipeleft swiperight", (e: HammerInput) => {
+        const { type, isFinal } = e;
 
-        //Event listener fires mutiple times. Waits until events are done.
-        if (isFinal){
-            //Check if user swipes right (image moves right)
-            if (type === 'swiperight') scrollBy(-1);
-            //Check if user swipes left (image moves left)
-            if (type === 'swipeleft') scrollBy(1);
+        //Event listener fires multiple times. Waits until events are done.
+        if (isFinal) {
+            if (type === 'swiperight') {
+                scrollBy(-1);
+            } else if (type === 'swipeleft') {
+                scrollBy(1);
+            }
         }
-      });
+    });
 
     divLeft.addEventListener('click', () => scrollBy(-1));
 
@@ -62,11 +63,11 @@ function carousel(id: string, curChild=0) {
         divRight.style.visibility = curChild === numChildren - 1 ? 'hidden' : 'visible';
     }
 
-    function scrollBy(n: number){
+    function scrollBy(n: number) {
         const nextChild = curChild + n;
         console.log("nuChildren:", numChildren);
         console.log("nextChild:", nextChild);
-        if (nextChild < 0 || nextChild >= numChildren){
+        if (nextChild < 0 || nextChild >= numChildren) {
             return;
         }
         curChild = nextChild;
