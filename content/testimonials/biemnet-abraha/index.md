@@ -2,7 +2,7 @@
 title = "Testimonial of Biemnet Abraha"
 date = 2021-12-06T18:40:54-08:00
 draft = false
-order = 10
+order = 11
 name = "Biemnet Abraha"
 location = "Kaloa, Hawaii"
 +++

@@ -2,7 +2,7 @@
 title = "Testimonial of Raynell Carmichael"
 date = 2022-01-06T19:20:54-08:00
 draft = false
-order = 5
+order = 6
 name = "Raynell Carmichael"
 location = "Los Angeles, CA"
 +++

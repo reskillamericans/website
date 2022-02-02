@@ -1,6 +1,6 @@
 +++
 title = "Testimonial of Jarla Kornegay"
-order = 8
+order = 9
 name = "Jarla Kornegay"
 location = "Atlanta, GA"
 date = 2021-12-31T17:56:52-08:00
