@@ -10,7 +10,7 @@ type DHMS = {
     hours: number,
     minutes: number,
     seconds: number
-}
+};
 
 class Countdown {
     date: Date;

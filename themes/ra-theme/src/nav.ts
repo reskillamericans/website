@@ -1,7 +1,7 @@
 export { main };
 
 function main() {
-  const nav = document.querySelector('header > nav > ul')!
+  const nav = document.querySelector('header > nav > ul')!;
   const toggle = document.querySelector('#menu-toggle')!;
 
   toggle.addEventListener('click', () => {

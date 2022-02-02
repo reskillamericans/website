@@ -175,7 +175,7 @@ async function checkUserForm(form: HTMLFormElement, collectionName: string) {
         const message = document.getElementById('message-box');
         if (message) {
             message.textContent = `We received the form you submitted on ${data.created.toDate().toLocaleString()}.`;
-            message.style.display = 'block'
+            message.style.display = 'block';
         } else {
             console.error("Page is missing message-box.");
         }

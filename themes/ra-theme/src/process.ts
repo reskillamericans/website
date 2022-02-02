@@ -5,7 +5,7 @@ type Processor = (options: Record<string, string>) => void;
 type ProcessorInfo = {
   name: string;
   [index: string]: any;
-}
+};
 
 // Singleton
 const processors: Map<string, Processor> = new Map();
