@@ -37,9 +37,11 @@ for enrollment details!
     caption="Nia Bailey completed the UI/UX Designer track in 2021." >}}
 
 {{% if-equal enroll false %}}
-# Do you share our mission to help underrepresented minorities get access to training so that they can build careers in tech?
 
-<a class="button-like standout" href="/partner" target="_blank">Partner with Us</a>
+## Do you share our mission to help underrepresented minorities get access to training so that they can build careers in tech?
+
+<a class="button-like standout" href="/partner">Partner with Us</a>
+
 {{% /if-equal %}}
 
 {{% /section %}}
