@@ -9,6 +9,6 @@ tags = []
 
 # News and Blog
 
-Scroll below to learn about town halls, jobs fairs, news and other ways that we are helping our participants create a career path in tech.
+Scroll below to learn about town halls, job fairs, news and other ways that we are helping our participants create a career path in tech.
 
 {{% /section %}}
