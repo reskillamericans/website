@@ -36,6 +36,9 @@ usage () {
     show_help "  --" $ALL_FLAGS
     echo
     show_help "  " $ALL_COMMANDS
+
+    echo -e "\n  status, logs, and stop can also be used with no command-line to operate"
+    echo "  on all recent daemons."
 }
 
 source $TOOLS_DIR/bash-helper
