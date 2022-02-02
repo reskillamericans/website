@@ -32,9 +32,7 @@ for enrollment details!
 <a class="button-like standout" href="/enroll">Join Our Next {{< term cohort caps >}}</a>
 {{% /if-equal %}}
 
-{{< image class="hero high" src="nia.jpg" resize="1080x jpg"
-    alt="Nia Bailey standing in front of the Public Library in New York"
-    caption="Nia Bailey completed the UI/UX Designer track in 2021." >}}
+{{< youtube id="ATcXz4ZmnTQ" autoplay="true" color="white" yt_start="12" yt_end="24">}}
 
 {{% if-equal enroll false %}}
 
