@@ -55,6 +55,9 @@ header {
         inset: 0 0 0 30%;
         background-color: hsla(0, 0%, 100%, 0.5);
         @include webkit-prefix('backdrop-filter', 'blur(15px)');
+        @supports not (backdrop-filter: none) {
+          background-color: rgba(255, 255, 255, 0.98);
+        } 
         flex-direction: column;
         gap: 2rem;
         justify-content: start;
