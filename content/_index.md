@@ -32,7 +32,9 @@ for enrollment details!
 <a class="button-like standout" href="/enroll">Join Our Next {{< term cohort caps >}}</a>
 {{% /if-equal %}}
 
-{{< youtube id="NklohK2beRY" autoplay="true" loop="true" >}}
+<div style="max-width: 800px; margin: auto;">
+{{< youtube NklohK2beRY >}}
+</div>
 
 {{% if-equal enroll false %}}
 
