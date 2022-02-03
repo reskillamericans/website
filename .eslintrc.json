@@ -16,6 +16,8 @@
         "@typescript-eslint"
     ],
     "rules": {
+        "spaced-comment": [ "error", "always" ],
+        "curly": "error",
         "keyword-spacing": [
             "error",
             {
