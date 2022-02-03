@@ -47,9 +47,12 @@ The GitHub CI will run tests to ensure that the build is successful, and the
 generated HTML is valid.  Once a code review by another contributor is done, the
 Pull Request can be merged into the `main` branch.
 
-We generally prefer that all code changes are `rebased` rather than `merged` so
-we have a linear commit history in the main branch.  Please be sure
-that your PR branch is rebased to the HEAD of main before submitting it.
+We generally pref that merges to the main branch are either:
+
+- **Rebased** - If you want to preserve the commit history of the PR.
+- **Merged and Squashed** - If the commit history had many revisions, it can
+  be easier to view history if they are all collapsed into a single commit
+  once moved to the main branch.
 
 ### One Pull Request - One Concern
 
@@ -78,7 +81,7 @@ All the content for the site is stored in
 [content](https://github.com/reskillamericans/website/tree/main/content)
 directory.
 
-*Please format paragraph text to line break at 80 characters.*
+***Please format paragraph text to line break at 80 characters.***
 
 We augment some of the features of MarkDown with the addition [Hugo
 Shortcodes](https://gohugo.io/content-management/shortcodes/).  The primary ones
@@ -221,6 +224,7 @@ like this:
 title = "Testimonial of Ethel Mertz"
 date = 2022-01-12T12:50:21-08:00
 draft = false
+order = 7.5
 
 name = "Ethel Mertz"
 location = "City, State"
@@ -235,6 +239,11 @@ quotation as plain text as the body of `index.md`.
 You should also upload a profile picture of the person and store it in the same
 directory, naming it `profile.jpg`.  Please be sure to save the profile picture
 in the maximum resolution available, since Hugo will downscale it appropriately.
+
+The order these appear in the carousel is given by the numerical order of the
+`order` front-matter property.  *Note: This does NOT have to be an integer, so
+if you want to insert a Testimonial between to others, just pick a number
+half-way between the two.*
 
 In rare cases, we have been given an image that was taken with a rotation in it.
 The rescaling process removes that knowledge, and so it will display sideways!
@@ -294,6 +303,9 @@ The `create-video-content-files.mjs` command will regenerate ALL the video
 content files in the `content/videos` directory by combining the information in
 the `video-metadata.toml` file with the `youtube-videos.json` file.
 
+**DO NOT EDIT Markdown files (index.md files) in the `content/videos` directory.
+Any changes you make will be lost when the site is rebuilt.**
+
 A sample metadata entry for a video looks like this:
 
 ```
@@ -314,6 +326,27 @@ quote = "This is a sample pull-quote for the video."
 All but the filename will be added to the [Front
 Matter](https://gohugo.io/content-management/front-matter/) of the corresponding
 Markdown file.
+
+## Typescript and Coding Conventions
+
+We do not have a formal Style Guide - but the [Google
+One](https://google.github.io/styleguide/tsguide.html) is probably close.
+
+Typescript code is located in two places in the repo: `/src` and
+`/themes/ra-theme/src`.  The first one is compiled with esbuild into one big
+`reskill.js` bundle.  The individual files in them are compiled using the
+TypeScript compiler into separate ES6-modules.  That way, they can be each
+included only in the pages that require them (via:
+
+```html
+<script type=module src="/scripts/my-script.js"></script>
+```
+
+Or, they can be imported into another script via:
+
+```js
+import { ASymbol } from '/scripts/my-script.js';
+```
 
 ## Our Logo
 
