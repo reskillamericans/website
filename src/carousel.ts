@@ -25,11 +25,11 @@ function carousel(id: string, curChild = 0) {
         centerCard(curChild);
     });
 
-    //Detect swipe left or right on divParent
+    // Detect swipe left or right on divParent
     hammer.on("swipeleft swiperight", (e: HammerInput) => {
         const { type, isFinal } = e;
 
-        //Event listener fires multiple times. Waits until events are done.
+        // Event listener fires multiple times. Waits until events are done.
         if (isFinal) {
             if (type === 'swiperight') {
                 scrollBy(-1);
@@ -61,8 +61,6 @@ function carousel(id: string, curChild = 0) {
 
     function scrollBy(n: number) {
         const nextChild = curChild + n;
-        console.log("nuChildren:", numChildren);
-        console.log("nextChild:", nextChild);
         if (nextChild < 0 || nextChild >= numChildren) {
             return;
         }
