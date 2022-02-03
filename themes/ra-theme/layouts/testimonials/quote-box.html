@@ -8,10 +8,10 @@
     {{- with $.Page.Params.rotation -}}
       {{- $sizing = printf "%s r%d" $sizing . -}}
     {{- end -}}
-    <img src="{{ (.Resize $sizing).Permalink }}" alt="{{ .Name }}">
+    <img src="{{ (.Resize $sizing).Permalink }}" alt="{{ .Name }}" draggable="false">
   {{ else }}
     {{ warnf "No profile image found for %s" .File }}
-    <img src="{{ ((resources.Get "images/anon-profile.png").Resize "200x").Permalink }}" alt="Photo missing.">
+    <img src="{{ ((resources.Get "images/anon-profile.png").Resize "200x").Permalink }}" alt="Photo missing." draggable="false">
   {{ end }}
   <div>
     {{ .Content }}
