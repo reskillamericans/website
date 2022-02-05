@@ -27,7 +27,10 @@ type LinkedInAuth = {
   expires_in: number;
 }
 
-const cors = corsBuilder(['https://reskill-learning.web.app', 'http://192.168.4.68:5500']);
+const cors = corsBuilder([
+  'https://reskillamericans.org',
+  'https://reskill-learning.web.app',
+  'http://192.168.4.68:5500']);
 
 // Keep this function simple by having all the params (except the secret)
 // stored in the browser code.  So this function just adds the secret and
