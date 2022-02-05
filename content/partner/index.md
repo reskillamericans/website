@@ -20,7 +20,8 @@ of our program.
 
 {{< image class="hero high"
           alt="Woman working at a laptop in a library."
-          src="nia-smiling.jpg" resize="1080x jpg" >}}
+          src="nia-smiling.jpg" resize="1080x jpg"
+          caption="Nia Bailey completed our 2021 program as a UI/UX designer." >}}
 
 {{% /section %}}
 
