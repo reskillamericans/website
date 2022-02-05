@@ -82,7 +82,7 @@ program with “confidence and enough work to build a portfolio.”
 
 ![Century Health](images/century-health-1.jpg)
 
-Team: Jarla Kornegay, Christian Villaroel, Tasha Taylor, Micheleine Beaucejour<br>
+Team: Jarla Kornegay, Christian Villaroel, Tasha Taylor, Michale Bailey<br>
 [Century Health](https://medical-aids-fe-1.netlify.app/index.html)
 
 Jarla Kornegay presented The Century Health App on behalf of her team. The app
