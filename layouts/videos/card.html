@@ -11,8 +11,8 @@
 
   {{ if not (eq $file "none") }}
     {{- $image := $file.Resize "400x" -}}
-      <a href="https://youtu.be/{{ $.Params.videoId }}" target="_blank">
-        <img src="{{ $image.Permalink }}" alt="{{ $.Title }}">
+      <a href="https://youtu.be/{{ $.Params.videoId }}" target="_blank" draggable="false">
+        <img src="{{ $image.Permalink }}" alt="{{ $.Title }}" draggable="false">
       </a>
   {{- else -}}
     {{ warnf "No thumbnail found for video-card %s" .Title }}
