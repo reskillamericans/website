@@ -2,14 +2,14 @@ div.quote-box {
   display: flex;
   box-sizing: border-box;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   align-content: flex-start;
   justify-content: center;
   gap: 2rem;
   overflow: hidden;
 
   color: $contrast-color;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 300;
   line-height: 1.5em;
 
