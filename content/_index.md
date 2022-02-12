@@ -125,7 +125,7 @@ need is a computer with a web browser.
 
 {{% section centered light-background %}}
 
-# Testimonials {#head-testimonials}
+## Testimonials {#head-testimonials}
 
 {{% /section %}}
 
