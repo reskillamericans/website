@@ -4,7 +4,7 @@ date = 2021-12-06T18:37:03-08:00
 draft = false
 order = 3
 name = "Alexandria Baynes"
-location = "Dallas, Texas"
+location = "Dallas, TX"
 rotation = 270
 
 # Don't publish full size image by default
