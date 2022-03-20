@@ -4,7 +4,7 @@ date = 2021-12-06T18:59:03-08:00
 draft = false
 order = 16 
 name = "Pia Torain"
-location = "Henderson, Nevada"
+location = "Henderson, NV"
 +++
 
 When I think about where I was last March and where I am now as a Frontend Web
