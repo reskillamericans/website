@@ -1,7 +1,7 @@
 +++
 title = "Femi Akinde"
 slug = "femi-akinde"
-jobTitle = "Co-Founder"
+jobTitle = "Founder"
 order = 1
 group = "Team"
 draft = false
