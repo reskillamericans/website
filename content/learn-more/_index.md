@@ -40,6 +40,7 @@ built a portfolio of work to show future employers.
 - You must self-identify as a historically underrepresented minority.
 - You must be eligible to work in the United States.
 - You must have a computer and internet access.
+- You must have a LinkedIn profile.
 
 </div>
 
