@@ -30,16 +30,17 @@ stop = "h2"
 
 ### When can I enroll in the next {{< term cohort >}}?
 
-We expect to launch our next session in the Spring of 2022, and will be
-announcing the exact date shortly. Please check our homepage regularly for an
-update as when we announce the 2022 date, we will also post the enrollment form.
+We expect to launch our next session in the Summer of 2022, and will be 
+announcing the exact date shortly. Please check our homepage regularly for 
+an update as when we announce the 2022 date, we will also post the enrollment form.
+
 
 {{% /if-equal %}}
 
 ### What do I need to be a part of the program?
 
-You need a computer with internet access, a passion to learn, determination to
-stick with it, and legal authorization to work in the U.S.
+You need a computer with internet access, a LinkedIn profile, 
+legal authorization to work in the U.S., and a passion to learn!
 
 ### What does the program cost?
 
@@ -111,6 +112,10 @@ mentors will meet you at that level and work with you to address your questions.
 While it is not possible to become an expert in just seven months (expertise
 takes years of experience), we will give you everything you need to get started
 and the resources required to grow.
+
+### What if I don't have a LinkedIn profile?
+
+If you don't have a LinkedIn profile, you will need to create one in order to enroll in our program. Your profile should include your photo, along with any professional background, skills or education you might have. Please note, it doesn't matter what this is: once you start our program, we will work with you to help you enhance your profile as part of our job search support. For additional tips on how to build a good LinkedIn profile, please watch our session with Career Coach and LinkedIn Strategist Teddy Burriss <a  href="https://www.youtube.com/watch?v=iubjqvaqZHM" target="_blank">here</a> .
 
 ## Program Details
 
