@@ -22,8 +22,8 @@ historically **underrepresented racial minorities** across the U.S.
 {{% if-equal enroll false %}}
 
 <p class="footnote">
-We will announce a date for our 2022 session shortly. Please watch this space
-for enrollment details!
+<b>
+We’ve enhanced our program for 2022 and plan to launch this summer! We’re announcing an enrollment date shortly:  <br>please watch this space, and <a href="/#mailing" >join our mailing list </a> to stay updated on our latest news!</b>
 </p>
 
 {{% /if-equal %}}
