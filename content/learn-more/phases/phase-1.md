@@ -9,9 +9,9 @@ layout = "document"
 
 ## Skills Building
 
-### (12 weeks)
+### (20 weeks)
 
-In this phase, we focus on project-based learning: we define a series of projects that you will need to complete in order to demonstrate your mastery of newly-acquired skills.
+Everyone comes to our program from a range of industries and experiences, and we’ve found that your diverse backgrounds can enhance your collective training. You will become part of a small group to enhance your learning and to support each other. Each learning group will have a TA to provide additional support. In this phase, we focus on building skills and learning through exercises and projects.
 
 <div class="wrapped-boxes">
 
@@ -21,18 +21,11 @@ In this phase, we focus on project-based learning: we define a series of project
 
 ## Web Development
 
-If you enroll in the Web Development Track, you will learn everything you need
-to know about creating web sites and applications. We begin with the basics of
-HTML and CSS, and you'll build your first web page projects.
+If you enroll in the Web Development Track, you will learn everything you need to know about creating websites and applications. Throughout this phase, you will cement your learning by working on an individual project which will be implemented in three parts as you learn the skills to develop the front end of the application, the back end with static data, and the back end with integration to a database.
 
-We then continue on to in-depth instruction in the JavaScript programming
-language. As before, we rely heavily on (fun) projects along the way to help
-cement concepts and build your confidence.
+We begin with the basics of HTML and CSS, when you build the front end of your project. We then continue with in-depth instruction in the JavaScript programming language. As before, we rely heavily on exercises along the way to help cement concepts and build your confidence. Next, you will learn server-side technologies necessary for web applications that store and process data. Finally, you will add a database to implement data storage and user authentication, and your individual project will be complete!
 
-Finally, we move to the back-end and learn how to implement a web application
-server by implementing data storage and user authentication.
-
-By this time you'll be ready to build a complete web application.
+Your hosted web application will include user authentication, user-provided data, use of a server-side database and web hosting. This project should be an excellent addition to your portfolio to show potential employers.
 
 {{% /image-box %}}
 
@@ -53,8 +46,10 @@ formulate a design from wire-framing through high-fidelity prototypes.
 You will have extensive practice using the user-interface design app, Figma, to
 communicate your designs to stakeholders and developers.
 
+You will complete multiple small design projects for different types of industries. This will be a great addition to your portfolio to show potential employers!
+
 {{% /image-box %}}
 
 </div>
 
-***You must complete this phase before proceeding to your final individual project.***
+***You must complete this phase before proceeding to Phase II***
