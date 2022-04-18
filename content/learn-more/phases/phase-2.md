@@ -7,25 +7,20 @@ order = 2
 layout = "document"
 +++
 
-## Individual Projects
+## Team Projects
 
-### (6 weeks) {#6-weeks-2}
+### (4 weeks)
 
 {{% image-box
     alt="Stylized drawing of two people collaborating on a web site."
     src="Phase-1.png" %}}
 
-In Phase 2, you will take everything you've learned from the classroom,
-exercises, and small projects in Phase I and apply it to an individual project.
+As a final project, you will be paired into teams to work on a project together. In this phase, we will integrate our Product Design and Web Development tracks.
 
-Your final individual project will be a complete hosted application.  We will
-work with you to suggest a project, or help you to define your own.
+You will be responsible for keeping your team on track and for defining your goals and milestones; you will have weekly mentor check-ins to help you get unblocked.
 
-Each project will include user authentication, user-provided data, use of a
-server-side database, and web hosting. This project should be an excellent
-addition to your portfolio to show to potential employers.
+We will ask each team to present their finished projects at a series of Demo Day events to cap off the program.
 
-***We require completion of an individual project before assigning you to a
-project team in Phase&nbsp;3.***
+***All participants who successfully complete these Phase II projects will be issued a Certificate of Completion in Web Development or in Product Design.***
 
 {{% /image-box %}}
