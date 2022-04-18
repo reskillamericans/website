@@ -7,24 +7,17 @@ order = 0
 layout = "document"
 +++
 
-## Self-Paced Orientation
+## Orientation
 
-### (approximately 4 weeks)
+### (Approximately 4 weeks)
 
 {{% image-box
     alt="Drawing of an online meeting on a tablet computer."
     src="Working_01.png" %}}
 
-Everyone comes to our program from a range of industries and experiences, and
-we've found that your diverse backgrounds can enhance your collective training.
-In our Intro Phase, you will be paired with a small group of your peers with
-complementary backgrounds in a "learning pod" to get to know each other.
+This phase is designed to introduce you to the structure of the training program and to prepare you for success in the following phases. You will learn about our two tracks and the career opportunities for each to help you decide which is best for you and to confirm your track. You will get a hands-on introduction to the essential tools needed for UI design or for creating a webpage.
 
-This Phase is designed to familiarize you with the tools and the materials that
-we'll be studying later.  This is also a good time to confirm your track.
-
-Not sure whether you even want to be a software developer? Our Intro Phase will
-help you figure that out!
+Not sure whether you even want to be a designer or software developer? The Intro Phase will help you figure that out! Learning the foundational concepts of your track and the fundamentals of programming will give you a jumpstart for the next phase of your training.
 
 ***You must actively participate in this phase to proceed to Phase I.***
 
