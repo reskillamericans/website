@@ -112,7 +112,7 @@ on time.
 
 ## Enrolling is Easy
 
-No credit check, entrance exam, or prior knowledge/experience required. All you need is a computer with a web browser, and a LinkedIn profile. (Don’t have a LinkedIn profile? Watch <a href="https://www.youtube.com/watch?v=iubjqvaqZHM" target="_blank">this video </a> with LinkedIn strategist, Teddy Burriss to get some topline tips)
+No credit check, entrance exam, or prior knowledge/experience required. All you need is a computer with a web browser, and a LinkedIn profile. (Don’t have a LinkedIn profile? Watch <a href="https://www.youtube.com/watch?v=iubjqvaqZHM" target="_blank">this video </a> with LinkedIn strategist, Teddy Burriss, to get some topline tips)
 
 </div>
 
