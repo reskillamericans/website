@@ -33,6 +33,24 @@ future for all.
 
 {{% section centered %}}
 
+## What Some of Our Donors are Saying:
+
+*"Reskill Americans provides a creative, cost-effective model for tech training. I think it has the potential to disrupt how we train our workforce, and, at the same time, bring greater economic equality to our society."*
+
+**--Sung Rhee, CEO, Optimal**
+
+{{% /section %}}
+
+{{% section centered %}}
+
+*"I believe in Reskill Americans, and that's why I donated to the nonprofit. It was the least I could do when they have given me a lot for free!"*
+
+**-Jamila, 2021 Reskill Americans Graduate**
+
+{{% /section %}}
+
+{{% section centered %}}
+
 ## Donate Today
 
 Reskill Americans is a 501(c)(3) non-profit organization.<br>
