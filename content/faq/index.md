@@ -39,8 +39,7 @@ an update as when we announce the 2022 date, we will also post the enrollment fo
 
 ### What do I need to be a part of the program?
 
-You need a computer with internet access, a LinkedIn profile, 
-legal authorization to work in the U.S., and a passion to learn!
+You must self-identify as an underrepresented racial minority, be at least 18 years old, and have: a computer with internet access, a LinkedIn profile with a photo, and legal authorization to work in the U.S.
 
 ### What does the program cost?
 
@@ -74,8 +73,7 @@ consider you.
 
 ### Is there an age limit?
 
-We accept anyone 16 and over. But adults under the age of 18 must have their
-parents/guardian complete a parental consent waiver.  There is no age limit.
+We accept anyone who is at least 18 years old. There is no age limit.
 
 ### Will there be materials or books that we need to purchase?
 
