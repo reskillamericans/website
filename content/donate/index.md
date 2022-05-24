@@ -30,14 +30,25 @@ future for all.
 *Our Co-Founder Femi Akinde discusses the power of providing access to tuition-free software development training, citing our 2021 enrollment statistics. The video was filmed as part of Microsoft’s internal speaker series, Outside in, and also featured Seattle Seahawks Coach Pete Carroll.*
 
 {{% /section %}}
-
 {{% section centered %}}
 
 ## What Some of Our Donors are Saying:
 
+{{% /section %}}
+
+{{% section centered %}}
+
+*"Reskill Americans democratizes access to careers in tech by eliminating pre-existing barriers to training, providing it tuition-free, and scaling up resources to train as many underrepresented minorities as possible. Many organizations are trying to increase diversity in tech, but Reskill Americans has the potential to truly level the playing field. If you have the ability to donate, I’ll hope you’ll support Reskill Americans."*
+
+**--<a href="https://corazon.com/team/sam-yagan/" target="_blank">Sam Yagan</a>, Internet entrepreneur and co-founder of Corazon Capital**
+
+{{% /section %}}
+
+{{% section centered %}}
+
 *"Reskill Americans provides a creative, cost-effective model for tech training. I think it has the potential to disrupt how we train our workforce, and, at the same time, bring greater economic equality to our society."*
 
-**--Sung Rhee, CEO, Optimal**
+**--<a href="https://www.optimal.com/team" target="_blank">Sung Rhee</a>, CEO, Optimal**
 
 {{% /section %}}
 
