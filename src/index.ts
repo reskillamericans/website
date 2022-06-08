@@ -155,7 +155,31 @@ async function submitUserForm(
     data.name = user.displayName!;
 
     const ref = await addDoc(collection(db, collectionName), data);
+
+    //send the email here
+    //send email to RA and inform them that a new volunteer just signed up
+    //make sure to check if the user is a volunteer or not before sending the email to RA
+    // if collectName is volunteers, send email to RA
+    if(collectionName === "volunteers"){
+
+        sendEmail(data.email, "A new Volunteer just signed up on your website", "writ the body of the email somwerhere here")
+
+    }
+   
     console.log(`Submitted at: ${ref.id}`);
+}
+
+function sendEmail(email: string, subject: string, body: string) {
+
+    const emailRef = collection(db, "emails");
+    const data = {
+        email: email,
+        subject: subject,
+        body: body,
+        created: Timestamp.now()
+    };
+
+    addDoc(emailRef, data);
 }
 
 async function checkUserForm(form: HTMLFormElement, collectionName: string) {
