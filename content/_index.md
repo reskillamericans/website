@@ -46,7 +46,15 @@ We’ve enhanced our program for 2022 and plan to launch this summer! We’re an
 
 {{% /section %}}
 
+{{% section centered light-background %}}
 
+## Testimonials {#head-testimonials}
+
+{{% /section %}}
+
+{{< section light-background >}}
+{{< testimonials >}}
+{{< /section >}}
 {{% section contrast centered prep-overlap %}}
 
 ## Learning Tracks
@@ -122,15 +130,7 @@ No credit check, entrance exam, or prior knowledge/experience required. If you s
 {{% /section %}}
 
 
-{{% section centered light-background %}}
 
-## Testimonials {#head-testimonials}
-
-{{% /section %}}
-
-{{< section light-background >}}
-{{< testimonials >}}
-{{< /section >}}
 
 {{% if-equal enroll true %}}
 
