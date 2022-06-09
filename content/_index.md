@@ -56,12 +56,6 @@ We’ve enhanced our program for 2022 and plan to launch this summer! We’re an
 {{< testimonials >}}
 {{< /section >}}
 
-{{% section centered contrast %}}
-
-<a class="button-like " href="/learn-more">Learn More</a>
-
-{{% /section %}}
-
 
 {{% section side-by-side %}}
 
@@ -131,6 +125,12 @@ mentorship.
 {{% /image-box %}}
 
 {{% /section %}}
+{{% section centered contrast %}}
+
+<a class="button-like " href="/learn-more">Learn More</a>
+
+{{% /section %}}
+
 
 {{% if-equal enroll true %}}
 
