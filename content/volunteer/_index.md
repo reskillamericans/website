@@ -120,7 +120,7 @@ Please complete this Volunteer Application and we will be in touch shortly. Than
       minorities.</p>
     <label><input name="minority" type="radio" value="none">Non-minority</label>
     {{< minority-options >}}
-    <p class="note">See our <a href="/faq/#minority" target="_blank">FAQ</a> for our definition of
+    <p class="note">See our <a href="/faq/#minority" target="_blank">FAQ </a> for our definition of
       underrepresented minorities.</p>
   </fieldset>
 </li>
