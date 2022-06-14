@@ -20,7 +20,7 @@ Thank you for your interest in volunteering with Reskill Americans. Whether you 
 Time commitment: 1- 2 hours per week for 7 months
 Timeframe: Starting in Fall 2022
 We seek volunteers that have technical expertise in product design and/or full
-stack web development. Whether you are an industry veteran, or someone who has
+stack web development. Whether ysdsou are an industry veteran, or someone who has
 just completed a boot camp yourself, we could use your help!
 
 <b>Mentor a Graduate:</b> Share your technical expertise and experience to mentor our graduates as they navigate the job search.
