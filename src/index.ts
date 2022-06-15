@@ -137,6 +137,29 @@ function main() {
         });
     }
 }
+// if user submits the form, sendemail to the admin notification email address telling him someone has signed up. also, send the admin the user email, subject, and body.
+async function checkUserForm(form: HTMLFormElement, collectionName: string) {
+    const user = auth.currentUser;
+    if (user) {
+        const userDoc = await getDocs(collection(db, collectionName), where("uid", "==", user.uid));
+        if (userDoc.length === 0) {
+            const formData = new FormData(form);
+            const data = {
+                created: Timestamp.now(),
+                email: user.email,
+                name: user.displayName,
+                uid: user.uid,
+            }
+            for (const [key, value] of formData.entries()) {
+                data[key] = value;
+            }
+            await addDoc(collection(db, collectionName), data);
+        }   else {
+            console.log("User already exists");
+        }
+    }
+}
+
 
 async function submitUserForm(
     data: Record<string, string | string[] | Timestamp>,
