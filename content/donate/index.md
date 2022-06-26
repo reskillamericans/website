@@ -35,6 +35,8 @@ future for all.
 
 ## What Some of Our Donors are Saying:
 
+<img alt="Drawing of a team meeting on a tablet."
+    src="./Sung.png" style="width:300px;height:300px;object-fit:contain;"> <br/>
 *"Reskill Americans provides a creative, cost-effective model for tech training. I think it has the potential to disrupt how we train our workforce, and, at the same time, bring greater economic equality to our society."*
 
 **--Sung Rhee, CEO, Optimal**
@@ -42,7 +44,8 @@ future for all.
 {{% /section %}}
 
 {{% section centered %}}
-
+<img alt="Drawing of a team meeting on a tablet."
+    src="./profiles.png" style="width:300px;height:300px;object-fit:contain;"> <br/>
 *"I believe in Reskill Americans, and that's why I donated to the nonprofit. It was the least I could do when they have given me a lot for free!"*
 
 **-Jamila, 2021 Reskill Americans Graduate**
