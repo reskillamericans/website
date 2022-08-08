@@ -3,7 +3,9 @@ title = "Testimonial of Alex Maldanado"
 date = 2022-07-02T08:54:42+01:00
 draft = false
 order=0.001
-name = "Alex Maldanado"
+
+name = "Alex Maldonado"
+
 location = "Rancho Cucamonga, CA"
 
 # Don't publish full size image
