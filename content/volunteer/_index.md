@@ -13,12 +13,14 @@ name = "form"
 
 {{< message-box >}}
 
-Thank you for your interest in volunteering with Reskill Americans.  We are
-looking for volunteer mentors to meet regularly with our participants during the
-course of our seven-month training program.
+Thank you for your interest in volunteering with Reskill Americans. Whether you are an industry veteran or someone who has just completed a boot camp yourself, we would love your help! We seek volunteer mentors with technical expertise in UI/UX product design or full stack web development in the following areas:
+
+*Mentor a Participant:* Share your technical expertise and experience to mentor our participants throughout our seven-month training program.
+Time commitment: 1- 2 hours per week for 7 months
+Timeframe: Starting in Fall 2022
 
 We seek volunteers that have technical expertise in product design and/or full
-stack web development. Whether you are an industry veteran, or someone who has
+stack web development. Whether ysdsou are an industry veteran, or someone who has
 just completed a boot camp yourself, we could use your help!
 
 We are asking for a minimum commitment of two hours per week, over a period of
