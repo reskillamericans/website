@@ -3,11 +3,11 @@ title = "Testimonial of Alex Maldanado"
 date = 2022-07-02T08:54:42+01:00
 draft = false
 order=0.001
-<<<<<<< HEAD
+<<<<<<<<< Temporary merge branch 1
 name = "Alex Maldanado"
-=======
+=========
 name = "Alex Maldonado"
->>>>>>> d20cb8b26e710adc444d1f89265b33c16d84ab0d
+>>>>>>>>> Temporary merge branch 2
 location = "Rancho Cucamonga, CA"
 
 # Don't publish full size image

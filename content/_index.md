@@ -19,29 +19,74 @@ Reskill Americans is a nonprofit founded by tech veterans that provides
 tuition-free software development training, mentorship and community for
 historically **underrepresented racial minorities** across the U.S.
 
+
 {{% if-equal enroll false %}}
 
+<<<<<<< HEAD
 <p class="footnote">
 <b>
 We’ve enhanced our program for 2022 and plan to launch this fall! We’re announcing an enrollment date shortly:  <br>please watch this space, and <a href="/#mailing" >join our mailing list </a> to stay updated on our latest news!</b>
 </p>
+=======
+## Are you an underrepresented racial minority looking to build a career in tech?
+>>>>>>> 3904190b71c0d6a5d58c9145594e4c10b4ad5de7
+
+ # Enroll in our
+ 
 
 {{% /if-equal %}}
 
-{{% if-equal enroll true %}}
-<a class="button-like standout" href="/enroll">Join Our Next {{< term cohort caps >}}</a>
-{{% /if-equal %}}
+{{% /section %}}
 
-<div style="max-width: 800px; margin: auto;">
-{{< youtube V3vqrYyqFXo >}}
+
+{{% section side-by-side %}}
+
+<div>
+
+## FREE TECH TRAINING 
+
+If you self-identify as a historically underrepresented minority, then
+our program is completely free for you. We are a 501(c)(3) non-profit
+organization funded by individual and corporate donors.
+
+## Learn from<br>Anywhere, Anytime
+
+Our course is entirely online. Once your {{< term cohort >}} begins, you can
+participate on a flexible schedule, as long as you submit your assignments
+on time.
+
+## Enrolling is Easy
+No credit check, entrance exam, or prior knowledge or experience required. If you self-identify as an underrepresented minority, all you need is a computer with Internet access, the ability to legally work in the U.S., and an accurate LinkedIn profile and photo. (Don’t have a LinkedIn profile?  Watch<a href="https://www.youtube.com/watch?v=iubjqvaqZHM" target="_blank"> this video </a> with LinkedIn strategist, Teddy Burriss, to get some topline tips)
+
 </div>
+
+{{< image alt="Drawing of a team meeting on a tablet."
+    src="Working_01.png" resize="800x" >}}
+
+{{% /section %}}
+{{% section centered %}}
+<a class="button-like standout" href="/">Enroll Now</a>
+{{% /section %}}
+
+
+{{% section centered %}}
+
+{{% if-equal enroll false %}}
+## <a href="/about"> WHO WE ARE</a>
+{{% /if-equal %}}
+
+
+
+A nonprofit founded by tech veterans who want to democratize access to careers in tech by training as many underrepresented minorities as possible
+
 
 {{% if-equal enroll false %}}
 
-## Do you want to help underrepresented minorities access careers in tech?
 
-<a class="button-like standout" href="/partner">Partner with Us</a>
 
+
+<a class="button-like standout" href="/learn-more">Learn More</a>
+<p class="timer" id="demo"></p>
 {{% /if-equal %}}
 
 {{% /section %}}
@@ -84,6 +129,22 @@ No credit check, entrance exam, or prior knowledge/experience required. If you s
 
 {{% /section %}}
 
+
+
+{{% section centered light-background %}}
+
+## Testimonials {#head-testimonials}
+
+{{% /section %}}
+
+{{< section light-background >}}
+{{< testimonials >}}
+{{< /section >}}
+{{% section centered %}}
+<div style="max-width: 800px; margin: auto;">
+{{< youtube V3vqrYyqFXo >}}
+</div>
+{{< /section >}}
 
 
 {{% section contrast centered prep-overlap %}}
@@ -132,15 +193,16 @@ mentorship.
 {{% /section %}}
 
 
-{{% if-equal enroll true %}}
+{{% if-equal enroll false %}}
+
+
 
 {{% section centered %}}
 
-# Partner with Us
+# Come Reskill With Us!
 
-We are seeking partners in the tech industry that share our mission to help underrepresented minorities get access to training so they can build careers in technology.
 
-<a class="button-like standout" href="mailto:{{< site-param email >}}" target="_blank">Contact Us</a>
+<a class="button-like standout" href=''>Enroll Now</a>
 
 {{% /section %}}
 
