@@ -22,8 +22,8 @@ historically **underrepresented racial minorities** across the U.S.
 {{% if-equal enroll false %}}
 
 <p class="footnote">
-<b>
-We’ve enhanced our program for 2022 and plan to launch this summer! We’re announcing an enrollment date shortly:  <br>please watch this space, and <a href="/#mailing" >join our mailing list </a> to stay updated on our latest news!</b>
+<b style="color:rgb(2, 2, 95) !important; font-size:25px;">
+We plan to launch our next cohort for Fall 2022.<a href="/#mailing" > Sign up </a> to be notified of when our enrollment opens!.  
 </p>
 
 {{% /if-equal %}}
