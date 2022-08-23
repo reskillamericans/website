@@ -23,7 +23,7 @@ historically **underrepresented racial minorities** across the U.S.
 
 <p class="footnote">
 <b style="color:rgb(2, 2, 95) !important; font-size:25px;">
-We plan to launch our next cohort for Fall 2022.<a href="/#mailing" > Sign up </a> to be notified of when our enrollment opens!.  
+Our next program will begin on October 3, 2022! Enrollment is opening very soon;  <a href="/#mailing" >  Sign up </a>  here to be notified so you know when to enroll!
 </p>
 
 {{% /if-equal %}}
