@@ -139,7 +139,35 @@ div.content {
     vertical-align: super;
     font-weight: bold;
   }
+.header-text{
+  color: #3C64B1;
+  margin-top: 110px;
+  line-height: 6px;
+  @media (max-width: $break-width) {
+    line-height: 40px;
+  }
+}
+.header-footnote{
 
+font-style: normal;
+font-weight: 300;
+font-size: 26px;
+line-height: 130%;
+/* or 39px */
+width: 40%;
+margin: auto;
+margin-bottom: 50px;
+text-align: center;
+letter-spacing: 0.3px;
+
+color: #121928;
+@media (max-width: $break-width) {
+  width: 98%;
+}
+}
+   @media (max-width: $break-width) {
+      padding-inline: 1rem;
+    }
   .footnote {
     font-size: 0.8em;
     line-height: 1.2em;
@@ -226,13 +254,16 @@ div.content {
 
   // Allow for overlapping section after this one.
   &.prep-overlap {
-    padding-bottom: 10rem;
+    padding-bottom: 15rem;
+    padding-top: 6rem;
   }
 
   &.overlap {
     margin-top: -10rem;
     background-color: transparent;
+   
   }
+ 
 
   &.document {
     max-width: 800px;
@@ -260,7 +291,44 @@ div.content {
     }
   }
 }
+.leftoverlap{
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  padding: 26px 0px;
+  width: 80%;
+  margin: auto;
+  margin-top: -10rem;
+  box-shadow: -20px 20px 40px rgba(0, 0, 0, 0.16);
+  border-radius: 17px;
+}
+#full-stack{
+  font-style: normal;
+font-weight: 700;
+font-size: 30px;
+margin: 0;
+padding-top: 20px;
+/* identical to box height, or 39px */
 
+letter-spacing: 0.3px;
+
+color: #121928;
+  text-align: left;
+}
+#design{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  margin: 0;
+  padding-top: 20px;
+
+letter-spacing: 0.3px;
+
+color: #121928;
+  text-align: left;
+}
+.leftimage{
+  padding-bottom: 200px;
+}
 .social-links {
   display: flex;
   gap: 1rem;
@@ -287,6 +355,7 @@ div.image-box {
   border-radius: 8px;
   min-width: 250px;
   min-height: 150px;
+  padding-bottom: 50px;
   background-color: white;
   font-size: 16px;
   line-height: 1.5em;
@@ -335,6 +404,67 @@ div.image-box {
   }
 }
 
+div.image-box-home {
+  // Reset font color and weight in case we are nested in a contrast section.
+  color: $main-text-color;
+  font-weight: 400;
+
+  border-radius: 8px;
+  min-width: 250px;
+  min-height: 150px;
+  padding-bottom: 50px;
+  background-color: #F7F7F8;
+  font-size: 16px;
+  line-height: 1.5em;
+
+  @include all-headings {
+    color: $main-heading-color;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  div.image-wrapper {
+    padding: 0;
+    // Hack: Set to match images being used on the RA site.
+    background-color: #f7f7f8;
+    border-radius: 8px 8px 0 0;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border-radius: 8px 8px 0 0;
+    max-width: 400px;
+    margin: auto;
+  }
+
+  p {
+    text-align: justify;
+    padding: 0 1rem;
+  }
+
+  div {
+    padding: 1rem;
+  }
+
+  ul {
+    // Default is 40px - too much here.
+    padding-left: 1rem;
+
+    li {
+      list-style-type: '-  ';
+
+      &::marker {
+        font-weight: bold;
+      }
+    }
+  }
+}
+.learnhow{
+  padding: 1rem;
+}
+
 .wrapped-boxes {
   display: flex;
   flex-wrap: wrap;
@@ -344,11 +474,11 @@ div.image-box {
 
   > div {
     @include floating-shadow;
-    max-width: 45%;
+    max-width: 48%;
     // max-width: 400px;
 
     @media (max-width: $break-width) {
-      max-width: 80%;
+      max-width: 82%;
     }
   }
 }
@@ -357,6 +487,7 @@ div.image-box {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 1fr;
+  padding-bottom: 150px !important;
 
   @media (max-width: $break-width) {
     grid-auto-flow: row;
