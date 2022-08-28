@@ -18,9 +18,16 @@ tags = []
 
 {{% if-equal enroll false %}}
 
+<<<<<<< HEAD
  ### Enroll in our
  ## FREE TECH TRAINING 
  Sign up for 7-month software development training by XX XXX! 
+=======
+<p class="footnote">
+<b style="color:rgb(2, 2, 95) !important; font-size:25px;">
+We plan to launch our next cohort for Fall 2022.<a href="/#mailing" > Sign up </a> to be notified of when our enrollment opens!.  
+</p>
+>>>>>>> cb5c852e2dc825ee7e00bdb23f824c7a2c95255d
 
 {{% /if-equal %}}
 
