@@ -84,7 +84,7 @@ Get practical product design experience: learn Figma, the industry standard inte
 
 {{% section  centered  %}}
 
-<div style="padding-top:50px;"">
+<div style="padding-top:50px;">
 
 # Why Choose Reskill
 
