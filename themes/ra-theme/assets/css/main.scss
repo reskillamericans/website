@@ -455,4 +455,35 @@ div.image-box {
   padding-top: 2rem !important;
   background-color: #FFFFFF !important;
 }
-.imagebox{background-color: #121928 !important;}
+
+#timer div span {
+  color: #ffffff;
+  display: block;
+  margin-top: 15px;
+  font-size: .35em;
+  font-weight: 600;
+}
+#timer {
+  font-size: 2.5em;
+  font-weight: 800;
+  color: white;
+  padding: 20px;
+  
+  margin: auto;
+  color: white;
+
+}
+
+#timer div {
+  display: inline-block;
+  min-width: 90px;
+  padding: 15px;
+  background: #3C64B1;
+  border-radius: 10px;
+  border: 2px solid #3C64B1;
+  margin: 15px;
+}
+#enrollment-closes-in{
+  margin-bottom: 0px;
+  margin-top: 70px;
+}

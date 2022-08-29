@@ -19,6 +19,10 @@ Are you an underrepresented racial minority looking to get a career in tech? Sig
 
 <a class="button-like standout" target="_blank" href="https://reskill-form.netlify.app/">Join Our Next Cohort</a>
 
+ ##### Enrollment closes in
+
+{{< countdown >}}
+
 {{% section centered %}}
 <div style="max-width: 800px; margin: auto;">
 {{< youtube V3vqrYyqFXo >}}
