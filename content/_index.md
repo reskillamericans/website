@@ -105,7 +105,7 @@ No credit check, entrance exam, or prior knowledge/experience required. If you s
 
 <i>
 <b>
-(Don’t have a LinkedIn profile? Watch <a href="https://www.youtube.com/watch?v=iubjqvaqZHM" target="_blank"> this video </a> to get some topline tips)
+(Don’t have a LinkedIn profile? Watch <a href="https://www.youtube.com/watch?v=iubjqvaqZHM" target="_blank"> this video </a> to get some topline tips) 
 </b>
 </i>
 
