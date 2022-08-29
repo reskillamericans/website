@@ -20,7 +20,6 @@ Are you an underrepresented racial minority looking to get a career in tech? Sig
 <a class="button-like standout" target="_blank" href="https://reskill-form.netlify.app/">Join Our Next Cohort</a>
 
  ##### Enrollment closes in
-
 {{< countdown >}}
 
 {{% section centered %}}
@@ -50,7 +49,7 @@ mentorship.
     src="code-fe.png" %}}
 <div class="left-box">
 
-## Full Stack Web Development {#full-stack}
+## Full Stack Web Development 
 </div>
 
 We will start from the basics of web development: HTML and CSS. And then move into JavaScript as used in the browser, and then on the server.
@@ -64,7 +63,7 @@ No prior experience is needed as we will begin with the basics and progress unti
     src="Design.png" %}}
 <div class="left-box">
 
-## Product Designer UI/UX {#design}
+## UI/UX Design
 
 </div>
 
@@ -106,8 +105,7 @@ No credit check, entrance exam, or prior knowledge/experience required. If you s
 
 <i>
 <b>
-(Don’t have a LinkedIn profile? Watch <a href="https://www.youtube.com/watch?v=iubjqvaqZHM" target="_blank"> this video </a> with LinkedIn strategist, Teddy Burriss, to get some topline tips)
-Watch with LinkedIn strategist, Teddy Burriss, to get some topline tips)
+(Don’t have a LinkedIn profile? Watch <a href="https://www.youtube.com/watch?v=iubjqvaqZHM" target="_blank"> this video </a> to get some topline tips)
 </b>
 </i>
 
