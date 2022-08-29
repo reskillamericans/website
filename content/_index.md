@@ -8,82 +8,24 @@ tags = []
 {{% section centered %}}
 
 {{% if-equal enroll false %}}
-# Increasing Access to Careers in Tech
+
+<h1 class="header-text">Launch Your Career in Tech:</h1>
+
+# Enroll in Our Tuition-Free <br> Training Program
 {{% /if-equal %}}
-
-{{% if-equal enroll true %}}
-# Launch Your Career in Tech:<br>Enroll in Our Free Training Program
-{{% /if-equal %}}
-
-Reskill Americans is a nonprofit founded by tech veterans that provides
-tuition-free software development training, mentorship and community for
-historically **underrepresented racial minorities** across the U.S.
-
-{{% if-equal enroll false %}}
-
-<p class="footnote">
-<b style="color:rgb(2, 2, 95) !important; font-size:25px;">
-We plan to launch our next cohort for Fall 2022.<a href="/#mailing" > Sign up </a> to be notified of when our enrollment opens!.  
+<p class="header-footnote">
+Are you an underrepresented racial minority looking to get a career in tech? Sign up below for our tuition-free, donor-funded program:
 </p>
 
-{{% /if-equal %}}
+<a class="button-like standout" target="_blank" href="https://reskill-form.netlify.app/">Join Our Next Cohort</a>
 
-{{% if-equal enroll true %}}
-<a class="button-like standout" href="/enroll">Join Our Next {{< term cohort caps >}}</a>
-{{% /if-equal %}}
-
+{{% section centered %}}
 <div style="max-width: 800px; margin: auto;">
 {{< youtube V3vqrYyqFXo >}}
 </div>
-
-{{% if-equal enroll false %}}
-
-## Do you want to help underrepresented minorities access careers in tech?
-
-<a class="button-like standout" href="/partner">Partner with Us</a>
-
-{{% /if-equal %}}
-
-{{% /section %}}
-
-{{% section centered light-background %}}
-
-## What Our Graduates Are Saying {#head-testimonials}
-
-{{% /section %}}
-
-{{< section light-background >}}
-{{< testimonials >}}
 {{< /section >}}
 
-
-{{% section side-by-side %}}
-
-<div>
-
-## It's Free!
-
-If you self-identify as a historically underrepresented minority, then
-our program is completely free for you. We are a 501(c)(3) non-profit
-organization funded by individual and corporate donors.
-
-## Learn from<br>Anywhere, Anytime
-
-Our course is entirely online. Once your {{< term cohort >}} begins, you can
-participate on a flexible schedule, as long as you submit your assignments
-on time.
-
-## Enrolling is Easy
-
-No credit check, entrance exam, or prior knowledge/experience required. If you self-identify as an underrepresented minority, all you need is a computer with a web browser, the ability to legally work in the U.S., and an accurate LinkedIn profile and photo. (Don’t have a LinkedIn profile? Watch<a href="https://www.youtube.com/watch?v=iubjqvaqZHM" target="_blank"> this video </a> with LinkedIn strategist, Teddy Burriss, to get some topline tips)
-
-</div>
-
-{{< image alt="Drawing of a team meeting on a tablet."
-    src="Working_01.png" resize="800x" >}}
-
 {{% /section %}}
-
 
 
 {{% section contrast centered prep-overlap %}}
@@ -96,54 +38,114 @@ Choose a track below and receive project-based, hands-on learning and weekly
 mentorship.
 
 {{% /section %}}
+<div class="leftoverlap">
 
-
-{{% section contrast wrapped-boxes overlap %}}
+{{% section contrast new-box wrapped-boxes overlap %}}
 
 {{% image-box alt="Drawing of a developer working on a laptop and phone"
     src="code-fe.png" %}}
+<div class="left-box">
 
-## Full Stack Web<br>Development {#full-stack}
+## Full Stack Web Development {#full-stack}
+</div>
 
-- We start with the basics: HTML and CSS, then take a deep-dive into JavaScript.
-- By the end of the program, you will be able to develop web sites and
-  applications on your own.
+We will start from the basics of web development: HTML and CSS. And then move into JavaScript as used in the browser, and then on the server.
+
+No prior experience is needed as we will begin with the basics and progress until you are able to develop complete web sites and applications on your own.
+
 
 {{% /image-box %}}
 
 {{% image-box alt="Drawing of a designer working on a laptop."
     src="Design.png" %}}
+<div class="left-box">
 
-## Product Designer<br>UI/UX {#design}
+## Product Designer UI/UX {#design}
 
-- Learn how to gather requirements from users, do customer research, and
-  architect product solutions to solve end-user problems.
-- Get practical product design experience: learn Figma, the industry standard
-  interface-design tool, to communicate your designs to stakeholders and
-  developers.
+</div>
+
+
+Learn how to gather requirements from users, do customer research, and architect product solutions to solve end-user problems.
+
+Get practical product design experience: learn Figma, the industry standard interface-design tool, to communicate your designs to stakeholders and developers.
 
 {{% /image-box %}}
 
 {{% /section %}}
-{{% section centered contrast %}}
+</div>
+{{% section  centered  %}}
 
-<a class="button-like " href="/learn-more">Learn More</a>
+<a class="button-like standout" href="/learn-more">Learn More</a>
+
+{{% /section %}}
+
+{{% section  centered  %}}
+
+<div style="padding-top:50px;"">
+
+# Why Choose Reskill
+
+</div>
+{{% /section %}}
+{{% section side-by-side %}}
+
+<div>
+
+## It's Free!
+
+If you self-identify as a historically underrepresented minority, then
+our program is completely free for you. We are a 501(c)(3) non-profit
+organization funded by individual and corporate donors.
+
+## Enrolling is Easy
+No credit check, entrance exam, or prior knowledge/experience required. If you self-identify as an underrepresented minority, all you need is a computer with a web browser, the ability to legally work in the U.S., and an accurate LinkedIn profile and photo.
+
+<i>
+<b>
+(Don’t have a LinkedIn profile? Watch <a href="https://www.youtube.com/watch?v=iubjqvaqZHM" target="_blank"> this video </a> with LinkedIn strategist, Teddy Burriss, to get some topline tips)
+Watch with LinkedIn strategist, Teddy Burriss, to get some topline tips)
+</b>
+</i>
+
+## Learn from<br>Anywhere, Anytime
+
+Our course is entirely online. Once your {{< term cohort >}} begins, you can
+participate on a flexible schedule, as long as you submit your assignments
+on time.
+
+
+</div>
+
+{{< image alt="Drawing of a team meeting on a tablet."
+    src="Working_01.png" resize="800x" >}}
 
 {{% /section %}}
 
 
-{{% if-equal enroll true %}}
 
-{{% section centered %}}
+{{% section centered light-background %}}
 
-# Partner with Us
-
-We are seeking partners in the tech industry that share our mission to help underrepresented minorities get access to training so they can build careers in technology.
-
-<a class="button-like standout" href="mailto:{{< site-param email >}}" target="_blank">Contact Us</a>
+# What Our Graduates Are Saying {#head-testimonials}
 
 {{% /section %}}
 
+{{< section light-background >}}
+{{< testimonials >}}
+{{< /section >}}
+
+{{% if-equal enroll false %}}
+
+<div style="padding-top:100px;padding-bottom:100px;">
+
+{{% section centered  %}}
+
+# Come Reskill With Us!
+
+
+<a class="button-like standout" target="_blank" href="https://reskill-form.netlify.app/">Enroll Now</a>
+
+{{% /section %}}
+</div>
 {{% /if-equal %}}
 
 {{< mailing-list-section >}}

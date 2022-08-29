@@ -1,0 +1,30 @@
+<div class="image-box-home">
+    {{- $path := (print "images/" (.Get "src")) -}}
+    
+    {{- $altText := (print "") -}}
+    {{- with $.Get "alt" -}}
+      {{- $altText = (printf "alt=\"%s\" " . ) -}}
+    {{- else -}}
+      <!-- Don't complain about alt text if no image! -->
+      {{ if $.Get "src" }}
+        {{- warnf "Missing alt attribute for image %s in %s" $path .Page.File -}}
+      {{ end }}
+    {{- end -}}
+    
+    {{- if .Get "src" -}}
+      <div class="image-wrapper">
+      {{- with (resources.Get $path) -}}
+        {{- $image := .Resize "400x" -}}
+          <img {{ $altText | safeHTMLAttr }} src="{{ $image.Permalink }}">
+      {{- else -}}
+        {{- warnf "Unable to find image: %s" $path -}}
+      {{- end -}}
+      </div>
+    {{- end }}
+    
+    <div>
+    {{- .Inner -}}
+    </div>
+    
+    </div>
+    
