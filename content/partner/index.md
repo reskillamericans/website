@@ -147,7 +147,7 @@ in other industries, and some have graduate degrees.
 {{% /section %}}
 
 {{% section centered %}}
-<a class="button-like standout" href="/mailto:info@reskillamericans.org">Contact Us</a>
+<a class="button-like standout" href="mailto:info@reskillamericans.org">Contact Us</a>
 {{% /section %}}
 
 {{< mailing-list-section >}}
