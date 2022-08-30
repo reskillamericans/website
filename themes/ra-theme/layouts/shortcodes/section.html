@@ -15,7 +15,7 @@
 {{- $sepMain := "" }}
 
 {{- range .Params }}
-  {{- if eq . "centered" "wrapped-boxes" "team-boxes" "prep-overlap" "overlap"
+  {{- if eq . "centered" "new-box" "wrapped-boxes" "team-boxes" "prep-overlap" "overlap"
       "side-by-side" "light-box" "document" }}
     {{- $mainClass = (print $mainClass $sepMain . ) }}
     {{- $sepMain = " " }}

@@ -69,8 +69,7 @@ in our rigorous, tuition-free software development program.
   class="footnote-mark">*</span>
 - Hire our participants for paid internships.&nbsp;<span
   class="footnote-mark">*</span>
-- Recruit your employees for our Volunteer Program. (See the
-  [Volunteer](/volunteer) section for details).
+- Recruit your employees for our Volunteer Program. 
 
 <p class="footnote">
 * Reskill Americans is a 501(c)(3) non-profit. We supplement donor funds through
@@ -107,7 +106,7 @@ in our rigorous, tuition-free software development program.
 
 ## Volunteers
 
-We seek volunteers, ideally software developers or UI/UX product designers, to
+We seek volunteers, ideally software developers or UI/UX designers, to
 engage with -- and/or mentor -- our participants throughout our seven-month
 program.
 
@@ -148,7 +147,7 @@ in other industries, and some have graduate degrees.
 {{% /section %}}
 
 {{% section centered %}}
-<a class="button-like standout" href="/volunteer">Volunteer</a>
+<a class="button-like standout" href="mailto:info@reskillamericans.org">Contact Us</a>
 {{% /section %}}
 
 {{< mailing-list-section >}}

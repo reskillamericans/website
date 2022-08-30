@@ -12,7 +12,7 @@
 {{- end -}}
 
 {{- if .Get "src" -}}
-  <div class="image-wrapper">
+  <div class="image-wrapper imagebox">
   {{- with (resources.Get $path) -}}
     {{- $image := .Resize "400x" -}}
       <img {{ $altText | safeHTMLAttr }} src="{{ $image.Permalink }}">
