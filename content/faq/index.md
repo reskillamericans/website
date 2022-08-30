@@ -45,7 +45,7 @@ Our program is tuition-free to participants, with no financial obligation. Our p
 
 ### Who qualifies as an underrepresented racial minority in tech?
 
-Reskill Americans' charter is to increase access to careers in tech for historically underrepresented minorities. We are primarily informed by studies on racial representation of minority groups working in STEM (Science, Technology, Engineering, and Math) fields as well as other published studies on diversity in the technology workforce. We specifically accept those who self-identify as:
+Reskill Americans' charter is to increase access to careers in tech for historically underrepresented minorities. We are primarily informed by studies on racial representation of minority groups working in STEM (Science, Technology, Engineering, and Math) fields as well as other published studies on diversity in the technology workforce.
 
 We specifically accept those who self-identify as:
 
