@@ -30,9 +30,7 @@ stop = "h2"
 
 ### When can I enroll in the next {{< term cohort >}}?
 
-We expect to launch our next session in the Summer of 2022, and will be 
-announcing the exact date shortly. Please check our homepage regularly for 
-an update as when we announce the 2022 date, we will also post the enrollment form.
+Enrollment is open from September 1 - September 30th, 2022! Please be sure to sign up by September 30th to join our next cohort which will begin October 3, 2022.
 
 
 {{% /if-equal %}}
@@ -43,17 +41,11 @@ You must self-identify as an underrepresented racial minority, be at least 18 ye
 
 ### What does the program cost?
 
-Our program is free to participants, with no financial obligation.
+Our program is tuition-free to participants, with no financial obligation. Our program is funded by donors and a fee-for-placement model.
 
-### Who qualifies as an underrepresented minority? {#minority}
+### Who qualifies as an underrepresented racial minority in tech?
 
-Reskill Americans' charter is to increase access to careers in tech for
-historically underrepresented minorities.  We are primarily informed by the
-National Science Foundation
-[study](https://www.nsf.gov/statistics/2017/nsf17310/digest/occupation/overall.cfm)
-on racial representation of minority groups working in STEM (Science,
-Technology, Engineering, and Math) fields as well as other published studies on
-diversity in the technology workforce.
+Reskill Americans' charter is to increase access to careers in tech for historically underrepresented minorities. We are primarily informed by studies on racial representation of minority groups working in STEM (Science, Technology, Engineering, and Math) fields as well as other published studies on diversity in the technology workforce. We specifically accept those who self-identify as:
 
 We specifically accept those who self-identify as:
 
@@ -62,12 +54,11 @@ We specifically accept those who self-identify as:
 - Black
 - Hispanic
 - Pacific Islander
-- Southeast Asian
 
 
 {{% if-equal enroll true %}}
 If you identify with a group we have not listed, that is also underrepresented
-in technology, please let us know in your [enrollment](/enroll) form and we will
+in technology, please let us know in your [enrollment](/) form and we will
 consider you.
 {{% /if-equal %}}
 
@@ -113,7 +104,7 @@ and the resources required to grow.
 
 ### What if I don't have a LinkedIn profile?
 
-If you don't have a LinkedIn profile, you will need to create one in order to enroll in our program. Your profile should include your photo, along with any professional background, skills or education you might have. Please note, it doesn't matter what this is: once you start our program, we will work with you to help you enhance your profile as part of our job search support. For additional tips on how to build a good LinkedIn profile, please watch our session with Career Coach and LinkedIn Strategist Teddy Burriss <a  href="https://www.youtube.com/watch?v=iubjqvaqZHM" target="_blank">here</a> .
+If you don’t have a LinkedIn profile, you will need to create one in order to enroll in our program. Your profile should include your photo, along with any professional background, skills or education you might have. Please note, it doesn’t matter what this is; once you start our program, we will work with you to help you enhance your profile as part of our job search support. For additional tips on how to build a good LinkedIn profile, please watch this video <a  href="https://www.youtube.com/watch?v=iubjqvaqZHM" target="_blank">here</a> .
 
 ## Program Details
 
@@ -149,10 +140,7 @@ questions and or need help.
 
 ### What will be the teaching format?
 
-Over seven months, you will learn the fundamental concepts of software
-development through a range of formats: recorded and live video sessions,
-training modules, and online video conferences with your instructors and mentors
-(collectively requiring a minimum of 15 hours a week).
+Over seven months, you will learn the fundamental concepts of full-stack web development or UX/UI design through a range of formats: recorded and live video sessions, training modules, and online video conferences with your instructors and mentors (collectively requiring a minimum of 15 hours a week).
 
 ### For individuals who work days, will live zoom meetings/classes be available as a recording?
 
@@ -193,11 +181,9 @@ The different tracks, their applications, and career trajectories will be
 introduced and explained in detail during the orientation week so that you have
 as much information as possible to make an informed decision.
 
-### What are the skills I will learn in the Product Design UI/UX track?
+### What are the skills I will learn in the UX/UI Design track?
 
-In the Product Design track, you will learn the following skills: User and
-Market Research, Wire Framing, User Interface Design, High Fidelity Prototyping,
-and Usability Testing.
+In the UX/UI Design track, you will learn the following skills: User and Market Research, Wire Framing, User Interface Design, High Fidelity Prototyping, and Usability Testing.
 
 ### What are the programming languages I will learn in the Full Stack Web Development track?
 
