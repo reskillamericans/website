@@ -33,7 +33,7 @@ Reskill is headquartered in the United States and offers the RA Training to lega
 
 ### 5. Privacy Policy.
 
-Reskill respects your privacy. Please read the Reskill <a href="https://reskillamericans.org/privacy.">Privacy Policy</a>.  It is part of these Terms of Service that are part of our agreement with you. Our Privacy Policy explains Reskill's collection, use, and disclosure of your personal information, including how we treat your personal information and protect your privacy when you apply for, or are enrolled in, the RA Training. The Privacy Policy also explains the procedures that you may use to view, update, correct, or delete certain portions of your personal information.
+Reskill respects your privacy. Please read the Reskill <a href="https://reskillamericans.org/privacy">Privacy Policy</a>.  It is part of these Terms of Service that are part of our agreement with you. Our Privacy Policy explains Reskill's collection, use, and disclosure of your personal information, including how we treat your personal information and protect your privacy when you apply for, or are enrolled in, the RA Training. The Privacy Policy also explains the procedures that you may use to view, update, correct, or delete certain portions of your personal information.
 
 ### 6. Guidelines.
 
