@@ -19,6 +19,7 @@ Are you an underrepresented racial minority looking to get a career in tech? Sig
 
 <a class="button-like standout" target="_blank" href="https://enrollment.reskillamericans.org/">Join Our Next Cohort</a>
 
+
  ##### Enrollment closes in
 {{< countdown >}}
 
