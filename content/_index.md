@@ -21,6 +21,7 @@ Are you an underrepresented racial minority looking to get a career in tech? Sig
 
 
  ##### Enrollment closes in
+ 
 {{< countdown >}}
 
 {{% section centered %}}
