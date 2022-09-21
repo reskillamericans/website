@@ -17,9 +17,11 @@ tags = []
 Are you an underrepresented racial minority looking to get a career in tech? Sign up below for our tuition-free, donor-funded program:
 </p>
 
-<a class="button-like standout" target="_blank" href="https://reskill-form.netlify.app/">Join Our Next Cohort</a>
+<a class="button-like standout" target="_blank" href="https://enrollment.reskillamericans.org/">Join Our Next Cohort</a>
+
 
  ##### Enrollment closes in
+ 
 {{< countdown >}}
 
 {{% section centered %}}
@@ -143,7 +145,7 @@ on time.
 # Come Reskill With Us!
 
 
-<a class="button-like standout" target="_blank" href="https://reskill-form.netlify.app/">Enroll Now</a>
+<a class="button-like standout" target="_blank" href="https://enrollment.reskillamericans.org/">Enroll Now</a>
 
 {{% /section %}}
 </div>
