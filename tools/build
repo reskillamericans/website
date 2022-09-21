@@ -29,7 +29,7 @@ cp $PROJ_DIR/themes/ra-theme/package.json $PROJ_DIR/public/scripts/
 cd $PROJ_DIR
 
 echo "Updating video content files from metadata ..."
-create-video-content-files.mjs
+# create-video-content-files.mjs
 
 echo "Building Hugo static site ..."
 hugo
