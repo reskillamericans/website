@@ -1,5 +1,5 @@
 +++
-title = "Working to Advance Diversity in Tech, One Cohort at a Time"
+title = "Reskill Americans Announces Enrollment for 2022-23 Program"
 date = 2022-09-08
 draft = false
 tags = ['press']
