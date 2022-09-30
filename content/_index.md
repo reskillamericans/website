@@ -32,9 +32,6 @@ Enrollment for our 2022-23 tuition-free software development training program ha
 <a class="button-like standout" href="/enroll">Join Our Next {{< term cohort caps >}}</a>
 {{% /if-equal %}}
 
- ##### Enrollment closes in
-
-
 <div style="max-width: 800px; margin: auto;">
 {{< youtube V3vqrYyqFXo >}}
 </div>
