@@ -102,7 +102,6 @@ on time.
 {{% if-equal enroll false %}}
 
 {{% section centered %}}
-
 # Partner with Us
 
 We are seeking partners in the tech industry that share our mission to help underrepresented minorities get access to training so they can build careers in technology.
