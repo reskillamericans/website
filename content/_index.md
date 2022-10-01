@@ -21,8 +21,8 @@ historically **underrepresented racial minorities** across the U.S.
 
 {{% if-equal enroll false %}}
 
-<p class="footnote">
-<b style="color:rgb(2, 2, 95) !important; font-size:25px;">
+<p class="footnote" style="color:rgb(2, 2, 95) !important; font-size:25px;">
+
 Enrollment for our 2022-23 tuition-free software development training program has closed. This fall, more than 1,000 participants across the U.S. start exciting journeys towards accessing careers in tech. 
 </p>
 
@@ -38,7 +38,7 @@ Enrollment for our 2022-23 tuition-free software development training program ha
 
 {{% if-equal enroll false %}}
 
-## Do you want to help underrepresented minorities access careers in tech?
+### Do you want to help underrepresented minorities access careers in tech?
 
 <a class="button-like standout" href="/partner">Partner with Us</a>
 
@@ -98,24 +98,4 @@ on time.
 
 {{% /section %}}
 
-
-{{% if-equal enroll false %}}
-
-{{% section centered %}}
-# Partner with Us
-
-We are seeking partners in the tech industry that share our mission to help underrepresented minorities get access to training so they can build careers in technology.
-
-<a class="button-like standout" href="mailto:{{< site-param email >}}" target="_blank">Contact Us</a>
-
-{{% /section %}}
-
-{{% /if-equal %}}
-
-
-{{% if-equal enroll false %}}
-
-
-
-{{% /if-equal %}}
 {{< mailing-list-section >}}
