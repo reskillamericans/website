@@ -8,90 +8,63 @@ tags = []
 {{% section centered %}}
 
 {{% if-equal enroll false %}}
-
-<h1 class="header-text">Launch Your Career in Tech:</h1>
-
-# Enroll in Our Tuition-Free <br> Training Program
+# Increasing Access to Careers in Tech
 {{% /if-equal %}}
-<p class="header-footnote">
-Are you an underrepresented racial minority looking to get a career in tech? Sign up below for our tuition-free, donor-funded program:
+
+{{% if-equal enroll true %}}
+# Launch Your Career in Tech:<br>Enroll in Our Free Training Program
+{{% /if-equal %}}
+
+Reskill Americans is a nonprofit founded by tech veterans that provides
+tuition-free software development training, mentorship and community for
+historically **underrepresented racial minorities** across the U.S.
+
+{{% if-equal enroll false %}}
+
+<p class="footnote" style="color:rgb(2, 2, 95) !important;">
+
+Enrollment for our 2022-23 tuition-free software development training program has closed. This fall, more than 1,000 participants across the U.S. start exciting journeys towards accessing careers in tech. 
 </p>
 
-<a class="button-like standout" target="_blank" href="https://enrollment.reskillamericans.org/">Join Our Next Cohort</a>
+{{% /if-equal %}}
 
+{{% if-equal enroll true %}}
+<a class="button-like standout" href="/enroll">Join Our Next {{< term cohort caps >}}</a>
+{{% /if-equal %}}
 
- ##### Enrollment closes in
- 
-{{< countdown >}}
-
-{{% section centered %}}
 <div style="max-width: 800px; margin: auto;">
 {{< youtube V3vqrYyqFXo >}}
 </div>
+
+{{% if-equal enroll false %}}
+
+### Do you want to help underrepresented minorities access careers in tech?
+
+<a class="button-like standout" href="/partner">Partner with Us</a>
+
+{{% /if-equal %}}
+
+{{% /section %}}
+
+{{% section centered light-background %}}
+
+## What Our Graduates Are Saying {#head-testimonials}
+
+{{% /section %}}
+
+{{< section light-background >}}
+{{< testimonials >}}
 {{< /section >}}
 
-{{% /section %}}
-
-
-{{% section contrast centered prep-overlap %}}
-
-## Learning Tracks
-
-No prior experience is required for our seven-month course.
-
-Choose a track below and receive project-based, hands-on learning and weekly
-mentorship.
-
-{{% /section %}}
-<div class="leftoverlap">
-
-{{% section contrast new-box wrapped-boxes overlap %}}
-
-{{% image-box alt="Drawing of a developer working on a laptop and phone"
-    src="code-fe.png" %}}
-<div class="left-box">
-
-## Full Stack Web Development 
-</div>
-
-We will start from the basics of web development: HTML and CSS. And then move into JavaScript as used in the browser, and then on the server.
-
-No prior experience is needed as we will begin with the basics and progress until you are able to develop complete web sites and applications on your own.
-
-
-{{% /image-box %}}
-
-{{% image-box alt="Drawing of a designer working on a laptop."
-    src="Design.png" %}}
-<div class="left-box">
-
-## UI/UX Design
-
-</div>
-
-
-Learn how to gather requirements from users, do customer research, and architect product solutions to solve end-user problems.
-
-Get practical product design experience: learn Figma, the industry standard interface-design tool, to communicate your designs to stakeholders and developers.
-
-{{% /image-box %}}
-
-{{% /section %}}
-</div>
 {{% section  centered  %}}
 
-<a class="button-like standout" href="/learn-more">Learn More</a>
-
-{{% /section %}}
-
-{{% section  centered  %}}
-
-<div style="padding-top:50px;">
+<div style="padding-top:20px;">
 
 # Why Choose Reskill
 
 </div>
 {{% /section %}}
+
 {{% section side-by-side %}}
 
 <div>
@@ -124,31 +97,5 @@ on time.
     src="Working_01.png" resize="800x" >}}
 
 {{% /section %}}
-
-
-{{% section centered light-background %}}
-
-# What Our Graduates Are Saying {#head-testimonials}
-
-{{% /section %}}
-
-{{< section light-background >}}
-{{< testimonials >}}
-{{< /section >}}
-
-{{% if-equal enroll false %}}
-
-<div style="padding-top:100px;padding-bottom:100px;">
-
-{{% section centered  %}}
-
-# Come Reskill With Us!
-
-
-<a class="button-like standout" target="_blank" href="https://enrollment.reskillamericans.org/">Enroll Now</a>
-
-{{% /section %}}
-</div>
-{{% /if-equal %}}
 
 {{< mailing-list-section >}}
