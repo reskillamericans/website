@@ -17,16 +17,7 @@ tags = []
 
 Reskill Americans is a nonprofit founded by tech veterans that provides
 tuition-free software development training, mentorship and community for
-historically **underrepresented racial minorities** across the U.S.
-
-{{% if-equal enroll false %}}
-
-<p class="footnote" style="color:rgb(2, 2, 95) !important; font-size:25px;">
-
-Enrollment for our 2022-23 tuition-free software development training program has closed. This fall, more than 1,000 participants across the U.S. start exciting journeys towards accessing careers in tech. 
-</p>
-
-{{% /if-equal %}}
+historically **underrepresented racial minorities** across the U.S. Enrollment for our 2022-23 tuition-free software development training program has closed. This fall, more than 1,000 participants across the U.S. start exciting journeys towards accessing careers in tech. 
 
 {{% if-equal enroll true %}}
 <a class="button-like standout" href="/enroll">Join Our Next {{< term cohort caps >}}</a>
