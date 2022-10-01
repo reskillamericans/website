@@ -65,23 +65,30 @@ Enrollment for our 2022-23 tuition-free software development training program ha
 </div>
 {{% /section %}}
 
-
 {{% section side-by-side %}}
 
 <div>
 
 ## It's Free!
 
-If you self-identify as a historically underrepresented minority, then our program is completely free for you. We are a 501(c)(3) non-profit organization funded by individual and corporate donors.
-## Enrolling is Easy
+If you self-identify as a historically underrepresented minority, then
+our program is completely free for you. We are a 501(c)(3) non-profit
+organization funded by individual and corporate donors.
 
+## Enrolling is Easy
 No credit check, entrance exam, or prior knowledge/experience required. If you self-identify as an underrepresented minority, all you need is a computer with a web browser, the ability to legally work in the U.S., and an accurate LinkedIn profile and photo.
- 
-(Don’t have a LinkedIn profile? Watch<a href="https://www.youtube.com/watch?v=iubjqvaqZHM" target="_blank"> this video </a> with LinkedIn strategist, Teddy Burriss, to get some topline tips)
+
+<i>
+<b>
+(Don’t have a LinkedIn profile? Watch <a href="https://www.youtube.com/watch?v=iubjqvaqZHM" target="_blank"> this video </a> to get some topline tips) 
+</b>
+</i>
 
 ## Learn from<br>Anywhere, Anytime
 
-Our course is entirely online. Once your session begins, you can participate on a flexible schedule, as long as you submit your assignments on time.
+Our course is entirely online. Once your {{< term cohort >}} begins, you can
+participate on a flexible schedule, as long as you submit your assignments
+on time.
 
 
 </div>
@@ -90,7 +97,6 @@ Our course is entirely online. Once your session begins, you can participate on 
     src="Working_01.png" resize="800x" >}}
 
 {{% /section %}}
-
 
 
 {{% if-equal enroll false %}}
