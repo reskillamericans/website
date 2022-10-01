@@ -26,15 +26,6 @@ stop = "h2"
 
 <hr>
 
-{{% if-equal enroll false %}}
-
-### When can I enroll in the next {{< term cohort >}}?
-
-Enrollment is open from September 1 - September 30th, 2022! Please be sure to sign up by September 30th to join our next cohort which will begin October 3, 2022.
-
-
-{{% /if-equal %}}
-
 ### What do I need to be a part of the program?
 
 You must self-identify as an underrepresented racial minority, be at least 18 years old, and have: a computer with internet access, a LinkedIn profile with a photo, and legal authorization to work in the U.S.
