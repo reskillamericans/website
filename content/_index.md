@@ -95,52 +95,6 @@ No credit check, entrance exam, or prior knowledge/experience required. If you s
 
 
 
-{{% section contrast centered prep-overlap %}}
-
-## Learning Tracks
-
-No prior experience is required for our seven-month course.
-
-Choose a track below and receive project-based, hands-on learning and weekly
-mentorship.
-
-{{% /section %}}
-
-
-{{% section contrast wrapped-boxes overlap %}}
-
-{{% image-box alt="Drawing of a developer working on a laptop and phone"
-    src="code-fe.png" %}}
-
-## Full Stack Web<br>Development {#full-stack}
-
-- We start with the basics: HTML and CSS, then take a deep-dive into JavaScript.
-- By the end of the program, you will be able to develop web sites and
-  applications on your own.
-
-{{% /image-box %}}
-
-{{% image-box alt="Drawing of a designer working on a laptop."
-    src="Design.png" %}}
-
-## Product Designer<br>UI/UX {#design}
-
-- Learn how to gather requirements from users, do customer research, and
-  architect product solutions to solve end-user problems.
-- Get practical product design experience: learn Figma, the industry standard
-  interface-design tool, to communicate your designs to stakeholders and
-  developers.
-
-{{% /image-box %}}
-
-{{% /section %}}
-{{% section centered contrast %}}
-
-<a class="button-like " href="/learn-more">Learn More</a>
-
-{{% /section %}}
-
-
 {{% if-equal enroll false %}}
 
 {{% section centered %}}
