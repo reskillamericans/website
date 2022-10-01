@@ -58,7 +58,7 @@ Enrollment for our 2022-23 tuition-free software development training program ha
 
 {{% section  centered  %}}
 
-<div style="padding-top:50px;">
+<div style="padding-top:20px;">
 
 # Why Choose Reskill
 
