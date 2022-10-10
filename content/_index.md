@@ -21,6 +21,7 @@ historically **underrepresented racial minorities** across the U.S.
 
 {{% if-equal enroll false %}}
 
+<<<<<<< HEAD
 <p class="footnote">
 <b style="color:rgb(2, 2, 95) !important; font-size:25px;">
 Enrollment for our 2022-23 tuition-free software development training program has closed. This fall, more than 1,000 participants across the U.S. start exciting journeys towards accessing careers in tech. 
@@ -31,6 +32,11 @@ Enrollment for our 2022-23 tuition-free software development training program ha
 {{% if-equal enroll true %}}
 <a class="button-like standout" href="/enroll">Join Our Next {{< term cohort caps >}}</a>
 {{% /if-equal %}}
+=======
+ ##### Enrollment closes in
+ 
+{{< countdown >}}
+>>>>>>> 977e7461503288dd30127ab27fbff84194dba619
 
 <div style="max-width: 800px; margin: auto;">
 {{< youtube V3vqrYyqFXo >}}
