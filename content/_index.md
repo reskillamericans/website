@@ -21,8 +21,8 @@ historically **underrepresented racial minorities** across the U.S.
 
 {{% if-equal enroll false %}}
 
-<p class="footnote">
-<b style="color:rgb(2, 2, 95) !important; font-size:25px;">
+<p class="footnote" style="color:rgb(2, 2, 95) !important;">
+
 Enrollment for our 2022-23 tuition-free software development training program has closed. This fall, more than 1,000 participants across the U.S. start exciting journeys towards accessing careers in tech. 
 </p>
 
@@ -38,7 +38,7 @@ Enrollment for our 2022-23 tuition-free software development training program ha
 
 {{% if-equal enroll false %}}
 
-## Do you want to help underrepresented minorities access careers in tech?
+### Do you want to help underrepresented minorities access careers in tech?
 
 <a class="button-like standout" href="/partner">Partner with Us</a>
 
@@ -58,13 +58,12 @@ Enrollment for our 2022-23 tuition-free software development training program ha
 
 {{% section  centered  %}}
 
-<div style="padding-top:50px;">
+<div style="padding-top:20px;">
 
 # Why Choose Reskill
 
 </div>
 {{% /section %}}
-
 
 {{% section side-by-side %}}
 
@@ -76,15 +75,21 @@ If you self-identify as a historically underrepresented minority, then
 our program is completely free for you. We are a 501(c)(3) non-profit
 organization funded by individual and corporate donors.
 
+## Enrolling is Easy
+No credit check, entrance exam, or prior knowledge/experience required. If you self-identify as an underrepresented minority, all you need is a computer with a web browser, the ability to legally work in the U.S., and an accurate LinkedIn profile and photo.
+
+<i>
+<b>
+(Don’t have a LinkedIn profile? Watch <a href="https://www.youtube.com/watch?v=iubjqvaqZHM" target="_blank"> this video </a> to get some topline tips) 
+</b>
+</i>
+
 ## Learn from<br>Anywhere, Anytime
 
 Our course is entirely online. Once your {{< term cohort >}} begins, you can
 participate on a flexible schedule, as long as you submit your assignments
 on time.
 
-## Enrolling is Easy
-
-No credit check, entrance exam, or prior knowledge/experience required. If you self-identify as an underrepresented minority, all you need is a computer with a web browser, the ability to legally work in the U.S., and an accurate LinkedIn profile and photo. (Don’t have a LinkedIn profile? Watch<a href="https://www.youtube.com/watch?v=iubjqvaqZHM" target="_blank"> this video </a> with LinkedIn strategist, Teddy Burriss, to get some topline tips)
 
 </div>
 
@@ -93,72 +98,4 @@ No credit check, entrance exam, or prior knowledge/experience required. If you s
 
 {{% /section %}}
 
-
-
-{{% section contrast centered prep-overlap %}}
-
-## Learning Tracks
-
-No prior experience is required for our seven-month course.
-
-Choose a track below and receive project-based, hands-on learning and weekly
-mentorship.
-
-{{% /section %}}
-
-
-{{% section contrast wrapped-boxes overlap %}}
-
-{{% image-box alt="Drawing of a developer working on a laptop and phone"
-    src="code-fe.png" %}}
-
-## Full Stack Web<br>Development {#full-stack}
-
-- We start with the basics: HTML and CSS, then take a deep-dive into JavaScript.
-- By the end of the program, you will be able to develop web sites and
-  applications on your own.
-
-{{% /image-box %}}
-
-{{% image-box alt="Drawing of a designer working on a laptop."
-    src="Design.png" %}}
-
-## Product Designer<br>UI/UX {#design}
-
-- Learn how to gather requirements from users, do customer research, and
-  architect product solutions to solve end-user problems.
-- Get practical product design experience: learn Figma, the industry standard
-  interface-design tool, to communicate your designs to stakeholders and
-  developers.
-
-{{% /image-box %}}
-
-{{% /section %}}
-{{% section centered contrast %}}
-
-<a class="button-like " href="/learn-more">Learn More</a>
-
-{{% /section %}}
-
-
-{{% if-equal enroll false %}}
-
-{{% section centered %}}
-
-# Partner with Us
-
-We are seeking partners in the tech industry that share our mission to help underrepresented minorities get access to training so they can build careers in technology.
-
-<a class="button-like standout" href="mailto:{{< site-param email >}}" target="_blank">Contact Us</a>
-
-{{% /section %}}
-
-{{% /if-equal %}}
-
-
-{{% if-equal enroll false %}}
-
-
-
-{{% /if-equal %}}
 {{< mailing-list-section >}}

@@ -2,7 +2,8 @@
 title = "Trish Millines Dziko"
 slug = "trish-millines-dziko"
 jobTitle = "Co-Founder and Executive Director, Technology Access Foundation (TAF)"
-group = "Advisor"
+order = 2
+group = "Team"
 draft = false
 linkedIn = "in/trishdziko"
 
