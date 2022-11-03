@@ -1,8 +1,8 @@
 +++
-title = " Lorraine Boehringer"
-slug = " lorraine-boehringer"
+title = "Lorraine Boehringer"
+slug = "lorraine-boehringer"
 jobTitle = "Director, Marketing & Communications"
-order = 1.2
+order = 4
 group = "Team"
 draft = false
 linkedIn = "in/loboeh/"
