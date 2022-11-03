@@ -5,7 +5,6 @@ jobTitle = "Founder"
 order = 1
 group = "Team"
 draft = false
-
 linkedIn = "in/femiakinde/"
 
 

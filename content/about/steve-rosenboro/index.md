@@ -1,9 +1,9 @@
 +++
 title = "Steve Rosenboro"
 slug = "steve-rosenboro"
-jobTitle = "Senior Corporate Counsel, Microsoft"
-
-group = "Advisor"
+jobTitle = "General Counsel, Reskill Americans."
+order=3
+group = "Team"
 draft = false
 
 linkedIn = "in/steverosenboro"
